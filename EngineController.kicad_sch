@@ -1621,7 +1621,7 @@
     )
     (pin "1" (uuid 820cb463-e699-492c-9935-f79e4de14158))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR04") (unit 1)
         )
@@ -1647,7 +1647,7 @@
     (pin "1" (uuid 31769c9d-af7c-44e6-84df-e5a0f737c9d8))
     (pin "2" (uuid a9353e24-f820-4a6e-a64d-9c6a28208987))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R1") (unit 1)
         )
@@ -1673,7 +1673,7 @@
     (pin "1" (uuid a51c4211-49ea-4b19-ab50-5f569363732f))
     (pin "2" (uuid 98705d3e-8978-4b42-8258-e009c7790fe7))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C2") (unit 1)
         )
@@ -1698,7 +1698,7 @@
     )
     (pin "1" (uuid c5287179-b3b6-428e-a484-e878e44f3199))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR02") (unit 1)
         )
@@ -1723,7 +1723,7 @@
     )
     (pin "1" (uuid 963e6348-5e97-4a50-8d0e-37eb9c0ee339))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR08") (unit 1)
         )
@@ -1749,7 +1749,7 @@
     (pin "1" (uuid 37148bbf-9f63-4e49-9105-22f0d25964ac))
     (pin "2" (uuid d3c38e12-00a4-4365-9e7c-23401893696e))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R3") (unit 1)
         )
@@ -1774,7 +1774,7 @@
     )
     (pin "1" (uuid 1bd480d0-4658-43ef-ad96-0e32013f3a20))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR07") (unit 1)
         )
@@ -1800,7 +1800,7 @@
     (pin "1" (uuid 4b03e0f3-9e45-4421-9ccd-a66af2c68cc9))
     (pin "2" (uuid 1b28e93e-476a-4063-bb46-463c0836ac41))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C8") (unit 1)
         )
@@ -1825,7 +1825,7 @@
     )
     (pin "1" (uuid 96a17626-f9ee-4aee-8dac-6fab93984c00))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR01") (unit 1)
         )
@@ -1851,7 +1851,7 @@
     (pin "1" (uuid 76594869-dff6-4e3d-b33c-f5520584da06))
     (pin "2" (uuid 6e196713-3ac2-4a58-940c-b6dfe09cfa17))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C3") (unit 1)
         )
@@ -1877,7 +1877,7 @@
     (pin "1" (uuid d5963d1c-e72f-4785-ba6f-1aed0abdad01))
     (pin "2" (uuid 2f584ba0-8b96-4568-a433-7e28372b5c73))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "TXLED1") (unit 1)
         )
@@ -1903,7 +1903,7 @@
     (pin "1" (uuid e51e4d3f-3b85-475d-a5a4-e1cdaf23eabd))
     (pin "2" (uuid 57db95f6-ac2d-44cf-a7f0-178e0f4e4971))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R2") (unit 1)
         )
@@ -1928,7 +1928,7 @@
     )
     (pin "1" (uuid 91a4378c-9ae3-4032-a50d-65b53c7dab97))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR012") (unit 1)
         )
@@ -1953,7 +1953,7 @@
     )
     (pin "1" (uuid aef4612b-be87-494d-9080-7ea71d7f25b4))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR06") (unit 1)
         )
@@ -1979,7 +1979,7 @@
     (pin "1" (uuid 62dd6e14-300c-40ae-a607-42cb19c587ac))
     (pin "2" (uuid f20b6a3e-ae65-4447-a086-d14e20656445))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "3V3LED1") (unit 1)
         )
@@ -2005,7 +2005,7 @@
     (pin "1" (uuid 5e94bc2b-f136-4f30-a527-9ff2cacf90c9))
     (pin "2" (uuid e6a6c7d1-f72a-4ae0-89d1-d5aa287a3276))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R4") (unit 1)
         )
@@ -2031,7 +2031,7 @@
     (pin "1" (uuid 7e972a1b-4a1b-41cb-bf10-1696ce47de2e))
     (pin "2" (uuid b319df63-5f02-4942-ae11-5cd569153740))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "ENJUMPER1") (unit 1)
         )
@@ -2057,7 +2057,7 @@
     (pin "1" (uuid cf79fd48-6e86-46b2-a350-e6bf25f55d1c))
     (pin "2" (uuid f8a46177-c207-45e1-aa8c-9ee19c95df87))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "BOOTJUMPER1") (unit 1)
         )
@@ -2082,7 +2082,7 @@
     )
     (pin "1" (uuid 5ed803be-5c06-41ff-b7a1-f96acd19d7e9))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR018") (unit 1)
         )
@@ -2112,7 +2112,7 @@
     (pin "5" (uuid ab57be61-3be2-49a1-b1a4-004ab8e0694b))
     (pin "6" (uuid fe7a5a10-5c4d-469c-9a98-6ec80008f4da))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "J1") (unit 1)
         )
@@ -2138,7 +2138,7 @@
     (pin "1" (uuid c3ea2a06-1773-4450-9273-f6d2533c8ea8))
     (pin "2" (uuid 27a26f87-3ba7-47e5-ad37-d7a8feb63205))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "12VLED1") (unit 1)
         )
@@ -2164,7 +2164,7 @@
     (pin "1" (uuid dbb7f326-03f2-43bc-bd9f-363e77d4bb84))
     (pin "2" (uuid b7b912dc-1955-41be-ac01-54cde64e6251))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R7") (unit 1)
         )
@@ -2189,7 +2189,7 @@
     )
     (pin "1" (uuid d7a258e2-d08c-4fd4-b61c-45edb53abc36))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "TP9") (unit 1)
         )
@@ -2214,7 +2214,7 @@
     )
     (pin "1" (uuid e20d252a-cebd-4978-8aa9-4a763d3eec7f))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR021") (unit 1)
         )
@@ -2239,7 +2239,7 @@
     )
     (pin "1" (uuid da27637c-6bb0-40e5-9924-ef000585a100))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR05") (unit 1)
         )
@@ -2265,7 +2265,7 @@
     (pin "1" (uuid 265670e9-4620-419a-b7fd-d43d5ee9e302))
     (pin "2" (uuid 6b8302a0-caad-4941-bca2-c4ebb3c4ad4a))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C9") (unit 1)
         )
@@ -2290,7 +2290,7 @@
     )
     (pin "1" (uuid d6ca7ed7-ab62-4373-9eed-aa57c66725e8))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR010") (unit 1)
         )
@@ -2315,7 +2315,7 @@
     )
     (pin "1" (uuid c919c225-7880-4e32-ac69-d537c269db4f))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H2") (unit 1)
         )
@@ -2341,7 +2341,7 @@
     (pin "1" (uuid 4b4ff1fe-f129-40fc-80b2-0e208cf35476))
     (pin "2" (uuid eb41d0df-f8dd-45eb-80d2-9c9ffde399f6))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C7") (unit 1)
         )
@@ -2366,7 +2366,7 @@
     )
     (pin "1" (uuid b08142d3-7ff8-4c5c-b42b-c785d3dc28ed))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR015") (unit 1)
         )
@@ -2391,7 +2391,7 @@
     )
     (pin "1" (uuid 74fe3bfb-5751-4c2b-b371-b92a1699ccee))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H4") (unit 1)
         )
@@ -2416,7 +2416,7 @@
     )
     (pin "1" (uuid 032121d6-13fe-407e-b1d5-09ad6e574252))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR014") (unit 1)
         )
@@ -2441,7 +2441,7 @@
     )
     (pin "1" (uuid a86d66ea-d900-49d0-a0f4-cf5dc54600a2))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR017") (unit 1)
         )
@@ -2467,7 +2467,7 @@
     (pin "1" (uuid d53c9461-eeab-4ea2-83d3-c5677294ad07))
     (pin "2" (uuid 94ec8071-8e61-494b-b4f0-a2990e4d6e0a))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C1") (unit 1)
         )
@@ -2493,7 +2493,7 @@
     (pin "1" (uuid 70fdd6ad-32b0-4a99-8439-1c787ac5eeec))
     (pin "2" (uuid 60857d83-6c1d-44a5-abd3-9cbcc25900e5))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C10") (unit 1)
         )
@@ -2519,7 +2519,7 @@
     (pin "1" (uuid 4902a4d6-34ce-466a-8e6c-78b40b69b34f))
     (pin "2" (uuid 9e36900f-4367-48b6-9df9-6bc742156a8e))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C14") (unit 1)
         )
@@ -2544,7 +2544,7 @@
     )
     (pin "1" (uuid 3849d66d-40e3-4def-aad0-9183d2d5c314))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR022") (unit 1)
         )
@@ -2570,7 +2570,7 @@
     (pin "1" (uuid 68c45389-bdce-47ed-be16-ce5bcb843737))
     (pin "2" (uuid 1d0b2b7c-f371-4553-b3ad-8263ac81b9f7))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C5") (unit 1)
         )
@@ -2595,7 +2595,7 @@
     )
     (pin "1" (uuid f97db71f-d602-44b6-b2ff-26f95f368026))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR011") (unit 1)
         )
@@ -2620,7 +2620,7 @@
     )
     (pin "1" (uuid e057ca2f-1b75-420b-8935-3a5f72a1ab12))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H1") (unit 1)
         )
@@ -2646,7 +2646,7 @@
     (pin "1" (uuid 418da76b-0ccb-4adf-a84e-780b5930e1e0))
     (pin "2" (uuid d430cb9e-64ce-44de-bddd-01ebc6600cec))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C11") (unit 1)
         )
@@ -2672,7 +2672,7 @@
     (pin "1" (uuid 4980f778-e4a6-483d-a671-63f83be90da6))
     (pin "2" (uuid 5275bad5-f328-40ee-b2a8-6f7519a510b2))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C13") (unit 1)
         )
@@ -2697,7 +2697,7 @@
     )
     (pin "1" (uuid 7af70fed-48b9-435f-bc2b-0ff09d16ca28))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR020") (unit 1)
         )
@@ -2723,7 +2723,7 @@
     (pin "1" (uuid 76adc77e-3988-4532-8bb2-cf55b84ca280))
     (pin "2" (uuid 248dad01-eac3-4b17-94a4-8a89355bd01e))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "L2") (unit 1)
         )
@@ -2748,7 +2748,7 @@
     )
     (pin "1" (uuid abb3743c-9d85-41bb-adb8-235a02ea2b78))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR013") (unit 1)
         )
@@ -2773,7 +2773,7 @@
     )
     (pin "1" (uuid 736d38d1-7a62-4576-8b89-3ca52ddf9d40))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "TP10") (unit 1)
         )
@@ -2799,7 +2799,7 @@
     (pin "1" (uuid 8aceee4b-0ba2-4ec4-830f-91a73124395a))
     (pin "2" (uuid cc95fe4e-01a7-4822-b596-b663cefcaf88))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "L1") (unit 1)
         )
@@ -2824,7 +2824,7 @@
     )
     (pin "1" (uuid 8cb0cb25-4761-4336-9d72-c84e24dfcf34))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR03") (unit 1)
         )
@@ -2905,7 +2905,7 @@
     (pin "8" (uuid bf5ba195-bda2-4a11-9b57-6de30238a35a))
     (pin "9" (uuid 0814a376-397e-443b-8d20-7c22d4ee4dde))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "U1") (unit 1)
         )
@@ -2930,7 +2930,7 @@
     )
     (pin "1" (uuid 47776f9f-a724-4d92-b93e-435f4140fa11))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H3") (unit 1)
         )
@@ -2955,7 +2955,7 @@
     )
     (pin "1" (uuid 1e2b55bb-e350-4363-bf19-e50ddc9809a3))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR023") (unit 1)
         )
@@ -2983,7 +2983,7 @@
     (pin "3" (uuid 155bda6c-ec4c-434e-9e35-182e171b07fe))
     (pin "4" (uuid 2dae3d9a-4853-403b-ad0f-6957b87d6073))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "Y1") (unit 1)
         )
@@ -3009,7 +3009,7 @@
     (pin "1" (uuid 0aa1e85b-7cad-4586-a6ba-fb82f94d8810))
     (pin "2" (uuid 94f71ba0-8a09-445a-933b-c97acb5ecf21))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C4") (unit 1)
         )
@@ -3034,7 +3034,7 @@
     )
     (pin "1" (uuid b0239597-cd62-4448-8c4c-8645b779d407))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR019") (unit 1)
         )
@@ -3060,7 +3060,7 @@
     (pin "1" (uuid c1d0073e-944f-4687-aba4-07fb2a533e6a))
     (pin "2" (uuid e7cd0c88-8e84-4eeb-8a00-0697bb9e4b4d))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R6") (unit 1)
         )
@@ -3086,7 +3086,7 @@
     (pin "1" (uuid e6c2711f-3a4a-43d8-af2c-321d9c010d13))
     (pin "2" (uuid e5993979-a3f8-40b5-a761-7ce3bba866f2))
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C6") (unit 1)
         )
@@ -3113,7 +3113,7 @@
       (uuid ba1155fd-d7b9-48e5-99ea-77360ad93f36)
     )
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "3"))
       )
     )
@@ -3146,7 +3146,7 @@
       (uuid 8eb98c56-17e4-4de6-a3e3-06dcfa392040)
     )
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "2"))
       )
     )
@@ -3163,8 +3163,25 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "RicardoTemplate"
+      (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 190.5 22.86) (size 33.02 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 6c17bf58-bab3-4fa6-ad33-cca9e388d73c)
+    (property "Sheetname" "buckC" (at 190.5 22.1484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "buckCkicad_sch.kicad_sch" (at 190.5 36.1446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "5"))
       )
     )
   )
