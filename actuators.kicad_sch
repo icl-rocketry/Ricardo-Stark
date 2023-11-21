@@ -538,7 +538,7 @@
           (reference "R26") (unit 1)
         )
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
-          (reference "R26") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -575,7 +575,7 @@
   (symbol (lib_id "power:+6V") (at 157.48 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d98ad3e7-7e9d-4fe2-87a5-89dede43d5d8)
-    (property "Reference" "#PWR078" (at 157.48 101.6 0)
+    (property "Reference" "#PWR052" (at 157.48 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+6V" (at 154.4153 95.9178 0)
@@ -623,7 +623,7 @@
           (reference "C12") (unit 1)
         )
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
-          (reference "C12") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -652,7 +652,7 @@
           (reference "R27") (unit 1)
         )
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
-          (reference "R27") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
