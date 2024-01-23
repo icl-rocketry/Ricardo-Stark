@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid 421b76eb-9665-4bc8-9fa7-5dae6f902196)
+  (uuid 9f4b7a3f-fddc-44cd-b28a-c2c571a1148b)
 
   (paper "A4")
 
@@ -613,11 +613,11 @@
         )
       )
     )
-    (symbol "power:+10V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+10V" (at 0 3.556 0)
+      (property "Value" "+12V" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -629,10 +629,10 @@
       (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+10V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+10V_0_1"
+      (symbol "+12V_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -658,9 +658,9 @@
           (fill (type none))
         )
       )
-      (symbol "+10V_1_1"
+      (symbol "+12V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+10V" (effects (font (size 1.27 1.27))))
+          (name "+12V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -809,6 +809,46 @@
         )
       )
     )
+    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "PWR_FLAG" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "flag power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line (at 0 0 90) (length 0)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
   )
 
   (junction (at 113.03 60.96) (diameter 0) (color 0 0 0 0)
@@ -820,11 +860,20 @@
   (junction (at 24.13 78.74) (diameter 0) (color 0 0 0 0)
     (uuid 1923c9c5-2987-48d8-9a76-c80d5dbd2271)
   )
+  (junction (at 224.79 109.22) (diameter 0) (color 0 0 0 0)
+    (uuid 215ece10-5916-4e65-b97d-d016164804c0)
+  )
+  (junction (at 257.81 46.99) (diameter 0) (color 0 0 0 0)
+    (uuid 2520c9b5-1f8c-42f9-aabf-24cd2f8bae1c)
+  )
   (junction (at 245.11 71.12) (diameter 0) (color 0 0 0 0)
     (uuid 267d7060-effc-466f-9f6c-d17a3391916b)
   )
   (junction (at 222.25 116.84) (diameter 0) (color 0 0 0 0)
     (uuid 2fd07753-4f92-4a79-852c-1a790c25f749)
+  )
+  (junction (at 201.93 41.91) (diameter 0) (color 0 0 0 0)
+    (uuid 364b27a0-1c37-4753-bb36-8af43822a8ed)
   )
   (junction (at 184.15 80.01) (diameter 0) (color 0 0 0 0)
     (uuid 39a9f423-cb34-48f1-b79c-83596d5c7a45)
@@ -838,14 +887,23 @@
   (junction (at 212.09 133.35) (diameter 0) (color 0 0 0 0)
     (uuid 5a9c7d03-70c3-4a50-bd54-f965174c44b6)
   )
+  (junction (at 219.71 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid 5eab133a-842a-4ed7-9abc-87fbd2461071)
+  )
   (junction (at 196.85 60.96) (diameter 0) (color 0 0 0 0)
     (uuid 67565713-a481-4d00-b716-5eff5839655f)
+  )
+  (junction (at 196.85 45.72) (diameter 0) (color 0 0 0 0)
+    (uuid 769e0cc0-d633-45a9-aab4-325ec9ce9c81)
   )
   (junction (at 27.94 73.66) (diameter 0) (color 0 0 0 0)
     (uuid 78fe09ed-d7d2-4c3f-bb1d-39334412457c)
   )
   (junction (at 255.27 54.61) (diameter 0) (color 0 0 0 0)
     (uuid 7b7adf5e-aeb9-4462-9cf4-fff09e813094)
+  )
+  (junction (at 252.73 43.18) (diameter 0) (color 0 0 0 0)
+    (uuid 7ba44f4c-ab17-4033-9958-514dfdb653da)
   )
   (junction (at 245.11 81.28) (diameter 0) (color 0 0 0 0)
     (uuid 7bc6568c-4986-4e9e-a79d-b40171765199)
@@ -867,6 +925,9 @@
   )
   (junction (at 224.79 124.46) (diameter 0) (color 0 0 0 0)
     (uuid 91e9b349-56ce-4f16-8b06-71e48b7f40ba)
+  )
+  (junction (at 252.73 49.53) (diameter 0) (color 0 0 0 0)
+    (uuid 9d88a6c1-063c-4d79-bce0-f14f29524fc1)
   )
   (junction (at 240.03 81.28) (diameter 0) (color 0 0 0 0)
     (uuid a0360ce1-dbc4-40df-8b84-ef0937338a66)
@@ -895,9 +956,18 @@
   (junction (at 184.15 69.85) (diameter 0) (color 0 0 0 0)
     (uuid e59f84a1-d84e-4008-9381-a6f6d5c48b3d)
   )
+  (junction (at 191.77 48.26) (diameter 0) (color 0 0 0 0)
+    (uuid f1f93d8f-6e1e-4763-a687-33de92801ed7)
+  )
 
+  (no_connect (at 35.56 58.42) (uuid 123b883d-ac56-4264-99b0-d416501862f5))
+  (no_connect (at 35.56 48.26) (uuid 1c268a08-85be-4e2d-abdf-316aa85c374a))
+  (no_connect (at 35.56 60.96) (uuid 1fafa6ef-c50a-4eb3-b05a-c186012a7fb2))
+  (no_connect (at 35.56 55.88) (uuid 255b1cc4-a578-40ed-b4e0-9cc7a3059752))
   (no_connect (at 35.56 76.2) (uuid 325d807d-b2d5-4387-89bb-282b77935212))
   (no_connect (at 101.6 81.28) (uuid 7cf60379-fe48-4f8f-9ba4-ecdcb86c768a))
+  (no_connect (at 35.56 50.8) (uuid ca32da70-a68b-4f47-8dfd-924fe78414d5))
+  (no_connect (at 35.56 53.34) (uuid e581c9e8-30d9-416c-8130-5ed2be0dc2a4))
 
   (wire (pts (xy 165.1 54.61) (xy 165.1 57.15))
     (stroke (width 0) (type default))
@@ -1391,6 +1461,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 05c05f09-0f8f-43f9-920f-6c62d9fcc5c1)
   )
+  (text "Voltage drawn across R34, R39, and R44 to be 1.2v max to match ADS input range"
+    (at 173.99 22.86 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 219089b8-d17e-465e-942e-26627435025c)
+  )
   (text "10V option" (at 229.87 121.92 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 250441c6-8856-4275-9122-7bd55108e0fd)
@@ -1482,7 +1557,7 @@
   (symbol (lib_id "power:+5V") (at 252.73 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 02f86c57-d447-4c9d-9428-8e01b5ce66f9)
-    (property "Reference" "#PWR088" (at 252.73 46.99 0)
+    (property "Reference" "#PWR093" (at 252.73 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 252.73 38.1 0)
@@ -1498,7 +1573,7 @@
     (instances
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR088") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -1529,7 +1604,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP3") (unit 1)
+          (reference "JP9") (unit 1)
         )
       )
     )
@@ -1560,7 +1635,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C?") (unit 1)
+          (reference "C49") (unit 1)
         )
       )
     )
@@ -1591,7 +1666,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C12") (unit 1)
+          (reference "C55") (unit 1)
         )
       )
     )
@@ -1685,7 +1760,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
     )
@@ -1716,7 +1791,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -1779,7 +1854,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -1810,7 +1885,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R20") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
     )
@@ -1841,7 +1916,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -1872,7 +1947,32 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R39") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 219.71 111.76 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 30f0418a-a48b-47c9-a729-2fb9c5eac795)
+    (property "Reference" "#FLG08" (at 219.71 109.855 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 218.44 109.22 0)
+      (effects (font (size 0.5 0.5)))
+    )
+    (property "Footprint" "" (at 219.71 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 219.71 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6e041229-99b3-4101-beb5-ea44a740022b))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG08") (unit 1)
         )
       )
     )
@@ -1902,7 +2002,32 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR083") (unit 1)
+          (reference "#PWR085") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 252.73 49.53 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 36992a2c-d94d-43eb-aeaf-47a8860ea042)
+    (property "Reference" "#FLG04" (at 252.73 47.625 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 252.73 45.72 0)
+      (effects (font (size 0.5 0.5)))
+    )
+    (property "Footprint" "" (at 252.73 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 252.73 49.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3439f3b3-3597-4299-a432-3ca3f21ccd18))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG04") (unit 1)
         )
       )
     )
@@ -1911,7 +2036,7 @@
   (symbol (lib_id "iclr:ADS131M06IRSNR") (at 35.56 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3896e26c-4b9c-46c6-936c-b8fe24a63797)
-    (property "Reference" "U9" (at 68.58 31.75 0)
+    (property "Reference" "U9" (at 68.58 33.02 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "ADS131M06IRSNR" (at 68.58 35.56 0)
@@ -2024,7 +2149,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR081") (unit 1)
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -2056,7 +2181,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP?") (unit 1)
+          (reference "JP4") (unit 1)
         )
       )
     )
@@ -2087,7 +2212,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -2118,7 +2243,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R22") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
@@ -2148,37 +2273,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR074") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+10V") (at 201.93 41.91 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 57c7c512-0e62-4661-b135-0cdc59ae2aa6)
-    (property "Reference" "#PWR022" (at 201.93 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+10V" (at 201.93 36.83 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 201.93 41.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 201.93 41.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ea1cd242-430c-437a-8b2a-386726107e8b))
-    (instances
-      (project "sensorboard - Copy"
-        (path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -2209,7 +2304,32 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R38") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 201.93 41.91 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 646f4d20-a81e-4c11-9f1b-c9c585a5a85a)
+    (property "Reference" "#FLG01" (at 203.835 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 205.74 41.91 90)
+      (effects (font (size 0.5 0.5)) (justify left))
+    )
+    (property "Footprint" "" (at 201.93 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 201.93 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 57692d9c-3f0f-4d11-b08f-2e2f7d7ba01e))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -2270,19 +2390,19 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR091") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+10V") (at 229.87 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 771d3dc0-7307-44e0-bc59-7e8d843603de)
-    (property "Reference" "#PWR022" (at 229.87 109.22 0)
+  (symbol (lib_id "power:+12V") (at 229.87 105.41 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7575ea2e-a01f-4d8a-a71c-48053688a0d7)
+    (property "Reference" "#PWR092" (at 229.87 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+10V" (at 229.87 100.33 0)
+    (property "Value" "+12V" (at 229.87 100.33 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 229.87 105.41 0)
@@ -2291,16 +2411,11 @@
     (property "Datasheet" "" (at 229.87 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 718c73c7-0e08-4128-bda1-e22add133f6a))
+    (pin "1" (uuid f944aa5e-e2dc-43a9-85ce-fb52da900bc2))
     (instances
-      (project "sensorboard - Copy"
-        (path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-          (reference "#PWR022") (unit 1)
-        )
-      )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
     )
@@ -2333,7 +2448,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "J?") (unit 1)
+          (reference "J5") (unit 1)
         )
       )
     )
@@ -2364,7 +2479,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C18") (unit 1)
+          (reference "C54") (unit 1)
         )
       )
     )
@@ -2402,6 +2517,31 @@
     )
   )
 
+  (symbol (lib_id "power:+12V") (at 262.89 43.18 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 86994efc-cd1c-42f3-b620-403852303940)
+    (property "Reference" "#PWR089" (at 262.89 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 262.89 38.1 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 262.89 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 262.89 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 70096f11-3296-49d0-9395-afbdb06a9c54))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#PWR089") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 101.6 43.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 88293285-9e7f-4797-a125-2f01b81474f3)
@@ -2426,37 +2566,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR056") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+10V") (at 262.89 43.18 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9258f749-0715-444e-a6cb-e4792d15c91a)
-    (property "Reference" "#PWR022" (at 262.89 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+10V" (at 262.89 38.1 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 262.89 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 262.89 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ff88206d-5f92-4a3d-b91c-f51de4747272))
-    (instances
-      (project "sensorboard - Copy"
-        (path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
       )
     )
@@ -2486,7 +2596,32 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR079") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 257.81 46.99 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 9580be2d-b488-4c15-a4e9-0710d6d9b726)
+    (property "Reference" "#FLG06" (at 255.905 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 255.27 48.26 0)
+      (effects (font (size 0.5 0.5)) (justify left))
+    )
+    (property "Footprint" "" (at 257.81 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 257.81 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 64790340-8751-4122-84ae-1644bf9191f4))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG06") (unit 1)
         )
       )
     )
@@ -2517,7 +2652,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C?") (unit 1)
+          (reference "C51") (unit 1)
         )
       )
     )
@@ -2549,7 +2684,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP2") (unit 1)
+          (reference "JP8") (unit 1)
         )
       )
     )
@@ -2580,7 +2715,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
@@ -2611,7 +2746,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C?") (unit 1)
+          (reference "C48") (unit 1)
         )
       )
     )
@@ -2620,7 +2755,7 @@
   (symbol (lib_id "power:+5V") (at 219.71 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a604ad04-45b9-433c-bdfc-d3a79f28c299)
-    (property "Reference" "#PWR093" (at 219.71 109.22 0)
+    (property "Reference" "#PWR090" (at 219.71 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 219.71 100.33 0)
@@ -2636,7 +2771,7 @@
     (instances
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -2667,7 +2802,57 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C?") (unit 1)
+          (reference "C47") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 196.85 45.72 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a7492420-bc40-4b4d-aa34-d62851a77672)
+    (property "Reference" "#FLG02" (at 194.945 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 193.04 46.99 0)
+      (effects (font (size 0.5 0.5)) (justify left))
+    )
+    (property "Footprint" "" (at 196.85 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 196.85 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid adf01a99-b6c0-498b-84b5-11b2ae11382a))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG02") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 201.93 41.91 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a8a3d06e-2c68-4a1a-98de-2473c6895c83)
+    (property "Reference" "#PWR095" (at 201.93 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 201.93 36.83 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 201.93 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 201.93 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 80d9d6d9-3761-4ce0-9ace-cd83e620a320))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -2698,7 +2883,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
@@ -2728,7 +2913,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR082") (unit 1)
+          (reference "#PWR084") (unit 1)
         )
       )
     )
@@ -2759,7 +2944,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
     )
@@ -2790,7 +2975,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R21") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -2823,7 +3008,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "J5") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -2854,7 +3039,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP?") (unit 1)
+          (reference "JP3") (unit 1)
         )
       )
     )
@@ -2884,7 +3069,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -2916,7 +3101,32 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP4") (unit 1)
+          (reference "JP10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 224.79 109.22 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cc33bb57-6cef-416a-b442-a51d62cac8c8)
+    (property "Reference" "#FLG07" (at 222.885 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 220.98 110.49 0)
+      (effects (font (size 0.5 0.5)) (justify left))
+    )
+    (property "Footprint" "" (at 224.79 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 224.79 109.22 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1df272d6-a4ad-4510-a6dc-2e1fa2bb89ed))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG07") (unit 1)
         )
       )
     )
@@ -2947,7 +3157,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C?") (unit 1)
+          (reference "C50") (unit 1)
         )
       )
     )
@@ -2978,7 +3188,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R18") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -3010,7 +3220,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP?") (unit 1)
+          (reference "JP2") (unit 1)
         )
       )
     )
@@ -3040,7 +3250,32 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR078") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 252.73 43.18 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e1095ff4-466a-48a6-a85e-333b548387de)
+    (property "Reference" "#FLG05" (at 250.825 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 248.92 43.18 90)
+      (effects (font (size 0.5 0.5)) (justify left))
+    )
+    (property "Footprint" "" (at 252.73 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 252.73 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4461b3e7-4b68-4ea3-9738-5ef92af4f8db))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG05") (unit 1)
         )
       )
     )
@@ -3071,7 +3306,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R?") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )
@@ -3127,7 +3362,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R19") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -3158,7 +3393,32 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C?") (unit 1)
+          (reference "C52") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 191.77 48.26 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f5cb8ff2-f6e3-4a3c-b4af-b1ea4c58b128)
+    (property "Reference" "#FLG03" (at 191.77 50.165 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 191.77 52.07 0)
+      (effects (font (size 0.5 0.5)))
+    )
+    (property "Footprint" "" (at 191.77 48.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 191.77 48.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0ad8ea43-cc56-4adc-8760-eafbc582a0a5))
+    (instances
+      (project "EngineController"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#FLG03") (unit 1)
         )
       )
     )
@@ -3188,7 +3448,7 @@
       )
       (project "EngineController"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR089") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
     )

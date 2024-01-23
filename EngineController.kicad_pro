@@ -3,7 +3,7 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
-        "board_outline_line_width": 0.09999999999999999,
+        "board_outline_line_width": 0.049999999999999996,
         "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -27,7 +27,7 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.15,
+        "other_line_width": 0.09999999999999999,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -38,11 +38,11 @@
           "height": 0.1,
           "width": 0.1
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.12,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_size_h": 0.7,
+        "silk_text_size_v": 0.7,
+        "silk_text_thickness": 0.15239999999999998,
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": true,
@@ -120,24 +120,24 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.15,
-        "min_connection": 0.09999999999999999,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.254,
-        "min_hole_clearance": 0.254,
-        "min_hole_to_hole": 0.254,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7,
-        "min_text_thickness": 0.15239999999999998,
+        "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.09999999999999999,
-        "min_via_annular_width": 0.09999999999999999,
+        "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.44999999999999996,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
-        "use_height_for_length_calcs": true
+        "use_height_for_length_calcs": false
       },
       "teardrop_options": [
         {
@@ -544,6 +544,10 @@
     [
       "249a9f46-b59f-4de1-97d1-386ac76339a5",
       "pressure_sensor"
+    ],
+    [
+      "df24f951-9014-423f-941d-dec7c0c4c8db",
+      "Boosts"
     ]
   ],
   "text_variables": {}
