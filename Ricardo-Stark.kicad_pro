@@ -35,8 +35,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.22,
-          "width": 0.81
+          "height": 2.8956,
+          "width": 2.8956
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -460,7 +460,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "EngineController.kicad_pro",
+    "filename": "Ricardo-Stark.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -488,7 +488,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "/BUCKP_EN"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

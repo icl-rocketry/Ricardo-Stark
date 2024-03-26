@@ -1234,21 +1234,20 @@
     (uuid fc252776-e449-4d23-a73e-4b169b69d189)
   )
 
-  (no_connect (at 135.89 115.57) (uuid 1cab645d-dd79-47a6-b033-417717555733))
-  (no_connect (at 135.89 105.41) (uuid 5b369b97-4590-477a-b929-2e143c7e02e9))
   (no_connect (at 135.89 107.95) (uuid 5c2b90c3-cd50-4b49-9635-7aaa9f0b2498))
   (no_connect (at 135.89 130.81) (uuid 778d4ccb-7b65-4668-bd3d-2feecd64f44a))
+  (no_connect (at 135.89 69.85) (uuid 7d76488a-5ad4-45fd-90cf-9bd97321e69e))
   (no_connect (at 69.85 118.11) (uuid 7e0aa22a-9bf4-49d9-b2d2-85dc712a024a))
+  (no_connect (at 69.85 105.41) (uuid 8644a0ad-bee5-47e2-bd84-5c0e4d63c19c))
   (no_connect (at 69.85 77.47) (uuid 86749bc6-b935-4c25-9994-054cf825bf11))
   (no_connect (at 135.89 72.39) (uuid 907c4ccf-9cc2-415d-9256-4d1b30e3c940))
-  (no_connect (at 135.89 102.87) (uuid 9756d37f-f20f-4022-b727-e5943fe2a94f))
   (no_connect (at 135.89 128.27) (uuid b03a9619-1d96-4644-bf85-4b591e167140))
   (no_connect (at 69.85 62.23) (uuid b70556bd-0988-43e0-80b0-baa493a62600))
   (no_connect (at 135.89 113.03) (uuid ba0e2a32-0319-4e19-bc9d-127797da9405))
-  (no_connect (at 135.89 92.71) (uuid cf864c35-4c61-434b-8124-441cca6e6b2a))
   (no_connect (at 69.85 120.65) (uuid d1ea4e5a-764c-4792-a034-1d4c949e0c20))
   (no_connect (at 135.89 123.19) (uuid d53bdb65-9586-496e-89ff-e2edf8bb8d22))
   (no_connect (at 69.85 123.19) (uuid eae3b1b8-6283-49d6-aaa5-0caba89dd600))
+  (no_connect (at 135.89 102.87) (uuid ed1d8ce3-7b84-4700-88e7-fb2f2f8a4d6b))
   (no_connect (at 69.85 125.73) (uuid f265f7fe-8d2c-4842-bb58-7dc3ee485445))
   (no_connect (at 135.89 110.49) (uuid f9ad1f97-d4d2-4ffd-9f51-b1642054a88c))
 
@@ -1638,10 +1637,6 @@
     (stroke (width 0) (type default))
     (uuid e350c58b-bda5-4dba-b1ed-a5a0d21c360e)
   )
-  (wire (pts (xy 135.89 69.85) (xy 144.78 69.85))
-    (stroke (width 0) (type default))
-    (uuid e51a25f8-65d0-4b4d-94bd-e812e47ea8a7)
-  )
   (wire (pts (xy 53.34 127) (xy 55.88 127))
     (stroke (width 0) (type default))
     (uuid e58214e3-6e5f-442e-a3df-91298d6756bd)
@@ -1719,10 +1714,6 @@
     (stroke (width 0) (type default))
     (uuid fad4c712-0a2e-465d-a9f8-83d26bd66e37)
   )
-  (wire (pts (xy 135.89 74.93) (xy 144.78 74.93))
-    (stroke (width 0) (type default))
-    (uuid fae2bf44-0968-4739-9fda-2ab4918d5eaa)
-  )
   (wire (pts (xy 16.51 165.1) (xy 24.13 165.1))
     (stroke (width 0) (type default))
     (uuid fb35e3b1-aff6-41a7-9cf0-52694b95edeb)
@@ -1760,8 +1751,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 05e3073d-2619-4ccb-a988-02bbd4e016f3)
   )
-  (label "BUCKP_EN" (at 69.85 105.41 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
+  (label "BuckP_EN" (at 135.89 74.93 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 086c0f58-7aa9-4dac-8101-0696ced05413)
   )
   (label "HSPI_MOSI" (at 220.98 81.28 0) (fields_autoplaced)
@@ -1812,7 +1803,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3d8e2435-a65d-4628-866c-8590f9d3a638)
   )
-  (label "BuckPGOOD" (at 135.89 118.11 0) (fields_autoplaced)
+  (label "BuckPGOOD" (at 135.89 82.55 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3e344c87-8dd0-4534-871f-0826b6224ba8)
   )
@@ -1824,11 +1815,11 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 3f4ae5d4-7746-4fd1-ae9e-977a2ba9e286)
   )
-  (label "VSPI_SCLK" (at 135.89 85.09 0) (fields_autoplaced)
+  (label "VSPI_SCLK" (at 135.89 87.63 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4004f817-931e-47a7-9f62-85c2f2041195)
   )
-  (label "SD1_CS" (at 135.89 90.17 0) (fields_autoplaced)
+  (label "SD1_CS" (at 135.89 92.71 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 408ee4e1-f3a2-4b71-9592-6374ef7cace8)
   )
@@ -1836,7 +1827,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 43359a6d-f6ba-4bc4-9823-002c3e51c92a)
   )
-  (label "HSPI_SCLK" (at 135.89 95.25 0) (fields_autoplaced)
+  (label "HSPI_SCLK" (at 135.89 100.33 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4a684e45-2de4-494b-91e2-e5bd3ee86472)
   )
@@ -1856,7 +1847,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5ac0e0c5-36e1-49db-bda3-7da2bd0076f6)
   )
-  (label "VSPI_MISO" (at 135.89 82.55 0) (fields_autoplaced)
+  (label "VSPI_MISO" (at 135.89 85.09 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5c00fa8e-1571-4f69-b081-476ef4002902)
   )
@@ -1864,7 +1855,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 5e7c3a32-8dda-4e6a-9838-c94d1f165575)
   )
-  (label "ADS_CLK" (at 144.78 69.85 0) (fields_autoplaced)
+  (label "ADS_CLK" (at 135.89 118.11 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5fa61525-6be5-43be-8259-bb3ea09ac319)
   )
@@ -1896,7 +1887,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8cb2cd3a-4ef9-4ae5-b6bc-2b1d16f657d6)
   )
-  (label "ServoV_LOG" (at 69.85 100.33 180) (fields_autoplaced)
+  (label "ServoV_LOG" (at 69.85 102.87 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 9280b08f-ee81-4d6f-83b7-a57d0d0cdd91)
   )
@@ -1924,7 +1915,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid aa6c5536-20c4-4aed-be61-32fdc3aa9e18)
   )
-  (label "ADS_CS0" (at 144.78 74.93 0) (fields_autoplaced)
+  (label "ADS_CS0" (at 135.89 105.41 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b0984d85-fb47-44f7-a457-079fcd53490e)
   )
@@ -1944,7 +1935,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cac349af-0476-42df-aa9f-d31fcc2c3d92)
   )
-  (label "BUCKC_EN" (at 69.85 102.87 180) (fields_autoplaced)
+  (label "BUCKC_EN" (at 69.85 100.33 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d1032a44-23fa-4b8e-9864-fbf60e797e9e)
   )
@@ -1952,7 +1943,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d68dca9b-48b3-498b-9b5f-3b3838250f82)
   )
-  (label "VSPI_MOSI" (at 135.89 87.63 0) (fields_autoplaced)
+  (label "VSPI_MOSI" (at 135.89 90.17 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d7bdd859-617b-48b1-9019-eea1dbd91656)
   )
@@ -1988,7 +1979,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid f7447e92-4293-41c4-be3f-69b30aad1f17)
   )
-  (label "HSPI_MOSI" (at 135.89 100.33 0) (fields_autoplaced)
+  (label "HSPI_MOSI" (at 135.89 95.25 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f9892eca-2e71-457e-849f-965bc1263e81)
   )
@@ -2001,7 +1992,7 @@
     )
   )
 
-  (hierarchical_label "BUCKP_EN" (shape output) (at 214.884 123.952 0) (fields_autoplaced)
+  (hierarchical_label "BUCKP_EN" (shape bidirectional) (at 214.884 122.428 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 63e5fd38-9ca1-40be-b9b3-940fb94cbd6c)
   )
@@ -2031,7 +2022,7 @@
     )
     (pin "1" (uuid 820cb463-e699-492c-9935-f79e4de14158))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR04") (unit 1)
         )
@@ -2057,7 +2048,7 @@
     (pin "1" (uuid 31769c9d-af7c-44e6-84df-e5a0f737c9d8))
     (pin "2" (uuid a9353e24-f820-4a6e-a64d-9c6a28208987))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R1") (unit 1)
         )
@@ -2083,7 +2074,7 @@
     (pin "1" (uuid a51c4211-49ea-4b19-ab50-5f569363732f))
     (pin "2" (uuid 98705d3e-8978-4b42-8258-e009c7790fe7))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C2") (unit 1)
         )
@@ -2108,7 +2099,7 @@
     )
     (pin "1" (uuid c5287179-b3b6-428e-a484-e878e44f3199))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR02") (unit 1)
         )
@@ -2133,7 +2124,7 @@
     )
     (pin "1" (uuid 963e6348-5e97-4a50-8d0e-37eb9c0ee339))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR08") (unit 1)
         )
@@ -2159,7 +2150,7 @@
     (pin "1" (uuid 37148bbf-9f63-4e49-9105-22f0d25964ac))
     (pin "2" (uuid d3c38e12-00a4-4365-9e7c-23401893696e))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R3") (unit 1)
         )
@@ -2184,7 +2175,7 @@
     )
     (pin "1" (uuid 1bd480d0-4658-43ef-ad96-0e32013f3a20))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR07") (unit 1)
         )
@@ -2210,7 +2201,7 @@
     (pin "1" (uuid 4b03e0f3-9e45-4421-9ccd-a66af2c68cc9))
     (pin "2" (uuid 1b28e93e-476a-4063-bb46-463c0836ac41))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C8") (unit 1)
         )
@@ -2235,7 +2226,7 @@
     )
     (pin "1" (uuid 96a17626-f9ee-4aee-8dac-6fab93984c00))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR01") (unit 1)
         )
@@ -2261,7 +2252,7 @@
     (pin "1" (uuid 76594869-dff6-4e3d-b33c-f5520584da06))
     (pin "2" (uuid 6e196713-3ac2-4a58-940c-b6dfe09cfa17))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C3") (unit 1)
         )
@@ -2287,7 +2278,7 @@
     (pin "1" (uuid d5963d1c-e72f-4785-ba6f-1aed0abdad01))
     (pin "2" (uuid 2f584ba0-8b96-4568-a433-7e28372b5c73))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "TXLED1") (unit 1)
         )
@@ -2313,7 +2304,7 @@
     (pin "1" (uuid e51e4d3f-3b85-475d-a5a4-e1cdaf23eabd))
     (pin "2" (uuid 57db95f6-ac2d-44cf-a7f0-178e0f4e4971))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R2") (unit 1)
         )
@@ -2338,7 +2329,7 @@
     )
     (pin "1" (uuid 91a4378c-9ae3-4032-a50d-65b53c7dab97))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR011") (unit 1)
         )
@@ -2363,7 +2354,7 @@
     )
     (pin "1" (uuid aef4612b-be87-494d-9080-7ea71d7f25b4))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR06") (unit 1)
         )
@@ -2389,7 +2380,7 @@
     (pin "1" (uuid 62dd6e14-300c-40ae-a607-42cb19c587ac))
     (pin "2" (uuid f20b6a3e-ae65-4447-a086-d14e20656445))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "3V3LED1") (unit 1)
         )
@@ -2415,7 +2406,7 @@
     (pin "1" (uuid 5e94bc2b-f136-4f30-a527-9ff2cacf90c9))
     (pin "2" (uuid e6a6c7d1-f72a-4ae0-89d1-d5aa287a3276))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R4") (unit 1)
         )
@@ -2441,7 +2432,7 @@
     (pin "1" (uuid 7e972a1b-4a1b-41cb-bf10-1696ce47de2e))
     (pin "2" (uuid b319df63-5f02-4942-ae11-5cd569153740))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "ENJUMPER1") (unit 1)
         )
@@ -2467,7 +2458,7 @@
     (pin "1" (uuid cf79fd48-6e86-46b2-a350-e6bf25f55d1c))
     (pin "2" (uuid f8a46177-c207-45e1-aa8c-9ee19c95df87))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "BOOTJUMPER1") (unit 1)
         )
@@ -2492,7 +2483,7 @@
     )
     (pin "1" (uuid 5ed803be-5c06-41ff-b7a1-f96acd19d7e9))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR016") (unit 1)
         )
@@ -2522,7 +2513,7 @@
     (pin "5" (uuid 9a5a63ad-d72e-42b8-b68d-cfe7c60b1636))
     (pin "6" (uuid a1165d71-6776-45b5-b763-30817943284b))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "J1") (unit 1)
         )
@@ -2548,7 +2539,7 @@
     (pin "1" (uuid c3ea2a06-1773-4450-9273-f6d2533c8ea8))
     (pin "2" (uuid 27a26f87-3ba7-47e5-ad37-d7a8feb63205))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "12VLED1") (unit 1)
         )
@@ -2574,7 +2565,7 @@
     (pin "1" (uuid dbb7f326-03f2-43bc-bd9f-363e77d4bb84))
     (pin "2" (uuid b7b912dc-1955-41be-ac01-54cde64e6251))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R6") (unit 1)
         )
@@ -2599,7 +2590,7 @@
     )
     (pin "1" (uuid 7dd20951-6418-44e9-87c2-e72c705670cd))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#FLG010") (unit 1)
         )
@@ -2624,7 +2615,7 @@
     )
     (pin "1" (uuid d7a258e2-d08c-4fd4-b61c-45edb53abc36))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "TP1") (unit 1)
         )
@@ -2649,7 +2640,7 @@
     )
     (pin "1" (uuid 5c7435d4-9928-47b2-9c9f-93625d507552))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR021") (unit 1)
         )
@@ -2674,7 +2665,7 @@
     )
     (pin "1" (uuid e20d252a-cebd-4978-8aa9-4a763d3eec7f))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR019") (unit 1)
         )
@@ -2699,7 +2690,7 @@
     )
     (pin "1" (uuid da27637c-6bb0-40e5-9924-ef000585a100))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR05") (unit 1)
         )
@@ -2724,7 +2715,7 @@
     )
     (pin "1" (uuid 262ed18e-1907-4494-85b1-ccc2489e0527))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR0126") (unit 1)
         )
@@ -2750,7 +2741,7 @@
     (pin "1" (uuid 265670e9-4620-419a-b7fd-d43d5ee9e302))
     (pin "2" (uuid 6b8302a0-caad-4941-bca2-c4ebb3c4ad4a))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C9") (unit 1)
         )
@@ -2775,7 +2766,7 @@
     )
     (pin "1" (uuid d6ca7ed7-ab62-4373-9eed-aa57c66725e8))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR09") (unit 1)
         )
@@ -2800,7 +2791,7 @@
     )
     (pin "1" (uuid c919c225-7880-4e32-ac69-d537c269db4f))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H2") (unit 1)
         )
@@ -2826,7 +2817,7 @@
     (pin "1" (uuid 4b4ff1fe-f129-40fc-80b2-0e208cf35476))
     (pin "2" (uuid eb41d0df-f8dd-45eb-80d2-9c9ffde399f6))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C7") (unit 1)
         )
@@ -2851,7 +2842,7 @@
     )
     (pin "1" (uuid 8ef71b0c-cd72-4d9a-b421-34423412510a))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR0125") (unit 1)
         )
@@ -2876,7 +2867,7 @@
     )
     (pin "1" (uuid b08142d3-7ff8-4c5c-b42b-c785d3dc28ed))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR014") (unit 1)
         )
@@ -2901,7 +2892,7 @@
     )
     (pin "1" (uuid 74fe3bfb-5751-4c2b-b371-b92a1699ccee))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H4") (unit 1)
         )
@@ -2926,7 +2917,7 @@
     )
     (pin "1" (uuid 032121d6-13fe-407e-b1d5-09ad6e574252))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR013") (unit 1)
         )
@@ -2951,7 +2942,7 @@
     )
     (pin "1" (uuid fcee50ec-1e73-4183-9868-c36450bb9533))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR015") (unit 1)
         )
@@ -2977,7 +2968,7 @@
     (pin "1" (uuid d53c9461-eeab-4ea2-83d3-c5677294ad07))
     (pin "2" (uuid 94ec8071-8e61-494b-b4f0-a2990e4d6e0a))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C1") (unit 1)
         )
@@ -3003,7 +2994,7 @@
     (pin "1" (uuid 70fdd6ad-32b0-4a99-8439-1c787ac5eeec))
     (pin "2" (uuid 60857d83-6c1d-44a5-abd3-9cbcc25900e5))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C10") (unit 1)
         )
@@ -3029,7 +3020,7 @@
     (pin "1" (uuid 4902a4d6-34ce-466a-8e6c-78b40b69b34f))
     (pin "2" (uuid 9e36900f-4367-48b6-9df9-6bc742156a8e))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C13") (unit 1)
         )
@@ -3054,7 +3045,7 @@
     )
     (pin "1" (uuid 3849d66d-40e3-4def-aad0-9183d2d5c314))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR020") (unit 1)
         )
@@ -3080,7 +3071,7 @@
     (pin "1" (uuid 68c45389-bdce-47ed-be16-ce5bcb843737))
     (pin "2" (uuid 1d0b2b7c-f371-4553-b3ad-8263ac81b9f7))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C5") (unit 1)
         )
@@ -3105,7 +3096,7 @@
     )
     (pin "1" (uuid f97db71f-d602-44b6-b2ff-26f95f368026))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR010") (unit 1)
         )
@@ -3131,7 +3122,7 @@
     (pin "1" (uuid 449f541f-688e-4aea-8cff-33e95c44b215))
     (pin "2" (uuid 0cf82309-4e67-4138-b26b-2f84cc00fb54))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R7") (unit 1)
         )
@@ -3156,7 +3147,7 @@
     )
     (pin "1" (uuid e057ca2f-1b75-420b-8935-3a5f72a1ab12))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H1") (unit 1)
         )
@@ -3181,7 +3172,7 @@
     )
     (pin "1" (uuid 498112c5-8613-4079-8ad5-2dd4fed9f5a6))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#FLG012") (unit 1)
         )
@@ -3207,7 +3198,7 @@
     (pin "1" (uuid 418da76b-0ccb-4adf-a84e-780b5930e1e0))
     (pin "2" (uuid d430cb9e-64ce-44de-bddd-01ebc6600cec))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C11") (unit 1)
         )
@@ -3233,7 +3224,7 @@
     (pin "1" (uuid 4980f778-e4a6-483d-a671-63f83be90da6))
     (pin "2" (uuid 5275bad5-f328-40ee-b2a8-6f7519a510b2))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C12") (unit 1)
         )
@@ -3258,7 +3249,7 @@
     )
     (pin "1" (uuid 7af70fed-48b9-435f-bc2b-0ff09d16ca28))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR018") (unit 1)
         )
@@ -3284,7 +3275,7 @@
     (pin "1" (uuid 76adc77e-3988-4532-8bb2-cf55b84ca280))
     (pin "2" (uuid 248dad01-eac3-4b17-94a4-8a89355bd01e))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "L2") (unit 1)
         )
@@ -3309,7 +3300,7 @@
     )
     (pin "1" (uuid abb3743c-9d85-41bb-adb8-235a02ea2b78))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR012") (unit 1)
         )
@@ -3334,7 +3325,7 @@
     )
     (pin "1" (uuid 736d38d1-7a62-4576-8b89-3ca52ddf9d40))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "TP2") (unit 1)
         )
@@ -3360,7 +3351,7 @@
     (pin "1" (uuid 8aceee4b-0ba2-4ec4-830f-91a73124395a))
     (pin "2" (uuid cc95fe4e-01a7-4822-b596-b663cefcaf88))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "L1") (unit 1)
         )
@@ -3385,7 +3376,7 @@
     )
     (pin "1" (uuid 8cb0cb25-4761-4336-9d72-c84e24dfcf34))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR03") (unit 1)
         )
@@ -3466,7 +3457,7 @@
     (pin "8" (uuid bf5ba195-bda2-4a11-9b57-6de30238a35a))
     (pin "9" (uuid 0814a376-397e-443b-8d20-7c22d4ee4dde))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "U1") (unit 1)
         )
@@ -3491,7 +3482,7 @@
     )
     (pin "1" (uuid 47776f9f-a724-4d92-b93e-435f4140fa11))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "H3") (unit 1)
         )
@@ -3517,7 +3508,7 @@
     (pin "1" (uuid 1f64ec76-dd13-4dfc-b747-3916bd88c098))
     (pin "2" (uuid 522a9650-626c-4b70-810c-79d20ecd09f5))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R8") (unit 1)
         )
@@ -3542,7 +3533,7 @@
     )
     (pin "1" (uuid 1e2b55bb-e350-4363-bf19-e50ddc9809a3))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR022") (unit 1)
         )
@@ -3570,7 +3561,7 @@
     (pin "3" (uuid 155bda6c-ec4c-434e-9e35-182e171b07fe))
     (pin "4" (uuid 2dae3d9a-4853-403b-ad0f-6957b87d6073))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "Y1") (unit 1)
         )
@@ -3596,7 +3587,7 @@
     (pin "1" (uuid 0aa1e85b-7cad-4586-a6ba-fb82f94d8810))
     (pin "2" (uuid 94f71ba0-8a09-445a-933b-c97acb5ecf21))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C4") (unit 1)
         )
@@ -3621,7 +3612,7 @@
     )
     (pin "1" (uuid b0239597-cd62-4448-8c4c-8645b779d407))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "#PWR017") (unit 1)
         )
@@ -3647,7 +3638,7 @@
     (pin "1" (uuid c1d0073e-944f-4687-aba4-07fb2a533e6a))
     (pin "2" (uuid e7cd0c88-8e84-4eeb-8a00-0697bb9e4b4d))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "R5") (unit 1)
         )
@@ -3673,7 +3664,7 @@
     (pin "1" (uuid e6c2711f-3a4a-43d8-af2c-321d9c010d13))
     (pin "2" (uuid e5993979-a3f8-40b5-a761-7ce3bba866f2))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
           (reference "C6") (unit 1)
         )
@@ -3700,7 +3691,7 @@
       (uuid ba1155fd-d7b9-48e5-99ea-77360ad93f36)
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "3"))
       )
     )
@@ -3733,7 +3724,7 @@
       (uuid 8eb98c56-17e4-4de6-a3e3-06dcfa392040)
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "2"))
       )
     )
@@ -3770,7 +3761,7 @@
       (uuid 5150e324-893d-41a8-a7b6-0c468470e280)
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "7"))
       )
     )
@@ -3787,7 +3778,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "9"))
       )
     )
@@ -3804,7 +3795,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "4"))
       )
     )
@@ -3833,7 +3824,7 @@
       (uuid f9434314-a51b-4b4f-83ba-da8ab8887ea7)
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "6"))
       )
     )
@@ -3853,12 +3844,12 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 43f0db92-a70e-49ed-9742-ff84720b6bb0)
     )
-    (pin "BUCK_EN" input (at 215.9 21.59 0)
+    (pin "BUCKC_EN" input (at 215.9 21.59 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid babef76c-2d7c-413f-a7aa-ad3ab6d07b5c)
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "5"))
       )
     )
@@ -3875,7 +3866,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "10"))
       )
     )
@@ -3900,7 +3891,7 @@
       (uuid 95846df2-6208-4783-8715-77997269e9b5)
     )
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83" (page "8"))
       )
     )

@@ -657,68 +657,16 @@
         )
       )
     )
-    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "#FLG" (at 0 1.905 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "PWR_FLAG" (at 0 3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "flag power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PWR_FLAG_0_0"
-        (pin power_out line (at 0 0 90) (length 0)
-          (name "pwr" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "PWR_FLAG_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 1.27)
-            (xy -1.016 1.905)
-            (xy 0 2.54)
-            (xy 1.016 1.905)
-            (xy 0 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-    )
   )
 
   (junction (at 91.44 115.57) (diameter 0) (color 0 0 0 0)
     (uuid 028934c9-fe7c-4453-9949-e25a17607271)
   )
-  (junction (at 229.87 57.15) (diameter 0) (color 0 0 0 0)
-    (uuid 0d32f227-b37c-48eb-8d37-8f3892739885)
-  )
-  (junction (at 210.82 57.15) (diameter 0) (color 0 0 0 0)
-    (uuid 0d4d8eeb-63c8-442b-b523-9bd86a15fb8f)
-  )
   (junction (at 77.47 33.02) (diameter 0) (color 0 0 0 0)
     (uuid 17188bd1-5c60-475f-971b-1ebd5ef7dade)
   )
-  (junction (at 201.93 57.15) (diameter 0) (color 0 0 0 0)
-    (uuid 1718eb19-fb1c-4c45-8703-e637f988d262)
-  )
   (junction (at 74.93 52.07) (diameter 0) (color 0 0 0 0)
     (uuid 20a54b60-0a66-485e-b193-c25eddfd311e)
-  )
-  (junction (at 196.85 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 2479b481-6e6d-4c76-8d93-5324bf9a6145)
   )
   (junction (at 86.36 33.02) (diameter 0) (color 0 0 0 0)
     (uuid 2cf0a894-f219-4b90-9350-e75ce1ed5a35)
@@ -726,14 +674,8 @@
   (junction (at 81.28 33.02) (diameter 0) (color 0 0 0 0)
     (uuid 33ad9b24-f40c-4ecc-b6a5-3f2db554552c)
   )
-  (junction (at 193.04 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 35341815-4a80-40d1-a815-3226cdc33796)
-  )
   (junction (at 74.93 63.5) (diameter 0) (color 0 0 0 0)
     (uuid 3ab67a0e-1cf2-4b96-93e9-9f66a9825950)
-  )
-  (junction (at 194.31 43.18) (diameter 0) (color 0 0 0 0)
-    (uuid 3bdfa35b-22e9-4f6f-968f-ccee4d1e4d3c)
   )
   (junction (at 91.44 120.65) (diameter 0) (color 0 0 0 0)
     (uuid 4fd64271-0aaa-4abc-8342-e9ee557dd51d)
@@ -750,26 +692,8 @@
   (junction (at 87.63 115.57) (diameter 0) (color 0 0 0 0)
     (uuid 6e35af35-b49f-4e41-a8d0-ee4eb3fd7d64)
   )
-  (junction (at 190.5 43.18) (diameter 0) (color 0 0 0 0)
-    (uuid 722224a2-824e-4867-8935-89999c60c9f5)
-  )
-  (junction (at 195.58 38.1) (diameter 0) (color 0 0 0 0)
-    (uuid 77f61854-7d05-4e82-a1d9-85ab08e4a979)
-  )
-  (junction (at 199.39 43.18) (diameter 0) (color 0 0 0 0)
-    (uuid 7b70003a-bfa4-47aa-b115-2792a25b292a)
-  )
-  (junction (at 219.71 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid 8a64f326-2fa7-46d2-8dcf-4ee97dc581a7)
-  )
   (junction (at 134.62 119.38) (diameter 0) (color 0 0 0 0)
     (uuid 92c4f7e4-beb6-4d2f-925b-2a0f8db2f096)
-  )
-  (junction (at 181.61 38.1) (diameter 0) (color 0 0 0 0)
-    (uuid 99f941fa-eada-4525-89af-a99fc2132563)
-  )
-  (junction (at 227.33 57.15) (diameter 0) (color 0 0 0 0)
-    (uuid 9a2777ee-10a6-4d92-9134-89be9f9bbbe8)
   )
   (junction (at 95.25 27.94) (diameter 0) (color 0 0 0 0)
     (uuid 9d257161-1a35-4d64-9750-59a50d9fde80)
@@ -777,29 +701,11 @@
   (junction (at 74.93 68.58) (diameter 0) (color 0 0 0 0)
     (uuid 9fa95695-028d-49e5-b6f4-7e3b558d3e99)
   )
-  (junction (at 199.39 38.1) (diameter 0) (color 0 0 0 0)
-    (uuid a151da3f-ca93-4a35-8ece-9ca03a6b70bf)
-  )
   (junction (at 129.54 44.45) (diameter 0) (color 0 0 0 0)
     (uuid ab9ffaca-cd5c-4510-a768-b7572f8bbac5)
   )
-  (junction (at 190.5 38.1) (diameter 0) (color 0 0 0 0)
-    (uuid c4de1611-26fc-4e1d-a831-f59fdc0bfee6)
-  )
-  (junction (at 201.93 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid c5688116-240d-4620-a97f-ee4ca69100f9)
-  )
   (junction (at 74.93 66.04) (diameter 0) (color 0 0 0 0)
     (uuid c8f58c2d-07ec-4355-92b4-a1615dc2f910)
-  )
-  (junction (at 210.82 62.23) (diameter 0) (color 0 0 0 0)
-    (uuid d5dc6ab8-f4e9-4ae8-8e34-1620cf89dd63)
-  )
-  (junction (at 198.12 57.15) (diameter 0) (color 0 0 0 0)
-    (uuid d6793b28-bbb8-49d3-a903-de1f16d7cfe9)
-  )
-  (junction (at 193.04 57.15) (diameter 0) (color 0 0 0 0)
-    (uuid dba13d31-11a3-4213-91ff-fdafa0b3b5f5)
   )
   (junction (at 86.36 27.94) (diameter 0) (color 0 0 0 0)
     (uuid e809a228-747d-49cb-afbc-e6928ca630f7)
@@ -809,9 +715,6 @@
   )
   (junction (at 124.46 49.53) (diameter 0) (color 0 0 0 0)
     (uuid ebc348d0-3026-4a3d-b84a-01fc12b71060)
-  )
-  (junction (at 219.71 57.15) (diameter 0) (color 0 0 0 0)
-    (uuid ed486701-c3b1-4764-92b5-ef0d5a312615)
   )
   (junction (at 82.55 27.94) (diameter 0) (color 0 0 0 0)
     (uuid eecde87c-a226-4b42-8a3f-b42fa10f9830)
@@ -890,14 +793,6 @@
     (stroke (width 0) (type default))
     (uuid 25d09e55-c641-4b13-b2cd-b17ad3acc423)
   )
-  (wire (pts (xy 229.87 57.15) (xy 227.33 57.15))
-    (stroke (width 0) (type default))
-    (uuid 263e4b22-c849-496c-90c0-e9f7076ae3c1)
-  )
-  (wire (pts (xy 210.82 62.23) (xy 219.71 62.23))
-    (stroke (width 0) (type default))
-    (uuid 287ba1fa-8b8a-48a6-bd25-dab95007f72e)
-  )
   (wire (pts (xy 95.25 27.94) (xy 105.41 27.94))
     (stroke (width 0) (type default))
     (uuid 2b23548b-26af-4757-b7ed-e71129be4659)
@@ -909,10 +804,6 @@
   (wire (pts (xy 74.93 60.96) (xy 74.93 63.5))
     (stroke (width 0) (type default))
     (uuid 2d2fc9b0-6aa4-44d7-a827-3a3ccdc75959)
-  )
-  (wire (pts (xy 190.5 43.18) (xy 194.31 43.18))
-    (stroke (width 0) (type default))
-    (uuid 309c1e18-f1fe-4be6-8fab-cd2545b404e2)
   )
   (wire (pts (xy 68.58 33.02) (xy 77.47 33.02))
     (stroke (width 0) (type default))
@@ -931,25 +822,9 @@
     (stroke (width 0) (type default))
     (uuid 394182cd-2613-45aa-acd3-a42f422e2c02)
   )
-  (wire (pts (xy 190.5 38.1) (xy 195.58 38.1))
-    (stroke (width 0) (type default))
-    (uuid 3c2b8af9-6117-4f60-af9a-4aec42d9f85c)
-  )
   (wire (pts (xy 134.62 119.38) (xy 138.43 119.38))
     (stroke (width 0) (type default))
     (uuid 4896e784-f770-44b0-9170-5701d1e3d27e)
-  )
-  (wire (pts (xy 179.07 38.1) (xy 181.61 38.1))
-    (stroke (width 0) (type default))
-    (uuid 4b2562b2-53c5-4ebb-8837-a1a454b29fa7)
-  )
-  (wire (pts (xy 194.31 43.18) (xy 199.39 43.18))
-    (stroke (width 0) (type default))
-    (uuid 4eedc0d7-0ed5-434e-a337-9f894f0a2665)
-  )
-  (wire (pts (xy 193.04 62.23) (xy 196.85 62.23))
-    (stroke (width 0) (type default))
-    (uuid 4f42b3fe-f50c-4e1e-bc85-dbfd4465c183)
   )
   (wire (pts (xy 86.36 120.65) (xy 91.44 120.65))
     (stroke (width 0) (type default))
@@ -962,14 +837,6 @@
   (wire (pts (xy 74.93 50.8) (xy 74.93 52.07))
     (stroke (width 0) (type default))
     (uuid 5434a8f0-8a0b-4df7-808a-1c3fd519e2c1)
-  )
-  (wire (pts (xy 219.71 62.23) (xy 227.33 62.23))
-    (stroke (width 0) (type default))
-    (uuid 5931cfda-420c-4db1-8532-c25a9d1b2133)
-  )
-  (wire (pts (xy 195.58 35.56) (xy 195.58 38.1))
-    (stroke (width 0) (type default))
-    (uuid 598e0cf4-2f77-405c-a78e-48ffa8b7173c)
   )
   (polyline (pts (xy 67.31 107.95) (xy 69.85 107.95))
     (stroke (width 0) (type default))
@@ -993,10 +860,6 @@
     (uuid 64188aea-6d9c-4d6f-9bf6-ede4305c6858)
   )
 
-  (wire (pts (xy 201.93 62.23) (xy 210.82 62.23))
-    (stroke (width 0) (type default))
-    (uuid 656b1de8-f791-4bcc-a59b-439f8463dad7)
-  )
   (wire (pts (xy 77.47 27.94) (xy 82.55 27.94))
     (stroke (width 0) (type default))
     (uuid 6c48965b-ed2a-4af3-9542-388a1e9aa8c8)
@@ -1008,10 +871,6 @@
   (wire (pts (xy 100.33 115.57) (xy 109.22 115.57))
     (stroke (width 0) (type default))
     (uuid 72d75656-60cd-48eb-b9e1-ba2ea1438bf0)
-  )
-  (wire (pts (xy 210.82 57.15) (xy 219.71 57.15))
-    (stroke (width 0) (type default))
-    (uuid 732a7016-3b89-45f9-a586-779b4e3e94eb)
   )
   (wire (pts (xy 63.5 83.82) (xy 74.93 83.82))
     (stroke (width 0) (type default))
@@ -1025,10 +884,6 @@
     (stroke (width 0) (type default))
     (uuid 7a8d98fa-1d9c-427b-80fa-cf91dfeeb7be)
   )
-  (wire (pts (xy 227.33 57.15) (xy 219.71 57.15))
-    (stroke (width 0) (type default))
-    (uuid 7ab802b6-2619-406e-a5ff-56a1bd1142b4)
-  )
   (wire (pts (xy 86.36 27.94) (xy 95.25 27.94))
     (stroke (width 0) (type default))
     (uuid 7e4de5ee-78fa-4686-bd7d-3205c348cee1)
@@ -1040,10 +895,6 @@
   (wire (pts (xy 167.64 88.9) (xy 172.72 88.9))
     (stroke (width 0) (type default))
     (uuid 856892d3-f03f-4e5a-8a00-d413d677b798)
-  )
-  (wire (pts (xy 195.58 38.1) (xy 199.39 38.1))
-    (stroke (width 0) (type default))
-    (uuid 87666e8a-2b38-4eea-ac47-b4d4a6bd285a)
   )
   (wire (pts (xy 62.23 55.88) (xy 74.93 55.88))
     (stroke (width 0) (type default))
@@ -1077,10 +928,6 @@
     (stroke (width 0) (type default))
     (uuid 9b69a891-ddbb-408f-8bb9-7c35ed55cdc8)
   )
-  (wire (pts (xy 199.39 38.1) (xy 208.28 38.1))
-    (stroke (width 0) (type default))
-    (uuid 9cb3b4c5-1969-4dd5-bcfe-9bf3a1d5926a)
-  )
   (polyline (pts (xy 67.31 128.27) (xy 67.31 107.95))
     (stroke (width 0) (type default))
     (uuid 9f8bb9c4-dfa9-4caa-b268-38d9b22db172)
@@ -1098,14 +945,6 @@
     (stroke (width 0) (type default))
     (uuid a5712663-d3f2-443c-8c3c-9113f1a0b7e6)
   )
-  (wire (pts (xy 193.04 57.15) (xy 198.12 57.15))
-    (stroke (width 0) (type default))
-    (uuid a657d7a8-7a07-437b-8b28-edfa128f015f)
-  )
-  (wire (pts (xy 199.39 43.18) (xy 208.28 43.18))
-    (stroke (width 0) (type default))
-    (uuid a67eb9cb-32cd-4fe7-b35e-6222902ecb5c)
-  )
   (wire (pts (xy 74.93 52.07) (xy 74.93 53.34))
     (stroke (width 0) (type default))
     (uuid a72840bf-0fd6-4a98-a25d-6c445e65357f)
@@ -1115,10 +954,6 @@
     (uuid a78ddfa1-ade4-4d0f-94dc-56b199e74db2)
   )
 
-  (wire (pts (xy 181.61 38.1) (xy 190.5 38.1))
-    (stroke (width 0) (type default))
-    (uuid a87825fb-8bd8-413b-b076-d7bffd993818)
-  )
   (wire (pts (xy 91.44 115.57) (xy 100.33 115.57))
     (stroke (width 0) (type default))
     (uuid a9478cd3-5152-4211-ab6b-b1c86bcf0f04)
@@ -1151,11 +986,6 @@
     (stroke (width 0) (type default))
     (uuid bd109147-9c06-45ed-b25b-37701fd48d9a)
   )
-
-  (wire (pts (xy 198.12 54.61) (xy 198.12 57.15))
-    (stroke (width 0) (type default))
-    (uuid be25779a-43d1-424b-acd3-11e7b8bcc0cd)
-  )
   (polyline (pts (xy 116.84 107.95) (xy 116.84 128.27))
     (stroke (width 0) (type default))
     (uuid c012d029-2fef-4728-b0d3-6f94ddc5adee)
@@ -1164,10 +994,6 @@
   (wire (pts (xy 121.92 73.66) (xy 110.49 73.66))
     (stroke (width 0) (type default))
     (uuid c9b585b6-5266-4166-962d-d27618e4267f)
-  )
-  (wire (pts (xy 196.85 62.23) (xy 201.93 62.23))
-    (stroke (width 0) (type default))
-    (uuid ca715eb3-5c43-4153-a315-c0bc1901559e)
   )
   (wire (pts (xy 81.28 33.02) (xy 86.36 33.02))
     (stroke (width 0) (type default))
@@ -1198,10 +1024,6 @@
     (stroke (width 0) (type default))
     (uuid df78a499-0ac3-4192-b929-fe6a3587dfe5)
   )
-  (wire (pts (xy 181.61 43.18) (xy 190.5 43.18))
-    (stroke (width 0) (type default))
-    (uuid e1015d8a-129b-46ac-b6b6-3e6d38b7ccf8)
-  )
   (wire (pts (xy 66.04 27.94) (xy 68.58 27.94))
     (stroke (width 0) (type default))
     (uuid e46b1820-ef61-4ff3-a2fb-c2e27e8893ff)
@@ -1213,14 +1035,6 @@
   (wire (pts (xy 124.46 49.53) (xy 134.62 49.53))
     (stroke (width 0) (type default))
     (uuid e8192faa-2a53-49eb-9fb7-6f68629bc7ac)
-  )
-  (wire (pts (xy 198.12 57.15) (xy 201.93 57.15))
-    (stroke (width 0) (type default))
-    (uuid e9d540c7-b4ae-4d1b-a23e-cff9cfac8095)
-  )
-  (wire (pts (xy 201.93 57.15) (xy 210.82 57.15))
-    (stroke (width 0) (type default))
-    (uuid ea0530a8-92d3-4a1b-9d6c-aa9d52cf9b03)
   )
   (polyline (pts (xy 144.78 50.8) (xy 132.08 50.8))
     (stroke (width 0) (type default))
@@ -1244,23 +1058,9 @@
     (stroke (width 0) (type default))
     (uuid f604365c-94b6-41a6-b661-a408fe9fec5d)
   )
-  (wire (pts (xy 184.15 57.15) (xy 193.04 57.15))
-    (stroke (width 0) (type default))
-    (uuid f7ad82d1-9e09-46c8-9dd5-07b4c7563531)
-  )
   (wire (pts (xy 74.93 66.04) (xy 74.93 68.58))
     (stroke (width 0) (type default))
     (uuid f94a9243-578c-48e9-80e5-08059b48ed8f)
-  )
-  (wire (pts (xy 184.15 62.23) (xy 193.04 62.23))
-    (stroke (width 0) (type default))
-    (uuid ff28d928-4b38-432d-b38a-0ac5f5dea168)
-  )
-
-  (rectangle (start 171.45 29.21) (end 237.49 74.93)
-    (stroke (width 0) (type default))
-    (fill (type none))
-    (uuid 9342fadd-cf17-4e8c-9d48-0d06afa6779a)
   )
 
   (text_box "Remove this resistor for 7.4V mode"
@@ -1271,11 +1071,6 @@
     (uuid 509ad292-60d6-472b-8eef-4ce77c8fb66b)
   )
 
-  (text "Backup capacitors, only place if the capacitance is too low\n"
-    (at 172.72 26.67 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 31a1a48d-1c20-4f7a-afbf-f2a2a07fd2b5)
-  )
   (text "SPM10065VT-3R3M-D" (at 50.8 68.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ae3dbdef-7f24-4215-839e-719497de2140)
@@ -1345,10 +1140,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9b9aeac7-53df-4329-b709-830888d99cbe)
   )
-  (label "Vin" (at 195.58 35.56 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid b135cfae-179c-4512-801c-62ff3107d58c)
-  )
   (label "Vin" (at 82.55 25.4 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b692b7a7-c208-4465-a433-6ab9bb67b561)
@@ -1356,10 +1147,6 @@
   (label "VOUT" (at 110.49 55.88 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c34e819b-5aaa-4489-a0dd-beb5b9d22cfd)
-  )
-  (label "VOUT" (at 198.12 54.61 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid c967927c-e090-4b0e-8891-7a2c11197cf6)
   )
   (label "VDD" (at 74.93 86.36 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -1379,32 +1166,6 @@
     (uuid a34d7f41-11a2-49b3-8c25-19e6868f845f)
   )
 
-  (symbol (lib_id "Device:C_Small") (at 210.82 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0195026f-c7e5-402a-85ed-061e811dba50)
-    (property "Reference" "C43" (at 213.36 58.4263 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 213.36 60.9663 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 210.82 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 210.82 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4ef50b99-b803-4f57-b826-fa19267ae3fe))
-    (pin "2" (uuid 0da24d72-c7ae-4cf0-beab-b54295af33c8))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C43") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GNDA") (at 57.15 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 01c07303-6bf3-4189-87f1-63fb432c3c43)
@@ -1422,34 +1183,9 @@
     )
     (pin "1" (uuid 336188c5-ec87-4785-933c-06f3dfa4de0a))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR049") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+12V") (at 179.07 38.1 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 065e5f20-b4e9-4443-b3be-ea1a808257c9)
-    (property "Reference" "#PWR068" (at 179.07 41.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 179.07 34.5242 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 179.07 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 179.07 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 65954fe8-2e3c-4f34-9ebb-64e6b730cf91))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -1473,7 +1209,7 @@
     (pin "1" (uuid 0fdcdb2b-4b3e-452d-a9c0-1ac2ebfb6939))
     (pin "2" (uuid 28f8c562-fba4-4593-a714-737455209483))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R20") (unit 1)
         )
@@ -1498,7 +1234,7 @@
     )
     (pin "1" (uuid 782fd2fb-690e-44ef-86de-5f9279b33850))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR062") (unit 1)
         )
@@ -1523,7 +1259,7 @@
     )
     (pin "1" (uuid 2362231a-e87a-4cbb-9ad1-642f94de8b8e))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR063") (unit 1)
         )
@@ -1548,7 +1284,7 @@
     )
     (pin "1" (uuid 33ef6877-8124-41bd-942a-9c00276db28c))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR061") (unit 1)
         )
@@ -1574,7 +1310,7 @@
     (pin "1" (uuid 55d68534-9834-4846-a76a-68f50f8541d0))
     (pin "2" (uuid bd478bc9-ab01-4cf8-bb7d-b5912ced5419))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C32") (unit 1)
         )
@@ -1599,7 +1335,7 @@
     )
     (pin "1" (uuid 252f200a-724e-4e7e-a3b7-6be70751eb10))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR053") (unit 1)
         )
@@ -1624,7 +1360,7 @@
     )
     (pin "1" (uuid 014ffa70-0161-4ab1-a9d7-1e760f74adbf))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR048") (unit 1)
         )
@@ -1649,7 +1385,7 @@
     )
     (pin "1" (uuid 16800b60-391a-4e3c-8eed-e32df3f7ec6f))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR064") (unit 1)
         )
@@ -1675,34 +1411,9 @@
     (pin "1" (uuid 365d56ee-65cd-4b89-b10d-0e8aa7ab6d6a))
     (pin "2" (uuid 33ed3015-8a4e-486f-8b3b-991d58d6f440))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C29") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 229.87 57.15 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3a554b61-40be-4672-a274-5f3796297566)
-    (property "Reference" "#FLG09" (at 231.775 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (at 233.68 57.15 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 229.87 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 229.87 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a8db89bc-417e-44fa-a187-092ed89d28be))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "#FLG09") (unit 1)
         )
       )
     )
@@ -1726,7 +1437,7 @@
     (pin "1" (uuid aca21753-3e3d-4592-95e7-9f41340eada5))
     (pin "2" (uuid 643d4f3c-6098-45b5-8373-a10e5d963788))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R27") (unit 1)
         )
@@ -1752,7 +1463,7 @@
     (pin "1" (uuid e2083f61-62b4-4b7e-8471-fe38404071e4))
     (pin "2" (uuid 720a05e0-3d23-4773-a01a-6e20eafe57ff))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C33") (unit 1)
         )
@@ -1777,7 +1488,7 @@
     )
     (pin "1" (uuid f11d11ff-0675-4e4f-9461-3dcdfa9492c5))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR051") (unit 1)
         )
@@ -1803,7 +1514,7 @@
     (pin "1" (uuid 8d526264-0078-4e21-9867-ce97f4c232ba))
     (pin "2" (uuid 2206d6ff-231a-4d08-b559-b45f64281e40))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R23") (unit 1)
         )
@@ -1829,34 +1540,9 @@
     (pin "1" (uuid b5c23475-4626-49e1-8f31-4f37e1198dae))
     (pin "2" (uuid af4e45bd-a28a-4147-afbd-44c5d61c869f))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C28") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+6V") (at 229.87 57.15 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 576d22c7-0c75-45fc-9162-3e9478f148e3)
-    (property "Reference" "#PWR071" (at 229.87 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+6V" (at 226.8053 55.2778 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 229.87 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 229.87 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8e2d4013-b001-40de-856b-0f946723a583))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -1880,7 +1566,7 @@
     (pin "1" (uuid ebb745e9-d42c-4810-bf9f-927648f3b5bd))
     (pin "2" (uuid fa0d7f33-d470-4955-a573-81e8d28e4921))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C26") (unit 1)
         )
@@ -1905,7 +1591,7 @@
     )
     (pin "1" (uuid 15631e86-07a1-4c49-a1b4-d0944f3b168b))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR060") (unit 1)
         )
@@ -1930,7 +1616,7 @@
     )
     (pin "1" (uuid 8da54519-dc6f-4972-a04f-dbb2a7b10546))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR055") (unit 1)
         )
@@ -1955,7 +1641,7 @@
     )
     (pin "1" (uuid f6bbacfe-b815-405f-9c09-a373fea69f45))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR056") (unit 1)
         )
@@ -1981,7 +1667,7 @@
     (pin "1" (uuid d2f1d183-d1b4-4e9e-9dad-29d64aa6a44f))
     (pin "2" (uuid e639be99-2b79-4af4-89fa-60a999588468))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R26") (unit 1)
         )
@@ -2007,60 +1693,9 @@
     (pin "1" (uuid 0c9198e4-b652-41af-8b77-36e0b9de1825))
     (pin "2" (uuid 68542f00-a803-41e8-8d31-281a5be6097f))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R24") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 227.33 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 802714f6-253d-4f10-8fde-efa7713539c3)
-    (property "Reference" "C45" (at 229.87 59.69 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 229.87 62.23 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 227.33 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 227.33 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a8fbe0bb-4e6d-4aba-b638-587d7111f8ed))
-    (pin "2" (uuid 1d283ce7-1a37-4e15-b6be-9f328691ed65))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C45") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 196.85 62.23 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 804f4644-7396-4ab9-a6e0-9993563de746)
-    (property "Reference" "#PWR070" (at 196.85 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 198.755 63.9338 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 196.85 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 196.85 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 57c9c0e8-e345-4385-b52b-d34d732c4de1))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -2083,35 +1718,9 @@
     )
     (pin "1" (uuid 6cda7e2a-2276-471b-9c03-c3cc17187754))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR057") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 190.5 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 82987548-6f89-4bb6-b109-94ca6139e23a)
-    (property "Reference" "C38" (at 193.04 39.3763 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 193.04 41.9163 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 190.5 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 190.5 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f1fd5f2f-5369-4fef-b43e-acdc6c856ba1))
-    (pin "2" (uuid 6b8b445b-e4d4-4438-8526-f0e50c1eec82))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C38") (unit 1)
         )
       )
     )
@@ -2135,7 +1744,7 @@
     (pin "1" (uuid 6042b4cf-095b-47c6-8f57-e27a9a85ccf6))
     (pin "2" (uuid db19551d-0105-499e-bf35-42303108ab1e))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C27") (unit 1)
         )
@@ -2160,7 +1769,7 @@
     )
     (pin "1" (uuid 6fc2d4dc-de00-4c94-93f6-8238bc1526ec))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR066") (unit 1)
         )
@@ -2185,35 +1794,9 @@
     )
     (pin "1" (uuid 0f42f034-8f0c-4cd5-9daf-57f2c74110ed))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR058") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 201.93 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8c4f4e41-3915-44d7-a7b3-4150358e0113)
-    (property "Reference" "C41" (at 204.47 58.4263 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 204.47 60.9663 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 201.93 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 201.93 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 92a2d9fc-695b-4386-9b7d-8951ea9a367c))
-    (pin "2" (uuid 22751ec6-66df-4d36-83be-a775d72cb164))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C41") (unit 1)
         )
       )
     )
@@ -2236,7 +1819,7 @@
     )
     (pin "1" (uuid 3ebb9a66-b463-47a3-b25f-09fb9957931a))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR054") (unit 1)
         )
@@ -2261,7 +1844,7 @@
     )
     (pin "1" (uuid e90ab0ee-a71e-4723-9094-44604f770067))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR067") (unit 1)
         )
@@ -2287,35 +1870,9 @@
     (pin "1" (uuid a684c875-faf0-4021-a08f-983d092fe1ae))
     (pin "2" (uuid 6fb11203-9128-4962-bb92-dbe2aa7c5dc4))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C31") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 184.15 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a14d4149-7786-4ec8-90ad-cc6ee76f7220)
-    (property "Reference" "C37" (at 186.69 58.4263 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 186.69 60.9663 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 184.15 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 184.15 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 56d60a39-b820-4778-8304-406811da8bae))
-    (pin "2" (uuid 0df6a9de-6211-4878-aebf-d492a34ac91a))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C37") (unit 1)
         )
       )
     )
@@ -2339,87 +1896,9 @@
     (pin "1" (uuid 24a5e115-787d-4d05-8786-d52a93d7c368))
     (pin "2" (uuid d31c448d-03d7-488d-a7f6-e61c9f37b4cf))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "L4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 219.71 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid adff1f09-3d47-4bab-868e-017716294697)
-    (property "Reference" "C44" (at 222.25 58.42 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 222.25 60.96 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 219.71 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 219.71 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0536b3c1-98af-4e1a-9271-789a3d23619a))
-    (pin "2" (uuid a113efcb-4b35-4ffe-b32a-ce835c528680))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C44") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 199.39 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b1320dda-f0ee-41cb-8ebd-fa634ea667d8)
-    (property "Reference" "C40" (at 201.93 39.3763 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 201.93 41.9163 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 199.39 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 199.39 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 870e8506-d385-4115-bd03-ea092633d5de))
-    (pin "2" (uuid 8f379795-f9b8-4fb8-bf21-8286259caf8a))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C40") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 181.61 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b4dcfadc-cc2c-496a-bba4-0a4176a9bf67)
-    (property "Reference" "C36" (at 184.15 39.3763 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 184.15 41.9163 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 181.61 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 181.61 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7f35888e-2aeb-4f2b-abec-a98707f572fc))
-    (pin "2" (uuid 38e14344-fe0e-41d6-bdb5-f43d0a847b88))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C36") (unit 1)
         )
       )
     )
@@ -2442,7 +1921,7 @@
     )
     (pin "1" (uuid 11e3db6e-5ab8-41e6-b3d3-25bbd9ebbfbd))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR065") (unit 1)
         )
@@ -2467,7 +1946,7 @@
     )
     (pin "1" (uuid 7d7afeeb-59a2-498d-828e-444c307bd18e))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR052") (unit 1)
         )
@@ -2551,35 +2030,9 @@
     (pin "8" (uuid 86f77014-52b7-4e1a-a68c-79d70497a2f3))
     (pin "9" (uuid e1f84c82-fc8c-4ca1-9bbc-01f7c4ee7985))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "U6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 193.04 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c79ad61e-e2c7-49a8-9b2f-1a9c40080505)
-    (property "Reference" "C39" (at 195.58 58.4263 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 195.58 60.9663 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 193.04 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 193.04 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ac6e0e89-8de0-4bd1-9654-a36d509898c5))
-    (pin "2" (uuid 5ac96df7-0c8b-4189-8f74-8e7ad3b652d9))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C39") (unit 1)
         )
       )
     )
@@ -2603,7 +2056,7 @@
     (pin "1" (uuid 4973b3e2-0c8a-4d1a-8541-072c3efc75fe))
     (pin "2" (uuid 2b6cca3f-bc97-4579-a4b4-558f95c0e2e9))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R21") (unit 1)
         )
@@ -2630,7 +2083,7 @@
     (pin "2" (uuid 08ff1af3-2553-4115-ae4c-088767527225))
     (pin "3" (uuid 54af038c-e83e-4bbd-ac27-c299288ffa16))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "Q1") (unit 1)
         )
@@ -2656,35 +2109,9 @@
     (pin "1" (uuid 9e4bd34b-f873-4d08-9d81-cf92155eba17))
     (pin "2" (uuid 5b32dac1-1891-466b-94d5-285807d47258))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C30") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 208.28 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d7759e8d-329d-4b19-92ff-69991b16e86f)
-    (property "Reference" "C42" (at 210.6041 39.8116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "DNP" (at 210.6041 42.3485 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 208.28 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 208.28 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 50d1b627-c70b-4e1a-be45-c7686dc6c3e4))
-    (pin "2" (uuid d69af256-1862-4aab-ab2f-5934c26c604c))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "C42") (unit 1)
         )
       )
     )
@@ -2708,7 +2135,7 @@
     (pin "1" (uuid 4f39f69b-a82f-437c-967f-262e1f66cb44))
     (pin "2" (uuid 08b95c57-5038-4371-99df-00fdcf29ad41))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R19") (unit 1)
         )
@@ -2733,7 +2160,7 @@
     )
     (pin "1" (uuid 6dc5624c-cda4-4416-b0d5-63c7b13770cf))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR050") (unit 1)
         )
@@ -2759,7 +2186,7 @@
     (pin "1" (uuid 3dcb82af-5522-4234-9097-cffd473db105))
     (pin "2" (uuid 88f94af6-0ccf-42db-9536-8480230b9ddf))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R22") (unit 1)
         )
@@ -2785,34 +2212,9 @@
     (pin "1" (uuid ea003fc1-c495-457c-ad8f-78793cd05678))
     (pin "2" (uuid 5e60c5f8-eb42-4f14-bfc8-8e9defda1634))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C34") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 194.31 43.18 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ec3af13f-5303-4634-a172-c46b1dd4999b)
-    (property "Reference" "#PWR069" (at 194.31 49.53 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 196.215 44.8838 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 194.31 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 194.31 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid aab3150a-c3a6-41de-bb54-47aa25fe7da1))
-    (instances
-      (project "EngineController"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-          (reference "#PWR069") (unit 1)
         )
       )
     )
@@ -2836,7 +2238,7 @@
     (pin "1" (uuid baf01b68-19c0-4af1-bef7-d5be7d0a91ef))
     (pin "2" (uuid 04b7c5fe-c08c-4308-98e6-dc9ca55e2dd4))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C25") (unit 1)
         )
@@ -2862,7 +2264,7 @@
     (pin "1" (uuid 9400f572-1d6a-4526-899d-65ed658057c3))
     (pin "2" (uuid aa764a7a-6bde-4c5f-9812-885e7977ff69))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R25") (unit 1)
         )
@@ -2887,7 +2289,7 @@
     )
     (pin "1" (uuid d6e39149-647d-449e-a197-23585c70f750))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "#PWR059") (unit 1)
         )
@@ -2913,7 +2315,7 @@
     (pin "1" (uuid 38f1a1b5-3336-434f-8f23-6bb5bb8cd22d))
     (pin "2" (uuid 8f1b364f-4580-4da8-95d5-2f798d72b869))
     (instances
-      (project "EngineController"
+      (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "C35") (unit 1)
         )
