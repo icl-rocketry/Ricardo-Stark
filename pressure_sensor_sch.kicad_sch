@@ -900,6 +900,46 @@
         )
       )
     )
+    (symbol "power:GNDA" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "GNDA" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GNDA\" , analog ground" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "GNDA_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "GNDA_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "GNDA" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "#FLG" (at 0 1.905 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1132,7 +1172,9 @@
     (uuid f9f1ffff-b4df-4e15-b4ba-538074625979)
   )
 
+  (no_connect (at 98.298 106.68) (uuid 2dcd2cba-adcf-46ba-9081-ab55bfbcd7b7))
   (no_connect (at 98.298 116.84) (uuid e4128b2a-f21a-48ff-ac50-5682bfa4df94))
+  (no_connect (at 32.258 114.3) (uuid ed277721-aa9b-412f-a343-a0bd5446ff6b))
 
   (wire (pts (xy 138.938 36.322) (xy 138.938 53.086))
     (stroke (width 0) (type default))
@@ -1636,6 +1678,10 @@
     (stroke (width 0) (type default))
     (uuid 99739dba-3624-4603-8370-1ea474e9943b)
   )
+  (wire (pts (xy 103.378 100.33) (xy 103.378 101.6))
+    (stroke (width 0) (type default))
+    (uuid 9a9fb90d-3117-44f1-9844-12c340da543e)
+  )
   (wire (pts (xy 143.256 141.478) (xy 143.256 158.242))
     (stroke (width 0) (type default))
     (uuid 9b24c8f3-baf0-49d9-8d70-16f59351e6eb)
@@ -1711,6 +1757,10 @@
   (wire (pts (xy 98.298 100.33) (xy 103.378 100.33))
     (stroke (width 0) (type default))
     (uuid b79159c9-edfa-49f6-8fb0-735ebfbae7e3)
+  )
+  (wire (pts (xy 98.298 91.44) (xy 109.22 91.44))
+    (stroke (width 0) (type default))
+    (uuid b8b3a993-7385-4c0e-b520-ccdf9895a01b)
   )
   (wire (pts (xy 172.466 116.586) (xy 164.846 116.586))
     (stroke (width 0) (type default))
@@ -1797,6 +1847,10 @@
   (wire (pts (xy 111.76 164.592) (xy 114.3 164.592))
     (stroke (width 0) (type default))
     (uuid d185c73a-8628-478a-b5c3-66d19cdbe82f)
+  )
+  (wire (pts (xy 109.22 91.44) (xy 109.22 92.456))
+    (stroke (width 0) (type default))
+    (uuid d3819666-a85c-4925-a58e-2327558d9d8a)
   )
   (wire (pts (xy 211.836 128.524) (xy 211.836 125.984))
     (stroke (width 0) (type default))
@@ -2119,7 +2173,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "J5") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -2128,7 +2182,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 109.22 151.892 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 09354081-a47f-4341-b746-1d3f39714f6c)
-    (property "Reference" "#FLG021" (at 109.22 153.797 0)
+    (property "Reference" "#FLG05" (at 109.22 153.797 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 109.22 155.702 0)
@@ -2144,7 +2198,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG021") (unit 1)
+          (reference "#FLG05") (unit 1)
         )
       )
     )
@@ -2175,7 +2229,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP18") (unit 1)
+          (reference "JP3") (unit 1)
         )
       )
     )
@@ -2184,7 +2238,7 @@
   (symbol (lib_id "power:+12V") (at 180.848 35.052 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0d981cf2-c286-4193-a59f-fc76b0df3ee0)
-    (property "Reference" "#PWR089" (at 180.848 38.862 0)
+    (property "Reference" "#PWR0104" (at 180.848 38.862 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 180.848 29.972 0)
@@ -2200,7 +2254,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR089") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -2209,7 +2263,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 172.466 94.996 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ff611df-f568-4933-aee5-bc07e5ee0bf4)
-    (property "Reference" "#FLG07" (at 172.466 96.901 0)
+    (property "Reference" "#FLG09" (at 172.466 96.901 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 172.466 98.806 0)
@@ -2225,7 +2279,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG07") (unit 1)
+          (reference "#FLG09") (unit 1)
         )
       )
     )
@@ -2256,7 +2310,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C55") (unit 1)
+          (reference "C38") (unit 1)
         )
       )
     )
@@ -2265,7 +2319,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 175.006 146.558 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 113fc97a-a4e0-407e-9e57-a3b78e6e4444)
-    (property "Reference" "#FLG017" (at 175.006 148.463 0)
+    (property "Reference" "#FLG010" (at 175.006 148.463 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 175.006 150.368 0)
@@ -2281,7 +2335,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG017") (unit 1)
+          (reference "#FLG010") (unit 1)
         )
       )
     )
@@ -2290,7 +2344,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 177.546 92.456 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1635850a-a6cd-4148-a831-59333aea4842)
-    (property "Reference" "#FLG08" (at 175.641 92.456 0)
+    (property "Reference" "#FLG012" (at 175.641 92.456 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 173.736 93.726 0)
@@ -2306,7 +2360,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG08") (unit 1)
+          (reference "#FLG012") (unit 1)
         )
       )
     )
@@ -2315,7 +2369,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 234.696 91.694 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 16b79d59-d628-4d13-acf4-3e3b5f019f8d)
-    (property "Reference" "#FLG015" (at 232.791 91.694 0)
+    (property "Reference" "#FLG020" (at 232.791 91.694 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 230.886 92.964 0)
@@ -2331,7 +2385,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG015") (unit 1)
+          (reference "#FLG020") (unit 1)
         )
       )
     )
@@ -2340,7 +2394,7 @@
   (symbol (lib_id "power:+12V") (at 239.776 87.884 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1984798e-1e06-43f6-8cd3-ed6cfa7c767f)
-    (property "Reference" "#PWR0116" (at 239.776 91.694 0)
+    (property "Reference" "#PWR0112" (at 239.776 91.694 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 239.776 82.804 0)
@@ -2356,7 +2410,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0116") (unit 1)
+          (reference "#PWR0112") (unit 1)
         )
       )
     )
@@ -2387,37 +2441,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R31") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 230.632 57.15 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1bb2bb46-4b67-4fdb-9072-21d229f8dff5)
-    (property "Reference" "#PWR0124" (at 230.632 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 230.632 62.23 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 230.632 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 230.632 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 76bad2b6-4627-4d60-a8df-7c1782057c9e))
-    (instances
-      (project "sensorboard - Copy"
-        (path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-          (reference "#PWR0124") (unit 1)
-        )
-      )
-      (project "Ricardo-Stark"
-        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR091") (unit 1)
+          (reference "R48") (unit 1)
         )
       )
     )
@@ -2448,7 +2472,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R39") (unit 1)
+          (reference "R55") (unit 1)
         )
       )
     )
@@ -2480,7 +2504,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP5") (unit 1)
+          (reference "JP14") (unit 1)
         )
       )
     )
@@ -2489,7 +2513,7 @@
   (symbol (lib_id "2024-03-09_17-28-43:ADS131M06IPBS") (at 32.258 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2661c392-0909-4df7-a220-3fd276c2e17c)
-    (property "Reference" "U8" (at 65.278 72.136 0)
+    (property "Reference" "U7" (at 65.278 72.136 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "ADS131M06IPBS" (at 65.278 74.676 0)
@@ -2536,7 +2560,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "U8") (unit 1)
+          (reference "U7") (unit 1)
         )
       )
     )
@@ -2568,7 +2592,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP19") (unit 1)
+          (reference "JP4") (unit 1)
         )
       )
     )
@@ -2577,7 +2601,7 @@
   (symbol (lib_id "power:+12V") (at 235.712 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 28415b19-43c6-407d-b4bb-85667e11d038)
-    (property "Reference" "#PWR092" (at 235.712 40.64 0)
+    (property "Reference" "#PWR0111" (at 235.712 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 235.712 31.75 0)
@@ -2593,7 +2617,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR0111") (unit 1)
         )
       )
     )
@@ -2625,7 +2649,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP2") (unit 1)
+          (reference "JP5") (unit 1)
         )
       )
     )
@@ -2634,7 +2658,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 229.616 94.234 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b1f2eba-21ae-471d-85ce-d98a8569e94e)
-    (property "Reference" "#FLG014" (at 229.616 96.139 0)
+    (property "Reference" "#FLG018" (at 229.616 96.139 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 229.616 98.044 0)
@@ -2650,7 +2674,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG014") (unit 1)
+          (reference "#FLG018") (unit 1)
         )
       )
     )
@@ -2659,7 +2683,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 114.3 149.352 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b5f3d78-fcc8-4c1b-83c2-24a2e68f1a94)
-    (property "Reference" "#FLG022" (at 112.395 149.352 0)
+    (property "Reference" "#FLG06" (at 112.395 149.352 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 110.49 150.622 0)
@@ -2675,7 +2699,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG022") (unit 1)
+          (reference "#FLG06") (unit 1)
         )
       )
     )
@@ -2706,7 +2730,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R42") (unit 1)
+          (reference "R47") (unit 1)
         )
       )
     )
@@ -2737,7 +2761,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R33") (unit 1)
+          (reference "R54") (unit 1)
         )
       )
     )
@@ -2746,7 +2770,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 230.632 40.64 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 338c797b-ead4-4371-a3f8-429b46116767)
-    (property "Reference" "#FLG05" (at 228.727 40.64 0)
+    (property "Reference" "#FLG019" (at 228.727 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 226.822 41.91 0)
@@ -2762,7 +2786,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG05") (unit 1)
+          (reference "#FLG019") (unit 1)
         )
       )
     )
@@ -2771,7 +2795,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 182.626 88.646 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 34e3e168-d3dd-417b-804a-704eda1a1ada)
-    (property "Reference" "#FLG011" (at 184.531 88.646 0)
+    (property "Reference" "#FLG015" (at 184.531 88.646 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 186.436 88.646 90)
@@ -2787,7 +2811,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG011") (unit 1)
+          (reference "#FLG015") (unit 1)
         )
       )
     )
@@ -2817,7 +2841,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0118") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -2826,7 +2850,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 180.086 144.018 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 378597f7-9970-4ee8-8173-23e513aef94a)
-    (property "Reference" "#FLG018" (at 178.181 144.018 0)
+    (property "Reference" "#FLG013" (at 178.181 144.018 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 176.276 145.288 0)
@@ -2842,7 +2866,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG018") (unit 1)
+          (reference "#FLG013") (unit 1)
         )
       )
     )
@@ -2872,7 +2896,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR085") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -2881,7 +2905,7 @@
   (symbol (lib_name "+3.3V_1") (lib_id "power:+3.3V") (at 32.258 124.46 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44c862f4-0b5e-4bb4-99c0-35b63cd7f483)
-    (property "Reference" "#PWR0148" (at 32.258 120.65 0)
+    (property "Reference" "#PWR089" (at 32.258 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 30.988 128.27 0)
@@ -2897,7 +2921,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0148") (unit 1)
+          (reference "#PWR089") (unit 1)
         )
       )
     )
@@ -2928,7 +2952,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C54") (unit 1)
+          (reference "C45") (unit 1)
         )
       )
     )
@@ -2960,7 +2984,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP16") (unit 1)
+          (reference "JP13") (unit 1)
         )
       )
     )
@@ -2991,7 +3015,63 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R41") (unit 1)
+          (reference "R59") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 100.838 101.6 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4e4a31ba-3bb3-461b-a8af-20c7380d1372)
+    (property "Reference" "C39" (at 105.156 101.6 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "220nF" (at 100.838 105.41 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 100.838 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 100.838 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1ec701a2-0558-4251-9321-7e90f6e348a8))
+    (pin "2" (uuid 5dd4dc5f-5cb9-4249-a033-3bfd9372a2f9))
+    (instances
+      (project "sensorboard - Copy"
+        (path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
+          (reference "C39") (unit 1)
+        )
+      )
+      (project "Ricardo-Stark"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "C39") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 109.22 92.456 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4f4d43e1-a740-452b-a7cd-0bdde1afbe45)
+    (property "Reference" "#PWR090" (at 109.22 98.806 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 109.22 97.282 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 109.22 92.456 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 109.22 92.456 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a86543fa-214c-4b20-a2c0-ce51ae028dda))
+    (instances
+      (project "Ricardo-Stark"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -3024,7 +3104,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "J7") (unit 1)
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -3033,7 +3113,7 @@
   (symbol (lib_name "GND_1") (lib_id "power:GND") (at 22.606 110.236 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51458035-05bf-43cf-8a3c-fdd7afdc0576)
-    (property "Reference" "#PWR0121" (at 22.606 116.586 0)
+    (property "Reference" "#PWR088" (at 22.606 116.586 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 22.606 115.062 0)
@@ -3049,7 +3129,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0121") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
     )
@@ -3080,7 +3160,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C51") (unit 1)
+          (reference "C44") (unit 1)
         )
       )
     )
@@ -3110,7 +3190,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR088") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -3140,7 +3220,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -3149,7 +3229,7 @@
   (symbol (lib_id "power:+5V") (at 170.688 35.052 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 562635c4-61d6-48f2-8fa1-14252c78091a)
-    (property "Reference" "#PWR087" (at 170.688 38.862 0)
+    (property "Reference" "#PWR098" (at 170.688 38.862 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 170.688 29.972 0)
@@ -3165,7 +3245,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR087") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -3198,7 +3278,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "J12") (unit 1)
+          (reference "J9") (unit 1)
         )
       )
     )
@@ -3229,7 +3309,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP15") (unit 1)
+          (reference "JP12") (unit 1)
         )
       )
     )
@@ -3261,7 +3341,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP8") (unit 1)
+          (reference "JP6") (unit 1)
         )
       )
     )
@@ -3293,7 +3373,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP4") (unit 1)
+          (reference "JP10") (unit 1)
         )
       )
     )
@@ -3323,7 +3403,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0122") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
     )
@@ -3356,7 +3436,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "J6") (unit 1)
+          (reference "J10") (unit 1)
         )
       )
     )
@@ -3365,7 +3445,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 225.552 43.18 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a2cfdba-981c-42f8-aba1-4fdb1ce6677a)
-    (property "Reference" "#FLG04" (at 225.552 45.085 0)
+    (property "Reference" "#FLG017" (at 225.552 45.085 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 225.552 46.99 0)
@@ -3381,7 +3461,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG04") (unit 1)
+          (reference "#FLG017") (unit 1)
         )
       )
     )
@@ -3412,7 +3492,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R40") (unit 1)
+          (reference "R57") (unit 1)
         )
       )
     )
@@ -3443,7 +3523,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R37") (unit 1)
+          (reference "R49") (unit 1)
         )
       )
     )
@@ -3452,7 +3532,7 @@
   (symbol (lib_id "power:+12V") (at 119.38 145.542 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6de71558-f7b1-4cf9-8e09-930777ad9a2a)
-    (property "Reference" "#PWR0141" (at 119.38 149.352 0)
+    (property "Reference" "#PWR097" (at 119.38 149.352 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 119.38 140.462 0)
@@ -3468,7 +3548,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0141") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -3498,7 +3578,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0114") (unit 1)
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -3507,7 +3587,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 119.38 145.542 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7116d6c7-6553-470e-9ac6-b6c80d83cca0)
-    (property "Reference" "#FLG023" (at 121.285 145.542 0)
+    (property "Reference" "#FLG07" (at 121.285 145.542 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 123.19 145.542 90)
@@ -3523,7 +3603,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG023") (unit 1)
+          (reference "#FLG07") (unit 1)
         )
       )
     )
@@ -3553,7 +3633,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0140") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -3585,7 +3665,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP11") (unit 1)
+          (reference "JP15") (unit 1)
         )
       )
     )
@@ -3616,7 +3696,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R44") (unit 1)
+          (reference "R53") (unit 1)
         )
       )
     )
@@ -3647,7 +3727,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C52") (unit 1)
+          (reference "C42") (unit 1)
         )
       )
     )
@@ -3679,7 +3759,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP10") (unit 1)
+          (reference "JP11") (unit 1)
         )
       )
     )
@@ -3710,7 +3790,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C48") (unit 1)
+          (reference "C43") (unit 1)
         )
       )
     )
@@ -3741,7 +3821,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R43") (unit 1)
+          (reference "R50") (unit 1)
         )
       )
     )
@@ -3772,7 +3852,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C72") (unit 1)
+          (reference "C40") (unit 1)
         )
       )
     )
@@ -3781,7 +3861,7 @@
   (symbol (lib_id "power:+5V") (at 109.22 145.542 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 884191c8-e0cf-47bf-8fd5-6165e49e4f23)
-    (property "Reference" "#PWR0139" (at 109.22 149.352 0)
+    (property "Reference" "#PWR091" (at 109.22 149.352 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 109.22 140.462 0)
@@ -3797,7 +3877,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0139") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
     )
@@ -3806,7 +3886,7 @@
   (symbol (lib_id "power:+5V") (at 175.006 140.208 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8a998937-308f-49c4-badd-a43f0242698f)
-    (property "Reference" "#PWR0117" (at 175.006 144.018 0)
+    (property "Reference" "#PWR0100" (at 175.006 144.018 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 175.006 135.128 0)
@@ -3822,7 +3902,32 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0117") (unit 1)
+          (reference "#PWR0100") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GNDA") (at 230.632 57.15 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8d2facef-30df-4768-a3d4-9af931d1579a)
+    (property "Reference" "#PWR0109" (at 230.632 63.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GNDA" (at 230.632 61.976 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 230.632 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 230.632 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a02a0c01-6c05-44ea-9b81-c0cf393c8434))
+    (instances
+      (project "Ricardo-Stark"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -3852,7 +3957,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0124") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -3861,7 +3966,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 185.166 140.208 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 92bbbe0c-e1cb-4bad-9b6d-856f38668e6a)
-    (property "Reference" "#FLG019" (at 187.071 140.208 0)
+    (property "Reference" "#FLG016" (at 187.071 140.208 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 188.976 140.208 90)
@@ -3877,7 +3982,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG019") (unit 1)
+          (reference "#FLG016") (unit 1)
         )
       )
     )
@@ -3886,7 +3991,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 175.768 38.862 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92e6bc58-fd64-4432-9ebb-87a790e33ca1)
-    (property "Reference" "#FLG02" (at 173.863 38.862 0)
+    (property "Reference" "#FLG011" (at 173.863 38.862 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 171.958 40.132 0)
@@ -3902,7 +4007,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG011") (unit 1)
         )
       )
     )
@@ -3942,7 +4047,7 @@
   (symbol (lib_id "power:+12V") (at 185.166 140.208 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9d565f0d-3984-4772-951b-bb7677f5a3e9)
-    (property "Reference" "#PWR0138" (at 185.166 144.018 0)
+    (property "Reference" "#PWR0106" (at 185.166 144.018 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 185.166 135.128 0)
@@ -3958,7 +4063,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0138") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -3989,7 +4094,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C50") (unit 1)
+          (reference "C46") (unit 1)
         )
       )
     )
@@ -4020,7 +4125,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R30") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
     )
@@ -4029,7 +4134,7 @@
   (symbol (lib_id "power:+5V") (at 172.466 88.646 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a83da7a9-948e-43df-9bd4-f24309512f40)
-    (property "Reference" "#PWR093" (at 172.466 92.456 0)
+    (property "Reference" "#PWR099" (at 172.466 92.456 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 172.466 83.566 0)
@@ -4045,7 +4150,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -4054,7 +4159,7 @@
   (symbol (lib_id "power:+12V") (at 182.626 88.646 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aea990cc-51ad-4730-9e02-e4866ad178df)
-    (property "Reference" "#PWR095" (at 182.626 92.456 0)
+    (property "Reference" "#PWR0105" (at 182.626 92.456 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 182.626 83.566 0)
@@ -4070,7 +4175,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -4101,7 +4206,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP6") (unit 1)
+          (reference "JP16") (unit 1)
         )
       )
     )
@@ -4110,7 +4215,7 @@
   (symbol (lib_id "power:+5V") (at 225.552 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b2b994fd-5847-48b4-8a7a-eaf4ae651553)
-    (property "Reference" "#PWR090" (at 225.552 40.64 0)
+    (property "Reference" "#PWR0107" (at 225.552 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 225.552 31.75 0)
@@ -4126,7 +4231,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -4158,7 +4263,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP14") (unit 1)
+          (reference "JP7") (unit 1)
         )
       )
     )
@@ -4200,7 +4305,7 @@
   (symbol (lib_name "GND_1") (lib_id "power:GND") (at 113.792 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b684187d-cb45-4058-8a35-c65d40822e02)
-    (property "Reference" "#PWR0147" (at 113.792 106.68 0)
+    (property "Reference" "#PWR095" (at 113.792 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 113.792 105.156 0)
@@ -4216,7 +4321,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0147") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -4225,7 +4330,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 170.688 41.402 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b794f8c7-fae7-46ea-9bd3-ebc79b049bdf)
-    (property "Reference" "#FLG01" (at 170.688 43.307 0)
+    (property "Reference" "#FLG08" (at 170.688 43.307 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 170.688 45.212 0)
@@ -4241,7 +4346,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG08") (unit 1)
         )
       )
     )
@@ -4250,7 +4355,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 180.848 35.052 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b8dee7fa-71ea-4b22-826e-b62b5427d990)
-    (property "Reference" "#FLG03" (at 182.753 35.052 0)
+    (property "Reference" "#FLG014" (at 182.753 35.052 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 184.658 35.052 90)
@@ -4266,7 +4371,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG03") (unit 1)
+          (reference "#FLG014") (unit 1)
         )
       )
     )
@@ -4275,7 +4380,7 @@
   (symbol (lib_id "power:+5V") (at 229.616 87.884 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf353ac7-3f28-483d-bc2b-24aa75918c8c)
-    (property "Reference" "#PWR0113" (at 229.616 91.694 0)
+    (property "Reference" "#PWR0108" (at 229.616 91.694 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 229.616 82.804 0)
@@ -4291,7 +4396,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR0113") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -4322,7 +4427,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP3") (unit 1)
+          (reference "JP8") (unit 1)
         )
       )
     )
@@ -4353,7 +4458,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R35") (unit 1)
+          (reference "R58") (unit 1)
         )
       )
     )
@@ -4362,7 +4467,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 239.776 87.884 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c9e0a726-baf9-4089-be80-3c5ae78e8c69)
-    (property "Reference" "#FLG016" (at 241.681 87.884 0)
+    (property "Reference" "#FLG022" (at 241.681 87.884 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 243.586 87.884 90)
@@ -4378,7 +4483,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG016") (unit 1)
+          (reference "#FLG022") (unit 1)
         )
       )
     )
@@ -4409,7 +4514,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R32") (unit 1)
+          (reference "R51") (unit 1)
         )
       )
     )
@@ -4440,7 +4545,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R53") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
@@ -4471,7 +4576,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C49") (unit 1)
+          (reference "C41") (unit 1)
         )
       )
     )
@@ -4502,7 +4607,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C53") (unit 1)
+          (reference "C47") (unit 1)
         )
       )
     )
@@ -4534,7 +4639,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP7") (unit 1)
+          (reference "JP17") (unit 1)
         )
       )
     )
@@ -4566,7 +4671,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP17") (unit 1)
+          (reference "JP2") (unit 1)
         )
       )
     )
@@ -4597,7 +4702,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP12") (unit 1)
+          (reference "JP18") (unit 1)
         )
       )
     )
@@ -4629,7 +4734,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "JP13") (unit 1)
+          (reference "JP19") (unit 1)
         )
       )
     )
@@ -4662,7 +4767,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "J13") (unit 1)
+          (reference "J6") (unit 1)
         )
       )
     )
@@ -4693,7 +4798,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R34") (unit 1)
+          (reference "R56") (unit 1)
         )
       )
     )
@@ -4724,7 +4829,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R38") (unit 1)
+          (reference "R52") (unit 1)
         )
       )
     )
@@ -4755,7 +4860,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R36") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
     )
@@ -4786,7 +4891,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R54") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
     )
@@ -4795,7 +4900,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 32.258 124.46 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f0055e8d-3418-4a80-99f2-d8f1e59e40d7)
-    (property "Reference" "#FLG020" (at 30.353 124.46 0)
+    (property "Reference" "#FLG04" (at 30.353 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 30.48 126.492 90)
@@ -4811,7 +4916,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG020") (unit 1)
+          (reference "#FLG04") (unit 1)
         )
       )
     )
@@ -4841,7 +4946,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#PWR084") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
     )
@@ -4850,7 +4955,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 235.712 36.83 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f0c45fff-7728-45d0-a353-e05cbfd1dea6)
-    (property "Reference" "#FLG06" (at 237.617 36.83 0)
+    (property "Reference" "#FLG021" (at 237.617 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 239.522 36.83 90)
@@ -4866,7 +4971,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "#FLG06") (unit 1)
+          (reference "#FLG021") (unit 1)
         )
       )
     )
@@ -4897,7 +5002,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "R52") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
@@ -4928,7 +5033,7 @@
       )
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-          (reference "C71") (unit 1)
+          (reference "C37") (unit 1)
         )
       )
     )

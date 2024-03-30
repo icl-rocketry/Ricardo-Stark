@@ -844,7 +844,7 @@
   (symbol (lib_id "power:GND") (at 127 96.52 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061988bf8)
-    (property "Reference" "#PWR029" (at 133.35 96.52 0)
+    (property "Reference" "#PWR039" (at 133.35 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 130.2512 96.393 90)
@@ -860,7 +860,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -869,7 +869,7 @@
   (symbol (lib_id "Device:R_Small") (at 123.19 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061988c01)
-    (property "Reference" "R13" (at 129.54 100.33 90)
+    (property "Reference" "R19" (at 129.54 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 129.54 102.6414 90)
@@ -886,7 +886,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "R13") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -895,7 +895,7 @@
   (symbol (lib_id "Device:R_Small") (at 123.19 93.98 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061988c0e)
-    (property "Reference" "R12" (at 123.19 89.0016 90)
+    (property "Reference" "R18" (at 123.19 89.0016 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 123.19 91.313 90)
@@ -912,7 +912,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "R12") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -921,7 +921,7 @@
   (symbol (lib_id "power:GND") (at 96.52 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061988c18)
-    (property "Reference" "#PWR027" (at 96.52 137.16 0)
+    (property "Reference" "#PWR037" (at 96.52 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 96.647 135.2042 0)
@@ -937,7 +937,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -987,7 +987,7 @@
   (symbol (lib_id "power:GND") (at 132.08 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061988c86)
-    (property "Reference" "#PWR030" (at 132.08 151.13 0)
+    (property "Reference" "#PWR040" (at 132.08 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.207 149.1742 0)
@@ -1003,7 +1003,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -1040,7 +1040,7 @@
   (symbol (lib_id "power:VBUS") (at 116.84 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061a236c4)
-    (property "Reference" "#PWR028" (at 116.84 88.9 0)
+    (property "Reference" "#PWR038" (at 116.84 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 117.221 81.8388 90)
@@ -1056,7 +1056,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -1141,7 +1141,7 @@
   (symbol (lib_id "Device:R_Small") (at 154.94 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061b104f0)
-    (property "Reference" "R14" (at 154.94 95.3516 90)
+    (property "Reference" "R20" (at 154.94 95.3516 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "5.1k" (at 154.94 97.663 90)
@@ -1158,7 +1158,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "R14") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -1167,7 +1167,7 @@
   (symbol (lib_id "power:GND") (at 165.1 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061b11f2f)
-    (property "Reference" "#PWR032" (at 171.45 92.71 0)
+    (property "Reference" "#PWR042" (at 171.45 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 168.3512 92.583 90)
@@ -1183,7 +1183,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -1192,7 +1192,7 @@
   (symbol (lib_id "power:VBUS") (at 152.4 92.71 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061b168a6)
-    (property "Reference" "#PWR031" (at 156.21 92.71 0)
+    (property "Reference" "#PWR041" (at 156.21 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 149.1488 92.329 90)
@@ -1208,7 +1208,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -1217,7 +1217,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 152.4 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f35f8e03-e2e5-4ba9-bc0d-ad01527f4e23)
-    (property "Reference" "#FLG013" (at 152.4 90.805 0)
+    (property "Reference" "#FLG03" (at 152.4 90.805 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 152.4 87.63 0)
@@ -1233,7 +1233,7 @@
     (instances
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-          (reference "#FLG013") (unit 1)
+          (reference "#FLG03") (unit 1)
         )
       )
     )
