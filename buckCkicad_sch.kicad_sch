@@ -1088,6 +1088,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 05c1d348-c7e0-4d9e-b78a-97ce69d0ffaa)
   )
+  (label "SW" (at 163.322 65.532 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 10725463-465b-484e-a715-7dfb690d8345)
+  )
   (label "VOUT" (at 87.63 113.03 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1c74b0ff-5f8a-4766-915b-3ddc2140a2db)
@@ -1522,6 +1526,67 @@
     )
   )
 
+  (symbol (lib_id "Device:R_Small") (at 163.322 73.152 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 53192c1b-6145-43e7-b415-77efca4f4ef6)
+    (property "Reference" "R90" (at 165.862 72.517 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "5.1" (at 165.862 75.057 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 163.322 73.152 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 163.322 73.152 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a58355f3-01b5-493c-b22f-53bd127d29ac))
+    (pin "2" (uuid 366c6f43-9c85-49e9-ac40-81a1380c3c98))
+    (instances
+      (project "Ricardo-Stark"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+          (reference "R90") (unit 1)
+        )
+      )
+      (project "PDU"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
+          (reference "R37") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 163.322 75.692 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 53250f5a-845d-4f2a-a7d2-00af83ff3464)
+    (property "Reference" "#PWR0174" (at 163.322 82.042 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 163.322 80.1354 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 163.322 75.692 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 163.322 75.692 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a3e25f1d-0e1d-40b5-9cb7-6e7159463db2))
+    (instances
+      (project "Ricardo-Stark"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+          (reference "#PWR0174") (unit 1)
+        )
+      )
+      (project "PDU"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
+          (reference "#PWR017") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C_Small") (at 77.47 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 56033353-c3c0-4cc3-a694-c62aef9d7ac5)
@@ -1696,6 +1761,37 @@
       (project "Ricardo-Stark"
         (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
           (reference "R30") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 163.322 68.072 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6eadbe17-793c-4678-9a74-c340840d3624)
+    (property "Reference" "C78" (at 165.862 67.4433 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "680pF" (at 165.862 69.9833 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 163.322 68.072 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 163.322 68.072 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 22d66f0a-0dc8-4445-8d10-d843812efc2d))
+    (pin "2" (uuid 1e5227d6-c0d8-4c2f-84a5-6e2e776ba9df))
+    (instances
+      (project "Ricardo-Stark"
+        (path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+          (reference "C78") (unit 1)
+        )
+      )
+      (project "PDU"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/e469982c-3823-4665-9e6d-e90b00c2da09"
+          (reference "C16") (unit 1)
         )
       )
     )
