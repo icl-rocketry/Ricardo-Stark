@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": true,
-          "min_clearance": 0.0
+          "min_clearance": 0.19999999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -73,7 +73,7 @@
         "duplicate_footprints": "error",
         "extra_footprint": "error",
         "footprint": "error",
-        "footprint_type_mismatch": "error",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -179,6 +179,7 @@
         0.1,
         0.15,
         0.2,
+        0.25,
         0.4,
         0.644926,
         1.0,
