@@ -1,4 +1,4 @@
-22632879746650705
+22643797200699839
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -92953,6 +92953,13 @@ SOIC127P600X170-9N
 15
 15
 iclr
+SON50P400X400X100-13N
+DNT0012B_-
+Integrated Circuit
+0
+13
+13
+iclr
 SOP40P640X120-14N
 
 
@@ -93171,13 +93178,6 @@ daisychain
 0
 iclr
 iclr_logo
-
-
-0
-0
-0
-iclr
-iclr_logo_estd2018_10mm
 
 
 0
