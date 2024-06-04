@@ -3436,6 +3436,12 @@
 		(uuid "aedcf345-23c2-4483-ade4-4cd8e6950abd")
 	)
 	(junction
+		(at 115.316 137.414)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c96131d3-5f9f-4cc9-8295-152716d33572")
+	)
+	(junction
 		(at 47.498 63.246)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3512,6 +3518,16 @@
 			(type default)
 		)
 		(uuid "05d0d139-0189-48e6-b79e-2aa26a6da56e")
+	)
+	(wire
+		(pts
+			(xy 115.316 137.414) (xy 122.174 137.414)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06dc3ee4-772f-4efb-925b-098f76e1d19c")
 	)
 	(wire
 		(pts
@@ -4405,6 +4421,16 @@
 	)
 	(wire
 		(pts
+			(xy 98.298 137.414) (xy 102.616 137.414)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14bdec9-3b82-45c5-8278-ecf7a0f6f0ea")
+	)
+	(wire
+		(pts
 			(xy 30.988 107.442) (xy 30.988 108.712)
 		)
 		(stroke
@@ -4412,6 +4438,16 @@
 			(type default)
 		)
 		(uuid "b4b5fbe7-c5b8-4363-b6e4-124d93112df5")
+	)
+	(wire
+		(pts
+			(xy 115.316 137.414) (xy 115.316 137.668)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b625055c-c818-4dad-adc3-344947879fbb")
 	)
 	(polyline
 		(pts
@@ -4482,6 +4518,16 @@
 			(type default)
 		)
 		(uuid "c6a785e2-4e1e-4cbb-b97e-7f8f4b205bc5")
+	)
+	(wire
+		(pts
+			(xy 115.316 145.288) (xy 115.316 146.812)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c904e6d6-7e17-4f1e-80c6-4b064f1c844e")
 	)
 	(polyline
 		(pts
@@ -4645,6 +4691,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.236 137.414) (xy 115.316 137.414)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1c48330-5381-4c4f-a6d9-11e0a912ffdb")
+	)
+	(wire
+		(pts
 			(xy 174.244 80.772) (xy 174.244 83.312)
 		)
 		(stroke
@@ -4803,6 +4859,17 @@
 			(justify left bottom)
 		)
 		(uuid "5156680b-acd8-4b66-a933-5eac8c8c3aa5")
+	)
+	(label "PyroV"
+		(at 98.298 137.414 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "519836a5-7625-4c85-b290-7eb9a07dbec8")
 	)
 	(label "VDD"
 		(at 241.554 75.692 0)
@@ -5058,6 +5125,18 @@
 			(justify right)
 		)
 		(uuid "52aaedf6-860e-47cf-baf0-5148e5f18178")
+	)
+	(hierarchical_label "Fuse_Cont"
+		(shape output)
+		(at 122.174 137.414 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f783017-f974-4215-95ea-8c57c367d914")
 	)
 	(hierarchical_label "Nuke 1"
 		(shape input)
@@ -6216,6 +6295,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 115.316 141.478 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fef5497-b6f5-42aa-b022-dd3344f30b90")
+		(property "Reference" "R43"
+			(at 113.538 141.478 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 117.348 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 117.094 141.478 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.316 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.316 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f3dd0f9-4c99-425f-80dc-0c450ffbb44b")
+		)
+		(pin "2"
+			(uuid "9d3bd98e-a5a8-4e52-9e41-38986e13349f")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 108.458 119.888 0)
 		(unit 1)
@@ -6761,6 +6907,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 115.316 146.812 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ffd5adc-df9d-49a5-8a2a-6fc5ef062b4c")
+		(property "Reference" "#PWR096"
+			(at 115.316 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 117.221 148.5158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.316 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.316 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.316 146.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbece72d-eeb2-49c6-9451-75bb2682322f")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
+					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 117.094 119.38 90)
 		(unit 1)
@@ -7117,7 +7331,7 @@
 				)
 			)
 		)
-		(property "Value" "11.52"
+		(property "Value" "470"
 			(at 104.648 121.92 90)
 			(effects
 				(font
@@ -7670,6 +7884,73 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
 					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 106.426 137.414 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8e558ed-977d-480f-8f00-752cd0e3a94b")
+		(property "Reference" "R42"
+			(at 107.696 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30k"
+			(at 107.442 141.478 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 106.426 139.192 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.426 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.426 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46bad6ca-4ead-4ae5-b22b-16bf90f69f36")
+		)
+		(pin "2"
+			(uuid "7c2cdd0c-1b91-45a8-af03-3abc9d1e18b9")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
+					(reference "R42")
 					(unit 1)
 				)
 			)

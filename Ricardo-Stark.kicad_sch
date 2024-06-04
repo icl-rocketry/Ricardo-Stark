@@ -3641,10 +3641,6 @@
 		(uuid "8e9bbc34-565b-4c2c-b0b5-3559338d3082")
 	)
 	(no_connect
-		(at 69.85 105.41)
-		(uuid "9dcb1663-9054-4eee-a403-f5ac602f2e3d")
-	)
-	(no_connect
 		(at 135.89 87.63)
 		(uuid "a73fb52a-c7cb-4ea9-a7b9-e155a81990d8")
 	)
@@ -3961,6 +3957,16 @@
 			(type default)
 		)
 		(uuid "281698c5-7895-43e7-9b24-4c1c20f939f7")
+	)
+	(wire
+		(pts
+			(xy 207.264 134.874) (xy 214.884 134.874)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e423cf-f9ad-46eb-91c1-3fb4149a7a12")
 	)
 	(wire
 		(pts
@@ -5685,6 +5691,17 @@
 		)
 		(uuid "5ac0e0c5-36e1-49db-bda3-7da2bd0076f6")
 	)
+	(label "Fuse_Cont"
+		(at 69.85 105.41 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5b73f9a7-bbc4-45a0-85a7-8d43400e50bd")
+	)
 	(label "VSPI_MISO"
 		(at 69.85 118.11 180)
 		(fields_autoplaced yes)
@@ -5739,6 +5756,17 @@
 			(justify left bottom)
 		)
 		(uuid "6732e03e-da7a-48a0-a557-ffb41e062f91")
+	)
+	(label "Fuse_Cont"
+		(at 207.264 134.874 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6df823d2-f996-46ce-be8a-7a2c0f5405cf")
 	)
 	(label "CAN-"
 		(at 115.57 25.4 270)
@@ -12455,6 +12483,16 @@
 				(justify left)
 			)
 			(uuid "34b1abc1-6d80-44b9-81f8-4b63267ed9b2")
+		)
+		(pin "Fuse_Cont" output
+			(at 214.884 134.874 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4dc8f19f-f684-44d8-8098-8ba15fe350e4")
 		)
 		(instances
 			(project "Ricardo-Stark"

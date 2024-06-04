@@ -1338,10 +1338,6 @@
 		(color 0 0 0 0)
 		(uuid "e5e0401f-c9d6-4139-a1ce-87b789e72336")
 	)
-	(no_connect
-		(at 227.838 86.36)
-		(uuid "b9da4bda-9ca9-4a9b-893b-eb6acab7ed7a")
-	)
 	(wire
 		(pts
 			(xy 204.978 97.79) (xy 208.788 97.79)
@@ -2182,6 +2178,73 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
 					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 227.838 86.36 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65f61785-037e-4157-935b-dbeff50af03b")
+		(property "Reference" "#PWR085"
+			(at 221.488 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.6631 86.7938 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.838 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.838 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.838 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35d654cb-8f99-4bd8-91a7-5774133e3bd1")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
