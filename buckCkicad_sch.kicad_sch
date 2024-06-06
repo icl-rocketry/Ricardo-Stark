@@ -2774,7 +2774,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 92.456 118.11 180)
+		(at 92.456 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2783,21 +2783,21 @@
 		(fields_autoplaced yes)
 		(uuid "0ebf2356-41a3-48d7-88c3-33833ab0b9a3")
 		(property "Reference" "C29"
-			(at 94.996 116.8336 0)
+			(at 95.25 116.8462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "470uF"
-			(at 94.996 119.3736 0)
+			(at 95.25 119.3862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
