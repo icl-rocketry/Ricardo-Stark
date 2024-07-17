@@ -1465,18 +1465,6 @@
 		(uuid "3ab67a0e-1cf2-4b96-93e9-9f66a9825950")
 	)
 	(junction
-		(at 86.868 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43dfd435-a197-4f5d-83c7-2a4e6fa7325b")
-	)
-	(junction
-		(at 86.868 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4bcde351-a13b-4c0f-bb58-8c6ffa67c017")
-	)
-	(junction
 		(at 77.47 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1770,16 +1758,6 @@
 		)
 		(uuid "5434a8f0-8a0b-4df7-808a-1c3fd519e2c1")
 	)
-	(wire
-		(pts
-			(xy 82.296 120.65) (xy 86.868 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5aea94b5-3cb9-4c05-960a-eee1aff892a0")
-	)
 	(polyline
 		(pts
 			(xy 67.31 107.95) (xy 69.85 107.95)
@@ -2029,16 +2007,6 @@
 			(type default)
 		)
 		(uuid "a78ddfa1-ade4-4d0f-94dc-56b199e74db2")
-	)
-	(wire
-		(pts
-			(xy 82.296 115.57) (xy 86.868 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8b4e150-7116-4159-bd95-e34ae7a8f0a5")
 	)
 	(wire
 		(pts
@@ -3941,75 +3909,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 82.296 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6f18f65b-199d-4600-9051-9d2aeb764ded")
-		(property "Reference" "C33"
-			(at 80.518 114.046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 75.184 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 82.296 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.296 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 82.296 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3d212668-e139-4843-9a06-7734f17ec28a")
-		)
-		(pin "2"
-			(uuid "22a4f5e4-5adc-4a8c-ac39-c5932a0b9efc")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+6V")
 		(at 114.046 115.57 0)
 		(unit 1)
@@ -4437,7 +4336,7 @@
 				)
 			)
 		)
-		(property "Footprint" "iclr:IND_SRP6540-390M"
+		(property "Footprint" "Inductor_SMD:ETQP5M6M_YLC"
 			(at 67.31 66.04 0)
 			(effects
 				(font
