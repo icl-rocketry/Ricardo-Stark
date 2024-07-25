@@ -5499,7 +5499,7 @@
 		(uuid "0e0e3233-920a-43fe-86e1-834c5b779d76")
 	)
 	(label "AIN4P"
-		(at 208.788 146.304 270)
+		(at 260.096 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5543,7 +5543,7 @@
 		(uuid "2b2642da-2b9e-46d8-8f16-28f2c5214bb6")
 	)
 	(label "AIN5N"
-		(at 255.016 146.05 270)
+		(at 203.708 146.304 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5576,7 +5576,7 @@
 		(uuid "4f63153d-d0c6-413b-8424-1741d4c421f2")
 	)
 	(label "AIN4N"
-		(at 203.708 146.304 270)
+		(at 255.016 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5587,7 +5587,7 @@
 		(uuid "4fb599a4-a83c-437a-9863-9b0b340dbfcd")
 	)
 	(label "AIN0P"
-		(at 160.528 77.978 270)
+		(at 210.566 78.232 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5598,7 +5598,7 @@
 		(uuid "52c71095-f001-4309-9010-7b2601e1989b")
 	)
 	(label "AIN1P"
-		(at 210.566 78.232 270)
+		(at 160.528 77.978 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5609,7 +5609,7 @@
 		(uuid "53d1f60d-c622-4770-b8fc-2cd6e9e6e3be")
 	)
 	(label "AIN3N"
-		(at 155.448 145.542 270)
+		(at 253.746 78.994 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5620,7 +5620,7 @@
 		(uuid "69c21ed1-a5ce-4923-b2e2-748d1d1b2a4b")
 	)
 	(label "AIN2N"
-		(at 253.746 78.994 270)
+		(at 155.448 145.542 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5631,7 +5631,7 @@
 		(uuid "732d58f7-6361-4fe3-95ab-687fe33b9ff2")
 	)
 	(label "AIN1N"
-		(at 205.486 78.232 270)
+		(at 155.448 77.978 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5642,7 +5642,7 @@
 		(uuid "7519ad25-fd2f-4e25-88f1-43d32fb821f3")
 	)
 	(label "AIN2P"
-		(at 258.826 78.994 270)
+		(at 160.528 145.542 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5664,7 +5664,7 @@
 		(uuid "8a3101b8-6665-4f69-b882-85f24b70cf99")
 	)
 	(label "AIN3P"
-		(at 160.528 145.542 270)
+		(at 258.826 78.994 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5675,7 +5675,7 @@
 		(uuid "a5e211d1-1bae-49c4-9ba3-4cef9f826eeb")
 	)
 	(label "AIN0N"
-		(at 155.448 77.978 270)
+		(at 205.486 78.232 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5719,7 +5719,7 @@
 		(uuid "ee326412-8066-486b-b0ed-fe98cf7f8f5f")
 	)
 	(label "AIN5P"
-		(at 260.096 146.05 270)
+		(at 208.788 146.304 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5939,7 +5939,7 @@
 	)
 	(symbol
 		(lib_id "iclr:1053131104")
-		(at 272.034 102.616 0)
+		(at 220.726 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5947,7 +5947,7 @@
 		(dnp no)
 		(uuid "05c58850-a57b-42e4-91ce-7ea3840dd504")
 		(property "Reference" "J11"
-			(at 286.004 105.156 0)
+			(at 234.696 105.41 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5956,7 +5956,7 @@
 			)
 		)
 		(property "Value" "1053131104"
-			(at 279.654 100.076 0)
+			(at 228.346 100.33 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5966,7 +5966,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 282.194 109.22 0)
+			(at 230.886 109.474 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5975,7 +5975,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 272.034 102.616 0)
+			(at 220.726 102.87 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -5983,7 +5983,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 272.034 102.616 0)
+			(at 220.726 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6155,7 +6155,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 275.844 31.75 0)
+		(at 177.546 98.298 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6164,72 +6164,6 @@
 		(fields_autoplaced yes)
 		(uuid "0937d75f-3641-4251-94ab-d262dcb70e15")
 		(property "Reference" "#PWR0108"
-			(at 275.844 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 275.844 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 275.844 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 275.844 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 275.844 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fbc3d235-a949-40e7-8c4e-7b0723c6ad27")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "#PWR0108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 177.546 98.298 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a64cf8f-6441-4891-a9c7-03b438e23b36")
-		(property "Reference" "#PWR0112"
 			(at 177.546 102.108 0)
 			(effects
 				(font
@@ -6266,6 +6200,72 @@
 		)
 		(property "Description" ""
 			(at 177.546 98.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbc3d235-a949-40e7-8c4e-7b0723c6ad27")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 275.844 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a64cf8f-6441-4891-a9c7-03b438e23b36")
+		(property "Reference" "#PWR0112"
+			(at 275.844 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 275.844 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 275.844 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275.844 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 275.844 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7218,7 +7218,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 172.466 98.298 0)
+		(at 270.764 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7226,7 +7226,7 @@
 		(dnp no)
 		(uuid "2df19dbb-6ca0-45c9-bc04-97f0e58b55e8")
 		(property "Reference" "JP23"
-			(at 172.466 95.758 90)
+			(at 270.764 29.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7235,7 +7235,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 164.846 89.408 0)
+			(at 263.144 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7245,7 +7245,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 172.466 98.298 0)
+			(at 270.764 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7254,7 +7254,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.466 98.298 0)
+			(at 270.764 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7263,7 +7263,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.466 98.298 0)
+			(at 270.764 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7632,7 +7632,7 @@
 	)
 	(symbol
 		(lib_id "iclr:1053131104")
-		(at 220.726 102.87 0)
+		(at 272.034 102.616 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7640,7 +7640,7 @@
 		(dnp no)
 		(uuid "3527d4e8-7c46-416b-b326-85e9ae9f78e9")
 		(property "Reference" "J10"
-			(at 234.696 105.41 0)
+			(at 286.004 105.156 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7649,7 +7649,7 @@
 			)
 		)
 		(property "Value" "1053131104"
-			(at 228.346 100.33 0)
+			(at 279.654 100.076 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7659,7 +7659,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 230.886 109.474 0)
+			(at 282.194 109.22 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7668,7 +7668,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.726 102.87 0)
+			(at 272.034 102.616 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7676,7 +7676,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.726 102.87 0)
+			(at 272.034 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7848,7 +7848,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 215.646 99.06 0)
+		(at 266.954 98.806 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7857,7 +7857,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d96e03e-a8f7-4a54-b1a5-2d9aabadc92f")
 		(property "Reference" "#PWR0147"
-			(at 215.646 102.87 0)
+			(at 266.954 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7866,7 +7866,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 215.646 93.98 0)
+			(at 266.954 93.726 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7874,7 +7874,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.646 99.06 0)
+			(at 266.954 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7883,7 +7883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.646 99.06 0)
+			(at 266.954 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7892,7 +7892,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.646 99.06 0)
+			(at 266.954 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8114,7 +8114,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 277.114 98.806 0)
+		(at 225.806 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8123,7 +8123,7 @@
 		(fields_autoplaced yes)
 		(uuid "46242555-f3fb-4473-8f45-2d2605c83726")
 		(property "Reference" "#PWR0179"
-			(at 277.114 102.616 0)
+			(at 225.806 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8132,7 +8132,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 277.114 93.726 0)
+			(at 225.806 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8140,7 +8140,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 277.114 98.806 0)
+			(at 225.806 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8149,7 +8149,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 277.114 98.806 0)
+			(at 225.806 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8158,7 +8158,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 277.114 98.806 0)
+			(at 225.806 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8247,7 +8247,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 266.954 98.806 0)
+		(at 215.646 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8256,7 +8256,7 @@
 		(fields_autoplaced yes)
 		(uuid "4744105f-4748-4074-91c7-ac4d3526eded")
 		(property "Reference" "#PWR0175"
-			(at 266.954 102.616 0)
+			(at 215.646 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8265,7 +8265,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 266.954 93.726 0)
+			(at 215.646 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8273,7 +8273,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 266.954 98.806 0)
+			(at 215.646 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8282,7 +8282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 266.954 98.806 0)
+			(at 215.646 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8291,7 +8291,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 266.954 98.806 0)
+			(at 215.646 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9830,7 +9830,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 167.386 98.298 0)
+		(at 265.684 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9839,7 +9839,7 @@
 		(fields_autoplaced yes)
 		(uuid "68392969-1d0b-4dee-b94c-b3c0a333931c")
 		(property "Reference" "#PWR0110"
-			(at 167.386 102.108 0)
+			(at 265.684 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9848,7 +9848,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 167.386 93.218 0)
+			(at 265.684 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9856,7 +9856,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.386 98.298 0)
+			(at 265.684 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9865,7 +9865,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.386 98.298 0)
+			(at 265.684 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9874,7 +9874,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.386 98.298 0)
+			(at 265.684 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9963,7 +9963,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 270.764 31.75 0)
+		(at 172.466 98.298 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9971,7 +9971,7 @@
 		(dnp no)
 		(uuid "6992b3eb-0202-4b82-9b51-500f30d2ca9d")
 		(property "Reference" "JP17"
-			(at 270.764 29.21 90)
+			(at 172.466 95.758 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9980,7 +9980,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 263.144 22.86 0)
+			(at 164.846 89.408 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9990,7 +9990,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 270.764 31.75 0)
+			(at 172.466 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9999,7 +9999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 270.764 31.75 0)
+			(at 172.466 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10008,7 +10008,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 270.764 31.75 0)
+			(at 172.466 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11716,7 +11716,7 @@
 	)
 	(symbol
 		(lib_id "iclr:1053131104")
-		(at 270.764 35.56 0)
+		(at 172.466 102.108 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11724,7 +11724,7 @@
 		(dnp no)
 		(uuid "bcde65eb-60e4-4b0f-a667-17d4796fbbc8")
 		(property "Reference" "J8"
-			(at 284.734 38.1 0)
+			(at 186.436 104.648 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11733,7 +11733,7 @@
 			)
 		)
 		(property "Value" "1053131104"
-			(at 278.384 33.02 0)
+			(at 180.086 99.568 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11743,7 +11743,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 280.924 42.164 0)
+			(at 182.626 108.712 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11752,7 +11752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.764 35.56 0)
+			(at 172.466 102.108 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11760,7 +11760,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 270.764 35.56 0)
+			(at 172.466 102.108 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12345,7 +12345,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 220.726 99.06 0)
+		(at 272.034 98.806 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12353,7 +12353,7 @@
 		(dnp no)
 		(uuid "d565de61-8a40-4e9f-955d-4baf179f2b84")
 		(property "Reference" "JP28"
-			(at 220.726 96.52 90)
+			(at 272.034 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12362,7 +12362,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 213.106 90.17 0)
+			(at 264.414 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12372,7 +12372,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 220.726 99.06 0)
+			(at 272.034 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12381,7 +12381,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 220.726 99.06 0)
+			(at 272.034 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12390,7 +12390,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.726 99.06 0)
+			(at 272.034 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13115,7 +13115,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 265.684 31.75 0)
+		(at 167.386 98.298 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13124,7 +13124,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec7aec23-aafa-4f44-a383-2d20dd704266")
 		(property "Reference" "#PWR0106"
-			(at 265.684 35.56 0)
+			(at 167.386 102.108 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13133,7 +13133,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 265.684 26.67 0)
+			(at 167.386 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13141,7 +13141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 265.684 31.75 0)
+			(at 167.386 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13150,7 +13150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.684 31.75 0)
+			(at 167.386 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13159,7 +13159,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 265.684 31.75 0)
+			(at 167.386 98.298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13315,7 +13315,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 225.806 99.06 0)
+		(at 277.114 98.806 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13324,7 +13324,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee7f2697-0139-4740-b6b1-0e12000f33b0")
 		(property "Reference" "#PWR0165"
-			(at 225.806 102.87 0)
+			(at 277.114 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13333,7 +13333,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 225.806 93.98 0)
+			(at 277.114 93.726 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13341,7 +13341,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 225.806 99.06 0)
+			(at 277.114 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13350,7 +13350,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 225.806 99.06 0)
+			(at 277.114 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13359,7 +13359,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 225.806 99.06 0)
+			(at 277.114 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13515,7 +13515,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 272.034 98.806 0)
+		(at 220.726 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13523,7 +13523,7 @@
 		(dnp no)
 		(uuid "f433b0fe-df0c-45f7-8cd3-e837127ec5db")
 		(property "Reference" "JP33"
-			(at 272.034 96.266 90)
+			(at 220.726 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13532,7 +13532,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 264.414 89.916 0)
+			(at 213.106 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13542,7 +13542,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 272.034 98.806 0)
+			(at 220.726 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13551,7 +13551,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 272.034 98.806 0)
+			(at 220.726 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13560,7 +13560,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 272.034 98.806 0)
+			(at 220.726 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13668,7 +13668,7 @@
 	)
 	(symbol
 		(lib_id "iclr:1053131104")
-		(at 172.466 102.108 0)
+		(at 270.764 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13676,7 +13676,7 @@
 		(dnp no)
 		(uuid "fa167ab6-cac3-4a1e-b894-1a67590ea0f4")
 		(property "Reference" "J9"
-			(at 186.436 104.648 0)
+			(at 284.734 38.1 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13685,7 +13685,7 @@
 			)
 		)
 		(property "Value" "1053131104"
-			(at 180.086 99.568 0)
+			(at 278.384 33.02 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13695,7 +13695,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 182.626 108.712 0)
+			(at 280.924 42.164 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13704,7 +13704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.466 102.108 0)
+			(at 270.764 35.56 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13712,7 +13712,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.466 102.108 0)
+			(at 270.764 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
