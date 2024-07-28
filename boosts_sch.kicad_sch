@@ -2011,6 +2011,18 @@
 		(uuid "d567c2ba-299e-48a9-b17b-48eb1968219d")
 	)
 	(junction
+		(at 217.932 32.512)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e830c7a9-d4e2-4319-9acf-03eece67e47e")
+	)
+	(junction
+		(at 217.932 37.592)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8922020-c3ab-4ec2-abfb-95ab31f5ca01")
+	)
+	(junction
 		(at 250.952 45.212)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2319,6 +2331,16 @@
 			(type default)
 		)
 		(uuid "378ecc7b-57fd-418d-bcfb-3fa3caa52399")
+	)
+	(wire
+		(pts
+			(xy 217.932 37.592) (xy 220.472 37.592)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dd10c80-55e9-4308-82ab-282bc1dbf506")
 	)
 	(wire
 		(pts
@@ -2942,7 +2964,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.392 37.592) (xy 220.472 37.592)
+			(xy 215.392 37.592) (xy 217.932 37.592)
 		)
 		(stroke
 			(width 0)
@@ -7857,6 +7879,76 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/df24f951-9014-423f-941d-dec7c0c4c8db"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 217.932 35.052 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bbba1aff-e6d6-49a4-a80d-e47049942cf1")
+		(property "Reference" "R107"
+			(at 215.392 35.687 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "492k"
+			(at 215.392 33.147 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 217.932 35.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.932 35.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.932 35.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "076184fc-cc05-40f2-a977-71979dc4343b")
+		)
+		(pin "2"
+			(uuid "9f3813f9-fd6e-4589-a9c8-4620bbc82646")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/df24f951-9014-423f-941d-dec7c0c4c8db"
+					(reference "R107")
 					(unit 1)
 				)
 			)

@@ -2503,22 +2503,22 @@
 	)
 	(global_label "RBUS_uC_V"
 		(shape input)
-		(at 90.17 39.37 0)
+		(at 34.29 41.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "fa70bd12-03a5-4c86-a4a3-bff8b0094b6c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.0171 39.4494 0)
+			(at 21.4362 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3109,7 +3109,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 34.29 41.91 0)
+		(at 90.17 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3118,7 +3118,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c623854-08d3-4713-928c-d4f4420abb63")
 		(property "Reference" "#PWR044"
-			(at 34.29 45.72 0)
+			(at 90.17 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3127,7 +3127,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 34.29 38.3342 0)
+			(at 90.17 35.7942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +3135,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 41.91 0)
+			(at 90.17 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3144,7 +3144,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 41.91 0)
+			(at 90.17 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3153,7 +3153,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 34.29 41.91 0)
+			(at 90.17 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1435,12 +1435,6 @@
 		)
 	)
 	(junction
-		(at 77.47 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17188bd1-5c60-475f-971b-1ebd5ef7dade")
-	)
-	(junction
 		(at 74.93 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1463,12 +1457,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ab67a0e-1cf2-4b96-93e9-9f66a9825950")
-	)
-	(junction
-		(at 77.47 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c603d24-d655-4af0-a8cd-93dc922a98ac")
 	)
 	(junction
 		(at 95.25 27.94)
@@ -1519,12 +1507,6 @@
 		(uuid "eecde87c-a226-4b42-8a3f-b42fa10f9830")
 	)
 	(junction
-		(at 92.456 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f0b68664-6818-49af-8140-533963ea42d2")
-	)
-	(junction
 		(at 68.58 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1550,7 +1532,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 27.94) (xy 77.47 27.94)
+			(xy 68.58 27.94) (xy 82.55 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1597,16 +1579,6 @@
 			(type default)
 		)
 		(uuid "157eeee7-fc1f-49ea-9069-d5f7577b79bc")
-	)
-	(wire
-		(pts
-			(xy 86.868 115.57) (xy 92.456 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a95ef78-e398-4ec8-b885-8e462ca2e93c")
 	)
 	(wire
 		(pts
@@ -1700,7 +1672,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 33.02) (xy 77.47 33.02)
+			(xy 68.58 33.02) (xy 81.28 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1810,16 +1782,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 27.94) (xy 82.55 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c48965b-ed2a-4af3-9542-388a1e9aa8c8")
-	)
-	(wire
-		(pts
 			(xy 92.456 115.57) (xy 114.046 115.57)
 		)
 		(stroke
@@ -1917,16 +1879,6 @@
 			(type default)
 		)
 		(uuid "91d7fb34-034b-427e-b533-f5cd3e05cc45")
-	)
-	(wire
-		(pts
-			(xy 77.47 33.02) (xy 81.28 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94f1eec1-878a-474f-b868-6588e0ccbb9a")
 	)
 	(wire
 		(pts
@@ -2247,16 +2199,6 @@
 			(type default)
 		)
 		(uuid "f94a9243-578c-48e9-80e5-08059b48ed8f")
-	)
-	(wire
-		(pts
-			(xy 86.868 120.65) (xy 92.456 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9c6e69b-f01c-483b-81e9-c63d6291c9b1")
 	)
 	(text_box "Remove this resistor for 7.4V mode"
 		(exclude_from_sim no)
@@ -3429,76 +3371,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 77.47 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56033353-c3c0-4cc3-a694-c62aef9d7ac5")
-		(property "Reference" "C28"
-			(at 80.01 29.2163 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "47uF"
-			(at 80.01 31.7563 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 77.47 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 77.47 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b5c23475-4626-49e1-8f31-4f37e1198dae")
-		)
-		(pin "2"
-			(uuid "af4e45bd-a28a-4147-afbd-44c5d61c869f")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-					(reference "C28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 67.31 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4373,75 +4245,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
 					(reference "L4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 86.868 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b5532d82-eb43-4dce-b9a4-def9533d3a75")
-		(property "Reference" "C31"
-			(at 85.344 113.792 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 84.328 122.682 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 86.868 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.868 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.868 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c776cbca-0533-432f-b64b-76680e08c4c7")
-		)
-		(pin "2"
-			(uuid "f14e4ede-c048-4ba8-88e1-afd587e983ea")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
-					(reference "C31")
 					(unit 1)
 				)
 			)
