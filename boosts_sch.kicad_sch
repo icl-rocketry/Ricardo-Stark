@@ -6028,7 +6028,7 @@
 		(fields_autoplaced yes)
 		(uuid "809cbbcf-c614-4ab7-8d6f-083cffd1d1c9")
 		(property "Reference" "R65"
-			(at 205.74 117.602 0)
+			(at 205.74 117.6019 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6036,8 +6036,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "900k"
-			(at 205.74 120.142 0)
+		(property "Value" "976k"
+			(at 205.74 120.1419 0)
 			(effects
 				(font
 					(size 1.27 1.27)
