@@ -535,13 +535,13 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
+      "gencad": "Ricardo-Stark.cad",
       "idf": "",
       "netlist": "",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Ricardo-Stark.step",
+      "step": "../../../../../../Downloads/Ricardo-Stark.step",
       "svg": "",
       "vrml": ""
     },
