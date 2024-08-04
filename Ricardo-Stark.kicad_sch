@@ -3664,10 +3664,6 @@
 		(at 135.89 80.01)
 		(uuid "d53d1037-a828-44e2-b832-ce65c56f641f")
 	)
-	(no_connect
-		(at 69.85 125.73)
-		(uuid "e4409f35-2c58-43fe-b40b-5e19fa35dbbf")
-	)
 	(wire
 		(pts
 			(xy 260.858 87.376) (xy 263.398 87.376)
@@ -5515,6 +5511,17 @@
 		)
 		(uuid "37c315b0-3d24-4b18-9925-c0ec7659c27e")
 	)
+	(label "DRDY"
+		(at 135.89 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37e0fbfa-1d78-4f25-a9d3-84466b1a0662")
+	)
 	(label "CAN+"
 		(at 115.57 185.42 0)
 		(fields_autoplaced yes)
@@ -5571,7 +5578,7 @@
 		(uuid "3f00994b-99c9-4ca0-835d-a6fc3df540f3")
 	)
 	(label "GPIO7"
-		(at 69.85 118.11 180)
+		(at 69.85 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5615,7 +5622,7 @@
 		(uuid "408ee4e1-f3a2-4b71-9592-6374ef7cace8")
 	)
 	(label "GPIO9"
-		(at 135.89 105.41 0)
+		(at 135.89 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5790,6 +5797,17 @@
 		)
 		(uuid "74855e0d-40e4-4940-a544-edae9207b2ea")
 	)
+	(label "DRDY"
+		(at 182.88 84.074 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "76988843-abb7-419e-99d3-f288fe050856")
+	)
 	(label "CAN_TX"
 		(at 14.732 33.274 0)
 		(fields_autoplaced yes)
@@ -5802,7 +5820,7 @@
 		(uuid "8027ab2c-c05e-4d81-a4b3-a826ee8e8f09")
 	)
 	(label "GPIO8"
-		(at 135.89 102.87 0)
+		(at 135.89 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5868,7 +5886,7 @@
 		(uuid "96c5206d-2c9d-45e7-9ea9-339cee828f77")
 	)
 	(label "GPIO5"
-		(at 69.85 123.19 180)
+		(at 69.85 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5956,7 +5974,7 @@
 		(uuid "aae6b15d-5806-48ed-a6ec-bf0712992c5c")
 	)
 	(label "ADS_CS0"
-		(at 135.89 100.33 0)
+		(at 135.89 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6121,13 +6139,13 @@
 		(uuid "de552ae9-cde6-4643-8cc7-9de2579dadae")
 	)
 	(label "GPIO4"
-		(at 135.89 107.95 0)
+		(at 69.85 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "e1d57f0f-0af3-40f9-b3c2-238fa612f4b2")
 	)
@@ -12404,6 +12422,16 @@
 				(justify right)
 			)
 			(uuid "5150e324-893d-41a8-a7b6-0c468470e280")
+		)
+		(pin "DRDY" bidirectional
+			(at 182.88 84.074 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "477119b9-bf95-48e0-8335-c4fb9cff984d")
 		)
 		(instances
 			(project "Ricardo-Stark"

@@ -2898,10 +2898,6 @@
 		(uuid "fda7af2f-ebe3-4133-9b89-9d39191224e8")
 	)
 	(no_connect
-		(at 98.298 116.84)
-		(uuid "e4128b2a-f21a-48ff-ac50-5682bfa4df94")
-	)
-	(no_connect
 		(at 32.258 114.3)
 		(uuid "ed277721-aa9b-412f-a343-a0bd5446ff6b")
 	)
@@ -5753,6 +5749,18 @@
 		)
 		(uuid "3f186de7-13bc-4a71-965e-e3b98433a492")
 	)
+	(hierarchical_label "DRDY"
+		(shape bidirectional)
+		(at 98.298 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "883db8b7-e6f1-430b-bd92-b7f1df7887f1")
+	)
 	(hierarchical_label "ADS_SCLK"
 		(shape bidirectional)
 		(at 102.108 114.3 0)
@@ -6942,7 +6950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "ADS131M06IPBS"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ads131m06.pdf?ts=1722711447211&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS131M06%253Fbm-verify%253DAAQAAAAJ_____3PRcak1s9y645AuuHNjtl9rOtrOIaOoIVylsudph4b42jws10PfoUc0NN8_vn4A5W1PRfakw0bMSz4jfLGW4zaYkLbaDcvq5L5_zHo15yGpMW7BVF3od7cx9KhugtbVdriNFDBo5LRJV0MvT1XGnlQPXQsUQtS6SiiLh9zAg47OOFflajmXwhRg6KqjRqyBOY1aoAJpzpQG_9El4vVs_b69ddXI-wn4pOsqD4OqvW4Iuar98OBh1F0vSQESnFJRUPIJBo_njnga3v0Ss-YlF-leunJX_IX177A5irbWwsOW0wVB"
 			(at 32.258 81.28 0)
 			(effects
 				(font
