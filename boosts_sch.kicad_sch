@@ -3102,28 +3102,6 @@
 		)
 		(uuid "ff7a6e71-be03-4f89-a573-57e75f96d877")
 	)
-	(text "SIM: https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=C25BB1AA15C31C1A"
-		(exclude_from_sim no)
-		(at 44.704 152.146 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7904ed03-1cf9-4000-a982-6a8a1c2a4add")
-	)
-	(text "SIM: https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=0086ECB0F8B2BBA7"
-		(exclude_from_sim no)
-		(at 174.752 139.446 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f603f8ea-bf67-417b-ad41-3d666320bd81")
-	)
 	(text "Vout"
 		(exclude_from_sim no)
 		(at 164.592 54.102 0)
