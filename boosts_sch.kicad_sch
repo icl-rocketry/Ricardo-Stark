@@ -3102,17 +3102,6 @@
 		)
 		(uuid "ff7a6e71-be03-4f89-a573-57e75f96d877")
 	)
-	(text "Vout"
-		(exclude_from_sim no)
-		(at 164.592 54.102 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fed0c0bc-3256-4155-914a-18eefa4cb886")
-	)
 	(label "LDO5.5V_IN"
 		(at 135.382 68.072 180)
 		(fields_autoplaced yes)
@@ -3302,7 +3291,7 @@
 		(dnp no)
 		(uuid "0268a292-150f-44c2-b797-0551426e19ee")
 		(property "Reference" "R64"
-			(at 187.2234 107.3063 0)
+			(at 193.548 106.934 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3311,7 +3300,7 @@
 			)
 		)
 		(property "Value" "18.7k"
-			(at 187.2234 109.2273 0)
+			(at 195.072 108.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7870,10 +7859,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bbba1aff-e6d6-49a4-a80d-e47049942cf1")
 		(property "Reference" "R107"
-			(at 215.392 35.687 0)
+			(at 224.536 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7881,8 +7869,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "492k"
-			(at 215.392 33.147 0)
+		(property "Value" "360k"
+			(at 224.282 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8468,10 +8456,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d5ce90d2-c175-42cb-a97d-7e21b6ec7e48")
 		(property "Reference" "C89"
-			(at 218.9861 118.2346 0)
+			(at 218.44 118.618 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8480,7 +8467,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 218.9861 120.1556 0)
+			(at 218.186 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9150,10 +9137,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ee6854fd-ff1f-42b0-8571-08d90a1911af")
 		(property "Reference" "C56"
-			(at 182.9181 106.8046 0)
+			(at 182.118 107.696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9162,7 +9148,7 @@
 			)
 		)
 		(property "Value" "120pF"
-			(at 182.9181 108.7256 0)
+			(at 181.864 109.982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9457,10 +9443,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fbf23389-225e-4043-99f9-89c0e998844f")
 		(property "Reference" "C54"
-			(at 226.3521 118.2346 0)
+			(at 225.552 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9469,7 +9454,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 226.3521 120.1556 0)
+			(at 224.282 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
