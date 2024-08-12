@@ -3796,7 +3796,7 @@
 	)
 	(wire
 		(pts
-			(xy 254.508 58.293) (xy 257.556 58.293)
+			(xy 254.508 58.42) (xy 257.556 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4406,7 +4406,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 64.008) (xy 180.34 64.008)
+			(xy 187.96 64.008) (xy 177.546 64.008)
 		)
 		(stroke
 			(width 0)
@@ -5434,7 +5434,7 @@
 		)
 		(uuid "2a065ae1-bfc4-4c49-ab4a-41601c0a1085")
 	)
-	(label "GPIO7"
+	(label "GPIO38"
 		(at 187.96 53.848 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5456,7 +5456,7 @@
 		)
 		(uuid "2f92b4c2-670e-40af-ab2c-ff6905924f4a")
 	)
-	(label "GPIO6"
+	(label "GPIO37"
 		(at 187.96 51.562 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5577,7 +5577,7 @@
 		)
 		(uuid "3f00994b-99c9-4ca0-835d-a6fc3df540f3")
 	)
-	(label "GPIO7"
+	(label "GPIO41"
 		(at 69.85 123.19 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5589,7 +5589,7 @@
 		(uuid "3f4ae5d4-7746-4fd1-ae9e-977a2ba9e286")
 	)
 	(label "VSPI_SCLK"
-		(at 69.85 87.63 180)
+		(at 69.85 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5611,7 +5611,7 @@
 		(uuid "40580676-31b6-4064-a772-1ce6ab0e5287")
 	)
 	(label "SD1_CS"
-		(at 69.85 92.71 180)
+		(at 69.85 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5621,7 +5621,7 @@
 		)
 		(uuid "408ee4e1-f3a2-4b71-9592-6374ef7cace8")
 	)
-	(label "GPIO9"
+	(label "GPIO38"
 		(at 135.89 107.95 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5699,7 +5699,7 @@
 		(uuid "5b73f9a7-bbc4-45a0-85a7-8d43400e50bd")
 	)
 	(label "VSPI_MISO"
-		(at 69.85 85.09 180)
+		(at 69.85 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5819,7 +5819,7 @@
 		)
 		(uuid "8027ab2c-c05e-4d81-a4b3-a826ee8e8f09")
 	)
-	(label "GPIO8"
+	(label "GPIO37"
 		(at 135.89 105.41 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5831,7 +5831,7 @@
 		(uuid "85832353-c5d0-4214-9865-40a8be000866")
 	)
 	(label "SD1_DET"
-		(at 254.508 58.293 180)
+		(at 254.508 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5885,7 +5885,7 @@
 		)
 		(uuid "96c5206d-2c9d-45e7-9ea9-339cee828f77")
 	)
-	(label "GPIO5"
+	(label "GPIO42"
 		(at 69.85 125.73 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5896,7 +5896,7 @@
 		)
 		(uuid "96e85653-5d80-46ea-9dbc-51f30ed91aaa")
 	)
-	(label "GPIO6"
+	(label "GPIO40"
 		(at 69.85 120.65 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5962,7 +5962,7 @@
 		)
 		(uuid "aa6c5536-20c4-4aed-be61-32fdc3aa9e18")
 	)
-	(label "GPIO9"
+	(label "GPIO42"
 		(at 187.96 62.484 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6017,7 +6017,7 @@
 		)
 		(uuid "b5b5ec84-f381-41b5-afd4-049939c31459")
 	)
-	(label "GPIO4"
+	(label "GPIO39"
 		(at 187.96 56.134 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6061,7 +6061,7 @@
 		)
 		(uuid "cac349af-0476-42df-aa9f-d31fcc2c3d92")
 	)
-	(label "GPIO8"
+	(label "GPIO41"
 		(at 187.96 60.452 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6095,7 +6095,7 @@
 		(uuid "d68dca9b-48b3-498b-9b5f-3b3838250f82")
 	)
 	(label "VSPI_MOSI"
-		(at 69.85 90.17 180)
+		(at 69.85 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6138,7 +6138,7 @@
 		)
 		(uuid "de552ae9-cde6-4643-8cc7-9de2579dadae")
 	)
-	(label "GPIO4"
+	(label "GPIO39"
 		(at 69.85 118.11 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6149,7 +6149,7 @@
 		)
 		(uuid "e1d57f0f-0af3-40f9-b3c2-238fa612f4b2")
 	)
-	(label "GPIO5"
+	(label "GPIO40"
 		(at 187.96 58.166 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10562,7 +10562,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 180.34 64.008 180)
+		(at 177.546 64.008 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10571,7 +10571,7 @@
 		(fields_autoplaced yes)
 		(uuid "b27ec431-7bf2-4ca6-9610-1b332903035a")
 		(property "Reference" "#PWR092"
-			(at 180.34 60.198 0)
+			(at 177.546 67.818 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10580,7 +10580,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 180.34 69.088 0)
+			(at 177.546 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10588,7 +10588,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 64.008 0)
+			(at 177.546 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10597,7 +10597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 64.008 0)
+			(at 177.546 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10606,7 +10606,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 64.008 0)
+			(at 177.546 64.008 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12617,66 +12617,6 @@
 			)
 			(uuid "f9434314-a51b-4b4f-83ba-da8ab8887ea7")
 		)
-		(pin "GPIO6" input
-			(at 187.96 51.562 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b78786e2-043d-4b44-9bce-5831725aa62c")
-		)
-		(pin "GPIO7" input
-			(at 187.96 53.848 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b5abea9c-aca0-4301-b8c1-f24a736c8e6b")
-		)
-		(pin "GPIO4" input
-			(at 187.96 56.134 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "4c1d1ee3-3f33-4b29-9bc5-058b9c21cf09")
-		)
-		(pin "GPIO5" input
-			(at 187.96 58.166 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "58fbbb39-6c35-4e2f-bbe7-fedccd3252ad")
-		)
-		(pin "GPIO8" input
-			(at 187.96 60.452 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b31a8861-c758-4d02-b15c-cffe6f62d879")
-		)
-		(pin "GPIO9" input
-			(at 187.96 62.484 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1638599a-86b2-4682-9ac1-6ac2fe0f0e29")
-		)
 		(pin "5V" output
 			(at 187.96 64.008 180)
 			(effects
@@ -12686,6 +12626,66 @@
 				(justify left)
 			)
 			(uuid "4cc2d974-e3c4-471d-9ac2-c207a7df4f7d")
+		)
+		(pin "GPIO38" input
+			(at 187.96 53.848 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7dd7325d-cb54-4aa9-81ad-b23b877730b8")
+		)
+		(pin "GPIO37" input
+			(at 187.96 51.562 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2c0497d2-67e4-42cc-a26a-abe70308ee27")
+		)
+		(pin "GPIO41" input
+			(at 187.96 60.452 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4c0eab4c-c240-41ce-ab57-83b442e189fe")
+		)
+		(pin "GPIO39" input
+			(at 187.96 56.134 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "40c3dec3-62f0-4ed3-add4-1bae11c57e9a")
+		)
+		(pin "GPIO40" input
+			(at 187.96 58.166 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8d938923-06a4-417a-8eae-a3ed5b5ff805")
+		)
+		(pin "GPIO42" input
+			(at 187.96 62.484 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a9a896a2-8344-4ee1-a457-9348f51e83e7")
 		)
 		(instances
 			(project "Ricardo-Stark"
@@ -12763,16 +12763,6 @@
 				(justify left top)
 			)
 		)
-		(pin "SD1_DET" input
-			(at 257.556 58.293 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "db62d0ea-15e3-4760-82cb-40047f7b0f4f")
-		)
 		(pin "VSPI_SCLK" input
 			(at 257.556 54.483 180)
 			(effects
@@ -12822,6 +12812,16 @@
 				(justify left)
 			)
 			(uuid "a489c2a9-1522-43fb-a996-5147e613ad28")
+		)
+		(pin "SD_DET" input
+			(at 257.556 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b4abcd7f-68ab-4110-9fe5-178b5f434bea")
 		)
 		(instances
 			(project "Ricardo-Stark"

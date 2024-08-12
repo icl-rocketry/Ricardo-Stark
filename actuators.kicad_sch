@@ -1449,6 +1449,247 @@
 				)
 			)
 		)
+		(symbol "iclr:RCLAMP3346PQTNT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "RCLAMP3346PQTNT"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "RCLAMP3346PQTNT"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "ESD Suppressors / TVS Diodes 6Line ESD protection automotive grade"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.53"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "947-RCLAMP3346PQTNT"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Semtech/RCLAMP3346PQTNT?qs=gTYE2QTfZfTlZML4DB76Nw%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "SEMTECH"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "RCLAMP3346PQTNT"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "RCLAMP3346PQTNT_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 25.4 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "K/A_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "K/A_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "K/A_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "K/A_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "K/A_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -5.08 180)
+					(length 5.08)
+					(name "K/A_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_names
@@ -1916,6 +2157,26 @@
 	)
 	(wire
 		(pts
+			(xy 215.646 110.49) (xy 217.932 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697b99d9-11c4-4200-bff3-b591c36fa77c")
+	)
+	(wire
+		(pts
+			(xy 215.646 107.95) (xy 217.932 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b0a0777-6144-4169-bbb7-58e720543f6f")
+	)
+	(wire
+		(pts
 			(xy 104.648 47.498) (xy 107.188 47.498)
 		)
 		(stroke
@@ -1923,6 +2184,16 @@
 			(type default)
 		)
 		(uuid "9566a8ac-2b15-4748-a795-03fe0964dc03")
+	)
+	(wire
+		(pts
+			(xy 215.646 102.87) (xy 217.932 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ddec00-d0c3-41ae-9b09-12ac26805c40")
 	)
 	(wire
 		(pts
@@ -2020,9 +2291,9 @@
 		)
 		(uuid "b90d806f-4553-4a36-bc06-bfc989d10d19")
 	)
-	(hierarchical_label "GPIO7"
+	(hierarchical_label "GPIO38"
 		(shape input)
-		(at 227.838 86.36 180)
+		(at 227.838 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2044,9 +2315,9 @@
 		)
 		(uuid "2c892b1e-4591-4c06-b15e-4b2942c565e0")
 	)
-	(hierarchical_label "GPIO6"
+	(hierarchical_label "GPIO37"
 		(shape input)
-		(at 227.838 81.28 180)
+		(at 227.838 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2056,9 +2327,33 @@
 		)
 		(uuid "2f0e06f2-04a2-4eb8-95a4-f928beae6593")
 	)
-	(hierarchical_label "GPIO8"
+	(hierarchical_label "GPIO38"
 		(shape input)
-		(at 227.838 73.66 180)
+		(at 215.646 107.95 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "35d6f0d9-6adb-4333-85da-d38db62c05b5")
+	)
+	(hierarchical_label "GPIO40"
+		(shape input)
+		(at 248.412 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3f838eac-d876-4b83-bee1-44e843854a52")
+	)
+	(hierarchical_label "GPIO41"
+		(shape input)
+		(at 227.838 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2080,7 +2375,7 @@
 		)
 		(uuid "58ab572f-c548-4b96-a837-8ac071e6c7c4")
 	)
-	(hierarchical_label "GPIO4"
+	(hierarchical_label "GPIO39"
 		(shape input)
 		(at 227.838 83.82 180)
 		(fields_autoplaced yes)
@@ -2092,7 +2387,7 @@
 		)
 		(uuid "64915a9d-1202-4d99-8737-3efa93a534ea")
 	)
-	(hierarchical_label "GPIO5"
+	(hierarchical_label "GPIO40"
 		(shape input)
 		(at 227.838 76.2 180)
 		(fields_autoplaced yes)
@@ -2116,9 +2411,9 @@
 		)
 		(uuid "7014fdf9-8111-4b6d-a33a-0c6a29830d2a")
 	)
-	(hierarchical_label "GPIO9"
+	(hierarchical_label "GPIO42"
 		(shape input)
-		(at 227.838 78.74 180)
+		(at 227.838 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2127,6 +2422,42 @@
 			(justify right)
 		)
 		(uuid "715c0c0a-af55-480e-b4d5-c6544a474afd")
+	)
+	(hierarchical_label "GPIO41"
+		(shape input)
+		(at 215.646 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7bac5c49-860d-4b7d-a323-1854f2d512bc")
+	)
+	(hierarchical_label "GPIO39"
+		(shape input)
+		(at 248.412 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b09b4d51-3cf3-4dd7-ae1b-7064924cebdb")
+	)
+	(hierarchical_label "GPIO42"
+		(shape input)
+		(at 248.412 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b17212a5-50cb-4c9b-a7b4-9221dabe7e20")
 	)
 	(hierarchical_label "SERVO2"
 		(shape bidirectional)
@@ -2139,6 +2470,18 @@
 			(justify left)
 		)
 		(uuid "c8a9c476-5176-4365-acf5-62970ddb4cbb")
+	)
+	(hierarchical_label "GPIO37"
+		(shape input)
+		(at 215.646 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e0f93a22-9b47-47e5-b856-4ca9e1a47202")
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x10_Socket")
@@ -2648,6 +2991,71 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
 					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 217.932 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b53d6c1-a892-496a-894d-3ed7fd9a892b")
+		(property "Reference" "#PWR066"
+			(at 217.932 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.138 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.932 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.932 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.932 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9e2d6f2-8bba-4ddb-9d50-7395c40983bb")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -3596,6 +4004,141 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
 					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iclr:RCLAMP3346PQTNT")
+		(at 217.932 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffbd30ef-fd3a-4462-aece-6180b396dd95")
+		(property "Reference" "D7"
+			(at 233.172 96.1855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RCLAMP3346PQTNT"
+			(at 233.172 98.6098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "iclr:RCLAMP3346PQTNT"
+			(at 244.602 197.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 244.602 297.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD Suppressors / TVS Diodes 6Line ESD protection automotive grade"
+			(at 217.932 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.53"
+			(at 244.602 497.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "947-RCLAMP3346PQTNT"
+			(at 244.602 597.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Semtech/RCLAMP3346PQTNT?qs=gTYE2QTfZfTlZML4DB76Nw%3D%3D"
+			(at 244.602 697.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "SEMTECH"
+			(at 244.602 797.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "RCLAMP3346PQTNT"
+			(at 244.602 897.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "da227b71-1a2f-43ff-9c81-f8fdb9593982")
+		)
+		(pin "7"
+			(uuid "77417ac6-0d21-4796-9acf-8f92c7e4e3ba")
+		)
+		(pin "1"
+			(uuid "642a7d97-8d02-4f23-9baa-6a4d784e3430")
+		)
+		(pin "5"
+			(uuid "46bb8b04-a7ed-4e79-b4d8-3042ea36a6e3")
+		)
+		(pin "4"
+			(uuid "a7810bc4-1281-478b-b8ab-e858a51c0156")
+		)
+		(pin "3"
+			(uuid "e09c1e69-3569-4d95-8b64-f459020ecdcd")
+		)
+		(pin "6"
+			(uuid "2679ca89-aefb-4dad-86c4-7564d2b83146")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/5f0880ee-ff3b-4d6c-b43c-55333f7e65e0"
+					(reference "D7")
 					(unit 1)
 				)
 			)
