@@ -5296,21 +5296,21 @@
 		(fields_autoplaced yes)
 		(uuid "590813b4-8bea-45f0-a7f7-4dbf3ad4e7e5")
 		(property "Reference" "R98"
-			(at 109.982 34.417 0)
+			(at 114.3 32.5119 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "50k"
-			(at 109.982 31.877 0)
+		(property "Value" "49.9k"
+			(at 114.3 35.0519 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
@@ -8391,7 +8391,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "152k"
+		(property "Value" "150k"
 			(at 115.062 42.037 0)
 			(effects
 				(font
