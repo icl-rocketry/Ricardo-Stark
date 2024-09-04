@@ -16,6 +16,7 @@
 
 #include <librrc/HAL/arduinogpio.h>
 #include "Config/types.h"
+#include "Sensors/vrailmonitor.h"
 
 class SiC43x
 {
@@ -33,7 +34,7 @@ public:
      * @param LowResistor Resistance value of potential divider resistor connected to the low side
      */
 
-    SiC43x(Types::CoreTypes::SystemStatus_t &systemstatus, int8_t PGood = -1, int8_t EN = -1, bool defaultEN = 0, bool invertEN = 0, int8_t VRead = -1, float HighResistor = 0, float LowResistor = 1) : 
+    SiC43x(Types::CoreTypes::SystemStatus_t &systemstatus,  int8_t VRead = -1, float HighResistor = 0, float LowResistor = 1, int8_t PGood = -1, int8_t EN = -1, bool defaultEN = 0, bool invertEN = 0) : 
         m_systemstatus(systemstatus),
         m_PGoodPin(PGood),
         m_ENPin(EN),
@@ -79,6 +80,7 @@ public:
         if (m_VReadPin >= 0)
         {
             m_servoVoltage.update(OutputV);
+            Serial.println(OutputV);
 
             //!TODO - make voltage limits configurable
             if ((OutputV > 12 || OutputV < 4) && !m_systemstatus.flagSet(SYSTEM_FLAG::ERROR_BUCK))
@@ -86,7 +88,7 @@ public:
                 m_systemstatus.newFlag(SYSTEM_FLAG::ERROR_BUCK, "Buck output voltage off-nominal! (ADC reading out of range)");
             }
             else if(OutputV < 12 && OutputV > 4 && m_systemstatus.flagSet(SYSTEM_FLAG::ERROR_BUCK)){
-                m_systemstatus.newFlag(SYSTEM_FLAG::ERROR_BUCK, "Buck output voltage off-nominal! (ADC reading back in configured range)");
+                m_systemstatus.deleteFlag(SYSTEM_FLAG::ERROR_BUCK, "Buck output voltage returned to nominal! (ADC reading back in configured range)");
             }
         }
 

@@ -11,6 +11,10 @@
 #include "telemetrylogframe.h"
 
 
+TelemetryLogger::TelemetryLogger():
+_file(nullptr),
+internalLogCB()
+{};
 
 bool TelemetryLogger::initialize(std::unique_ptr<WrappedFile> file,std::function<void(std::string_view message)> logcb)
 {

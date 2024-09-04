@@ -20,9 +20,18 @@ namespace Services{
      */
     enum class ID:uint8_t{
 
-        Servo1 = 10,
-        Servo2 = 11,
+        Engine = 10,
+        Servo1 = 11,
+        Servo2 = 12,
+        LED = 15,
         Pyro = 20,
+        PT0 = 30,
+        PT1 = 31,
+        PT2 = 32,
+        PT3 = 33,
+        PT4 = 34,
+        PT5 = 35,
+        Engine = 69
 
     };
 

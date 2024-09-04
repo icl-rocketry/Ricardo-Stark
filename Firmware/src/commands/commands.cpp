@@ -16,6 +16,11 @@
 #include "Packets/rawADCPacket.h"
 
 
+#include "states/ignition.h"
+#include "states/shutdown.h"
+#include "states/debug.h"
+
+
 #include "system.h"
 
 #include "esp_log.h"
@@ -56,7 +61,35 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 
 }
 
-void Commands::rawADCCommand(System& sm, const RnpPacketSerialized& packet)
+
+	void Commands::StarkTelemCommand(System& sm, const RnpPacketSerialized& packet)
+{	
+	SimpleCommandPacket commandpacket(packet);
+
+	StarkTelemPacket starktelem;
+	Engine& engine();
+
+	starktelem.header.type = static_cast<uint8_t>(10);
+	starktelem.header.source = sm.networkmanager.getAddress();
+	starktelem.header.source_service = sm.commandhandler.getServiceID();
+	starktelem.header.destination = commandpacket.header.source;
+	starktelem.header.destination_service = commandpacket.header.source_service;
+	starktelem.header.uid = commandpacket.header.uid; 
+	starktelem.servoVoltage = sm.Buck.getOutputV();
+	// starktelem.pyroIMon = sm.Pyro.getIMon();
+	starktelem.ch0sens = sm.ThanosR.ChamberPT.getPressure();
+	starktelem.ch1sens = sm.ThanosR.OxPT.getPressure();
+	starktelem.ch2sens = sm.ThanosR.FuelPT.getPressure();
+	starktelem.system_status = sm.systemstatus.getStatus();
+	starktelem.system_time = millis();
+	
+	sm.networkmanager.sendPacket(starktelem);
+	
+}
+	
+ 
+
+void Commands::RawADCCommand(System& sm, const RnpPacketSerialized& packet)
 {
 	SimpleCommandPacket commandpacket(packet);
 
@@ -70,44 +103,44 @@ void Commands::rawADCCommand(System& sm, const RnpPacketSerialized& packet)
 	rawSensors.header.uid = commandpacket.header.uid;
 	rawSensors.system_time = millis();
 
-	rawSensors.ch0 = sm.ADC0.getOutput(5);
-	rawSensors.ch1 = sm.ADC0.getOutput(4);
-	rawSensors.ch2 = sm.ADC0.getOutput(3); 
-	rawSensors.ch3 = sm.ADC0.getOutput(2);
-	rawSensors.ch4 = sm.ADC0.getOutput(1);
-	rawSensors.ch5 = sm.ADC0.getOutput(0);
+	rawSensors.ch0 = sm.ADC0.getOutput(0);
+	rawSensors.ch1 = sm.ADC0.getOutput(1);
+	rawSensors.ch2 = sm.ADC0.getOutput(2); 
+	rawSensors.ch3 = sm.ADC0.getOutput(3);
+	rawSensors.ch4 = sm.ADC0.getOutput(4);
+	rawSensors.ch5 = sm.ADC0.getOutput(5);
 
 	rawSensors.system_status = sm.systemstatus.getStatus();
 
 	sm.networkmanager.sendPacket(rawSensors);
+}	
+
+
+void Commands::Idle(System& sm, const RnpPacketSerialized& packet)
+{
+	
+
+}
+
+void Commands::IgnitionCommand(System& sm, const RnpPacketSerialized& packet)
+{
+	sm.statemachine.changeState(std::make_unique<Ignition>(sm));
+
+}
+
+void Commands::ShutdownCommand(System& sm, const RnpPacketSerialized& packet)
+{
+	sm.statemachine.changeState(std::make_unique<Ignition>(sm));
+
+}
+
+void Commands::Debug(System& sm, const RnpPacketSerialized& packet)
+{
+
+
 }
 
 
 
-	void Commands::StarkTelemCommand(System& sm, const RnpPacketSerialized& packet)
-{	
-	SimpleCommandPacket commandpacket(packet);
 
-	StarkTelemPacket starktelem;
 
-	starktelem.header.type = static_cast<uint8_t>(10);
-	starktelem.header.source = sm.networkmanager.getAddress();
-	starktelem.header.source_service = sm.commandhandler.getServiceID();
-	starktelem.header.destination = commandpacket.header.source;
-	starktelem.header.destination_service = commandpacket.header.source_service;
-	starktelem.header.uid = commandpacket.header.uid; 
-	starktelem.servoVoltage = sm.Buck.getOutputV();
-	starktelem.pyroIMon = sm.Pyro.getIMon();
-	starktelem.ch0sens = sm.PT0.getPressure();
-	starktelem.ch1sens = sm.PT1.getPressure();
-	starktelem.ch2sens = sm.PT2.getPressure();
-	starktelem.ch3sens = sm.PT3.getPressure();
-	starktelem.ch4sens = sm.PT4.getPressure();
-	starktelem.ch5sens = sm.PT5.getPressure();
-	starktelem.system_status = sm.systemstatus.getStatus();
-	starktelem.system_time = millis();
-	
-	sm.networkmanager.sendPacket(starktelem);
-	
-}
-	

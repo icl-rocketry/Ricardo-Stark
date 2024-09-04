@@ -9,8 +9,8 @@
 namespace PinMap{
 
     // CAN
-    static constexpr uint8_t RxCan = 1;
-    static constexpr uint8_t TxCan = 2;
+    static constexpr uint8_t RxCan = 1; //1
+    static constexpr uint8_t TxCan = 2; //2
     
     // SD
     static constexpr uint8_t SdDet = 4;
@@ -21,9 +21,9 @@ namespace PinMap{
     static constexpr uint8_t V_MISO = 9;
 
     // Servo
-    static constexpr uint8_t ServoPWM1 = 11;
-    static constexpr uint8_t ServoPWM2 = 10;
-    static constexpr uint8_t ServoVLog = 12;
+    static constexpr uint8_t ServoPWM1 = 11; //11
+    static constexpr uint8_t ServoPWM2 = 10; //10
+    static constexpr uint8_t ServoVLog = 12; //12
 
     // Pyro
     static constexpr uint8_t PyroIMon = 13;
@@ -35,20 +35,20 @@ namespace PinMap{
     static constexpr uint8_t LED = 26;
 
     // ADS
-    static constexpr uint8_t H_MISO = 33;
-    static constexpr uint8_t H_SCLK = 34;
-    static constexpr uint8_t DRDY = 35;
-    static constexpr uint8_t ADS_Cs = 36;
-    static constexpr uint8_t H_MOSI = 47;
-    static constexpr uint8_t ADS_Clk =  48;
+    static constexpr uint8_t H_MISO = 33; //33
+    static constexpr uint8_t H_SCLK = 34; //34
+    static constexpr uint8_t DRDY = 35; //35
+    static constexpr uint8_t ADS_Cs = 36; //36
+    static constexpr uint8_t H_MOSI = 47; //47
+    static constexpr uint8_t ADS_Clk =  48; //48
 
     // GPIO Breakout
-    static constexpr uint8_t GPIO37 = 37;
-    static constexpr uint8_t GPIO38 = 38;
-    static constexpr uint8_t GPIO39 = 39;
-    static constexpr uint8_t GPIO40 = 40;
-    static constexpr uint8_t GPIO41 = 41;
-    static constexpr uint8_t GPIO42 = 42;
+    static constexpr uint8_t GPIO37 = 37; //37
+    static constexpr uint8_t GPIO38 = 38; //38
+    static constexpr uint8_t GPIO39 = 39; //39
+    static constexpr uint8_t GPIO40 = 40; //40
+    static constexpr uint8_t GPIO41 = 41; //41
+    static constexpr uint8_t GPIO42 = 42; //42
 
    
 };

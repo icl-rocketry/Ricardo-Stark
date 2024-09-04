@@ -20,8 +20,17 @@
 #include "systemflags_config.h"
 #include "commands_config.h"
 
+#include <librrc/Remote/nrcremotepyro.h>
+#include <librrc/Remote/nrcremoteservo.h>
+#include <librrc/Remote/nrcremoteptap.h>
+#include <librrc/HAL/localpwm.h>
+#include <librrc/HAL/arduinogpio.h>
+
 namespace Types{
     using CoreTypes = RicCoreTypes<ForwardDecl_SystemClass,SYSTEM_FLAG,Commands::ID,256>;
     //any other useful aliases used in multiple places should be defined here
+    using LocalServo_t = NRCRemoteServo<LocalPWM>;
+    using LocalPyro_t = NRCRemotePyro<ArduinoGpio>;
+    using LocalSensor_t = NRCRemotePTap;
 };
 

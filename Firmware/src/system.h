@@ -4,14 +4,21 @@
 
 #include <memory>
 #include <librrc/Remote/nrcremoteservo.h>
-#include <librrc/Remote/nrcremoteptap> 
+#include <librrc/Remote/nrcremoteptap.h> 
 #include <librrc/Remote/nrcremotepyro.h>
+
 #include "Sensors/ADS131M06.h"
+#include "SiC43x.h"
 
 
 #include "Config/systemflags_config.h"
 #include "Config/commands_config.h"
 #include "Config/pinmap_config.h"
+#include <libriccore/networkinterfaces/can/canbus.h>
+#include "config/pinmap_config.h"
+
+#include "states/Engine.h"
+
 
 #include "Commands/commands.h"
 
@@ -29,39 +36,33 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         void systemUpdate();
 
-         SiC43x Buck;
+        void serviceSetup();
 
-         CanBus<SYSTEM_FLAG> canbus;
 
-    private:
+        // EngineController ThanosR;
 
         SPIClass SDSPI;
         SPIClass SNSRSPI;
 
-        NRCRemoteServo Servo1;
-        NRCRemoteServo Servo2;
-
-        NRCRemotePyro Pyro;
+        CanBus<SYSTEM_FLAG> canbus;
+         
+        SiC43x Buck;
 
         ADS131M06 ADC0;
 
-        NRCRemotePTap PT0;
-        NRCRemotePTap PT1;
-        NRCRemotePTap PT2;
-        NRCRemotePTap PT3;
-        NRCRemotePTap PT4;
-        NRCRemotePTap PT5;
-
-
+      
         SdFat_Store primarysd;
 
-        std::unique_ptr<WrappedFile> file_ptr;
-        std::unique_ptr<WrappedFile> file_ptr2;
+    private:
 
+        void initializeLoggers();
+        void logReadings();
+
+        const std::string log_path = "/Logs";
+        const std::string config_path = "/Config";
+        uint32_t telemetry_log_delta = 5000;
+        uint32_t prev_telemetry_log_time;
         uint32_t prevtime;
-
-        std::vector<uint8_t> data;
-        std::vector<uint8_t> data2;
 
         
 

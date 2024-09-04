@@ -12,7 +12,6 @@
 #include <stdint.h>
 
 #include "Packets/StarkTelemPacket.h"
-
 #include "Config/forward_decl.h"
 #include <librnp/rnp_packet.h>
 
@@ -20,6 +19,13 @@ namespace Commands{
     
     void FreeRamCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
     void StarkTelemCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
-    void rawADCCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void RawADCCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void setChamberP(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void setFuelP(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void Idle(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void IgnitionCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void ShutdownCommand(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    void Debug(ForwardDecl_SystemClass& system, const RnpPacketSerialized& packet);
+    
 
 }
