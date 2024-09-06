@@ -17,8 +17,9 @@
 #include <libriccore/networkinterfaces/can/canbus.h>
 #include "config/pinmap_config.h"
 
-#include "states/Engine.h"
-
+#include "EngineController/enginecontroller.h"
+#include "EngineController/Ignition.h"
+#include "EngineController/Controlled.h"
 
 #include "Commands/commands.h"
 
@@ -39,7 +40,7 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         void serviceSetup();
 
 
-        // EngineController ThanosR;
+        EngineController ThanosR;
 
         SPIClass SDSPI;
         SPIClass SNSRSPI;
@@ -48,7 +49,11 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
          
         SiC43x Buck;
 
-        ADS131M06 ADC0;
+        ADS131M06 ADC;
+
+        NRCRemotePTap ChamberPt;
+        NRCRemotePTap OxPt;
+        NRCRemotePTap OxInjPt;
 
       
         SdFat_Store primarysd;
@@ -57,12 +62,12 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         void initializeLoggers();
         void logReadings();
+        void setupSPI();
 
         const std::string log_path = "/Logs";
         const std::string config_path = "/Config";
-        uint32_t telemetry_log_delta = 5000;
-        uint32_t prev_telemetry_log_time;
-        uint32_t prevtime;
+    
+
 
         
 

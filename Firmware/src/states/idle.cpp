@@ -1,50 +1,41 @@
-// #include "Ignition.h"
+#include "idle.h"
 
-// #include <memory>
+#include <memory>
 
-// #include <libriccore/fsm/state.h>
-// #include <libriccore/systemstatus/systemstatus.h>
-// #include <libriccore/commands/commandhandler.h>
-// #include <libriccore/riccorelogging.h>
+#include <libriccore/fsm/state.h>
+#include <libriccore/systemstatus/systemstatus.h>
+#include <libriccore/commands/commandhandler.h>
+#include <libriccore/riccorelogging.h>
 
-// #include "Config/systemflags_config.h"
-// #include "Config/types.h"
-// #include "Config/commands_config.h"
+#include "Config/systemflags_config.h"
+#include "Config/types.h"
 
-// #include "system.h"
+#include "system.h"
 
-// Idle::Idle(System &system, Engine &engine): State(SYSTEM_FLAG::STATE_IDLE, system.systemstatus),
-//                                     _system(system),
-//                                     _engine(system.ThanosR)
-//                                     {};
 
-// void Idle::initialize()
-// {
-//     State::initialize();
+Idle::Idle(Types::CoreTypes::SystemStatus_t& systemtatus, Types::CoreTypes::CommandHandler_t& commandhandler):
+State(SYSTEM_FLAG::STATE_IDLE,systemtatus),
+_commandhandler(commandhandler)
+{};
 
-//     _system.commandhandler.enableCommands({
-//         Commands::ID::Ignition,
-//         Commands::ID::Debug
-//         });
+void Idle::initialize()
+{
+    State::initialize(); // call parent initialize first!
+    _commandhandler.enableCommands({Commands::ID::Free_Ram});
+};
 
-// // Unregistering services so they can only be accessed in debug mode
+Types::CoreTypes::State_ptr_t Idle::update()
+{
+    // if (millis()-prevLogMessageTime > 1000)
+    // {
+    //     RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Idle heartbeat!");
+    //     prevLogMessageTime = millis();
+    // }
 
-//     _engine._networkmanager.unregisterService(_engine.OxMainservice);
-//     _engine._networkmanager.unregisterService(_engine.FuelMainservice);
-//     _engine._networkmanager.unregisterService(_engine.Pyroservice);
-//     _engine._networkmanager.unregisterService(_engine.ChamberPTservice);
-//     _engine._networkmanager.unregisterService(_engine.OxPTservice);
-//     _engine._networkmanager.unregisterService(_engine.FuelPTservice);
-// };
-// Types::CoreTypes::State_ptr_t Idle::update()
-// {
+    return nullptr;
+};
 
-// return nullptr;
-
-// };
-
-// void Idle::exit()
-// {
-//     State::exit();
-//     _system.commandhandler.resetCommands();
-// };
+void Idle::exit()
+{
+    Types::CoreTypes::State_t::exit(); // call parent exit last!
+};

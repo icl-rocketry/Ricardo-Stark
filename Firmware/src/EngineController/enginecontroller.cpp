@@ -1,73 +1,114 @@
 #include "enginecontroller.h"
 
 
-EngineController::EngineController(RnpNetworkManager& networkmanager):
-                    NRCRemoteActuatorBase(_networkmanager),
-                    _networkmanager(networkmanager),
-                    EC_statemachine(),
-                    OxMain(LocalPWM(PinMap::ServoPWM1,0), _networkmanager,std::string("OxMain")),
+EngineController::EngineController(RnpNetworkManager& networkmanager, NRCRemotePTap& chamberPt, NRCRemotePTap& oxPt, NRCRemotePTap& oxInjPT):
+                    NRCRemoteActuatorBase(networkmanager),
+                    _networkmanager(networkmanager),    
+                    _ChamberPT(chamberPt),
+                    _OxPT(oxPt),
+                    _OxInjPT(oxInjPT),
+                    OxMain(LocalPWM(PinMap::ServoPWM1,0), networkmanager,"OxMain"),
                     OxMainAdapter(0,OxMain,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
-                    FuelMain(LocalPWM(PinMap::ServoPWM2,1),_networkmanager,std::string("FuelMain")),
+                    FuelMain(LocalPWM(PinMap::ServoPWM2,1),networkmanager,"FuelMain"),
                     FuelMainAdapter(0,FuelMain,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
                     Pyro(PinMap::PyroNuke, PinMap::PyroCont, _networkmanager),
-                    PyroAdapter(0,Pyro,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
-                    ChamberPT(_networkmanager, 0, 0),
-                    ChamberPTAdapter(0,ChamberPT,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
-                    OxPT(_networkmanager, 1, 1),
-                    OxPTAdapter(0,OxPT,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
-                    FuelPT(_networkmanager, 2, 2),
-                    FuelPTAdapter(0,FuelPT,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);})  
+                    PyroAdapter(0,Pyro,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);})
 
 {}; 
 
 
-void EngineController::armEngine(packetptr_t packetptr){
+void EngineController::setup()
+{
 
-    SimpleCommandPacket execute_command(*packetptr);
+    OxMain.setup();
+    FuelMain.setup();
+    Pyro.setup();
 
-    if (execute_command.command == 3){
+    _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams));
 
-        PyroAdapter.arm(0);
-        OxMainAdapter.arm(0);
-        FuelMainAdapter.arm(0);
-    }
+}
+
+void EngineController::update()
+{   
+
+    _engineStateMachine.update();
+    logReadings();
+
+};
+
+void EngineController::arm_impl(packetptr_t packetptr){
+
+    SimpleCommandPacket armingpacket(*packetptr);
+
+    PyroAdapter.arm(armingpacket.arg);
+    OxMainAdapter.arm(0);
+    FuelMainAdapter.arm(0);
+
 
 }
 
 
-void EngineController::disarmEngine(packetptr_t packetptr){
+void EngineController::disarm_impl(packetptr_t packetptr){
 
-    SimpleCommandPacket execute_command(*packetptr);
+    PyroAdapter.disarm();
+    OxMainAdapter.disarm();
+    FuelMainAdapter.disarm();
 
-    if (execute_command.command == 4){
-
-        PyroAdapter.disarm();
-        OxMainAdapter.disarm();
-        FuelMainAdapter.disarm();
-    }
 
 }
+
 
 void EngineController::serviceSetup(){
 
-    _networkmanager.registerService(OxMainservice,OxMain.getThisNetworkCallback());
-    _networkmanager.registerService(FuelMainservice,FuelMain.getThisNetworkCallback());
-    _networkmanager.registerService(Pyroservice,Pyro.getThisNetworkCallback());
+    // _networkmanager.registerService(OxMainservice,OxMain.getThisNetworkCallback());
+    // _networkmanager.registerService(FuelMainservice,FuelMain.getThisNetworkCallback());
+    // _networkmanager.registerService(Pyroservice,Pyro.getThisNetworkCallback());
 
 
 }
 
-void EngineController::ignition(packetptr_t packetptr){
-
+void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_ID commandID, packetptr_t packetptr)
+{
     SimpleCommandPacket execute_command(*packetptr);
 
-    if (execute_command.arg == 1){
+    switch(execute_command.arg)
+    {
+        case 1:
+        {
+            // Ignition
+            _engineStateMachine.changeState(std::make_unique<Ignition>(m_IgnitionStateParams,m_ControlledStateParams, *this));
 
-        EC_statemachine.changeState(std::make_unique<IGNITION>(EC_statemachine));
+            break;
+
+        }
+
+
 
     }
 
 }
+
+void EngineController::logReadings()
+{
+    if (micros() - prev_telemetry_log_time > telemetry_log_delta)
+    {
+        TelemetryLogframe logframe;
+
+        logframe.ch0sens = _ChamberPT.getPressure();
+        logframe.ch1sens = _OxPT.getPressure();
+        logframe.ch2sens = _OxInjPT.getPressure();
+
+        logframe.timestamp = micros();
+
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::TELEMETRY>(logframe);
+
+        prev_telemetry_log_time = micros();
+    }
+}
+
+
+
+
 
 
 

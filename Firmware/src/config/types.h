@@ -23,14 +23,28 @@
 #include <librrc/Remote/nrcremotepyro.h>
 #include <librrc/Remote/nrcremoteservo.h>
 #include <librrc/Remote/nrcremoteptap.h>
+
 #include <librrc/HAL/localpwm.h>
 #include <librrc/HAL/arduinogpio.h>
+
+#include <libriccore/systemstatus/systemstatus.h>
+#include <libriccore/fsm/state.h>
+#include <libriccore/fsm/statemachine.h>
+
+#include "EngineController/enginecontroller.h"
+
 
 namespace Types{
     using CoreTypes = RicCoreTypes<ForwardDecl_SystemClass,SYSTEM_FLAG,Commands::ID,256>;
     //any other useful aliases used in multiple places should be defined here
-    using LocalServo_t = NRCRemoteServo<LocalPWM>;
-    using LocalPyro_t = NRCRemotePyro<ArduinoGpio>;
-    using LocalSensor_t = NRCRemotePTap;
+    // using LocalServo_t = NRCRemoteServo<LocalPWM>;
+    // using LocalPyro_t = NRCRemotePyro<ArduinoGpio>;
+    // using LocalSensor_t = NRCRemotePTap;
+
+    // using ServoAdapter_t = RemoteActuatorAdapter<LocalServo_t>;
+    // using PyroAdapter_t = RemoteActuatorAdapter<LocalPyro_t>;
+    // using SensorAdapter_t = RemoteSensorAdapter<LocalSensor_t>;
+    // using LocalServoMap_t = std::array<LocalServo_t*,2>;
+   
 };
 

@@ -33,12 +33,15 @@ static constexpr int HSPI_BUS_NUM = HSPI;
 
 System::System():
 RicCoreSystem(Commands::command_map,Commands::defaultEnabledCommands,Serial),
-ThanosR(networkmanager, ADC0),
+ThanosR(networkmanager,ChamberPt,OxPt,OxInjPt),
 SDSPI(VSPI_BUS_NUM),
 SNSRSPI(HSPI_BUS_NUM),
 canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
-ADC0(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk),
+ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk),
+ChamberPt(networkmanager,0),
+OxPt(networkmanager,1),
+OxInjPt(networkmanager,2),
 primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
 {};
 
@@ -48,6 +51,8 @@ void System::systemSetup(){
     Serial.setRxBufferSize(GeneralConfig::SerialRxSize);
     Serial.begin(GeneralConfig::SerialBaud);
 
+    Serial.println("Test");
+
     SDSPI.begin(PinMap::V_SCLK,PinMap::V_MISO,PinMap::V_MOSI);
     SDSPI.setFrequency(SD_SCK_MHZ(50));
 
@@ -55,7 +60,7 @@ void System::systemSetup(){
     digitalWrite(PinMap::SdCs,HIGH);
 
     //initialize statemachine with idle state
-    statemachine.initalize(std::make_unique<Idle>(systemstatus,commandhandler));
+    // statemachine.initalize(std::make_unique<Idle>(systemstatus,commandhandler));
     //any other setup goes here
 
 
@@ -67,12 +72,16 @@ void System::systemSetup(){
 
 
     pinMode(PinMap::LED, OUTPUT);
-    digitalWrite(PinMap::LED, HIGH); 
+    // digitalWrite(PinMap::LED, HIGH); 
 
     canbus.setup();
     Buck.setup();
+    setupSPI();
+    ADC.setup();
 
-    ADC0.setup();
+    ChamberPt.setup();
+    OxPt.setup();
+    OxInjPt.setup();
  
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,3});
@@ -84,16 +93,34 @@ void System::systemSetup(){
 
     primarysd.setup();  
     initializeLoggers();
+
+    ThanosR.setup();
     
 };
+
+void System::setupSPI(){
+    SDSPI.begin(PinMap::V_SCLK,PinMap::V_MISO,PinMap::V_MOSI, PinMap::SdCs);
+    SDSPI.setFrequency(2000000);
+    SDSPI.setBitOrder(MSBFIRST);
+    SDSPI.setDataMode(SPI_MODE0);
+
+    SNSRSPI.begin(PinMap::H_SCLK, PinMap::H_MISO, PinMap::H_MOSI, PinMap::ADS_Cs);
+    SNSRSPI.setFrequency(5000000);
+    SNSRSPI.setBitOrder(MSBFIRST);
+    SNSRSPI.setDataMode(SPI_MODE1);
+}
+
 
 
 void System::systemUpdate(){
     
     Buck.update();
-    ADC0.update();
+    ADC.update();
+    ThanosR.update(); 
 
-    
+    ChamberPt.update(ADC.getOutput(0));
+    OxPt.update(ADC.getOutput(1));
+    OxInjPt.update(ADC.getOutput(2));
 
 };
 

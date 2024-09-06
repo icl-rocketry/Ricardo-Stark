@@ -11,9 +11,9 @@ private:
             &TelemetryLogframe::ch0sens,
             &TelemetryLogframe::ch1sens,
             &TelemetryLogframe::ch2sens,
-            &TelemetryLogframe::ch3sens,
-            &TelemetryLogframe::ch4sens,
-            &TelemetryLogframe::ch5sens,
+            // &TelemetryLogframe::ch3sens,
+            // &TelemetryLogframe::ch4sens,
+            // &TelemetryLogframe::ch5sens,
             &TelemetryLogframe::timestamp         
 
         );
