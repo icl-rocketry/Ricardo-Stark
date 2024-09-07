@@ -23,11 +23,6 @@
 
 #include "EngineTypes.h"
 
-#include "Default.h"
-#include "Ignition.h"
-#include "Controlled.h"
-#include "Shutdown.h"
-#include "Debug.h"
 
 
 // enum class EC_FLAGS:uint8_t{
@@ -107,6 +102,7 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
     Engine::IgnitionStateInit m_IgnitionStateParams = {_engineStatus, PyroAdapter};
     Engine::ControlledStateInit m_ControlledStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
+    Engine::ShutdownStateInit m_ShutdownStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
 
     protected:
 

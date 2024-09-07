@@ -38,7 +38,7 @@ void Shutdown::initialize()
 Types::EngineTypes::State_ptr_t Shutdown::update()
 {
 
-    digitalWrite(PinMap::LED, HIGH);
+    
     return nullptr;
 
     

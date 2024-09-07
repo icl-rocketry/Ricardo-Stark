@@ -1,4 +1,17 @@
 #include "enginecontroller.h"
+#include <math.h>
+#include <Arduino.h>
+
+#include <libriccore/commands/commandhandler.h>
+#include <libriccore/riccorelogging.h>
+
+
+#include "Default.h"
+#include "Ignition.h"
+#include "Controlled.h"
+#include "Shutdown.h"
+#include "Debug.h"
+
 
 
 EngineController::EngineController(RnpNetworkManager& networkmanager, NRCRemotePTap& chamberPt, NRCRemotePTap& oxPt, NRCRemotePTap& oxInjPT):
@@ -54,6 +67,9 @@ void EngineController::disarm_impl(packetptr_t packetptr){
     OxMainAdapter.disarm();
     FuelMainAdapter.disarm();
 
+    _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams));
+
+
 
 }
 
@@ -74,10 +90,30 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
     switch(execute_command.arg)
     {
         case 1:
+        {   
+             if (!_engineStatus.flagSet(EC_FLAGS::State_Default))
         {
+            break;
+        }
             // Ignition
             _engineStateMachine.changeState(std::make_unique<Ignition>(m_IgnitionStateParams,m_ControlledStateParams, *this));
 
+            break;
+
+        }
+
+        case 2:
+        {
+            // Shutdown
+            _engineStateMachine.changeState(std::make_unique<Shutdown>(m_ShutdownStateParams));
+
+            break;
+
+        }
+
+        case 3:
+        {
+            // Add Debug
             break;
 
         }
