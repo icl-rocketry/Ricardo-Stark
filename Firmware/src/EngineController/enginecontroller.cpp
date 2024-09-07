@@ -47,6 +47,9 @@ void EngineController::update()
     _engineStateMachine.update();
      logReadings();
 
+     uint32_t _OxAngle = OxMain.getValue();
+     uint32_t _FuelAngle = FuelMain.getValue();
+
 };
 
 void EngineController::arm_base(int32_t arg){
@@ -56,6 +59,7 @@ void EngineController::arm_base(int32_t arg){
     OxMainAdapter.arm(arg);
     FuelMainAdapter.arm(arg);
 
+     NRCRemoteActuatorBase::arm_base(arg);
 
 }
 
@@ -66,10 +70,22 @@ void EngineController::disarm_base(){
     OxMainAdapter.disarm();
     FuelMainAdapter.disarm();
 
+    NRCRemoteActuatorBase::disarm_base();
+
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams));
 
 
 
+}
+
+uint32_t EngineController::getOxAngle()
+{
+    return OxMain.getValue();
+}
+
+uint32_t EngineController::getFuelAngle()
+{
+    return FuelMain.getValue();
 }
 
 

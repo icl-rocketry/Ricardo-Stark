@@ -54,9 +54,15 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         NRCRemotePTap ChamberPt;
         NRCRemotePTap OxPt;
         NRCRemotePTap OxInjPt;
+        NRCRemotePTap PT0;
+        NRCRemotePTap PT1;
+        NRCRemotePTap PT4;
 
       
         SdFat_Store primarysd;
+
+        uint32_t _OxAngle;
+        uint32_t _FuelAngle;
 
     private:
 

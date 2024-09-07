@@ -104,6 +104,12 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     Engine::ControlledStateInit m_ControlledStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
     Engine::ShutdownStateInit m_ShutdownStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
 
+
+    uint32_t _OxAngle;
+    uint32_t _FuelAngle;
+
+    uint32_t getOxAngle();
+    uint32_t getFuelAngle();
     protected:
 
     friend class NRCRemoteActuatorBase;

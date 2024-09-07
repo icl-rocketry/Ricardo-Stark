@@ -38,10 +38,13 @@ SDSPI(VSPI_BUS_NUM),
 SNSRSPI(HSPI_BUS_NUM),
 canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
-ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk),
-ChamberPt(networkmanager,0),
-OxPt(networkmanager,1),
+ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk,2),
+ChamberPt(networkmanager,3),
+OxPt(networkmanager,5),
 OxInjPt(networkmanager,2),
+PT0(networkmanager,0),
+PT1(networkmanager,1),
+PT4(networkmanager,4),
 primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
 {};
 
@@ -82,6 +85,10 @@ void System::systemSetup(){
     ChamberPt.setup();
     OxPt.setup();
     OxInjPt.setup();
+
+    PT0.setup();
+    PT1.setup();
+    PT4.setup();
  
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,3});
@@ -119,7 +126,7 @@ void System::setupSPI(){
     SNSRSPI.setDataMode(SPI_MODE1);
 }
 
-
+ 
 
 void System::systemUpdate(){
     
@@ -127,9 +134,16 @@ void System::systemUpdate(){
     ADC.update();
     ThanosR.update(); 
 
-    ChamberPt.update(ADC.getOutput(0));
-    OxPt.update(ADC.getOutput(1));
+    _OxAngle = ThanosR.getOxAngle();
+    _FuelAngle = ThanosR.getFuelAngle();
+
+    ChamberPt.update(ADC.getOutput(3));
+    OxPt.update(ADC.getOutput(5));
     OxInjPt.update(ADC.getOutput(2));
+
+    PT0.update(ADC.getOutput(0));
+    PT1.update(ADC.getOutput(1));
+    PT4.update(ADC.getOutput(4));
 
 };
 

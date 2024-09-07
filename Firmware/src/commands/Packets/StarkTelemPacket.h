@@ -18,6 +18,11 @@ class StarkTelemPacket : public RnpPacket{
                 &StarkTelemPacket::ch0sens,
                 &StarkTelemPacket::ch1sens,
                 &StarkTelemPacket::ch2sens,
+                &StarkTelemPacket::ch3sens,
+                &StarkTelemPacket::ch4sens,
+                &StarkTelemPacket::ch5sens,
+                &StarkTelemPacket::Servo1Angle,
+                &StarkTelemPacket::Servo2Angle,
                 &StarkTelemPacket::system_status,
                 &StarkTelemPacket::system_time
             );
@@ -48,6 +53,13 @@ class StarkTelemPacket : public RnpPacket{
         float ch0sens;
         float ch1sens;
         float ch2sens;
+        float ch3sens;
+        float ch4sens;
+        float ch5sens;
+
+        uint32_t Servo1Angle;
+        uint32_t Servo2Angle;
+        
         uint32_t system_status;
         uint64_t system_time;
 
