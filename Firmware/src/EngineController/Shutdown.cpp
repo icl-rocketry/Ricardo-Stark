@@ -13,10 +13,10 @@
 
 #include "system.h"
 
-Shutdown::Shutdown(Engine::ShutdownStateInit& ShutdownInitParams):
-State(EC_FLAGS::SHUTDOWN,ShutdownInitParams.enginestatus),
-_OxMainAdapter(ShutdownInitParams.OxAdapter),
-_FuelMainAdapter(ShutdownInitParams.FuelAdapter)
+Shutdown::Shutdown(Engine::DefaultStateInit& DefaultInitParams):
+State(EC_FLAGS::SHUTDOWN,DefaultInitParams.enginestatus),
+_OxMainAdapter(DefaultInitParams.OxAdapter),
+_FuelMainAdapter(DefaultInitParams.FuelAdapter)
 {};
 
 void Shutdown::initialize()

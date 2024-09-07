@@ -12,13 +12,14 @@
 #include <librrc/Local/remoteactuatoradapter.h> 
 
 #include "system.h"
+#include "Shutdown.h"
 
-Controlled::Controlled(Engine::ControlledStateInit& ControlledInitParams, Engine::ShutdownStateInit& ShutdownInitParams, EngineController& Engine):
-State(EC_FLAGS::CONTROLLED,ControlledInitParams.enginestatus),
-m_ShutdownInitParams(ShutdownInitParams),
+Controlled::Controlled(Engine::DefaultStateInit& DefaultInitParams,EngineController& Engine):
+State(EC_FLAGS::CONTROLLED,DefaultInitParams.enginestatus),
+m_DefaultInitParams(DefaultInitParams),
 _engine(Engine),
-_OxMainAdapter(ControlledInitParams.OxAdapter),
-_FuelMainAdapter(ControlledInitParams.FuelAdapter),
+_OxMainAdapter(DefaultInitParams.OxAdapter),
+_FuelMainAdapter(DefaultInitParams.FuelAdapter),
 PcAngleLuT({4.2,12.0},{92.9,136.88})
 {};
 
@@ -47,13 +48,13 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
         if (millis() - m_Controlled_Command_time > m_Controlled_duration){
 
-        return std::make_unique<Shutdown>(m_ShutdownInitParams);
+        return std::make_unique<Shutdown>(m_DefaultInitParams);
 
     }
 
     else if (m_Pc > m_maxPc){
 
-         return std::make_unique<Shutdown>(m_ShutdownInitParams); //Kills Engine if Pc is too high
+         return std::make_unique<Shutdown>(m_DefaultInitParams); //Kills Engine if Pc is too high
 
     }
 
@@ -78,7 +79,7 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
         m_Fuel_FF = Fuel_FF(_nextOxAngle);
 
-        _nextFuelAngle = m_Fuel_FF + FuelAngleFb();
+        _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
 
         _FuelMainAdapter.execute(_nextFuelAngle);
 
@@ -157,40 +158,40 @@ float Controlled::Ox_FF(float Pc){
 
 };
 
-float Controlled::FuelAngleFb(){
+// float Controlled::FuelAngleFb(){
 
-    float demand_OF_ratio = m_OFratio;
-    float _curr_OF_ratio = (float)_engine._OxPT.getPressure() / (float)_engine._FuelPT.getPressure();
+//     float demand_OF_ratio = m_OFratio;
+//     float _curr_OF_ratio = (float)_engine._OxPT.getPressure() / (float)_engine._FuelPT.getPressure();
 
-    float _OF_err = demand_OF_ratio - _curr_OF_ratio;
+//     float _OF_err = demand_OF_ratio - _curr_OF_ratio;
 
-    float P_Fuel_Angle = (float)OF_K_p*_OF_err;
+//     float P_Fuel_Angle = (float)OF_K_p*_OF_err;
 
-    float dt = (float)(esp_timer_get_time() - m_prev_int_t)/((float)1e6); //Calculate the time since the last update in s
-    m_prev_int_t = esp_timer_get_time();
-    m_I_err = m_I_err + _OF_err*dt; //Increment the integral counter
+//     float dt = (float)(esp_timer_get_time() - m_prev_int_t)/((float)1e6); //Calculate the time since the last update in s
+//     m_prev_int_t = esp_timer_get_time();
+//     m_I_err = m_I_err + _OF_err*dt; //Increment the integral counter
 
-    if (m_I_err > m_I_max)
-    {
-        m_I_err = m_I_max;
-    }
-    else if (m_I_err < -m_I_max)
-    {
-        m_I_err = -m_I_max;
-    }
+//     if (m_I_err > m_I_max)
+//     {
+//         m_I_err = m_I_max;
+//     }
+//     else if (m_I_err < -m_I_max)
+//     {
+//         m_I_err = -m_I_max;
+//     }
 
-    if(_OF_err * m_prev_I_err < 0){
-        m_I_err = 0;
-    }
-    m_prev_I_err = _OF_err;
+//     if(_OF_err * m_prev_I_err < 0){
+//         m_I_err = 0;
+//     }
+//     m_prev_I_err = _OF_err;
 
-    float Fuel_I_term = Throttle_K_i*m_I_err;
-    float Fuel_I_angle = Fuel_I_term;
+//     float Fuel_I_term = Throttle_K_i*m_I_err;
+//     float Fuel_I_angle = Fuel_I_term;
    
-    float _FuelAngleFb = P_Fuel_Angle + Fuel_I_angle; 
+//     float _FuelAngleFb = P_Fuel_Angle + Fuel_I_angle; 
 
-    return _FuelAngleFb;
-};
+//     return _FuelAngleFb;
+// };
 
 
 

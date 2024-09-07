@@ -51,7 +51,7 @@ void System::systemSetup(){
     Serial.setRxBufferSize(GeneralConfig::SerialRxSize);
     Serial.begin(GeneralConfig::SerialBaud);
 
-    Serial.println("Test");
+    // Serial.println("Test");
 
     SDSPI.begin(PinMap::V_SCLK,PinMap::V_MISO,PinMap::V_MOSI);
     SDSPI.setFrequency(SD_SCK_MHZ(50));
@@ -60,7 +60,7 @@ void System::systemSetup(){
     digitalWrite(PinMap::SdCs,HIGH);
 
     //initialize statemachine with idle state
-    // statemachine.initalize(std::make_unique<Idle>(systemstatus,commandhandler));
+    statemachine.initalize(std::make_unique<Idle>(systemstatus,commandhandler));
     //any other setup goes here
 
 
@@ -89,6 +89,15 @@ void System::systemSetup(){
 
     uint8_t Engineservice = (uint8_t) Services::ID::Engine;
     networkmanager.registerService(Engineservice,ThanosR.getThisNetworkCallback());
+
+    uint8_t ChamberPTservice = (uint8_t) Services::ID::PT0;
+    networkmanager.registerService(ChamberPTservice,ChamberPt.getThisNetworkCallback());
+
+    uint8_t OxPTservice = (uint8_t) Services::ID::PT1;
+    networkmanager.registerService(OxPTservice,OxPt.getThisNetworkCallback());
+
+    uint8_t OxInjPTservice = (uint8_t) Services::ID::PT0;
+    networkmanager.registerService(OxInjPTservice,OxInjPt.getThisNetworkCallback());
 
 
     primarysd.setup();  

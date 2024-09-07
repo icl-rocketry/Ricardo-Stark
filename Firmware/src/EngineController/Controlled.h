@@ -18,7 +18,7 @@ class Controlled: public Types::EngineTypes ::State_t
 {
     public:
 
-    Controlled(Engine::ControlledStateInit& ControlledInitParams, Engine::ShutdownStateInit& ShutdownInitParams, EngineController& Engine);
+    Controlled(Engine::DefaultStateInit& DefaultInitParams, EngineController& Engine);
 
     void initialize() override;
 
@@ -29,7 +29,7 @@ class Controlled: public Types::EngineTypes ::State_t
 
     private:
 
-    Engine::ShutdownStateInit& m_ShutdownInitParams;
+    Engine::DefaultStateInit& m_DefaultInitParams;
     EngineController& _engine;
 
     Types::LocalServoAdapter_t& _OxMainAdapter;
@@ -108,7 +108,7 @@ class Controlled: public Types::EngineTypes ::State_t
     static constexpr float OF_K_p = 6.0;
     static constexpr float OF_K_i = 6.0;
 
-    float FuelAngleFb();
+    // float FuelAngleFb();
 
 
    

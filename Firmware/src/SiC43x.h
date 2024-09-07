@@ -80,7 +80,7 @@ public:
         if (m_VReadPin >= 0)
         {
             m_servoVoltage.update(OutputV);
-            Serial.println(OutputV);
+            // Serial.println(OutputV);
 
             //!TODO - make voltage limits configurable
             if ((OutputV > 12 || OutputV < 4) && !m_systemstatus.flagSet(SYSTEM_FLAG::ERROR_BUCK))

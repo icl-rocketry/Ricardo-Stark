@@ -12,12 +12,13 @@
 #include <librrc/Local/remoteactuatoradapter.h>
 
 #include "system.h"
+#include "Controlled.h"
 
-Ignition::Ignition(Engine::IgnitionStateInit& IgnitionInitParams, Engine::ControlledStateInit& ControlledInitParams, EngineController& Engine):
-State(EC_FLAGS::IGNITION,IgnitionInitParams.enginestatus),
-m_ControlledInitParams(ControlledInitParams),
+Ignition::Ignition(Engine::DefaultStateInit& DefaultInitParams, EngineController& Engine):
+State(EC_FLAGS::IGNITION,DefaultInitParams.enginestatus),
+m_DefaultInitParams(DefaultInitParams),
 _engine(Engine),
-_PyroAdapter(IgnitionInitParams.PyroAdapter)
+_PyroAdapter(DefaultInitParams.PyroAdapter)
 
 {};
 
@@ -48,7 +49,7 @@ if (m_IgnitionCalls > 0) //Ignition has been called already
     else
     {
         
-        return std::make_unique<Controlled>(m_ControlledInitParams);
+        return std::make_unique<Controlled>(m_DefaultInitParams, _engine);
     }
   
 }
@@ -59,10 +60,10 @@ else if (m_IgnitionCalls == 0)
     _engine.PyroAdapter.execute(5000);
     m_IgnitionCalls++;
 
-    return nullptr;
+
 }
 
-    
+    return nullptr;
 }
 
 void Ignition::exit()

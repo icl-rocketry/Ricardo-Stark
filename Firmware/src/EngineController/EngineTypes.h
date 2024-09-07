@@ -45,6 +45,7 @@ namespace Engine
         Types::EngineTypes::SystemStatus_t &enginestatus;
         Types::LocalServoAdapter_t &OxAdapter;
         Types::LocalServoAdapter_t &FuelAdapter;
+        Types::LocalPyroAdapter_t &PyroAdapter;
         
     };
 

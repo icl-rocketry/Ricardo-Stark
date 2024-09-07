@@ -16,7 +16,7 @@ class Ignition: public Types::EngineTypes ::State_t
 {
     public:
 
-    Ignition(Engine::IgnitionStateInit& IgnitionInitParams, Engine::ControlledStateInit& ControlledInitParams, EngineController& Engine);
+    Ignition(Engine::DefaultStateInit& DefaultInitParams,EngineController& Engine);
 
     void initialize() override;
 
@@ -27,7 +27,7 @@ class Ignition: public Types::EngineTypes ::State_t
 
     private:
 
-    Engine::ControlledStateInit& m_ControlledInitParams;
+    Engine::DefaultStateInit& m_DefaultInitParams;
     EngineController& _engine;
     Types::LocalPyroAdapter_t& _PyroAdapter;
 

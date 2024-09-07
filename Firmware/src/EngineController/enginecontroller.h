@@ -99,7 +99,7 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     Types::EngineTypes::StateMachine_t _engineStateMachine;
     Types::EngineTypes::SystemStatus_t _engineStatus;
 
-    Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
+    Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter, PyroAdapter};
     Engine::IgnitionStateInit m_IgnitionStateParams = {_engineStatus, PyroAdapter};
     Engine::ControlledStateInit m_ControlledStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
     Engine::ShutdownStateInit m_ShutdownStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};

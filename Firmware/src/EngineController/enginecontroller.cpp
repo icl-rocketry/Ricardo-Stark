@@ -43,7 +43,7 @@ void EngineController::setup()
 
 void EngineController::update()
 {   
-
+    _value = _engineStatus.getStatus();
     _engineStateMachine.update();
     logReadings();
 
@@ -96,7 +96,7 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
             break;
         }
             // Ignition
-            _engineStateMachine.changeState(std::make_unique<Ignition>(m_IgnitionStateParams,m_ControlledStateParams, *this));
+            _engineStateMachine.changeState(std::make_unique<Ignition>(m_DefaultStateParams, *this));
 
             break;
 
@@ -105,7 +105,7 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
         case 2:
         {
             // Shutdown
-            _engineStateMachine.changeState(std::make_unique<Shutdown>(m_ShutdownStateParams));
+            _engineStateMachine.changeState(std::make_unique<Shutdown>(m_DefaultStateParams));
 
             break;
 

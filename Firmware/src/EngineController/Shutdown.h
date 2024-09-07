@@ -15,7 +15,7 @@ class Shutdown: public Types::EngineTypes ::State_t
 {
     public:
 
-    Shutdown(Engine::ShutdownStateInit& ShutdownInitParams);
+    Shutdown(Engine::DefaultStateInit& DefaultInitParams);
 
     void initialize() override;
 
