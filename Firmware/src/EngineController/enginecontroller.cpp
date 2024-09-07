@@ -49,19 +49,18 @@ void EngineController::update()
 
 };
 
-void EngineController::arm_impl(packetptr_t packetptr){
+void EngineController::arm_base(int32_t arg){
 
-    SimpleCommandPacket armingpacket(*packetptr);
 
-    PyroAdapter.arm(armingpacket.arg);
-    OxMainAdapter.arm(0);
-    FuelMainAdapter.arm(0);
+    PyroAdapter.arm(arg);
+    OxMainAdapter.arm(arg);
+    FuelMainAdapter.arm(arg);
 
 
 }
 
 
-void EngineController::disarm_impl(packetptr_t packetptr){
+void EngineController::disarm_base(){
 
     PyroAdapter.disarm();
     OxMainAdapter.disarm();
@@ -83,11 +82,10 @@ void EngineController::serviceSetup(){
 
 }
 
-void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_ID commandID, packetptr_t packetptr)
+void EngineController::execute_base(int32_t arg)
 {
-    SimpleCommandPacket execute_command(*packetptr);
 
-    switch(execute_command.arg)
+    switch(arg)
     {
         case 1:
         {   

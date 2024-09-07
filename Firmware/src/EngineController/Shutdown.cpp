@@ -26,8 +26,8 @@ void Shutdown::initialize()
     _OxMainAdapter.arm(0); 
     _FuelMainAdapter.arm(0);
 
-    _OxMainAdapter.execute(180);
-    _FuelMainAdapter.execute(0);
+    _OxMainAdapter.execute(0);
+    _FuelMainAdapter.execute(180);
 
     _OxMainAdapter.disarm();
     _FuelMainAdapter.disarm();

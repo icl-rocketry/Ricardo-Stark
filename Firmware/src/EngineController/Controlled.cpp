@@ -43,53 +43,58 @@ void Controlled::initialize()
 Types::EngineTypes::State_ptr_t Controlled::update()
 {
 
-    digitalWrite(PinMap::LED, HIGH);
+   
+    m_Pc = _engine._ChamberPT.getPressure();
 
 
-        if (millis() - m_Controlled_Command_time > m_Controlled_duration){
+    if (millis() - m_Controlled_Command_time > m_Controlled_duration){
 
         return std::make_unique<Shutdown>(m_DefaultInitParams);
 
     }
 
-    else if (m_Pc > m_maxPc){
+    if (m_Pc > m_maxPc){
 
          return std::make_unique<Shutdown>(m_DefaultInitParams); //Kills Engine if Pc is too high
 
     }
 
-    else 
-    {
+
+         m_Ox_FF = Ox_FF(m_Pc);
 
         if(En_Throttle == true) //Throttle control enabled
         {
 
-            m_Ox_FF = Ox_FF(m_Pc);
-
             _nextOxAngle = m_Ox_FF + OxAngleFb();
 
-            _OxMainAdapter.execute(_nextOxAngle);
+           
+
+        }
+        else {
+
+             _nextOxAngle = m_Ox_FF;
 
         }
 
-        if(En_OF == true) //OF control enabled
-        {
+         _OxMainAdapter.execute(_nextOxAngle);
 
-        m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
+          _nextFuelAngle = Fuel_FF(_nextOxAngle);
 
-        m_Fuel_FF = Fuel_FF(_nextOxAngle);
+        // if(En_OF == true) //OF control enabled
+        // {
 
-        _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
+        // m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
 
-        _FuelMainAdapter.execute(_nextFuelAngle);
+        // _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
 
-        }
-        else //Feedforward only for simple controller
-        {
-            _OxMainAdapter.execute(Ox_FF(m_Pc));
-            _FuelMainAdapter.execute(Fuel_FF(_nextOxAngle));
+        // _FuelMainAdapter.execute(_nextFuelAngle);
 
-        }
+        // }
+
+        //Feedforward only for simple controller
+    
+        _FuelMainAdapter.execute( _nextFuelAngle );
+
 
         return nullptr;
 
@@ -97,7 +102,7 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     
 
-}
+
 
 void Controlled::exit()
 {
@@ -196,6 +201,8 @@ float Controlled::Ox_FF(float Pc){
 
 
 float Controlled::Fuel_FF(float OxAngle){
+
+     m_OxPercent = (float)(_nextOxAngle -  m_throttleOx_min) / (float)(m_OxThrottleRange );
 
      m_FuelPercent = m_OxPercent + m_FuelExtra;
     

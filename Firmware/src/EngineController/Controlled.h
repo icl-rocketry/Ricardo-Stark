@@ -49,7 +49,7 @@ class Controlled: public Types::EngineTypes ::State_t
     // Simple Engine
 
     uint16_t m_SimpleOxAngle = 150;
-    uint64_t m_Controlled_duration = 5000;
+    uint64_t m_Controlled_duration = 15000;
     uint64_t m_Controlled_Command_time;
 
     float  _nextOxAngle;

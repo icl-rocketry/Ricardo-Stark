@@ -10,10 +10,10 @@
 enum class EC_FLAGS:uint8_t{
 
     State_Default =(1<<0),
-    IGNITION = (3 << 0),
-    CONTROLLED = (4 <<0),
-    SHUTDOWN = (5 << 0),
-    DEBUG = (6 << 0)
+    IGNITION = (1 << 1),
+    CONTROLLED = (1 <<2),
+    SHUTDOWN = (1 << 3),
+    DEBUG = (1 << 4)
 };
 
 

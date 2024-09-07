@@ -48,9 +48,9 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     void setup();
     void update();
 
-    void arm_impl(packetptr_t packetptr);
-    void disarm_impl(packetptr_t packetptr);
-    void extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_ID commandID, packetptr_t packetptr);
+    void arm_base(int32_t arg);
+    void disarm_base();
+    void execute_base(int32_t arg);
 
     void serviceSetup();
 
