@@ -97,13 +97,13 @@ void System::systemSetup(){
     uint8_t Engineservice = (uint8_t) Services::ID::Engine;
     networkmanager.registerService(Engineservice,ThanosR.getThisNetworkCallback());
 
-    uint8_t ChamberPTservice = (uint8_t) Services::ID::PT0;
+    uint8_t ChamberPTservice = (uint8_t) Services::ID::PT3;
     networkmanager.registerService(ChamberPTservice,ChamberPt.getThisNetworkCallback());
 
-    uint8_t OxPTservice = (uint8_t) Services::ID::PT1;
+    uint8_t OxPTservice = (uint8_t) Services::ID::PT5;
     networkmanager.registerService(OxPTservice,OxPt.getThisNetworkCallback());
 
-    uint8_t OxInjPTservice = (uint8_t) Services::ID::PT0;
+    uint8_t OxInjPTservice = (uint8_t) Services::ID::PT2;
     networkmanager.registerService(OxInjPTservice,OxInjPt.getThisNetworkCallback());
 
 

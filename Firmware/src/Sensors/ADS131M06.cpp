@@ -61,8 +61,14 @@ void ADS131M06::setup() {
   ledcWrite(clockCh, 2);
  }
 
-  setOSR(OSROPT::OSR8192);
+  setOSR(OSROPT::OSR16256);
   setGain(5, ADS131M06::GAIN::GAIN1);
+  setGain(4, ADS131M06::GAIN::GAIN1);
+  setGain(3, ADS131M06::GAIN::GAIN1);
+  setGain(2, ADS131M06::GAIN::GAIN1);
+  setGain(1, ADS131M06::GAIN::GAIN1);
+  setGain(0, ADS131M06::GAIN::GAIN1);
+
   
   initialised=true;
 }
