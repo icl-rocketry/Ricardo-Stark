@@ -45,7 +45,7 @@ void EngineController::update()
 {   
     _value = _engineStatus.getStatus();
     _engineStateMachine.update();
-    logReadings();
+     logReadings();
 
 };
 
@@ -112,6 +112,7 @@ void EngineController::execute_base(int32_t arg)
         case 3:
         {
             // Add Debug
+            _engineStateMachine.changeState(std::make_unique<Debug>(m_DefaultStateParams));
             break;
 
         }

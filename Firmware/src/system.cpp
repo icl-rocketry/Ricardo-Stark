@@ -54,7 +54,7 @@ void System::systemSetup(){
     // Serial.println("Test");
 
     SDSPI.begin(PinMap::V_SCLK,PinMap::V_MISO,PinMap::V_MOSI);
-    SDSPI.setFrequency(SD_SCK_MHZ(50));
+    SDSPI.setFrequency(SD_SCK_MHZ(20));
 
     pinMode(PinMap::SdCs,OUTPUT);
     digitalWrite(PinMap::SdCs,HIGH);

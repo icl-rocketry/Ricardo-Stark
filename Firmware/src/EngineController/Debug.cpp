@@ -1,11 +1,42 @@
-// #include "Debug.h"
+#include "Debug.h"
 
+#include <memory>
 
-// Debug::Debug(EngineController& engine, System& system):
-//     State(EC_FLAGS::DEBUG, engine.enginestatus),
-//     _engine(engine),
-//     _system(system)
+#include <libriccore/fsm/state.h>
+#include <libriccore/systemstatus/systemstatus.h>
+#include <libriccore/commands/commandhandler.h>
+#include <libriccore/riccorelogging.h>
 
-// {};
+#include "Config/systemflags_config.h"
+#include "Config/types.h"
+#include <librrc/Local/remoteactuatoradapter.h> 
 
-//  _networkmanager.registerService(_engine.Pyroservice,_engine.Pyro.getThisNetworkCallback());
+#include "system.h"
+
+Debug::Debug(Engine::DefaultStateInit& DefaultInitParams):
+State(EC_FLAGS::DEBUG,DefaultInitParams.enginestatus),
+_OxMainAdapter(DefaultInitParams.OxAdapter),
+_FuelMainAdapter(DefaultInitParams.FuelAdapter),
+_PyroAdapter(DefaultInitParams.PyroAdapter)
+{};
+
+void Debug::initialize()
+{
+    Types::EngineTypes::State_t::initialize();
+  
+};
+
+Types::EngineTypes::State_ptr_t Debug::update()
+{
+
+    
+    return nullptr;
+
+    
+
+}
+
+void Debug::exit()
+{
+    Types::EngineTypes::State_t::exit();
+};
