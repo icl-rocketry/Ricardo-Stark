@@ -57,43 +57,46 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
          return std::make_unique<Shutdown>(m_DefaultInitParams); //Kills Engine if Pc is too high
 
-    }
+    }   
+
+    _OxMainAdapter.execute(135);
+    _FuelMainAdapter.execute(135);
 
 
-         m_Ox_FF = Ox_FF(m_Pc);
+        //  m_Ox_FF = Ox_FF(m_Pc);
 
-        if(En_Throttle == true) //Throttle control enabled
-        {
+        // if(En_Throttle == true) //Throttle control enabled
+        // {
 
-            _nextOxAngle = m_Ox_FF + OxAngleFb();
+        //     _nextOxAngle = m_Ox_FF + OxAngleFb();
 
            
 
-        }
-        else {
+        // }
+        // else {
 
-             _nextOxAngle = m_Ox_FF;
-
-        }
-
-         _OxMainAdapter.execute(_nextOxAngle);
-
-          _nextFuelAngle = Fuel_FF(_nextOxAngle);
-
-        // if(En_OF == true) //OF control enabled
-        // {
-
-        // m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
-
-        // _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
-
-        // _FuelMainAdapter.execute(_nextFuelAngle);
+        //      _nextOxAngle = m_Ox_FF;
 
         // }
 
-        //Feedforward only for simple controller
+        //  _OxMainAdapter.execute(_nextOxAngle);
+
+        //   _nextFuelAngle = Fuel_FF(_nextOxAngle);
+
+        // // if(En_OF == true) //OF control enabled
+        // // {
+
+        // // m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
+
+        // // _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
+
+        // // _FuelMainAdapter.execute(_nextFuelAngle);
+
+        // // }
+
+        // //Feedforward only for simple controller
     
-        _FuelMainAdapter.execute( _nextFuelAngle );
+        // _FuelMainAdapter.execute( _nextFuelAngle );
 
 
         return nullptr;

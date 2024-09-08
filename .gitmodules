@@ -10,9 +10,9 @@
 [submodule "Firmware/components/ArduinoJson"]
 	path = Firmware/components/ArduinoJson
 	url = https://github.com/bblanchon/ArduinoJson.git
-[submodule "Firmware/components/SdFat"]
-	path = Firmware/components/SdFat
-	url = git@github.com:icl-rocketry/SdFat.git
 [submodule "Firmware/components/arduino"]
 	path = Firmware/components/arduino
 	url = git@github.com:icl-rocketry/arduino-esp32.git
+[submodule "Firmware/lib/SdFat"]
+	path = Firmware/lib/SdFat
+	url = git@github.com:icl-rocketry/SdFat.git
