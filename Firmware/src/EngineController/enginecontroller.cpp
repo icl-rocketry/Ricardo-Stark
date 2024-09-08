@@ -38,6 +38,7 @@ void EngineController::setup()
     Pyro.setup();
 
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams));
+    serviceSetup();
 
 }
 
@@ -45,10 +46,10 @@ void EngineController::update()
 {   
     _value = _engineStatus.getStatus();
     _engineStateMachine.update();
-     logReadings();
+    logReadings();
 
-     uint32_t _OxAngle = OxMain.getValue();
-     uint32_t _FuelAngle = FuelMain.getValue();
+    //  uint32_t _OxAngle = OxMain.getValue();
+    //  uint32_t _FuelAngle = FuelMain.getValue();
 
 };
 
@@ -91,9 +92,9 @@ uint32_t EngineController::getFuelAngle()
 
 void EngineController::serviceSetup(){
 
-    // _networkmanager.registerService(OxMainservice,OxMain.getThisNetworkCallback());
-    // _networkmanager.registerService(FuelMainservice,FuelMain.getThisNetworkCallback());
-    // _networkmanager.registerService(Pyroservice,Pyro.getThisNetworkCallback());
+    _networkmanager.registerService(OxMainservice,OxMain.getThisNetworkCallback());
+    _networkmanager.registerService(FuelMainservice,FuelMain.getThisNetworkCallback());
+    _networkmanager.registerService(Pyroservice,Pyro.getThisNetworkCallback());
 
 
 }

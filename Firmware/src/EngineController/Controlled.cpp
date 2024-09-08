@@ -59,8 +59,8 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     }   
 
-    _OxMainAdapter.execute(135);
-    _FuelMainAdapter.execute(135);
+    _OxMainAdapter.execute(170);
+    _FuelMainAdapter.execute(180);
 
 
         //  m_Ox_FF = Ox_FF(m_Pc);

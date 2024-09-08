@@ -38,7 +38,7 @@ class Controlled: public Types::EngineTypes ::State_t
    
     // Sensor params
     float m_Pc;
-    static constexpr uint16_t m_maxPc = 23;
+    static constexpr uint16_t m_maxPc = 25;
 
     float m_POx; //Ox injector pressure
     float m_PF; //Fuel injector pressure

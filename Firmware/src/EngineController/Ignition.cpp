@@ -57,7 +57,7 @@ if (m_IgnitionCalls > 0) //Ignition has been called already
 else if (m_IgnitionCalls == 0)
 {
     
-    _engine.PyroAdapter.execute(5000);
+    _engine.PyroAdapter.execute(500);
     m_IgnitionCalls++;
 
 
