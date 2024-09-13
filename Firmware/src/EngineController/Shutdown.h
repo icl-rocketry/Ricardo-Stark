@@ -15,7 +15,7 @@ class Shutdown: public Types::EngineTypes ::State_t
 {
     public:
 
-    Shutdown(Engine::DefaultStateInit& DefaultInitParams);
+    Shutdown(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine);
 
     void initialize() override;
 
@@ -26,8 +26,14 @@ class Shutdown: public Types::EngineTypes ::State_t
 
     private:
 
+    RnpNetworkManager& _networkmanager;
+    EngineController& _engine;
+    
     Types::LocalServoAdapter_t& _OxMainAdapter;
     Types::LocalServoAdapter_t& _FuelMainAdapter;
+
+    uint8_t m_ereg_service = 10; //Update
+    uint8_t m_ereg_address = 0; //Update
    
   
    

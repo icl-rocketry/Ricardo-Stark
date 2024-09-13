@@ -13,8 +13,10 @@
 
 #include "system.h"
 
-Debug::Debug(Engine::DefaultStateInit& DefaultInitParams):
+Debug::Debug(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine):
 State(EC_FLAGS::DEBUG,DefaultInitParams.enginestatus),
+_networkmanager(networkmanager),
+_engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),
 _FuelMainAdapter(DefaultInitParams.FuelAdapter),
 _PyroAdapter(DefaultInitParams.PyroAdapter)
@@ -23,6 +25,9 @@ _PyroAdapter(DefaultInitParams.PyroAdapter)
 void Debug::initialize()
 {
     Types::EngineTypes::State_t::initialize();
+
+
+    _engine.serviceSetup();
   
 };
 

@@ -72,5 +72,4 @@ namespace Engine
         Types::LocalServoAdapter_t &FuelAdapter;
         
     };
-    
 }

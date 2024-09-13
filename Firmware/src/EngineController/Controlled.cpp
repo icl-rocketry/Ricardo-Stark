@@ -14,9 +14,10 @@
 #include "system.h"
 #include "Shutdown.h"
 
-Controlled::Controlled(Engine::DefaultStateInit& DefaultInitParams,EngineController& Engine):
+Controlled::Controlled(Engine::DefaultStateInit& DefaultInitParams,RnpNetworkManager& networkmanager, EngineController& Engine):
 State(EC_FLAGS::CONTROLLED,DefaultInitParams.enginestatus),
 m_DefaultInitParams(DefaultInitParams),
+_networkmanager(networkmanager),
 _engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),
 _FuelMainAdapter(DefaultInitParams.FuelAdapter),
@@ -29,6 +30,9 @@ void Controlled::initialize()
 
     _OxMainAdapter.arm(0); 
     _FuelMainAdapter.arm(0);
+
+    _engine.OxMain.setAngleLims(m_throttleOx_min, m_OxAngleLim);
+    _engine.FuelMain.setAngleLims(m_throttleFuel_min, m_FuelAngleLim); 
 
     m_throttle_index = 0;
     m_Controlled_Command_time = millis();
@@ -49,54 +53,52 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     if (millis() - m_Controlled_Command_time > m_Controlled_duration){
 
-        return std::make_unique<Shutdown>(m_DefaultInitParams);
+        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
 
     }
 
     if (m_Pc > m_maxPc){
 
-         return std::make_unique<Shutdown>(m_DefaultInitParams); //Kills Engine if Pc is too high
+         return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine); //Kills Engine if Pc is too high
 
     }   
 
-    _OxMainAdapter.execute(170);
-    _FuelMainAdapter.execute(180);
 
+        float demandPc = PcSetpoint();
+         m_Ox_FF = Ox_FF(demandPc);
 
-        //  m_Ox_FF = Ox_FF(m_Pc);
+        if(En_Throttle == true) //Throttle control enabled
+        {
 
-        // if(En_Throttle == true) //Throttle control enabled
-        // {
-
-        //     _nextOxAngle = m_Ox_FF + OxAngleFb();
+            _nextOxAngle = m_Ox_FF + OxAngleFb();
 
            
 
-        // }
-        // else {
+        }
+        else {
 
-        //      _nextOxAngle = m_Ox_FF;
+             _nextOxAngle = m_Ox_FF;
 
-        // }
+        }
 
-        //  _OxMainAdapter.execute(_nextOxAngle);
+         _OxMainAdapter.execute(_nextOxAngle);
 
-        //   _nextFuelAngle = Fuel_FF(_nextOxAngle);
+          _nextFuelAngle = Fuel_FF(_nextOxAngle);
 
-        // // if(En_OF == true) //OF control enabled
-        // // {
+        if(En_OF == true) //OF control enabled
+        {
 
-        // // m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
+        m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
 
-        // // _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
+        _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
 
-        // // _FuelMainAdapter.execute(_nextFuelAngle);
+        _FuelMainAdapter.execute(_nextFuelAngle);
 
-        // // }
+        }
 
-        // //Feedforward only for simple controller
+        //Feedforward only for simple controller
     
-        // _FuelMainAdapter.execute( _nextFuelAngle );
+        _FuelMainAdapter.execute( _nextFuelAngle );
 
 
         return nullptr;
@@ -151,8 +153,12 @@ float Controlled::OxAngleFb(){
 float Controlled::PcSetpoint(){
 
     if (millis() - m_Controlled_Command_time > m_throttletime[m_throttle_index])
-    {
-        m_throttle_index++;
+    {   
+        if (m_throttletime.size() > m_throttle_index + 1)
+        {
+             m_throttle_index++;
+        }
+     
         m_ThrottleTime = millis();
     }
 

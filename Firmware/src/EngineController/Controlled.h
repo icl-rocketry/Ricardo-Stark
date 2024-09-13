@@ -18,7 +18,7 @@ class Controlled: public Types::EngineTypes ::State_t
 {
     public:
 
-    Controlled(Engine::DefaultStateInit& DefaultInitParams, EngineController& Engine);
+    Controlled(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine);
 
     void initialize() override;
 
@@ -30,6 +30,7 @@ class Controlled: public Types::EngineTypes ::State_t
     private:
 
     Engine::DefaultStateInit& m_DefaultInitParams;
+    RnpNetworkManager& _networkmanager;
     EngineController& _engine;
 
     Types::LocalServoAdapter_t& _OxMainAdapter;
@@ -55,11 +56,11 @@ class Controlled: public Types::EngineTypes ::State_t
     float  _nextOxAngle;
     float  _nextFuelAngle;
 
-    float m_OxAngleLim = 175; //CHANGE THESE
-    float m_FuelAngleLim = 150;
+    float m_OxAngleLim = 180; 
+    float m_FuelAngleLim = 180;
 
-    float m_throttleOx_min = 100; //CHANGE THESE
-    float m_throttleFuel_min = 90;
+    float m_throttleOx_min = 80; 
+    float m_throttleFuel_min = 105;
 
     float Ox_FF(float Pc);
     float Fuel_FF(float OxAngle);
@@ -83,12 +84,12 @@ class Controlled: public Types::EngineTypes ::State_t
     LuT<float,LinearInterp<float>> PcAngleLuT;
 
    
-    std::vector<float> m_targetPc = {20,15};
-    std::vector<uint32_t> m_throttletime = {0,1500};
+    std::vector<float> m_targetPc = {15};
+    std::vector<uint32_t> m_throttletime = {0};
 
     uint8_t m_throttle_index;
-    static constexpr float Throttle_K_p = 6.0;
-    static constexpr float Throttle_K_i = 6.0;
+    static constexpr float Throttle_K_p = 6.0; //6.0
+    static constexpr float Throttle_K_i = 6.0; //6.0
 
     float m_prev_I_err = 0;
 

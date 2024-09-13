@@ -24,20 +24,6 @@
 #include "EngineTypes.h"
 
 
-
-// enum class EC_FLAGS:uint8_t{
-
-//     State_Default =(1<<0),
-//     IGNITION = (3 << 0),
-//     CONTROLLED = (4 <<0),
-//     SHUTDOWN = (5 << 0),
-//     DEBUG = (6 << 0)
-// };
-
-// using EC_State_T = State<EC_FLAGS>;
-// using EC_StateMachine_T = StateMachine<EC_FLAGS>;
-
-
 class EngineController: public NRCRemoteActuatorBase<EngineController>
 {   
     
@@ -53,6 +39,7 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     void execute_base(int32_t arg);
 
     void serviceSetup();
+    void unregisterServices();
 
     void ignition(packetptr_t packetptr);
     void shutdown(packetptr_t packetptr);
@@ -81,11 +68,6 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     Types::LocalPyro_t Pyro;
     Types::LocalPyroAdapter_t PyroAdapter;
 
-    // const Types::LocalServoMap_t localServoMap = {&OxMain,&FuelMain};
-
-    // Types::LocalPyro_t Pyro;
-    // RemoteActuatorAdapter<ArduinoGpio> PyroAdapter;
-
 
     uint8_t OxMainservice = (uint8_t) Services::ID::Servo1;
     uint8_t FuelMainservice = (uint8_t) Services::ID::Servo2;
@@ -100,9 +82,6 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     Types::EngineTypes::SystemStatus_t _engineStatus;
 
     Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter, PyroAdapter};
-    Engine::IgnitionStateInit m_IgnitionStateParams = {_engineStatus, PyroAdapter};
-    Engine::ControlledStateInit m_ControlledStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
-    Engine::ShutdownStateInit m_ShutdownStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter};
 
 
     // uint32_t _OxAngle;

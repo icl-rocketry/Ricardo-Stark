@@ -14,9 +14,10 @@
 #include "system.h"
 #include "Controlled.h"
 
-Ignition::Ignition(Engine::DefaultStateInit& DefaultInitParams, EngineController& Engine):
+Ignition::Ignition(Engine::DefaultStateInit& DefaultInitParams,RnpNetworkManager& networkmanager, EngineController& Engine):
 State(EC_FLAGS::IGNITION,DefaultInitParams.enginestatus),
 m_DefaultInitParams(DefaultInitParams),
+_networkmanager(networkmanager),
 _engine(Engine),
 _PyroAdapter(DefaultInitParams.PyroAdapter)
 
@@ -49,7 +50,7 @@ if (m_IgnitionCalls > 0) //Ignition has been called already
     else
     {
         
-        return std::make_unique<Controlled>(m_DefaultInitParams, _engine);
+        return std::make_unique<Controlled>(m_DefaultInitParams, _networkmanager, _engine);
     }
   
 }

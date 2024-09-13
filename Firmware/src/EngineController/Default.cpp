@@ -13,8 +13,9 @@
 
 #include "system.h"
 
-Default::Default(Engine::DefaultStateInit& DefaultInitParams):
+Default::Default(Engine::DefaultStateInit& DefaultInitParams, EngineController& Engine):
 State(EC_FLAGS::State_Default,DefaultInitParams.enginestatus),
+_engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),
 _FuelMainAdapter(DefaultInitParams.FuelAdapter)
 {};
@@ -26,6 +27,9 @@ void Default::initialize()
     _OxMainAdapter.arm(0); 
     _FuelMainAdapter.arm(0);
 
+    _engine.OxMain.setAngleLims(0, 180);
+    _engine.FuelMain.setAngleLims(0, 180);
+    
     _OxMainAdapter.execute(0);
     _FuelMainAdapter.execute(0);
 

@@ -15,7 +15,7 @@ class Default: public Types::EngineTypes ::State_t
 {
     public:
 
-    Default(Engine::DefaultStateInit& DefaultInitParams);
+    Default(Engine::DefaultStateInit& DefaultInitParams, EngineController& Engine);
 
     void initialize() override;
 
@@ -26,6 +26,7 @@ class Default: public Types::EngineTypes ::State_t
 
     private:
 
+    EngineController& _engine; 
     Types::LocalServoAdapter_t& _OxMainAdapter;
     Types::LocalServoAdapter_t& _FuelMainAdapter;
    

@@ -11,11 +11,12 @@
 #include "enginetypes.h"
 #include "enginecontroller.h"
 
+
 class Debug: public Types::EngineTypes ::State_t
 {
     public:
 
-    Debug(Engine::DefaultStateInit& DefaultInitParams);
+    Debug(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine);
 
     void initialize() override;
 
@@ -25,6 +26,9 @@ class Debug: public Types::EngineTypes ::State_t
 
 
     private:
+
+    RnpNetworkManager& _networkmanager;
+    EngineController& _engine;
 
     Types::LocalServoAdapter_t& _OxMainAdapter;
     Types::LocalServoAdapter_t& _FuelMainAdapter;

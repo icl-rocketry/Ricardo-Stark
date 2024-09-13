@@ -12,7 +12,7 @@
 #include "Shutdown.h"
 #include "Debug.h"
 
-
+ 
 
 EngineController::EngineController(RnpNetworkManager& networkmanager, NRCRemotePTap& chamberPt, NRCRemotePTap& oxPt, NRCRemotePTap& oxInjPT):
                     NRCRemoteActuatorBase(networkmanager),
@@ -37,8 +37,15 @@ void EngineController::setup()
     FuelMain.setup();
     Pyro.setup();
 
-    _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams));
-    serviceSetup();
+    
+    _networkmanager.unregisterService(OxMainservice);
+    _networkmanager.unregisterService(FuelMainservice);
+    _networkmanager.unregisterService(Pyroservice);
+
+    _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
+
+
+
 
 }
 
@@ -48,8 +55,6 @@ void EngineController::update()
     _engineStateMachine.update();
     logReadings();
 
-    //  uint32_t _OxAngle = OxMain.getValue();
-    //  uint32_t _FuelAngle = FuelMain.getValue();
 
 };
 
@@ -73,7 +78,7 @@ void EngineController::disarm_base(){
 
     NRCRemoteActuatorBase::disarm_base();
 
-    _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams));
+    _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 
 
 
@@ -99,6 +104,15 @@ void EngineController::serviceSetup(){
 
 }
 
+void EngineController::unregisterServices(){
+
+    _networkmanager.unregisterService(OxMainservice);
+    _networkmanager.unregisterService(FuelMainservice);
+    _networkmanager.unregisterService(Pyroservice);
+
+
+}
+
 void EngineController::execute_base(int32_t arg)
 {
 
@@ -111,7 +125,7 @@ void EngineController::execute_base(int32_t arg)
             break;
         }
             // Ignition
-            _engineStateMachine.changeState(std::make_unique<Ignition>(m_DefaultStateParams, *this));
+            _engineStateMachine.changeState(std::make_unique<Ignition>(m_DefaultStateParams, _networkmanager, *this));
 
             break;
 
@@ -120,17 +134,34 @@ void EngineController::execute_base(int32_t arg)
         case 2:
         {
             // Shutdown
-            _engineStateMachine.changeState(std::make_unique<Shutdown>(m_DefaultStateParams));
+            _engineStateMachine.changeState(std::make_unique<Shutdown>(m_DefaultStateParams, _networkmanager, *this));
 
-            break;
+            break;  
 
         }
 
         case 3:
         {
-            // Add Debug
-            _engineStateMachine.changeState(std::make_unique<Debug>(m_DefaultStateParams));
+            // Debug
+            _engineStateMachine.changeState(std::make_unique<Debug>(m_DefaultStateParams, _networkmanager, *this));
             break;
+
+        }
+
+        case 4:
+        {
+            // Enter Default from Debug
+
+            if(!_engineStatus.flagSet(EC_FLAGS::DEBUG))
+            {
+                break;
+            }
+
+             // Default
+            _engineStateMachine.changeState(std::make_unique<Default>(m_DefaultStateParams, *this));
+
+            break;
+
 
         }
 
