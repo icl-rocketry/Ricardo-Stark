@@ -37,10 +37,10 @@ void EngineController::setup()
     FuelMain.setup();
     Pyro.setup();
 
-    
-    _networkmanager.unregisterService(OxMainservice);
-    _networkmanager.unregisterService(FuelMainservice);
-    _networkmanager.unregisterService(Pyroservice);
+
+    // Registering Actuator Services
+    serviceSetup();
+
 
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 

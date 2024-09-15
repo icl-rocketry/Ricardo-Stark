@@ -25,7 +25,7 @@ void Shutdown::initialize()
 {
     Types::EngineTypes::State_t::initialize();
 
-     SimpleCommandPacket ereg_shutdown(2, 4); //UPDATE ARG
+     SimpleCommandPacket ereg_shutdown(2, 2);
             ereg_shutdown.header.source_service = static_cast<uint8_t>(Services::ID::Engine);
             ereg_shutdown.header.destination_service = m_ereg_service;
             ereg_shutdown.header.source = 1;

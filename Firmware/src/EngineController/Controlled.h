@@ -75,7 +75,7 @@ class Controlled: public Types::EngineTypes ::State_t
 
    
     // Throttle Params
-    static constexpr bool En_Throttle = true;
+    static constexpr bool En_Throttle = false;
     uint64_t m_ThrottleTime;
 
     float m_OxThrottleRange;

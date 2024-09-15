@@ -49,7 +49,7 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
    
     m_Pc = _engine._ChamberPT.getPressure();
-
+    
 
     if (millis() - m_Controlled_Command_time > m_Controlled_duration){
 
@@ -57,48 +57,52 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     }
 
-    if (m_Pc > m_maxPc){
+    // if (m_Pc > m_maxPc){
 
-         return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine); //Kills Engine if Pc is too high
+    //      return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine); //Kills Engine if Pc is too high
 
-    }   
+    // }   
 
+        // Hotfire Valve Angles
 
-        float demandPc = PcSetpoint();
-         m_Ox_FF = Ox_FF(demandPc);
+        _OxMainAdapter.execute(170);
+        _FuelMainAdapter.execute(180);
 
-        if(En_Throttle == true) //Throttle control enabled
-        {
+        // float demandPc = PcSetpoint();
+        //  m_Ox_FF = Ox_FF(demandPc);
 
-            _nextOxAngle = m_Ox_FF + OxAngleFb();
+        // if(En_Throttle == true) //Throttle control enabled
+        // {
+
+        //     _nextOxAngle = m_Ox_FF + OxAngleFb();
 
            
 
-        }
-        else {
+        // }
+        // else {
 
-             _nextOxAngle = m_Ox_FF;
+        //      _nextOxAngle = m_Ox_FF;
 
-        }
+        // }
 
-         _OxMainAdapter.execute(_nextOxAngle);
+        //  _OxMainAdapter.execute(_nextOxAngle);
 
-          _nextFuelAngle = Fuel_FF(_nextOxAngle);
+        //   _nextFuelAngle = Fuel_FF(_nextOxAngle);
 
-        if(En_OF == true) //OF control enabled
-        {
+        // if(En_OF == true) //OF control enabled
+        // {
 
-        m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
+        // m_OxPercent = (float)(_nextOxAngle - m_throttleOx_min) / (float)(m_OxThrottleRange);
 
-        _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
+        // _nextFuelAngle = m_Fuel_FF; //+ FuelAngleFb();
 
-        _FuelMainAdapter.execute(_nextFuelAngle);
+        // _FuelMainAdapter.execute(_nextFuelAngle);
 
-        }
+        // }
 
-        //Feedforward only for simple controller
+        // //Feedforward only for simple controller
     
-        _FuelMainAdapter.execute( _nextFuelAngle );
+        // _FuelMainAdapter.execute( _nextFuelAngle );
 
 
         return nullptr;
