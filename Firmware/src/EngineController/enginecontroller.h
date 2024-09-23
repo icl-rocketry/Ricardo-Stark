@@ -51,11 +51,13 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     uint32_t prevtime;
 
     RnpNetworkManager& _networkmanager;
+
     
     // Local Sensors
     NRCRemotePTap& _ChamberPT;
     NRCRemotePTap& _OxPT;
     NRCRemotePTap& _OxInjPT;
+
 
     // Local Actuators
 
@@ -84,11 +86,9 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter, PyroAdapter};
 
 
-    // uint32_t _OxAngle;
-    // uint32_t _FuelAngle;
-
     uint32_t getOxAngle();
     uint32_t getFuelAngle();
+
     protected:
 
     friend class NRCRemoteActuatorBase;

@@ -58,16 +58,14 @@ Types::EngineTypes::State_ptr_t Controlled::update()
     }
     
         //Obtains valve angles from array
-
-        float currtime = millis();
     
-    if (m_timeIndex < size(time_array)){
+    if (millis() - m_Controlled_Command_time > time_array[m_timeIndex+1]){
 
-        if (currtime - time_array[m_timeIndex + 1] > 0){
+        if (time_array.size() - 1 > m_timeIndex){
 
             m_timeIndex++;
 
-        }
+        }  
     }
         _OxMainAdapter.execute(m_OxAngle[m_timeIndex]);
         _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex]);

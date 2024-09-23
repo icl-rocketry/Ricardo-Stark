@@ -50,11 +50,11 @@ class Controlled: public Types::EngineTypes ::State_t
     uint64_t m_Controlled_duration = 15000;
     uint64_t m_Controlled_Command_time;
 
-    std::vector<float> time_array = {0};
+    std::vector<uint32_t> time_array = {0};
     std::vector<float> m_OxAngle = {170};
     std::vector<float> m_FuelAngle = {180};
 
-    uint8_t m_timeIndex;
+    uint8_t m_timeIndex = 0;
 
     float  _nextOxAngle;
     float  _nextFuelAngle;

@@ -44,9 +44,6 @@ void EngineController::setup()
 
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 
-
-
-
 }
 
 void EngineController::update()
