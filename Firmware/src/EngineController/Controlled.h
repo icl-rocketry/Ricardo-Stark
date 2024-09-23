@@ -44,14 +44,17 @@ class Controlled: public Types::EngineTypes ::State_t
     float m_POx; //Ox injector pressure
     float m_PF; //Fuel injector pressure
 
-    float updatePc();
-
 
     // Simple Engine
 
-    uint16_t m_SimpleOxAngle = 150;
     uint64_t m_Controlled_duration = 15000;
     uint64_t m_Controlled_Command_time;
+
+    std::vector<float> time_array = {0};
+    std::vector<float> m_OxAngle = {170};
+    std::vector<float> m_FuelAngle = {180};
+
+    uint8_t m_timeIndex;
 
     float  _nextOxAngle;
     float  _nextFuelAngle;
@@ -75,43 +78,13 @@ class Controlled: public Types::EngineTypes ::State_t
 
    
     // Throttle Params
-    static constexpr bool En_Throttle = false;
-    uint64_t m_ThrottleTime;
 
     float m_OxThrottleRange;
     float m_FuelThrottleRange;
 
-    LuT<float,LinearInterp<float>> PcAngleLuT;
-
-   
-    std::vector<float> m_targetPc = {15};
-    std::vector<uint32_t> m_throttletime = {0};
-
-    uint8_t m_throttle_index;
-    static constexpr float Throttle_K_p = 6.0; //6.0
-    static constexpr float Throttle_K_i = 6.0; //6.0
-
-    float m_prev_I_err = 0;
-
-
-    uint64_t m_prev_int_t = 0;
-    uint16_t m_I_err;
-    float m_I_max = 5; 
 
     float OxAngleFb();
     float PcSetpoint();
-
-
-    // OF Ratio Params
-    static constexpr bool En_OF = false;
-    static constexpr float m_OFratio = 2.5;
-
-    static constexpr float OF_K_p = 6.0;
-    static constexpr float OF_K_i = 6.0;
-
-    // float FuelAngleFb();
-
-
    
 
 };
