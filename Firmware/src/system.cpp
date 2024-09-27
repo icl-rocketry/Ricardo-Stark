@@ -33,18 +33,18 @@ static constexpr int HSPI_BUS_NUM = HSPI;
 
 System::System():
 RicCoreSystem(Commands::command_map,Commands::defaultEnabledCommands,Serial),
-ThanosR(networkmanager,ChamberPt,OxPt,OxInjPt),
+ThanosR(networkmanager,PT4,PT3,PT5),
 SDSPI(VSPI_BUS_NUM),
 SNSRSPI(HSPI_BUS_NUM),
 canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
 ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk,2),
-ChamberPt(networkmanager,3),
-OxPt(networkmanager,5),
-OxInjPt(networkmanager,2),
 PT0(networkmanager,0),
 PT1(networkmanager,1),
+PT2(networkmanager,2),
+PT3(networkmanager,3),
 PT4(networkmanager,4),
+PT5(networkmanager,5),
 primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
 {};
 
@@ -84,13 +84,12 @@ void System::systemSetup(){
     setupSPI();
     ADC.setup();
 
-    ChamberPt.setup();
-    OxPt.setup();
-    OxInjPt.setup();
-
     PT0.setup();
     PT1.setup();
+    PT2.setup();
+    PT3.setup();
     PT4.setup();
+    PT5.setup();
  
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,3});
@@ -99,18 +98,30 @@ void System::systemSetup(){
     uint8_t Engineservice = (uint8_t) Services::ID::Engine;
     networkmanager.registerService(Engineservice,ThanosR.getThisNetworkCallback());
 
-    uint8_t ChamberPTservice = (uint8_t) Services::ID::PT3;
-    networkmanager.registerService(ChamberPTservice,ChamberPt.getThisNetworkCallback());
 
-    uint8_t OxPTservice = (uint8_t) Services::ID::PT5;
-    networkmanager.registerService(OxPTservice,OxPt.getThisNetworkCallback());
+    uint8_t PT0Service = (uint8_t) Services::ID::PT0;
+    networkmanager.registerService(PT0Service,PT0.getThisNetworkCallback());
 
-    uint8_t OxInjPTservice = (uint8_t) Services::ID::PT2;
-    networkmanager.registerService(OxInjPTservice,OxInjPt.getThisNetworkCallback());
+    uint8_t PT1Service = (uint8_t) Services::ID::PT1;
+    networkmanager.registerService(PT1Service,PT1.getThisNetworkCallback());
+
+    uint8_t PT2Service = (uint8_t) Services::ID::PT2;
+    networkmanager.registerService(PT2Service,PT2.getThisNetworkCallback());
+
+    uint8_t PT3Service = (uint8_t) Services::ID::PT3;
+    networkmanager.registerService(PT3Service,PT3.getThisNetworkCallback());
+
+    uint8_t PT4Service = (uint8_t) Services::ID::PT4;
+    networkmanager.registerService(PT4Service,PT4.getThisNetworkCallback());
+
+    uint8_t PT5Service = (uint8_t) Services::ID::PT5;
+    networkmanager.registerService(PT5Service,PT5.getThisNetworkCallback());
 
 
     primarysd.setup();  
     initializeLoggers();
+
+    
 
     ThanosR.setup();
     
@@ -139,13 +150,12 @@ void System::systemUpdate(){
     _OxAngle = ThanosR.getOxAngle();
     _FuelAngle = ThanosR.getFuelAngle();
 
-    ChamberPt.update(ADC.getOutput(3));
-    OxPt.update(ADC.getOutput(5));
-    OxInjPt.update(ADC.getOutput(2));
-
     PT0.update(ADC.getOutput(0));
     PT1.update(ADC.getOutput(1));
+    PT2.update(ADC.getOutput(2));
+    PT3.update(ADC.getOutput(3));
     PT4.update(ADC.getOutput(4));
+    PT5.update(ADC.getOutput(5));
 
 };
 

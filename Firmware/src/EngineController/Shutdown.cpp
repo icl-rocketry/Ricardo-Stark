@@ -50,11 +50,8 @@ void Shutdown::initialize()
 
 Types::EngineTypes::State_ptr_t Shutdown::update()
 {
-
-    
+   
     return nullptr;
-
-    
 
 }
 

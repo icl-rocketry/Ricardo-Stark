@@ -79,10 +79,10 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 	// starktelem.pyroIMon = sm.Pyro.getIMon();
 	starktelem.ch0sens = sm.PT0.getPressure();
 	starktelem.ch1sens = sm.PT1.getPressure();
-	starktelem.ch2sens = sm.ThanosR._OxInjPT.getPressure();
-	starktelem.ch3sens = sm.ThanosR._ChamberPT.getPressure();
+	starktelem.ch2sens = sm.PT2.getPressure();
+	starktelem.ch3sens = sm.PT3.getPressure();
 	starktelem.ch4sens = sm.PT4.getPressure();
-	starktelem.ch5sens = sm.ThanosR._OxPT.getPressure();
+	starktelem.ch5sens = sm.PT5.getPressure();
 
 	starktelem.Servo1Angle = sm.ThanosR.getOxAngle();
 	starktelem.Servo2Angle = sm.ThanosR.getFuelAngle();

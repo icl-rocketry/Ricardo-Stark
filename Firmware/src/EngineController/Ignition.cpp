@@ -49,7 +49,7 @@ if (m_IgnitionCalls > 0) //Ignition has been called already
     }
     else
     {
-        
+        _PyroAdapter.disarm();
         return std::make_unique<Controlled>(m_DefaultInitParams, _networkmanager, _engine);
     }
   

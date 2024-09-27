@@ -6,6 +6,7 @@
 #include <librrc/Remote/nrcremoteservo.h>
 #include <librrc/Remote/nrcremoteptap.h> 
 #include <librrc/Remote/nrcremotepyro.h>
+#include <librrc/Remote/nrcremotepotentiometer.h>
 
 #include "Sensors/ADS131M06.h"
 #include "SiC43x.h"
@@ -51,12 +52,12 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         ADS131M06 ADC;
 
-        NRCRemotePTap ChamberPt;
-        NRCRemotePTap OxPt;
-        NRCRemotePTap OxInjPt;
         NRCRemotePTap PT0;
         NRCRemotePTap PT1;
+        NRCRemotePTap PT2;
+        NRCRemotePTap PT3;
         NRCRemotePTap PT4;
+        NRCRemotePTap PT5;
 
       
         SdFat_Store primarysd;
@@ -69,6 +70,8 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         void initializeLoggers();
         void logReadings();
         void setupSPI();
+
+
 
         const std::string log_path = "/Logs";
         const std::string config_path = "/Config";

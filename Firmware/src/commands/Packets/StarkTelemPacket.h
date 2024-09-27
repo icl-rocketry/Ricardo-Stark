@@ -59,7 +59,7 @@ class StarkTelemPacket : public RnpPacket{
 
         uint32_t Servo1Angle;
         uint32_t Servo2Angle;
-        
+
         uint32_t system_status;
         uint64_t system_time;
 

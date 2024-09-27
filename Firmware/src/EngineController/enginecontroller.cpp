@@ -7,6 +7,7 @@
 
 
 #include "Default.h"
+#include "Armed.h"
 #include "Ignition.h"
 #include "Controlled.h"
 #include "Shutdown.h"
@@ -37,10 +38,7 @@ void EngineController::setup()
     FuelMain.setup();
     Pyro.setup();
 
-
-    // Registering Actuator Services
     serviceSetup();
-
 
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 
@@ -62,7 +60,26 @@ void EngineController::arm_base(int32_t arg){
     OxMainAdapter.arm(arg);
     FuelMainAdapter.arm(arg);
 
-     NRCRemoteActuatorBase::arm_base(arg);
+    if (PyroAdapter.getState().flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL)&& 
+        OxMainAdapter.getState().flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL)&&
+        FuelMainAdapter.getState().flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL))
+            {
+
+                NRCRemoteActuatorBase::arm_base(arg);
+
+                if (this->_state.flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL))
+                
+                _engineStateMachine.changeState(std::make_unique<Armed>(m_DefaultStateParams, _networkmanager, *this));
+
+            }
+    else {
+
+        PyroAdapter.disarm();
+        OxMainAdapter.disarm();
+        FuelMainAdapter.disarm();
+    }
+
+    
 
 }
 
@@ -117,7 +134,7 @@ void EngineController::execute_base(int32_t arg)
     {
         case 1:
         {   
-             if (!_engineStatus.flagSet(EC_FLAGS::State_Default))
+             if (!_engineStatus.flagSet(EC_FLAGS::ARMED))
         {
             break;
         }
