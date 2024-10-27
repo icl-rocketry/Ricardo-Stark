@@ -23,15 +23,7 @@ _FuelMainAdapter(DefaultInitParams.FuelAdapter)
 
 void Shutdown::initialize()
 {
-    Types::EngineTypes::State_t::initialize();
-
-     SimpleCommandPacket ereg_shutdown(2, 2);
-            ereg_shutdown.header.source_service = static_cast<uint8_t>(Services::ID::Engine);
-            ereg_shutdown.header.destination_service = m_ereg_service;
-            ereg_shutdown.header.source = 1;
-            ereg_shutdown.header.destination = m_ereg_address;  
-            ereg_shutdown.header.uid = 0;
-            _networkmanager.sendPacket(ereg_shutdown); 
+    Types::EngineTypes::State_t::initialize(); 
 
     _OxMainAdapter.arm(0); 
     _FuelMainAdapter.arm(0);
