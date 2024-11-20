@@ -37,6 +37,7 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     void arm_base(int32_t arg);
     void disarm_base();
     void execute_base(int32_t arg);
+    void extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_ID commandID, packetptr_t packetptr);
 
     void serviceSetup();
     void unregisterServices();
@@ -78,12 +79,19 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     uint8_t OxPTservice = (uint8_t) Services::ID::PT1;
     uint8_t FuelPTservice = (uint8_t) Services::ID::PT2;
 
+    // Engine Test Parameters
+
+    uint16_t m_Ox_Angle_Set = 0;
+    uint16_t m_Fuel_Angle_Set = 0;
+    uint16_t m_Ox_Lag_Set = 0;
+
     
 
     Types::EngineTypes::StateMachine_t _engineStateMachine;
     Types::EngineTypes::SystemStatus_t _engineStatus;
 
     Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter, PyroAdapter};
+    Engine::EngineTestParams m_EngineTestParams = {500,180,170};
 
 
     uint32_t getOxAngle();

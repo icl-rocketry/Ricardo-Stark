@@ -14,9 +14,10 @@
 #include "system.h"
 #include "Shutdown.h"
 
-Controlled::Controlled(Engine::DefaultStateInit& DefaultInitParams,RnpNetworkManager& networkmanager, EngineController& Engine):
+Controlled::Controlled(Engine::DefaultStateInit& DefaultInitParams, Engine::EngineTestParams& EngineTestParams, RnpNetworkManager& networkmanager, EngineController& Engine):
 State(EC_FLAGS::CONTROLLED,DefaultInitParams.enginestatus),
 m_DefaultInitParams(DefaultInitParams),
+m_EngineTestParams(EngineTestParams),
 _networkmanager(networkmanager),
 _engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),

@@ -50,27 +50,11 @@ namespace Engine
         
     };
 
-    struct IgnitionStateInit
+    struct EngineTestParams     //Introduced for the spark igniter test that requires remote setup changes
     {
-        Types::EngineTypes::SystemStatus_t &enginestatus;
-        Types::LocalPyroAdapter_t &PyroAdapter;
-        
-    };
-    
-      struct ControlledStateInit
-    {
-        Types::EngineTypes::SystemStatus_t &enginestatus;
-        Types::LocalServoAdapter_t &OxAdapter;
-        Types::LocalServoAdapter_t &FuelAdapter;
-   
-        
+        float Ox_angle_preset;
+        float Fuel_angle_preset;
+        uint32_t Ox_lag_preset;
     };
 
-        struct ShutdownStateInit
-    {
-        Types::EngineTypes::SystemStatus_t &enginestatus;
-        Types::LocalServoAdapter_t &OxAdapter;
-        Types::LocalServoAdapter_t &FuelAdapter;
-        
-    };
 }

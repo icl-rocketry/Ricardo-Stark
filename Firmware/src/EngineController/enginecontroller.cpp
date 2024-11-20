@@ -139,7 +139,7 @@ void EngineController::execute_base(int32_t arg)
             break;
         }
             // Ignition
-            _engineStateMachine.changeState(std::make_unique<Ignition>(m_DefaultStateParams, _networkmanager, *this));
+            _engineStateMachine.changeState(std::make_unique<Ignition>(m_DefaultStateParams, m_EngineTestParams, _networkmanager, *this));
 
             break;
 
@@ -179,7 +179,42 @@ void EngineController::execute_base(int32_t arg)
 
         }
 
+    }
 
+}
+
+void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_ID commandID, packetptr_t packetptr)
+{
+    SimpleCommandPacket command(*packetptr);
+    switch(static_cast<uint8_t>(commandID))
+    {
+
+        case 5:
+        {
+            // Preset Ox Main Angle
+
+            m_Ox_Angle_Set = command.arg;
+
+            break;
+        }
+
+        case 6:
+        {
+            // Preset Fuel Main Angle
+
+            m_Fuel_Angle_Set = command.arg;
+
+            break;
+        }
+
+        case 7:
+        {
+            // Preset Ox Main Lag
+
+            m_Ox_Lag_Set = command.arg;
+
+            break;
+        }
 
     }
 
