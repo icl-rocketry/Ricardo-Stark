@@ -23,6 +23,9 @@ class StarkTelemPacket : public RnpPacket{
                 &StarkTelemPacket::ch5sens,
                 &StarkTelemPacket::Servo1Angle,
                 &StarkTelemPacket::Servo2Angle,
+                &StarkTelemPacket::Ox_angle_preset,
+                &StarkTelemPacket::Fuel_angle_preset,
+                &StarkTelemPacket::Ox_Lag_preset,
                 &StarkTelemPacket::system_status,
                 &StarkTelemPacket::system_time
             );
@@ -57,8 +60,12 @@ class StarkTelemPacket : public RnpPacket{
         float ch4sens;
         float ch5sens;
 
-        uint32_t Servo1Angle;
-        uint32_t Servo2Angle;
+        int32_t Servo1Angle;
+        int32_t Servo2Angle;
+
+        float Ox_angle_preset;
+        float Fuel_angle_preset;
+        uint32_t Ox_Lag_preset;
 
         uint32_t system_status;
         uint64_t system_time;

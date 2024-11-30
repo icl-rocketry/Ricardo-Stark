@@ -83,30 +83,29 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
 
     float m_Ox_Angle_Set = 0;
     float m_Fuel_Angle_Set = 0;
-    uint32_t m_Ox_Lag_Set = 0;
-
-    
-
+    uint32_t m_Ox_Lag_set = 0;
     Types::EngineTypes::StateMachine_t _engineStateMachine;
     Types::EngineTypes::SystemStatus_t _engineStatus;
-    
     Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter, PyroAdapter};
-    Engine::EngineTestParams m_EngineTestParams = {m_Ox_Angle_Set,m_Fuel_Angle_Set,m_Ox_Lag_Set};
+    // Engine::EngineTestParams m_EngineTestParams = {m_Ox_Angle_Set,m_Fuel_Angle_Set,m_Ox_Lag_Set};
 
 
-    uint32_t getOxAngle();
-    uint32_t getFuelAngle();
-    
-    Engine::EngineTestParams getTestParams(){
-        Engine::EngineTestParams preset = {
+    int32_t getOxAngle();
+    int32_t getFuelAngle();
 
-            m_Ox_Angle_Set,
-            m_Fuel_Angle_Set,
-            m_Ox_Lag_Set
-        };
+    float getOxAnglePreset();
+    float getFuelAnglePreset();
+    uint32_t getOxLagPreset();
 
-        return preset;
-    }
+    // Engine::EngineTestParams getTestParams(){
+    //     Engine::EngineTestParams preset = {
+    //         m_Ox_Angle_Set,
+    //         m_Fuel_Angle_Set,
+    //         m_Ox_Lag_set
+    //     };
+
+    //     return preset;
+    // }
 
     protected:
 

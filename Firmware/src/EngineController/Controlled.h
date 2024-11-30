@@ -52,9 +52,14 @@ class Controlled: public Types::EngineTypes ::State_t
 
     Engine::EngineTestParams m_test_params;
 
-    std::vector<uint32_t> time_array = {0,m_test_params.Ox_lag_preset};
-    std::vector<float> m_OxAngle = {0,m_test_params.Ox_angle_preset};
-    std::vector<float> m_FuelAngle = {m_test_params.Fuel_angle_preset, m_test_params.Fuel_angle_preset};
+    float m_OxAnglePreset = _engine.getOxAnglePreset();
+    float m_FuelAnglePreset = _engine.getFuelAnglePreset();
+    uint32_t m_OxlagPreset = _engine.getOxLagPreset();
+
+
+    std::vector<uint32_t> time_array = {0,m_OxlagPreset};
+    std::vector<float> m_OxAngle = {0,m_OxAnglePreset};
+    std::vector<float> m_FuelAngle = {m_FuelAnglePreset,m_FuelAnglePreset};
 
     uint8_t m_timeIndex = 0;
 

@@ -40,7 +40,7 @@ void EngineController::setup()
 
     serviceSetup();
 
-    
+
 
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 
@@ -100,14 +100,30 @@ void EngineController::disarm_base(){
 
 }
 
-uint32_t EngineController::getOxAngle()
-{
-    return OxMain.getValue();
+int32_t EngineController::getOxAngle(){
+
+    return OxMainAdapter.getValue();
 }
 
-uint32_t EngineController::getFuelAngle()
+int32_t EngineController::getFuelAngle(){
+
+    return FuelMainAdapter.getValue();
+}
+
+
+float EngineController::getOxAnglePreset()
 {
-    return FuelMain.getValue();
+    return m_Ox_Angle_Set;
+}
+
+float EngineController::getFuelAnglePreset()
+{
+    return m_Fuel_Angle_Set;
+}
+
+uint32_t EngineController::getOxLagPreset()
+{
+    return m_Ox_Lag_set;
 }
 
 
@@ -191,29 +207,29 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
     switch(static_cast<uint8_t>(commandID))
     {
 
-        case 5:
+        case 6:
         {
             // Preset Ox Main Angle
 
-            m_EngineTestParams.Ox_angle_preset = command.arg;
-
-            break;
-        }
-
-        case 6:
-        {
-            // Preset Fuel Main Angle
-
-            m_EngineTestParams.Fuel_angle_preset = command.arg;
+            m_Ox_Angle_Set = command.arg;
 
             break;
         }
 
         case 7:
         {
+            // Preset Fuel Main Angle
+
+            m_Fuel_Angle_Set = command.arg;
+
+            break;
+        }
+
+        case 8:
+        {
             // Preset Ox Main Lag
 
-            m_EngineTestParams.Ox_lag_preset = command.arg;
+            m_Ox_Lag_set = command.arg;
 
             break;
         }

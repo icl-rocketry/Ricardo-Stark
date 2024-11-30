@@ -30,8 +30,8 @@ void Controlled::initialize()
     _OxMainAdapter.arm(0); 
     _FuelMainAdapter.arm(0);
 
-    _engine.OxMain.setAngleLims(m_throttleOx_min, m_OxAngleLim);
-    _engine.FuelMain.setAngleLims(m_throttleFuel_min, m_FuelAngleLim); 
+    // _engine.OxMain.setAngleLims(m_throttleOx_min, m_OxAngleLim);
+    // _engine.FuelMain.setAngleLims(m_throttleFuel_min, m_FuelAngleLim); 
 
     m_Controlled_Command_time = millis();
 
@@ -41,7 +41,7 @@ void Controlled::initialize()
     // Initialise time index
     m_timeIndex = 0;
 
-    m_test_params = _engine.getTestParams();
+    // m_test_params = _engine.getTestParams();
 
   
 };
@@ -52,7 +52,11 @@ Types::EngineTypes::State_ptr_t Controlled::update()
    
     m_Pc = _engine._ChamberPT.getPressure();
 
-    m_test_params = _engine.getTestParams();
+    // m_test_params = _engine.getTestParams();
+
+    m_OxAnglePreset = _engine.getOxAnglePreset();
+    m_FuelAnglePreset = _engine.getFuelAnglePreset();
+    m_OxlagPreset = _engine.getOxLagPreset();
     
 
     if (millis() - m_Controlled_Command_time > m_Controlled_duration){
