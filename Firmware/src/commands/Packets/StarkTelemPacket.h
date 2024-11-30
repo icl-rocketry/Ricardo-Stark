@@ -26,6 +26,7 @@ class StarkTelemPacket : public RnpPacket{
                 &StarkTelemPacket::Ox_angle_preset,
                 &StarkTelemPacket::Fuel_angle_preset,
                 &StarkTelemPacket::Ox_Lag_preset,
+                &StarkTelemPacket::Fuel_Lag_preset,
                 &StarkTelemPacket::system_status,
                 &StarkTelemPacket::system_time
             );
@@ -66,6 +67,7 @@ class StarkTelemPacket : public RnpPacket{
         float Ox_angle_preset;
         float Fuel_angle_preset;
         uint32_t Ox_Lag_preset;
+        uint32_t Fuel_Lag_preset;
 
         uint32_t system_status;
         uint64_t system_time;

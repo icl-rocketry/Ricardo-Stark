@@ -94,7 +94,8 @@ namespace PinMap{
     static constexpr uint8_t GPIO41 = 41; //41
     static constexpr uint8_t GPIO42 = 42; //42
 
-
+    // ABORT GPIO
+    static constexpr uint8_t Abort = 40; //40
    
 };
 

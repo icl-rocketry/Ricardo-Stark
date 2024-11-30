@@ -55,13 +55,16 @@ class Controlled: public Types::EngineTypes ::State_t
     float m_OxAnglePreset = _engine.getOxAnglePreset();
     float m_FuelAnglePreset = _engine.getFuelAnglePreset();
     uint32_t m_OxlagPreset = _engine.getOxLagPreset();
+    uint32_t m_FuellagPreset = _engine.getFuelLagPreset();
 
 
-    std::vector<uint32_t> time_array = {0,m_OxlagPreset};
-    std::vector<float> m_OxAngle = {0,m_OxAnglePreset};
-    std::vector<float> m_FuelAngle = {m_FuelAnglePreset,m_FuelAnglePreset};
+    std::vector<uint32_t> time_array_Ox = {m_OxlagPreset};
+    std::vector<uint32_t> time_array_Fuel = {m_FuellagPreset};
+    std::vector<float> m_OxAngle = {m_OxAnglePreset};
+    std::vector<float> m_FuelAngle = {m_FuelAnglePreset};
 
-    uint8_t m_timeIndex = 0;
+    uint8_t m_timeIndex_Ox = 0;
+    int8_t m_timeIndex_Fuel = 0;
 
     float  _nextOxAngle;
     float  _nextFuelAngle;

@@ -18,7 +18,8 @@ State(EC_FLAGS::SHUTDOWN,DefaultInitParams.enginestatus),
 _networkmanager(networkmanager),
 _engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),
-_FuelMainAdapter(DefaultInitParams.FuelAdapter)
+_FuelMainAdapter(DefaultInitParams.FuelAdapter),
+_PyroAdapter(DefaultInitParams.PyroAdapter)
 {};
 
 void Shutdown::initialize()
@@ -34,10 +35,12 @@ void Shutdown::initialize()
     _OxMainAdapter.execute(0);
     _FuelMainAdapter.execute(0);
 
+    _PyroAdapter.disarm();
+
     _OxMainAdapter.disarm();
     _FuelMainAdapter.disarm();
   
-  
+    
 };
 
 Types::EngineTypes::State_ptr_t Shutdown::update()

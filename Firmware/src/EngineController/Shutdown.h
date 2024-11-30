@@ -31,6 +31,7 @@ class Shutdown: public Types::EngineTypes ::State_t
     
     Types::LocalServoAdapter_t& _OxMainAdapter;
     Types::LocalServoAdapter_t& _FuelMainAdapter;
+    Types::LocalPyroAdapter_t& _PyroAdapter;
 
     uint8_t m_ereg_service = 10; //Update
     uint8_t m_ereg_address = 13; //Update

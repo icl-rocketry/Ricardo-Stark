@@ -40,7 +40,8 @@ void EngineController::setup()
 
     serviceSetup();
 
-
+    // Abort GPIO
+     pinMode(PinMap::Abort,INPUT_PULLDOWN);
 
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 
@@ -124,6 +125,11 @@ float EngineController::getFuelAnglePreset()
 uint32_t EngineController::getOxLagPreset()
 {
     return m_Ox_Lag_set;
+}
+
+uint32_t EngineController::getFuelLagPreset()
+{
+    return m_Fuel_Lag_set;
 }
 
 
@@ -230,6 +236,15 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
             // Preset Ox Main Lag
 
             m_Ox_Lag_set = command.arg;
+
+            break;
+        }
+
+         case 9:
+        {
+            // Preset Ox Main Lag
+
+            m_Fuel_Lag_set = command.arg;
 
             break;
         }

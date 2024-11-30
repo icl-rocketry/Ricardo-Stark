@@ -90,6 +90,7 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 	starktelem.Ox_angle_preset=sm.ThanosR.getOxAnglePreset();
 	starktelem.Fuel_angle_preset=sm.ThanosR.getFuelAnglePreset();
 	starktelem.Ox_Lag_preset=sm.ThanosR.getOxLagPreset();
+	starktelem.Fuel_Lag_preset=sm.ThanosR.getFuelLagPreset();
 	
 	starktelem.system_status = sm.systemstatus.getStatus();
 

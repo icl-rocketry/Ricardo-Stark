@@ -39,7 +39,8 @@ void Controlled::initialize()
     m_FuelThrottleRange = m_FuelAngleLim - m_throttleFuel_min;
 
     // Initialise time index
-    m_timeIndex = 0;
+    m_timeIndex_Ox = 0;
+    m_timeIndex_Fuel = 0;
 
     // m_test_params = _engine.getTestParams();
 
@@ -56,7 +57,8 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     m_OxAnglePreset = _engine.getOxAnglePreset();
     m_FuelAnglePreset = _engine.getFuelAnglePreset();
-    m_OxlagPreset = _engine.getOxLagPreset();
+    m_OxlagPreset = _engine.getOxLagPreset();   
+    m_FuellagPreset = _engine.getFuelLagPreset();
     
 
     if (millis() - m_Controlled_Command_time > m_Controlled_duration){
@@ -64,23 +66,45 @@ Types::EngineTypes::State_ptr_t Controlled::update()
         return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
 
     }
+
+      if (digitalRead(PinMap::Abort)==LOW){
+
+        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+
+    }   
+
+
+   
     
         //Obtains valve angles from array
     
-    if (millis() - m_Controlled_Command_time > time_array[m_timeIndex+1]){
+    if (millis() - m_Controlled_Command_time > time_array_Ox[m_timeIndex_Ox+1]){
 
-        if (time_array.size() - 1 > m_timeIndex){
+        if (time_array_Ox.size() - 1 > m_timeIndex_Ox){
 
-            m_timeIndex++;
+            m_timeIndex_Ox++;
 
         }  
     }
-        _OxMainAdapter.execute(m_OxAngle[m_timeIndex]);
-        _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex]);
+
+     if (millis() - m_Controlled_Command_time > time_array_Ox[m_timeIndex_Ox+1]){
+
+        if (time_array_Fuel.size() - 1 > m_timeIndex_Fuel){
+
+            m_timeIndex_Fuel++;
+
+        }  
+    }
+        _OxMainAdapter.execute(m_OxAngle[m_timeIndex_Ox]);
+        _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex_Fuel]);
+      
 
         return nullptr;
 
     }
+
+
+      
 
     
 
