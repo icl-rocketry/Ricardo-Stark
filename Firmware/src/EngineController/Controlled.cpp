@@ -14,10 +14,9 @@
 #include "system.h"
 #include "Shutdown.h"
 
-Controlled::Controlled(Engine::DefaultStateInit& DefaultInitParams, Engine::EngineTestParams& EngineTestParams, RnpNetworkManager& networkmanager, EngineController& Engine):
+Controlled::Controlled(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine):
 State(EC_FLAGS::CONTROLLED,DefaultInitParams.enginestatus),
 m_DefaultInitParams(DefaultInitParams),
-m_EngineTestParams(EngineTestParams),
 _networkmanager(networkmanager),
 _engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),
@@ -42,6 +41,8 @@ void Controlled::initialize()
     // Initialise time index
     m_timeIndex = 0;
 
+    m_test_params = _engine.getTestParams();
+
   
 };
 
@@ -50,6 +51,8 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
    
     m_Pc = _engine._ChamberPT.getPressure();
+
+    m_test_params = _engine.getTestParams();
     
 
     if (millis() - m_Controlled_Command_time > m_Controlled_duration){

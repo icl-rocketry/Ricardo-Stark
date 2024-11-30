@@ -14,10 +14,9 @@
 #include "system.h"
 #include "Controlled.h"
 
-Ignition::Ignition(Engine::DefaultStateInit& DefaultInitParams, Engine::EngineTestParams EngineTestParams, RnpNetworkManager& networkmanager, EngineController& Engine):
+Ignition::Ignition(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine):
 State(EC_FLAGS::IGNITION,DefaultInitParams.enginestatus),
 m_DefaultInitParams(DefaultInitParams),
-m_EngineTestParams(EngineTestParams),
 _networkmanager(networkmanager),
 _engine(Engine),
 _PyroAdapter(DefaultInitParams.PyroAdapter)
@@ -50,8 +49,9 @@ if (m_IgnitionCalls > 0) //Ignition has been called already
     }
     else
     {
-        _PyroAdapter.disarm();
-        return std::make_unique<Controlled>(m_DefaultInitParams, m_EngineTestParams, _networkmanager, _engine);
+        // UPDATED FOR SPARK PLUG TO REMAIN ON
+        // _PyroAdapter.disarm();
+        return std::make_unique<Controlled>(m_DefaultInitParams,  _networkmanager, _engine);
     }
   
 }
@@ -59,7 +59,7 @@ if (m_IgnitionCalls > 0) //Ignition has been called already
 else if (m_IgnitionCalls == 0)
 {
     
-    _engine.PyroAdapter.execute(500);
+    _engine.PyroAdapter.execute(2000);
     m_IgnitionCalls++;
 
 

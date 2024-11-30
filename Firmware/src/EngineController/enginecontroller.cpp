@@ -40,6 +40,8 @@ void EngineController::setup()
 
     serviceSetup();
 
+    
+
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 
 }
@@ -139,7 +141,7 @@ void EngineController::execute_base(int32_t arg)
             break;
         }
             // Ignition
-            _engineStateMachine.changeState(std::make_unique<Ignition>(m_DefaultStateParams, m_EngineTestParams, _networkmanager, *this));
+            _engineStateMachine.changeState(std::make_unique<Ignition>(m_DefaultStateParams, _networkmanager, *this));
 
             break;
 
@@ -193,7 +195,7 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
         {
             // Preset Ox Main Angle
 
-            m_Ox_Angle_Set = command.arg;
+            m_EngineTestParams.Ox_angle_preset = command.arg;
 
             break;
         }
@@ -202,7 +204,7 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
         {
             // Preset Fuel Main Angle
 
-            m_Fuel_Angle_Set = command.arg;
+            m_EngineTestParams.Fuel_angle_preset = command.arg;
 
             break;
         }
@@ -211,12 +213,19 @@ void EngineController::extendedCommandHandler_impl(const NRCPacket::NRC_COMMAND_
         {
             // Preset Ox Main Lag
 
-            m_Ox_Lag_Set = command.arg;
+            m_EngineTestParams.Ox_lag_preset = command.arg;
 
             break;
         }
 
+        default:
+        {
+            NRCRemoteActuatorBase::extendedCommandHandler_impl(commandID, std::move(packetptr));
+            break;
+        }
+
     }
+    
 
 }
 

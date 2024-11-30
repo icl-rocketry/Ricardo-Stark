@@ -16,7 +16,7 @@ class Ignition: public Types::EngineTypes ::State_t
 {
     public:
 
-    Ignition(Engine::DefaultStateInit& DefaultInitParams, Engine::EngineTestParams EngineTestParams, RnpNetworkManager& networkmanager, EngineController& Engine);
+    Ignition(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine);
 
     void initialize() override;
 
@@ -28,7 +28,6 @@ class Ignition: public Types::EngineTypes ::State_t
     private:
 
     Engine::DefaultStateInit& m_DefaultInitParams;
-    Engine::EngineTestParams& m_EngineTestParams;
     RnpNetworkManager& _networkmanager;
     EngineController& _engine;
     Types::LocalPyroAdapter_t& _PyroAdapter;
@@ -37,7 +36,7 @@ class Ignition: public Types::EngineTypes ::State_t
 
     uint8_t m_IgnitionCalls;
     uint64_t m_ignitionTime;
-    uint64_t m_pyroTime = 500; 
+    uint64_t m_pyroTime = 1000; 
    
    
   

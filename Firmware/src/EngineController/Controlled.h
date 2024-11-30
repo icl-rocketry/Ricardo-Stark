@@ -18,7 +18,7 @@ class Controlled: public Types::EngineTypes ::State_t
 {
     public:
 
-    Controlled(Engine::DefaultStateInit& DefaultInitParams, Engine::EngineTestParams& EngineTestParams, RnpNetworkManager& networkmanager, EngineController& Engine);
+    Controlled(Engine::DefaultStateInit& DefaultInitParams, RnpNetworkManager& networkmanager, EngineController& Engine);
 
     void initialize() override;
 
@@ -30,7 +30,6 @@ class Controlled: public Types::EngineTypes ::State_t
     private:
 
     Engine::DefaultStateInit& m_DefaultInitParams;
-    Engine::EngineTestParams& m_EngineTestParams;
     RnpNetworkManager& _networkmanager;
     EngineController& _engine;
 
@@ -48,12 +47,14 @@ class Controlled: public Types::EngineTypes ::State_t
 
     // Simple Engine
 
-    uint64_t m_Controlled_duration = 15000;
+    uint64_t m_Controlled_duration = 5000;
     uint64_t m_Controlled_Command_time;
 
-    std::vector<uint32_t> time_array = {0,m_EngineTestParams.Ox_lag_preset};
-    std::vector<float> m_OxAngle = {0,m_EngineTestParams.Ox_angle_preset};
-    std::vector<float> m_FuelAngle = {m_EngineTestParams.Fuel_angle_preset, m_EngineTestParams.Fuel_angle_preset};
+    Engine::EngineTestParams m_test_params;
+
+    std::vector<uint32_t> time_array = {0,m_test_params.Ox_lag_preset};
+    std::vector<float> m_OxAngle = {0,m_test_params.Ox_angle_preset};
+    std::vector<float> m_FuelAngle = {m_test_params.Fuel_angle_preset, m_test_params.Fuel_angle_preset};
 
     uint8_t m_timeIndex = 0;
 

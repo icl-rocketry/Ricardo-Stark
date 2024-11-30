@@ -81,21 +81,32 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
 
     // Engine Test Parameters
 
-    uint16_t m_Ox_Angle_Set = 0;
-    uint16_t m_Fuel_Angle_Set = 0;
-    uint16_t m_Ox_Lag_Set = 0;
+    float m_Ox_Angle_Set = 0;
+    float m_Fuel_Angle_Set = 0;
+    uint32_t m_Ox_Lag_Set = 0;
 
     
 
     Types::EngineTypes::StateMachine_t _engineStateMachine;
     Types::EngineTypes::SystemStatus_t _engineStatus;
-
+    
     Engine::DefaultStateInit m_DefaultStateParams = {_engineStatus, OxMainAdapter, FuelMainAdapter, PyroAdapter};
-    Engine::EngineTestParams m_EngineTestParams = {500,180,170};
+    Engine::EngineTestParams m_EngineTestParams = {m_Ox_Angle_Set,m_Fuel_Angle_Set,m_Ox_Lag_Set};
 
 
     uint32_t getOxAngle();
     uint32_t getFuelAngle();
+    
+    Engine::EngineTestParams getTestParams(){
+        Engine::EngineTestParams preset = {
+
+            m_Ox_Angle_Set,
+            m_Fuel_Angle_Set,
+            m_Ox_Lag_Set
+        };
+
+        return preset;
+    }
 
     protected:
 
