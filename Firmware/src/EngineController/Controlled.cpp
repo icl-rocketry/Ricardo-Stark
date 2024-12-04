@@ -87,7 +87,7 @@ Types::EngineTypes::State_ptr_t Controlled::update()
         }  
     }
 
-     if (millis() - m_Controlled_Command_time > time_array_Ox[m_timeIndex_Ox+1]){
+     if (millis() - m_Controlled_Command_time > time_array_Fuel[m_timeIndex_Fuel+1]){
 
         if (time_array_Fuel.size() - 1 > m_timeIndex_Fuel){
 
