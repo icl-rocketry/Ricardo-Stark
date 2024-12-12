@@ -23,10 +23,6 @@ private:
 public:
     //Sensors
      float ch0sens,ch1sens,ch2sens,ch3sens,ch4sens,ch5sens;
-    
-    
-    int16_t rssi; 
-    float snr;
 
     
     uint64_t timestamp;

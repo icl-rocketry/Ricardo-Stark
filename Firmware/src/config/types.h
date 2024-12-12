@@ -31,7 +31,7 @@
 #include <libriccore/fsm/state.h>
 #include <libriccore/fsm/statemachine.h>
 
-#include "EngineController/enginecontroller.h"
+#include "EngineController/StateMachine/enginecontroller.h"
 
 
 namespace Types{

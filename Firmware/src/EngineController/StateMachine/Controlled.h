@@ -11,8 +11,8 @@
 #include "enginetypes.h"
 #include "enginecontroller.h"
 
-#include "LuT.h"
-#include "LinearInterp.h"
+#include "EngineController/Control/throttle.h"
+
 
 class Controlled: public Types::EngineTypes ::State_t
 {
@@ -51,7 +51,7 @@ class Controlled: public Types::EngineTypes ::State_t
     uint64_t m_Controlled_Command_time;
 
     std::vector<uint32_t> time_array = {0};
-    std::vector<float> m_OxAngle = {170};
+    std::vector<float> m_OxAngle = {180};
     std::vector<float> m_FuelAngle = {180};
 
     uint8_t m_timeIndex = 0;
@@ -64,9 +64,6 @@ class Controlled: public Types::EngineTypes ::State_t
 
     float m_throttleOx_min = 80; 
     float m_throttleFuel_min = 105;
-
-    float Ox_FF(float Pc);
-    float Fuel_FF(float OxAngle);
 
     float m_Ox_FF;
     float m_Fuel_FF;
@@ -82,9 +79,10 @@ class Controlled: public Types::EngineTypes ::State_t
     float m_OxThrottleRange;
     float m_FuelThrottleRange;
 
+    void updateThrottle();
 
-    float OxAngleFb();
-    float PcSetpoint();
+    Throttle m_throttle;
+
    
 
 };

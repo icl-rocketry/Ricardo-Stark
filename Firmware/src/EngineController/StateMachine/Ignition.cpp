@@ -13,6 +13,7 @@
 
 #include "system.h"
 #include "Controlled.h"
+#include "Shutdown.h"
 
 Ignition::Ignition(Engine::DefaultStateInit& DefaultInitParams,RnpNetworkManager& networkmanager, EngineController& Engine):
 State(EC_FLAGS::IGNITION,DefaultInitParams.enginestatus),
@@ -38,6 +39,14 @@ void Ignition::initialize()
 
 Types::EngineTypes::State_ptr_t Ignition::update()
 {
+
+
+//  if (digitalRead(PinMap::Abort)==LOW){
+
+//         return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+
+//     }
+
 
 // Check ignition calls and fire pyro accordingly
 

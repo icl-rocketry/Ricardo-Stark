@@ -58,7 +58,10 @@
         "thread": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "unordered_set": "cpp",
+        "regex": "cpp",
+        "iomanip": "cpp"
     },
     "idf.adapterTargetName": "esp32s3"
 }

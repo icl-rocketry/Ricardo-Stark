@@ -13,14 +13,14 @@
 #include "Shutdown.h"
 #include "Debug.h"
 
+#include "EngineController/Control/throttle.h"
+
  
 
-EngineController::EngineController(RnpNetworkManager& networkmanager, NRCRemotePTap& chamberPt, NRCRemotePTap& oxPt, NRCRemotePTap& oxInjPT):
+EngineController::EngineController(RnpNetworkManager& networkmanager, SensorHandler& sensorHandler):
                     NRCRemoteActuatorBase(networkmanager),
-                    _networkmanager(networkmanager),    
-                    _ChamberPT(chamberPt),
-                    _OxPT(oxPt),
-                    _OxInjPT(oxInjPT),
+                    _networkmanager(networkmanager),  
+                    _sensorHandler(sensorHandler),
                     OxMain(LocalPWM(PinMap::ServoPWM1,0), networkmanager,"OxMain"),
                     OxMainAdapter(0,OxMain,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
                     FuelMain(LocalPWM(PinMap::ServoPWM2,1),networkmanager,"FuelMain"),
@@ -48,7 +48,6 @@ void EngineController::update()
 {   
     _value = _engineStatus.getStatus();
     _engineStateMachine.update();
-    logReadings();
 
 
 };
@@ -184,26 +183,6 @@ void EngineController::execute_base(int32_t arg)
     }
 
 }
-
-void EngineController::logReadings()
-{
-    if (micros() - prev_telemetry_log_time > telemetry_log_delta)
-    {
-        TelemetryLogframe logframe;
-
-        logframe.ch0sens = _ChamberPT.getPressure();
-        logframe.ch1sens = _OxPT.getPressure();
-        logframe.ch2sens = _OxInjPT.getPressure();
-
-        logframe.timestamp = micros();
-
-        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::TELEMETRY>(logframe);
-
-        prev_telemetry_log_time = micros();
-    }
-}
-
-
 
 
 

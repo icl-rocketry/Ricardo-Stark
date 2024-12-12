@@ -32,7 +32,7 @@ void Shutdown::initialize()
     _engine.FuelMain.setAngleLims(0, 180);
     
     _OxMainAdapter.execute(0);
-    _FuelMainAdapter.execute(180);
+    _FuelMainAdapter.execute(0);
 
     _OxMainAdapter.disarm();
     _FuelMainAdapter.disarm();

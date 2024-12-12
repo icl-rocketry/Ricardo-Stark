@@ -18,9 +18,11 @@
 #include <libriccore/networkinterfaces/can/canbus.h>
 #include "config/pinmap_config.h"
 
-#include "EngineController/enginecontroller.h"
-#include "EngineController/Ignition.h"
-#include "EngineController/Controlled.h"
+#include "EngineController/StateMachine/enginecontroller.h"
+#include "EngineController/StateMachine/Ignition.h"
+#include "EngineController/StateMachine/Controlled.h"
+
+#include "Sensors/sensorHandler.h"
 
 #include "Commands/commands.h"
 
@@ -41,7 +43,6 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         void serviceSetup();
 
 
-        EngineController ThanosR;
 
         SPIClass SDSPI;
         SPIClass SNSRSPI;
@@ -52,12 +53,8 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         ADS131M06 ADC;
 
-        NRCRemotePTap PT0;
-        NRCRemotePTap PT1;
-        NRCRemotePTap PT2;
-        NRCRemotePTap PT3;
-        NRCRemotePTap PT4;
-        NRCRemotePTap PT5;
+        SensorHandler sensorHandler;
+        EngineController ThanosR;
 
       
         SdFat_Store primarysd;
@@ -76,11 +73,5 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         const std::string log_path = "/Logs";
         const std::string config_path = "/Config";
     
-
-
-        
-
-        
-
 
 };
