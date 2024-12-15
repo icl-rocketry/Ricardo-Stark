@@ -12,6 +12,7 @@
 #include "enginecontroller.h"
 
 #include "EngineController/Control/throttle.h"
+#include "EngineController/Control/OF.h"
 
 
 class Controlled: public Types::EngineTypes ::State_t
@@ -47,19 +48,19 @@ class Controlled: public Types::EngineTypes ::State_t
 
     // Simple Engine
 
-    uint64_t m_Controlled_duration = 15000;
+    uint64_t m_Controlled_duration = 5000;
     uint64_t m_Controlled_Command_time;
 
-    std::vector<uint32_t> time_array = {0};
+    std::vector<uint32_t> time_array = {0,500};
     std::vector<float> m_OxAngle = {180};
-    std::vector<float> m_FuelAngle = {180};
+    std::vector<float> m_FuelAngle = {110,180};
 
     uint8_t m_timeIndex = 0;
 
     float  _nextOxAngle;
     float  _nextFuelAngle;
 
-    float m_OxAngleLim = 180; 
+    float m_OxAngleLim = 150; 
     float m_FuelAngleLim = 180;
 
     float m_throttleOx_min = 80; 
@@ -80,8 +81,10 @@ class Controlled: public Types::EngineTypes ::State_t
     float m_FuelThrottleRange;
 
     void updateThrottle();
+    void updateOF();
 
     Throttle m_throttle;
+    OF m_OF;
 
    
 

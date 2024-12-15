@@ -3,8 +3,8 @@
 
 Throttle::Throttle(EngineController& Engine):
 _engine(Engine),
-m_setpointPcLuT({0,2000,2100,12000},{20.0,20.0,12.0,20.0}), //THROTTLE PC setpoints LUT
-m_PcAngleLuT({4.2,14.0},{92.9,136.88}) //THROTTLE OX ANGLE LUT
+m_setpointPcLuT({0,500,1500,5000},{0,0,10,10}), //THROTTLE PC setpoints LUT
+m_PcAngleLuT({0,10},{110,150}) //THROTTLE OX ANGLE LUT
 {};
 
 void Throttle::setup(uint64_t ControlledTime){

@@ -76,7 +76,6 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 	starktelem.header.destination_service = commandpacket.header.source_service;
 	starktelem.header.uid = commandpacket.header.uid; 
 	starktelem.servoVoltage = sm.Buck.getOutputV();
-	// starktelem.pyroIMon = sm.Pyro.getIMon();
 	starktelem.ch0sens = sm.sensorHandler.getPressure(0);
 	starktelem.ch1sens = sm.sensorHandler.getPressure(1);
 	starktelem.ch2sens = sm.sensorHandler.getPressure(2);
@@ -84,6 +83,8 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 	starktelem.ch4sens = sm.sensorHandler.getPressure(4);
 	starktelem.ch5sens = sm.sensorHandler.getPressure(5);
 	starktelem.flowmeter = sm.sensorHandler.getFlow();
+	starktelem.OF = sm.ThanosR.getOF();
+	starktelem.FuelFlowCalc = sm.ThanosR.getFuelCalc();
 
 	starktelem.Servo1Angle = sm.ThanosR.getOxAngle();
 	starktelem.Servo2Angle = sm.ThanosR.getFuelAngle();

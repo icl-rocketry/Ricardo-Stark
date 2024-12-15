@@ -22,8 +22,6 @@ m_CstarTable({0.1,0.22041,0.34082,0.46122,0.58163,0.70204,
 
 void OF::setup(){
 
-    setupPts();
-
     _currPc = _engine._sensorHandler.getPressure(SensorID::ChamberPt);
     _WarmFuelInjP = _engine._sensorHandler.getPressure(SensorID::WarmFuelInjPt);
 
@@ -37,11 +35,6 @@ void OF::update(){
 
 }
 
-void OF::setupPts(){
-
-    
-
-}
 
 void OF::updateOF(){
 
@@ -60,6 +53,18 @@ void OF::updateOF(){
 
     m_currOF = m_loopOF;
 
+
+}
+
+float OF::getOF(){
+
+    return m_currOF;
+
+}
+
+float OF::getCalcFuelFlow(){
+
+    return m_mdotFuel/m_fuelrho;
 
 }
 

@@ -35,6 +35,8 @@ class SensorHandler
         PT5.setup();
         TF0.setup();
 
+        serviceSetup();
+
     };
 
     void serviceSetup(){

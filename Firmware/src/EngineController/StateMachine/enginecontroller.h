@@ -82,6 +82,12 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     uint32_t getOxAngle();
     uint32_t getFuelAngle();
 
+    float getOF();
+    float getFuelCalc();
+
+    float m_currOF = 0.0;
+    float m_fuelcalc = 0.0;
+
 
     protected:
 

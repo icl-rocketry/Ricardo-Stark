@@ -20,6 +20,7 @@ public:
     void setupPts();
     void updateOF();    //Iterative OF update
     float getOF();      //Returns Current OF
+    float getCalcFuelFlow(); //Returns Calculated Fuel Mass Flow Rate
 
 private:
 

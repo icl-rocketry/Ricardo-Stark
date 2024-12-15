@@ -41,11 +41,11 @@ Types::EngineTypes::State_ptr_t Ignition::update()
 {
 
 
-//  if (digitalRead(PinMap::Abort)==LOW){
+ if (digitalRead(PinMap::Abort)==LOW){
 
-//         return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
 
-//     }
+    }
 
 
 // Check ignition calls and fire pyro accordingly

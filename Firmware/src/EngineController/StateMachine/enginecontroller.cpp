@@ -40,6 +40,9 @@ void EngineController::setup()
 
     serviceSetup();
 
+     // Abort GPIO
+     pinMode(PinMap::Abort,INPUT_PULLDOWN);
+
     _engineStateMachine.initalize(std::make_unique<Default>(m_DefaultStateParams, *this));
 
 }
@@ -105,6 +108,16 @@ uint32_t EngineController::getOxAngle()
 uint32_t EngineController::getFuelAngle()
 {
     return FuelMain.getValue();
+}
+
+float EngineController::getOF()
+{
+    return m_currOF;
+}
+
+float EngineController::getFuelCalc(){
+
+    return m_fuelcalc;
 }
 
 

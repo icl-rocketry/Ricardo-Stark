@@ -21,7 +21,8 @@ _networkmanager(networkmanager),
 _engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),
 _FuelMainAdapter(DefaultInitParams.FuelAdapter),
-m_throttle(Engine)
+m_throttle(Engine),
+m_OF(Engine)
 {};
 
 void Controlled::initialize()
@@ -40,6 +41,7 @@ void Controlled::initialize()
     m_FuelThrottleRange = m_FuelAngleLim - m_throttleFuel_min;
 
     m_throttle.setup(m_Controlled_Command_time);
+    m_OF.setup();
 
     // Initialise time index
     m_timeIndex = 0;
@@ -53,6 +55,7 @@ Types::EngineTypes::State_ptr_t Controlled::update()
    
 
     updateThrottle();
+    updateOF();
     
 
     if (millis() - m_Controlled_Command_time > m_Controlled_duration){
@@ -62,11 +65,11 @@ Types::EngineTypes::State_ptr_t Controlled::update()
     }
 
 
-    //  if (digitalRead(PinMap::Abort)==LOW){
+     if (digitalRead(PinMap::Abort)==LOW){
 
-    //     return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
 
-    // }
+    }
     
         //Obtains valve angles from array
     
@@ -94,6 +97,13 @@ void Controlled::updateThrottle(){
 
 }
 
+void Controlled::updateOF(){
+
+    m_OF.update();
+    _engine.m_currOF = m_OF.getOF();
+    _engine.m_fuelcalc = m_OF.getCalcFuelFlow();
+
+}
     
 
 void Controlled::exit()
