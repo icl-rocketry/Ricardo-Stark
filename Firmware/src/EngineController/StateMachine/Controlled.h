@@ -63,8 +63,8 @@ class Controlled: public Types::EngineTypes ::State_t
     float m_OxAngleLim = 150; 
     float m_FuelAngleLim = 180;
 
-    float m_throttleOx_min = 80; 
-    float m_throttleFuel_min = 105;
+    float m_throttleOx_min = 0; 
+    float m_throttleFuel_min = 0;
 
     float m_Ox_FF;
     float m_Fuel_FF;
