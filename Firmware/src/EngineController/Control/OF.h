@@ -19,6 +19,10 @@ public:
 
     void setupPts();
     void updateOF();    //Iterative OF update
+
+    void updateFF();
+    float getNextAngle();
+    
     float getOF();      //Returns Current OF
     float getCalcFuelFlow(); //Returns Calculated Fuel Mass Flow Rate
 
@@ -44,6 +48,25 @@ float m_mdotOx;
 float _currPc;
 float _WarmFuelInjP;
 
+
+// FF Params
+
+ float m_OxAngleLim = 150; 
+ float m_FuelAngleLim = 180;
+
+float m_throttleOx_min = 110; 
+float m_throttleFuel_min = 110;
+
+
+float m_oxthrottlerange;
+float m_fuelthrottlerange;
+
+float m_fuelextra = 0.0;
+float _oxcurrAngle;
+
+float m_FFnextAngle;
+
+// FB Loop
 float m_currOF;
 float m_loopOF;
 

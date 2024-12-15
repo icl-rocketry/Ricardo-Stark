@@ -37,7 +37,9 @@ void Shutdown::initialize()
     _OxMainAdapter.disarm();
     _FuelMainAdapter.disarm();
 
-    SimpleCommandPacket n2_shutdown(2, 0); //UPDATE ARG
+    // Kills nitrogen pressurisation when engine shuts down
+    
+    SimpleCommandPacket n2_shutdown(2, 0); 
             n2_shutdown.header.source_service = static_cast<uint8_t>(Services::ID::Engine);
             n2_shutdown.header.destination_service = 11;
             n2_shutdown.header.source = 1;

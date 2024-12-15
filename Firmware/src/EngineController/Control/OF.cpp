@@ -27,11 +27,15 @@ void OF::setup(){
 
     m_currOF = m_startOF;
 
+    m_oxthrottlerange = m_OxAngleLim - m_throttleOx_min;
+    m_fuelthrottlerange = m_FuelAngleLim - m_throttleFuel_min; 
+
 }
 
 void OF::update(){
 
     updateOF();
+    updateFF();
 
 }
 
@@ -55,6 +59,26 @@ void OF::updateOF(){
 
 
 }
+
+void OF::updateFF(){
+
+    // Feed forward based on throttle percentage
+
+    _oxcurrAngle = _engine.getOxAngle();
+
+    float oxthrottlepercent =(_oxcurrAngle - m_throttleOx_min)/m_oxthrottlerange;
+
+    m_FFnextAngle = m_throttleFuel_min + m_fuelthrottlerange*(oxthrottlepercent + m_fuelextra);
+
+
+}
+
+float OF::getNextAngle(){
+
+    return m_FFnextAngle;
+}
+
+
 
 float OF::getOF(){
 

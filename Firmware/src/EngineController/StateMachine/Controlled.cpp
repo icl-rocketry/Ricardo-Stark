@@ -64,6 +64,11 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     }
 
+     if (digitalRead(PinMap::Abort)==LOW){
+
+        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+
+    }
 
     
         //Obtains valve angles from array
@@ -76,9 +81,20 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
         }  
     }
+
+
+    if (millis() - m_Controlled_Command_time > m_OxDelay){
+
         // _OxMainAdapter.execute(m_OxAngle[m_timeIndex]);
         _OxMainAdapter.execute(_nextOxAngle);
-        _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex]);
+    }
+
+    if (millis() - m_Controlled_Command_time > m_FuelDelay){
+
+        // _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex]);
+        _FuelMainAdapter.execute(_nextFuelAngle);
+
+    }
 
         return nullptr;
 
@@ -97,6 +113,7 @@ void Controlled::updateOF(){
     m_OF.update();
     _engine.m_currOF = m_OF.getOF();
     _engine.m_fuelcalc = m_OF.getCalcFuelFlow();
+    _nextFuelAngle = m_OF.getNextAngle();
 
 }
     

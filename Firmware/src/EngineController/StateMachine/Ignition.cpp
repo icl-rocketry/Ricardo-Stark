@@ -40,6 +40,11 @@ void Ignition::initialize()
 Types::EngineTypes::State_ptr_t Ignition::update()
 {
 
+     if (digitalRead(PinMap::Abort)==LOW){
+
+        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+
+    }
 
 
 

@@ -63,16 +63,21 @@ class Controlled: public Types::EngineTypes ::State_t
     float m_OxAngleLim = 150; 
     float m_FuelAngleLim = 180;
 
-    float m_throttleOx_min = 0; 
-    float m_throttleFuel_min = 0;
+    float m_throttleOx_min = 110; 
+    float m_throttleFuel_min = 110;
 
     float m_Ox_FF;
     float m_Fuel_FF;
 
-    float m_OxPercent = 0;
-    float m_FuelPercent = 0;
+    float m_OxPercent = 0.0;
+    float m_FuelPercent = 0.0;
 
-    float m_FuelExtra = -0.45;
+    float m_FuelExtra = 0.0;
+
+    // OX / Fuel Lead timing
+
+    uint32_t m_OxDelay = 200;
+    uint32_t m_FuelDelay = 0;
 
    
     // Throttle Params

@@ -69,7 +69,7 @@ void EngineController::arm_base(int32_t arg){
 
                 NRCRemoteActuatorBase::arm_base(arg);
 
-                if (this->_state.flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL))
+                if (this->_state.flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL) && _engineStateMachine.getCurrentStateID() == EC_FLAGS::State_Default)
                 
                 _engineStateMachine.changeState(std::make_unique<Armed>(m_DefaultStateParams, _networkmanager, *this));
 
