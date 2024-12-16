@@ -91,8 +91,8 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     if (millis() - m_Controlled_Command_time > m_FuelDelay){
 
-        // _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex]);
-        _FuelMainAdapter.execute(_nextFuelAngle);
+        _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex]);
+        // _FuelMainAdapter.execute(_nextFuelAngle);
 
     }
 
