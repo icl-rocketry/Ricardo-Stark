@@ -674,15 +674,15 @@
     ],
     [
       "6c17bf58-bab3-4fa6-ad33-cca9e388d73c",
-      "buckC"
+      "ServoPower"
     ],
     [
       "5f0880ee-ff3b-4d6c-b43c-55333f7e65e0",
-      "actuators"
+      "Actuators"
     ],
     [
       "249a9f46-b59f-4de1-97d1-386ac76339a5",
-      "pressure_sensor"
+      "Sensors"
     ],
     [
       "df24f951-9014-423f-941d-dec7c0c4c8db",
@@ -695,6 +695,14 @@
     [
       "cbb4aecb-b4d4-4eab-8e16-74accf8129be",
       "microSD"
+    ],
+    [
+      "f8b7b364-2ada-4ef7-a1e0-215e1ae33a6e",
+      "Fuzzzze"
+    ],
+    [
+      "578673ef-832d-4fff-a2db-444ca36bedd2",
+      "LEDs"
     ]
   ],
   "text_variables": {}

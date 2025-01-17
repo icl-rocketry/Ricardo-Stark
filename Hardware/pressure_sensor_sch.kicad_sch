@@ -125,6 +125,341 @@
 				)
 			)
 		)
+		(symbol "1053131104_1"
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J4"
+				(at 13.97 -2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1053131104"
+				(at 7.62 2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0507_1x05-1MP_P1.00mm_Horizontal"
+				(at 10.16 -11.938 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CON_1053131104"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1053131104_1_1_1"
+				(polyline
+					(pts
+						(xy 5.08 -10.16) (xy 12.7 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -8.4582)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -6.7818)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -5.9182)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -4.2418)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -3.3782)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -1.7018)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 -0.8382)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 0.8382)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -10.16) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "2024-03-09_17-28-43:ADS131M06IPBS"
 			(pin_names
 				(offset 0.254)
@@ -1628,338 +1963,6 @@
 				)
 			)
 		)
-		(symbol "iclr:1053131104"
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 8.89 6.35 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "1053131104"
-				(at 10.16 -5.08 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "CON_1053131104"
-				(at 10.16 -6.604 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CON_1053131104"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1053131104_1_1"
-				(polyline
-					(pts
-						(xy 5.08 -10.16) (xy 12.7 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -8.4582)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -6.7818)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -5.9182)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -4.2418)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -3.3782)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -1.7018)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 -0.8382)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 0.8382)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -10.16) (xy 12.7 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+12V"
 			(power)
 			(pin_names
@@ -2416,6 +2419,102 @@
 				)
 			)
 		)
+		(symbol "power:GNDA"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDA"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDA_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDA_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GNDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:PWR_FLAG"
 			(power)
 			(pin_numbers hide)
@@ -2520,6 +2619,12 @@
 		(uuid "014e6504-0917-4c05-a58c-27cfae4f17f6")
 	)
 	(junction
+		(at 155.956 51.562)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "061bb0e4-7ed2-4038-868b-6cdcd4f3ec9a")
+	)
+	(junction
 		(at 155.448 69.088)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2550,6 +2655,12 @@
 		(uuid "0c888708-1ad5-4343-99a8-fd8a6fc70103")
 	)
 	(junction
+		(at 205.994 51.816)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f264a97-e198-4e50-bedc-b1f1a2b0a79a")
+	)
+	(junction
 		(at 124.968 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2578,18 +2689,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2af66a50-4a7f-4836-922d-90005de30cbc")
-	)
-	(junction
-		(at 155.956 119.126)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2be29a78-0ecf-464e-b643-d0aee43876c5")
-	)
-	(junction
-		(at 155.956 51.562)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2eff9749-ee2f-41a7-ac5a-51e9ae738df5")
 	)
 	(junction
 		(at 267.97 125.73)
@@ -2742,12 +2841,6 @@
 		(uuid "9ce445a4-62ec-41c2-bfc8-9ddec960f7d3")
 	)
 	(junction
-		(at 255.524 119.634)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d656666-37e5-4829-a058-715272aeb393")
-	)
-	(junction
 		(at 270.764 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2764,6 +2857,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a44e8086-29cd-4d58-bb55-16b3c74b9877")
+	)
+	(junction
+		(at 254.254 52.578)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4906ea2-2a7a-48bb-83f1-83e328a4559f")
 	)
 	(junction
 		(at 172.466 117.348)
@@ -2784,16 +2883,16 @@
 		(uuid "ada2077e-9366-495b-8215-1e59541fb024")
 	)
 	(junction
-		(at 254.254 52.578)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b427771d-e1c7-42f3-9d9e-ee7d6d82f1e4")
-	)
-	(junction
 		(at 272.034 117.856)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba1fab61-13ef-4301-8cd7-c0848af518f3")
+	)
+	(junction
+		(at 255.524 119.634)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcd9fb5f-990e-4c42-a1f3-b34c9a488160")
 	)
 	(junction
 		(at 27.94 117.856)
@@ -2812,6 +2911,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5ee7904-d755-4221-8be4-180cd5bcf34c")
+	)
+	(junction
+		(at 155.956 119.126)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d699e500-ce62-4df9-89bf-b6e9e677534b")
 	)
 	(junction
 		(at 192.532 56.896)
@@ -2886,12 +2991,6 @@
 		(uuid "fa3ccec1-2723-46f1-942b-64fe20ee9bdb")
 	)
 	(junction
-		(at 205.994 51.816)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fc1ab758-b89b-4f38-88d5-13d70065eba2")
-	)
-	(junction
 		(at 109.728 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2950,16 +3049,6 @@
 			(type default)
 		)
 		(uuid "03eb53dc-41c2-46ba-9879-73c903307aae")
-	)
-	(wire
-		(pts
-			(xy 257.302 119.634) (xy 255.524 119.634)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05ce4aab-cdea-4569-85cb-68ea6f7aee38")
 	)
 	(wire
 		(pts
@@ -3263,16 +3352,6 @@
 	)
 	(wire
 		(pts
-			(xy 98.298 104.14) (xy 103.378 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25a427ef-8d38-44c1-ab9a-b9861250958e")
-	)
-	(wire
-		(pts
 			(xy 109.728 92.71) (xy 109.728 96.52)
 		)
 		(stroke
@@ -3290,6 +3369,16 @@
 			(type default)
 		)
 		(uuid "2693b18b-ef2e-49ae-aa25-f01c51fae7a4")
+	)
+	(wire
+		(pts
+			(xy 205.994 51.816) (xy 207.772 51.816)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26e1a5b6-eb37-47e5-bfff-4c814df629a6")
 	)
 	(wire
 		(pts
@@ -3483,7 +3572,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.298 111.76) (xy 102.108 111.76)
+			(xy 98.298 111.76) (xy 99.06 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3540,6 +3629,16 @@
 			(type default)
 		)
 		(uuid "3ad9b023-5da0-40a0-bd1e-2ffa7e63c247")
+	)
+	(wire
+		(pts
+			(xy 98.298 104.14) (xy 99.06 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cce068d-5135-4d63-8e83-2ba75affaec8")
 	)
 	(wire
 		(pts
@@ -3621,16 +3720,6 @@
 		)
 		(uuid "4491a950-0eb9-4b3a-8ce7-54128d7a4034")
 	)
-	(wire
-		(pts
-			(xy 207.772 51.816) (xy 205.994 51.816)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4498f0e4-a26e-479d-bf12-43afdf1595c3")
-	)
 	(polyline
 		(pts
 			(xy 284.48 12.7) (xy 284.48 198.12)
@@ -3643,7 +3732,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.298 109.22) (xy 102.108 109.22)
+			(xy 98.298 109.22) (xy 99.06 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3653,7 +3742,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.298 119.38) (xy 102.108 119.38)
+			(xy 98.298 119.38) (xy 99.06 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3843,16 +3932,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 52.578) (xy 254.254 52.578)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56efc939-c3f4-4470-8d44-552908f0ddc0")
-	)
-	(wire
-		(pts
 			(xy 268.224 40.64) (xy 270.764 40.64)
 		)
 		(stroke
@@ -3973,7 +4052,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.032 52.578) (xy 254.254 52.578)
+			(xy 254 52.578) (xy 254.254 52.578)
 		)
 		(stroke
 			(width 0)
@@ -4093,6 +4172,26 @@
 	)
 	(wire
 		(pts
+			(xy 155.956 51.562) (xy 157.734 51.562)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7238bcf9-0cb4-4908-95ab-a35722900f38")
+	)
+	(wire
+		(pts
+			(xy 115.316 106.68) (xy 98.298 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77440972-d8aa-40eb-ba89-297dc84ebd7c")
+	)
+	(wire
+		(pts
 			(xy 32.258 116.84) (xy 32.258 119.38)
 		)
 		(stroke
@@ -4190,6 +4289,16 @@
 			(type default)
 		)
 		(uuid "82646375-c2e4-4131-bd23-cfedd1d855b4")
+	)
+	(wire
+		(pts
+			(xy 34.544 124.46) (xy 32.258 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83f5f507-18ad-4c65-bf78-7290a7da5cec")
 	)
 	(wire
 		(pts
@@ -4533,6 +4642,16 @@
 	)
 	(wire
 		(pts
+			(xy 98.298 114.3) (xy 99.06 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b31f00cb-a6a0-4e33-aaaa-1af459828cc0")
+	)
+	(wire
+		(pts
 			(xy 155.702 133.35) (xy 155.448 133.35)
 		)
 		(stroke
@@ -4723,16 +4842,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.734 51.562) (xy 155.956 51.562)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6b05427-a058-497d-b3d0-8d4eb04b4a28")
-	)
-	(wire
-		(pts
 			(xy 269.494 107.696) (xy 272.034 107.696)
 		)
 		(stroke
@@ -4740,6 +4849,16 @@
 			(type default)
 		)
 		(uuid "c7ebce54-da12-47bc-a882-6020d92dec13")
+	)
+	(wire
+		(pts
+			(xy 98.806 116.84) (xy 98.298 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c80aa967-e6ae-49e5-88f9-3f89cdeb9cbf")
 	)
 	(wire
 		(pts
@@ -4770,6 +4889,16 @@
 			(type default)
 		)
 		(uuid "c8d9af9e-cd9a-453c-a07c-fd3fdc308852")
+	)
+	(wire
+		(pts
+			(xy 254.254 52.578) (xy 256.032 52.578)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c90eeadb-156c-432e-a75a-ee6c64b3569a")
 	)
 	(wire
 		(pts
@@ -4870,16 +4999,6 @@
 			(type default)
 		)
 		(uuid "d3ebef01-e260-405b-b4a7-ea0dafb7a07a")
-	)
-	(wire
-		(pts
-			(xy 157.734 119.126) (xy 155.956 119.126)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d60254ed-bdfb-4bcc-8633-a22be64917d1")
 	)
 	(wire
 		(pts
@@ -5133,13 +5252,23 @@
 	)
 	(wire
 		(pts
-			(xy 98.298 114.3) (xy 102.108 114.3)
+			(xy 255.524 119.634) (xy 257.302 119.634)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f53a82b8-5c55-45ef-828a-00742df767ad")
+		(uuid "f449799b-da0e-4122-be30-a8c11a03d9c2")
+	)
+	(wire
+		(pts
+			(xy 155.956 119.126) (xy 157.734 119.126)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a9fcee-de8e-44df-b610-fdf48153f19f")
 	)
 	(wire
 		(pts
@@ -5263,18 +5392,7 @@
 		)
 		(uuid "13cc080a-ca14-4610-b040-cb05b6ffa014")
 	)
-	(text "Voltage drawn across R34, R39, and R44 to be 1.2v max to match ADS input range"
-		(exclude_from_sim no)
-		(at 173.99 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "219089b8-d17e-465e-942e-26627435025c")
-	)
-	(text "Volatge option"
+	(text "Voltage option"
 		(exclude_from_sim no)
 		(at 142.24 99.314 0)
 		(effects
@@ -5296,7 +5414,7 @@
 		)
 		(uuid "375f67fd-78c5-4bf8-b14c-1e6c327b8268")
 	)
-	(text "Volatge option"
+	(text "Voltage option"
 		(exclude_from_sim no)
 		(at 190.5 100.076 0)
 		(effects
@@ -5307,7 +5425,7 @@
 		)
 		(uuid "3e0487bb-ef57-46b8-9143-58f40ae4f34a")
 	)
-	(text "Volatge option"
+	(text "Voltage option"
 		(exclude_from_sim no)
 		(at 241.808 99.822 0)
 		(effects
@@ -5329,7 +5447,7 @@
 		)
 		(uuid "47105edc-96c2-4fc1-a957-41739d0c3ceb")
 	)
-	(text "Volatge option"
+	(text "Voltage option"
 		(exclude_from_sim no)
 		(at 142.24 31.75 0)
 		(effects
@@ -5351,7 +5469,7 @@
 		)
 		(uuid "987722ea-0618-47e5-b6a9-bf091dfa8254")
 	)
-	(text "Volatge option"
+	(text "Voltage option"
 		(exclude_from_sim no)
 		(at 192.278 32.004 0)
 		(effects
@@ -5373,7 +5491,7 @@
 		)
 		(uuid "c674e826-99b1-4e7d-9de4-c87b3933c415")
 	)
-	(text "Volatge option"
+	(text "Voltage option"
 		(exclude_from_sim no)
 		(at 240.538 32.766 0)
 		(effects
@@ -5495,7 +5613,7 @@
 		(uuid "0e0e3233-920a-43fe-86e1-834c5b779d76")
 	)
 	(label "AIN4P"
-		(at 260.096 146.05 270)
+		(at 255.016 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5539,7 +5657,7 @@
 		(uuid "2b2642da-2b9e-46d8-8f16-28f2c5214bb6")
 	)
 	(label "AIN5N"
-		(at 203.708 146.304 270)
+		(at 208.788 146.304 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5572,7 +5690,7 @@
 		(uuid "4f63153d-d0c6-413b-8424-1741d4c421f2")
 	)
 	(label "AIN4N"
-		(at 255.016 146.05 270)
+		(at 260.096 146.05 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5583,7 +5701,7 @@
 		(uuid "4fb599a4-a83c-437a-9863-9b0b340dbfcd")
 	)
 	(label "AIN0P"
-		(at 210.566 78.232 270)
+		(at 205.486 78.232 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5594,7 +5712,7 @@
 		(uuid "52c71095-f001-4309-9010-7b2601e1989b")
 	)
 	(label "AIN1P"
-		(at 160.528 77.978 270)
+		(at 155.448 77.978 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5605,7 +5723,7 @@
 		(uuid "53d1f60d-c622-4770-b8fc-2cd6e9e6e3be")
 	)
 	(label "AIN3N"
-		(at 253.746 78.994 270)
+		(at 258.826 78.994 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5616,7 +5734,7 @@
 		(uuid "69c21ed1-a5ce-4923-b2e2-748d1d1b2a4b")
 	)
 	(label "AIN2N"
-		(at 155.448 145.542 270)
+		(at 160.528 145.542 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5627,7 +5745,7 @@
 		(uuid "732d58f7-6361-4fe3-95ab-687fe33b9ff2")
 	)
 	(label "AIN1N"
-		(at 155.448 77.978 270)
+		(at 160.528 77.978 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5638,7 +5756,7 @@
 		(uuid "7519ad25-fd2f-4e25-88f1-43d32fb821f3")
 	)
 	(label "AIN2P"
-		(at 160.528 145.542 270)
+		(at 155.448 145.542 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5660,7 +5778,7 @@
 		(uuid "8a3101b8-6665-4f69-b882-85f24b70cf99")
 	)
 	(label "AIN3P"
-		(at 258.826 78.994 270)
+		(at 253.746 78.994 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5671,7 +5789,7 @@
 		(uuid "a5e211d1-1bae-49c4-9ba3-4cef9f826eeb")
 	)
 	(label "AIN0N"
-		(at 205.486 78.232 270)
+		(at 210.566 78.232 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5715,7 +5833,7 @@
 		(uuid "ee326412-8066-486b-b0ed-fe98cf7f8f5f")
 	)
 	(label "AIN5P"
-		(at 208.788 146.304 270)
+		(at 203.708 146.304 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5727,7 +5845,7 @@
 	)
 	(hierarchical_label "ADS_CS0"
 		(shape bidirectional)
-		(at 102.108 119.38 0)
+		(at 99.06 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5739,7 +5857,7 @@
 	)
 	(hierarchical_label "ADS_CLK"
 		(shape bidirectional)
-		(at 103.378 104.14 0)
+		(at 99.06 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5751,7 +5869,7 @@
 	)
 	(hierarchical_label "DRDY"
 		(shape bidirectional)
-		(at 98.298 116.84 0)
+		(at 98.806 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5763,7 +5881,7 @@
 	)
 	(hierarchical_label "ADS_SCLK"
 		(shape bidirectional)
-		(at 102.108 114.3 0)
+		(at 99.06 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5775,7 +5893,7 @@
 	)
 	(hierarchical_label "ADS_MISO"
 		(shape output)
-		(at 102.108 111.76 0)
+		(at 99.06 111.76 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5787,7 +5905,7 @@
 	)
 	(hierarchical_label "ADS_MOSI"
 		(shape input)
-		(at 102.108 109.22 0)
+		(at 99.06 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5865,162 +5983,6 @@
 		)
 	)
 	(symbol
-		(lib_id "iclr:1053131104")
-		(at 172.466 34.544 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "03b9c856-db28-4c99-97b8-c2434a91c2d5")
-		(property "Reference" "J13"
-			(at 186.436 37.084 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 180.086 32.004 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 182.626 41.148 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.466 34.544 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 172.466 34.544 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c25a54a1-bf50-4850-917a-dcb3afa65de9")
-		)
-		(pin "2"
-			(uuid "4fda7a41-ab82-405e-b22d-7bb7fcaa7197")
-		)
-		(pin "3"
-			(uuid "c29e15be-6f24-4df4-9cfc-f471890f41c5")
-		)
-		(pin "4"
-			(uuid "8cd6c3ed-46aa-4867-a76e-f9422aa01d9f")
-		)
-		(instances
-			(project "sensorboard - Copy"
-				(path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "iclr:1053131104")
-		(at 220.726 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "05c58850-a57b-42e4-91ce-7ea3840dd504")
-		(property "Reference" "J11"
-			(at 234.696 105.41 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 228.346 100.33 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 230.886 109.474 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.726 102.87 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.726 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "51c4f93b-6394-435e-852c-1b7495e6d7fc")
-		)
-		(pin "2"
-			(uuid "72a9aa9c-5b67-43c4-88c8-3d7cf1d5500d")
-		)
-		(pin "3"
-			(uuid "e9df00eb-1f39-4c3f-8934-d1f770888920")
-		)
-		(pin "4"
-			(uuid "1f335ef8-6629-43fb-a893-74716b7c89b5")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 268.224 46.99 90)
 		(unit 1)
@@ -6083,79 +6045,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 222.504 30.988 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "080ce299-c036-4a42-bf2f-7ea288a63100")
-		(property "Reference" "JP12"
-			(at 222.504 28.448 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 214.884 22.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 222.504 30.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.504 30.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 222.504 30.988 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d1d61b4-49a0-4b8d-98eb-f8f2379c4d7a")
-		)
-		(pin "2"
-			(uuid "ccf96516-744e-4fc4-a86c-3b60271be6a9")
-		)
-		(pin "3"
-			(uuid "1e1cfef6-2137-44a8-b9fe-13d6125802fc")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP12")
 					(unit 1)
 				)
 			)
@@ -6442,7 +6331,7 @@
 		(dnp no)
 		(uuid "0f77ed71-c0b7-4ff8-a835-2fef01910dc7")
 		(property "Reference" "C41"
-			(at 117.3543 90.17 90)
+			(at 114.808 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6450,7 +6339,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 120.65 93.98 90)
+			(at 120.904 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6573,6 +6462,80 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 172.466 30.734 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1bf2090b-fd68-4829-ad06-89a0ccd6604d")
+		(property "Reference" "JP10"
+			(at 173.736 28.194 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 171.196 29.464 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 172.466 30.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.466 30.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.466 30.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2beafd44-1730-4934-84d1-d9b6cc1a1a10")
+		)
+		(pin "2"
+			(uuid "04a1c973-02c3-416d-bd9b-92174f41d3c9")
+		)
+		(pin "3"
+			(uuid "62a5a47d-3abf-4e0d-807a-3413d1b3bbb3")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP10")
 					(unit 1)
 				)
 			)
@@ -6714,6 +6677,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 155.448 37.084 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e0d5e54-7bd3-4b04-8129-c66bfc4d3477")
+		(property "Reference" "JP5"
+			(at 152.908 35.814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 154.178 38.354 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 155.448 37.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 155.448 37.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 155.448 37.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "096de3ba-6be5-489a-92cc-a29de8eed07d")
+		)
+		(pin "2"
+			(uuid "f1311933-cc02-4292-a5f0-179fd2ef4322")
+		)
+		(pin "3"
+			(uuid "cb6178cd-9728-4db7-9772-fdf39b25d9ab")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 142.494 118.872 0)
 		(unit 1)
@@ -6842,6 +6879,71 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 115.316 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "241b4340-86c6-4d2e-935f-79b9420815ee")
+		(property "Reference" "#PWR0181"
+			(at 115.316 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.316 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.316 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.316 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.316 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84c17011-12cb-4495-8227-a95903759263")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "#PWR0181")
 					(unit 1)
 				)
 			)
@@ -7078,36 +7180,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 155.448 37.084 90)
+		(lib_id "power:GNDA")
+		(at 104.902 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2abc3097-cca0-4405-a06e-998efb7d0ca1")
-		(property "Reference" "JP39"
-			(at 152.908 35.814 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 154.178 38.354 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 155.448 37.084 0)
+		(uuid "2a8181d9-34bd-4927-81cc-ca6f57ac7f64")
+		(property "Reference" "#PWR090"
+			(at 104.902 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7115,8 +7197,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 155.448 37.084 0)
+		(property "Value" "GNDA"
+			(at 102.108 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.902 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.902 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7125,7 +7224,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 155.448 37.084 0)
+			(at 104.902 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7134,24 +7233,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "eefed29e-c41e-4ed5-8c4f-f0285ba9af29")
-		)
-		(pin "2"
-			(uuid "2bdf3d23-c689-4abc-b8cb-842f12101363")
-		)
-		(pin "3"
-			(uuid "32a19436-efdc-46cf-ae9a-ac4ce480edbb")
+			(uuid "aae7e0a8-6840-4c95-a37d-cd1a0f6d7f9c")
 		)
 		(instances
-			(project "sensorboard - Copy"
-				(path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-					(reference "JP39")
-					(unit 1)
-				)
-			)
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP5")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -7219,79 +7306,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "R39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 270.764 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2df19dbb-6ca0-45c9-bc04-97f0e58b55e8")
-		(property "Reference" "JP23"
-			(at 270.764 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 263.144 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 270.764 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.764 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 270.764 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1206040a-69c7-4be2-a625-d2f0098fe6b9")
-		)
-		(pin "2"
-			(uuid "d69cf531-fee7-48c0-9913-609761ba7090")
-		)
-		(pin "3"
-			(uuid "f17ff967-bd5a-4cc9-b7e5-d5c117c38d5e")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP23")
 					(unit 1)
 				)
 			)
@@ -7639,52 +7653,54 @@
 		)
 	)
 	(symbol
-		(lib_id "iclr:1053131104")
-		(at 272.034 102.616 0)
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 202.184 51.816 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3527d4e8-7c46-416b-b326-85e9ae9f78e9")
-		(property "Reference" "J10"
-			(at 286.004 105.156 0)
+		(uuid "37709031-3970-4ab9-bad9-5e5e8a8970d0")
+		(property "Reference" "JP6"
+			(at 199.644 50.546 90)
 			(effects
 				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 279.654 100.076 0)
-			(effects
-				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 282.194 109.22 0)
+		(property "Value" "SolderJumper_3_Open"
+			(at 200.914 53.086 90)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 202.184 51.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 272.034 102.616 0)
+		(property "Datasheet" "~"
+			(at 202.184 51.816 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 272.034 102.616 0)
+			(at 202.184 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7693,21 +7709,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "731eb272-77d3-447e-909a-fa5d6db9d130")
+			(uuid "cc281848-cec3-428b-a5d8-73f8f151703e")
 		)
 		(pin "2"
-			(uuid "3ecc036c-330b-43b4-8737-a88d4d7fd33d")
+			(uuid "70651433-67c9-471c-a7b7-1022af2eab38")
 		)
 		(pin "3"
-			(uuid "fbb6ce8b-cad8-45cc-951b-aed0264a12b3")
-		)
-		(pin "4"
-			(uuid "a63004c1-4887-4bec-adc5-84dd3fc2e8eb")
+			(uuid "bd870df7-4f6c-4033-9346-64465d21d220")
 		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J10")
+					(reference "JP6")
 					(unit 1)
 				)
 			)
@@ -7775,80 +7788,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "C41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 202.184 51.816 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3d5b2c9c-9651-4275-a21c-ca211f840383")
-		(property "Reference" "JP6"
-			(at 199.644 50.546 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 200.914 53.086 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 202.184 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 202.184 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 202.184 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "abd51191-aacb-477c-98ef-5ac409e0299b")
-		)
-		(pin "2"
-			(uuid "5ca8c3e9-8604-4bf1-a842-9145b8e9bc6e")
-		)
-		(pin "3"
-			(uuid "6f2882dd-eeab-49f8-bf30-17bf1762a231")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP6")
 					(unit 1)
 				)
 			)
@@ -8057,7 +7996,7 @@
 	(symbol
 		(lib_name "+3.3V_1")
 		(lib_id "power:+3.3V")
-		(at 32.258 124.46 180)
+		(at 34.544 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8065,7 +8004,7 @@
 		(dnp no)
 		(uuid "44c862f4-0b5e-4bb4-99c0-35b63cd7f483")
 		(property "Reference" "#PWR089"
-			(at 32.258 120.65 0)
+			(at 34.544 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8074,7 +8013,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 30.988 128.27 0)
+			(at 36.576 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8082,7 +8021,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 32.258 124.46 0)
+			(at 34.544 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8091,7 +8030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 32.258 124.46 0)
+			(at 34.544 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8100,7 +8039,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 32.258 124.46 0)
+			(at 34.544 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8588,74 +8527,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 104.902 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f4d43e1-a740-452b-a7cd-0bdde1afbe45")
-		(property "Reference" "#PWR090"
-			(at 104.902 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 104.902 97.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.902 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.902 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 104.902 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a86543fa-214c-4b20-a2c0-ce51ae028dda")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "#PWR090")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 269.494 114.046 90)
 		(unit 1)
@@ -8718,74 +8589,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 22.606 110.236 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51458035-05bf-43cf-8a3c-fdd7afdc0576")
-		(property "Reference" "#PWR088"
-			(at 22.606 116.586 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.606 115.062 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.606 110.236 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.606 110.236 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 22.606 110.236 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d9a2f5f7-f93b-4b2a-bb52-496a8a185df0")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -8858,74 +8661,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_1")
-		(lib_id "power:GND")
-		(at 98.298 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "533a0fcd-99b3-47a5-b279-4ead7075a935")
-		(property "Reference" "#PWR0181"
-			(at 98.298 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 98.298 111.506 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 98.298 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 98.298 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 98.298 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56ae1cfe-1f73-4731-9f43-314c84c39eb8")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "#PWR0181")
 					(unit 1)
 				)
 			)
@@ -9073,7 +8808,7 @@
 		(dnp no)
 		(uuid "58889692-8615-4128-9d83-1642829f4aac")
 		(property "Reference" "C46"
-			(at 117.3543 86.36 90)
+			(at 114.808 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9081,7 +8816,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 118.872 88.392 90)
+			(at 119.888 93.726 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9143,85 +8878,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 172.466 30.734 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5b352752-100e-46e8-ae56-1d5b6eec7dfc")
-		(property "Reference" "JP35"
-			(at 172.466 28.194 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 164.846 21.844 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 172.466 30.734 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.466 30.734 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 172.466 30.734 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6c8212b3-8ee4-4b93-84bc-d59175ef0e27")
-		)
-		(pin "2"
-			(uuid "ae0896d4-0cd2-41b6-8648-5473efc20ff2")
-		)
-		(pin "3"
-			(uuid "13fb7b7b-cb93-4ed9-b90c-9ea0430a6290")
-		)
-		(instances
-			(project "sensorboard - Copy"
-				(path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-					(reference "JP35")
-					(unit 1)
-				)
-			)
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 22.352 117.856 0)
 		(unit 1)
@@ -9240,7 +8896,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 22.352 114.046 0)
+			(at 18.796 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9724,7 +9380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+		(property "Footprint" "iclr:small_3pin_SolderJP"
 			(at 203.708 105.41 0)
 			(effects
 				(font
@@ -9764,6 +9420,80 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 251.714 119.634 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "652f6bb7-11c3-4c6c-b930-f0533180b086")
+		(property "Reference" "JP3"
+			(at 249.174 118.364 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 250.444 120.904 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 251.714 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.714 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 251.714 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5e58f53-d3da-49b0-8387-df3296e7121f")
+		)
+		(pin "2"
+			(uuid "73e70406-a81d-4cc6-a56b-96ba7c75de0c")
+		)
+		(pin "3"
+			(uuid "2467fcab-3e21-42fa-a9ba-94c56c2ae650")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -9970,53 +9700,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 172.466 98.298 0)
+		(lib_name "1053131104_1")
+		(lib_id "iclr:1053131104")
+		(at 270.764 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6992b3eb-0202-4b82-9b51-500f30d2ca9d")
-		(property "Reference" "JP17"
-			(at 172.466 95.758 90)
+		(uuid "6b6225ed-01bc-4fa3-b9b1-bb05c37e9876")
+		(property "Reference" "J6"
+			(at 284.734 38.1 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 164.846 89.408 0)
+		(property "Value" "1053131104"
+			(at 278.384 33.02 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 172.466 98.298 0)
+		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
+			(at 280.924 47.498 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 172.466 98.298 0)
+		(property "Datasheet" ""
+			(at 270.764 35.56 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 172.466 98.298 0)
+			(at 270.764 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10025,18 +9755,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "04210467-a7b0-4bbf-aaac-545ea95532bb")
+			(uuid "77534552-9842-44c0-bc71-5a8511f757f7")
 		)
 		(pin "2"
-			(uuid "c75d0ba2-7500-49e2-96b6-e8acd2c37e0c")
+			(uuid "54dd18de-e32e-43c5-8d7c-6c43701a03f9")
 		)
 		(pin "3"
-			(uuid "dda46908-c8b7-4d1c-b0d1-6b33cf01fe7c")
+			(uuid "89aa4c2f-7b95-4fee-9299-aef019b0b1d0")
+		)
+		(pin "4"
+			(uuid "e46d05c3-200d-4225-ac57-522cf679aa6b")
 		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP17")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -10109,54 +9842,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 205.486 37.338 90)
+		(lib_name "1053131104_1")
+		(lib_id "iclr:1053131104")
+		(at 272.034 102.616 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6dc6762e-bb5f-4327-8cb6-b5f8df4731ca")
-		(property "Reference" "JP7"
-			(at 202.946 36.068 90)
+		(uuid "6e51893a-feee-4d64-ae8a-36970f20548c")
+		(property "Reference" "J10"
+			(at 286.004 105.156 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 279.654 100.076 0)
+			(effects
+				(font
+					(size 1.524 1.524)
 				)
 				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 204.216 38.608 90)
+		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
+			(at 282.194 114.554 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 205.486 37.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 205.486 37.338 0)
+		(property "Datasheet" ""
+			(at 272.034 102.616 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 205.486 37.338 0)
+			(at 272.034 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10165,18 +9897,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "e792a64c-247d-4b31-9e55-7f6ee9a0354b")
+			(uuid "f90ca7de-55de-4db1-87d1-48cf55688315")
 		)
 		(pin "2"
-			(uuid "ff6d99e5-a56d-4139-a4f8-27ba0913f278")
+			(uuid "f7fdc0c4-786d-41ac-92d4-401382c61986")
 		)
 		(pin "3"
-			(uuid "bc4ea6ae-1c05-4651-912e-645a9ec02fc4")
+			(uuid "2991a9eb-59a1-4d57-b3be-57b59c410458")
+		)
+		(pin "4"
+			(uuid "e9159a0a-5f30-4f57-a03a-702e450f7be4")
 		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP7")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -10317,6 +10052,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 222.504 30.988 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "750ee38b-030a-49b7-8fc2-3d07cfcf6ce0")
+		(property "Reference" "JP12"
+			(at 223.774 28.448 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 221.234 29.718 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 222.504 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.504 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 222.504 30.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6bf5dce-1468-43bc-9ae2-3a9f4b5ba9b5")
+		)
+		(pin "2"
+			(uuid "cacd493a-6c04-40a8-a38f-b5f320e178f9")
+		)
+		(pin "3"
+			(uuid "b51d9abc-c323-454a-8c31-6d05e9994304")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 255.27 131.318 180)
 		(unit 1)
@@ -10385,15 +10194,15 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 253.746 38.1 90)
+		(at 272.034 98.806 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7cb5ac28-c63d-4402-ad60-e791564d2fd3")
-		(property "Reference" "JP14"
-			(at 251.206 36.83 90)
+		(uuid "7ce01362-2a9b-4996-9ca5-8872bd5da196")
+		(property "Reference" "JP28"
+			(at 273.304 96.266 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10403,7 +10212,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 252.476 39.37 90)
+			(at 270.764 97.536 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10412,8 +10221,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 253.746 38.1 0)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 272.034 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10422,7 +10231,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 253.746 38.1 0)
+			(at 272.034 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10431,7 +10240,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 253.746 38.1 0)
+			(at 272.034 98.806 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10440,18 +10249,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "f88195e0-73af-4297-86f0-45d7a9e14b0e")
+			(uuid "d5438416-9e04-4aff-82a8-e2cef833e1b0")
 		)
 		(pin "2"
-			(uuid "a8c0b511-cbbf-4cc9-bc49-2b175e8a0b89")
+			(uuid "68dbac5b-6f9f-4911-a09c-942a6182dce1")
 		)
 		(pin "3"
-			(uuid "e39c711b-dea7-45b8-8987-0c8d8eb6e867")
+			(uuid "744c6cdc-f6a8-4307-b244-ff6fe650ee3b")
 		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP14")
+					(reference "JP28")
 					(unit 1)
 				)
 			)
@@ -10459,15 +10268,15 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 155.448 104.648 90)
+		(at 250.444 52.578 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7d1b0d71-e466-4037-9c0d-f33d55cfc935")
-		(property "Reference" "JP19"
-			(at 152.908 103.378 90)
+		(uuid "7f225d7f-82b5-49ba-86a3-aab0f89cfcbd")
+		(property "Reference" "JP13"
+			(at 247.904 51.308 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10477,7 +10286,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Open"
-			(at 154.178 105.918 90)
+			(at 249.174 53.848 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10486,8 +10295,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 155.448 104.648 0)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 250.444 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10496,7 +10305,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 155.448 104.648 0)
+			(at 250.444 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10505,7 +10314,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 155.448 104.648 0)
+			(at 250.444 52.578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10514,18 +10323,92 @@
 			)
 		)
 		(pin "1"
-			(uuid "da3f7fb4-530b-4f3b-9678-2720e5cf0841")
+			(uuid "68c6ee54-f0eb-4d44-8fd8-cebe50e58530")
 		)
 		(pin "2"
-			(uuid "74b84010-418a-4f99-a0c2-a82b45866795")
+			(uuid "c1fc79ae-48bd-471d-abdb-83f3079c1e15")
 		)
 		(pin "3"
-			(uuid "becd8331-d915-4bf8-9ab7-db681caf731b")
+			(uuid "965b764a-df24-4611-b0fa-cb773605d517")
 		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP19")
+					(reference "JP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 270.764 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80b16134-3ba2-4235-86cf-41964ae54aa4")
+		(property "Reference" "JP23"
+			(at 272.034 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 269.494 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 270.764 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 270.764 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 270.764 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f445e34d-0e83-4eaa-94dc-1d856e38426e")
+		)
+		(pin "2"
+			(uuid "e23a186d-32b6-4e74-9b62-5788293940bd")
+		)
+		(pin "3"
+			(uuid "77e58717-bced-4a05-92a9-934ca1e0f099")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP23")
 					(unit 1)
 				)
 			)
@@ -10592,6 +10475,80 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "#PWR0163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 253.746 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82eba7ae-7d47-4960-8f7e-c70eb901c47d")
+		(property "Reference" "JP14"
+			(at 251.206 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 252.476 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 253.746 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 253.746 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 253.746 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d80f6a8b-da3d-4979-9696-5f78f6e7f0a8")
+		)
+		(pin "2"
+			(uuid "263a43a3-ee3c-4d72-a5c8-e2002eeb2434")
+		)
+		(pin "3"
+			(uuid "c00b3c75-d711-48e6-ad55-e9a1fdc89feb")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP14")
 					(unit 1)
 				)
 			)
@@ -10693,7 +10650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+		(property "Footprint" "iclr:small_3pin_SolderJP"
 			(at 200.406 119.888 0)
 			(effects
 				(font
@@ -10733,6 +10690,156 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 155.448 104.648 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8efa3ee5-cc20-4a40-9b66-da5b618c7d04")
+		(property "Reference" "JP19"
+			(at 152.908 103.378 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 154.178 105.918 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 155.448 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 155.448 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 155.448 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ac8ffac-bcfb-4fc9-9a5b-7a4674fef35c")
+		)
+		(pin "2"
+			(uuid "347a2141-9251-4b8b-85b7-43fe55a61915")
+		)
+		(pin "3"
+			(uuid "4d8c82ad-8a47-4975-a08b-49f964e23111")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "1053131104_1")
+		(lib_id "iclr:1053131104")
+		(at 220.726 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94539e73-92ac-4473-ad3c-72964969c490")
+		(property "Reference" "J9"
+			(at 234.696 105.41 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 228.346 100.33 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
+			(at 230.886 114.808 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.726 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.726 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa643040-12d5-4893-a5bc-1576f25df179")
+		)
+		(pin "2"
+			(uuid "0c300129-8dd7-4813-bd3a-85c827a4414b")
+		)
+		(pin "3"
+			(uuid "12356e5e-83b6-4212-adc0-1b6e8b16a3c9")
+		)
+		(pin "4"
+			(uuid "287d4556-c337-4853-8385-862f9fc65a76")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -10869,6 +10976,80 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 205.486 37.338 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a95f40a-68b3-4f26-a937-5485680f2357")
+		(property "Reference" "JP7"
+			(at 202.946 36.068 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 204.216 38.608 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 205.486 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.486 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 205.486 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "767419e3-c10c-4807-b1a5-d579a214a236")
+		)
+		(pin "2"
+			(uuid "1fd5cf08-bfa0-4b1a-924a-bd0bbf406e13")
+		)
+		(pin "3"
+			(uuid "7e76d897-c536-423e-b2bf-0cc05aa7ef8e")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP7")
 					(unit 1)
 				)
 			)
@@ -11210,81 +11391,6 @@
 		)
 	)
 	(symbol
-		(lib_id "iclr:1053131104")
-		(at 222.504 34.798 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a8ef54c5-3e03-48ba-b14a-4c640f928867")
-		(property "Reference" "J6"
-			(at 236.474 37.338 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 230.124 32.258 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 232.664 41.402 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.504 34.798 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 222.504 34.798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6de9e8d0-c072-42c0-a7fd-da9a62e9f9e7")
-		)
-		(pin "2"
-			(uuid "bd213f29-ddba-4c92-8ee0-844576e3fde3")
-		)
-		(pin "3"
-			(uuid "0a562217-33ca-4c8d-ae24-bab2e9fdf103")
-		)
-		(pin "4"
-			(uuid "10fc5de7-01ea-43e8-bc7b-300974053462")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 109.728 101.6 90)
 		(unit 1)
@@ -11294,7 +11400,7 @@
 		(dnp no)
 		(uuid "aa2cca87-6e46-4d3c-997c-7b53a289fb62")
 		(property "Reference" "C43"
-			(at 109.728 105.41 90)
+			(at 106.934 100.584 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11302,7 +11408,7 @@
 			)
 		)
 		(property "Value" "220nF"
-			(at 115.062 102.87 90)
+			(at 113.792 100.584 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11438,7 +11544,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ab901585-4161-49ec-b9d8-cc7c0fd925b3")
 		(property "Reference" "#PWR076"
 			(at 124.968 110.49 0)
@@ -11450,7 +11555,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.968 109.22 0)
+			(at 124.968 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11503,6 +11608,80 @@
 			(project "analogueI2C"
 				(path "/b5cea0b5-192f-476b-a3c8-0c26e2231699"
 					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 172.466 98.298 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2fdf011-1872-4d56-a3c5-cb3e0b56fc56")
+		(property "Reference" "JP17"
+			(at 173.736 95.758 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 171.196 97.028 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 172.466 98.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.466 98.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.466 98.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06bd5252-107e-4478-874c-c682e33b5e3b")
+		)
+		(pin "2"
+			(uuid "c2e3c9cc-fe54-4854-b497-6f187ad107f4")
+		)
+		(pin "3"
+			(uuid "2212f5ce-9770-44dd-9072-2d6521a43902")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP17")
 					(unit 1)
 				)
 			)
@@ -11643,155 +11822,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "#PWR0142")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 255.016 105.156 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bbdc6d32-4511-4100-b35f-c49eabd38731")
-		(property "Reference" "JP30"
-			(at 252.476 103.886 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 253.746 106.426 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 255.016 105.156 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.016 105.156 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 255.016 105.156 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9f2227f-385c-4730-b96c-8b0b3b45729d")
-		)
-		(pin "2"
-			(uuid "7645130d-edf7-47ab-ac48-04b82f70b17e")
-		)
-		(pin "3"
-			(uuid "8a714942-c6b7-4c48-a0cf-f8de03d5d841")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "iclr:1053131104")
-		(at 172.466 102.108 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bcde65eb-60e4-4b0f-a667-17d4796fbbc8")
-		(property "Reference" "J8"
-			(at 186.436 104.648 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 180.086 99.568 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 182.626 108.712 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.466 102.108 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 172.466 102.108 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fe2097a4-c7ee-401a-875a-593ad8c89306")
-		)
-		(pin "2"
-			(uuid "ff6a3495-08e7-4a6d-bbf5-76df3f92afc8")
-		)
-		(pin "3"
-			(uuid "b14b80f8-d921-4974-a821-477424fa1748")
-		)
-		(pin "4"
-			(uuid "b8a3aec1-e6c3-4590-9a25-257c501be1cc")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -12213,7 +12243,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c7411771-bde1-48ad-a8df-310b0dce3fea")
 		(property "Reference" "#PWR070"
 			(at 109.728 96.52 0)
@@ -12225,7 +12254,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 109.728 87.63 0)
+			(at 111.506 89.154 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12278,6 +12307,82 @@
 			(project "analogueI2C"
 				(path "/b5cea0b5-192f-476b-a3c8-0c26e2231699"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "1053131104_1")
+		(lib_id "iclr:1053131104")
+		(at 172.466 102.108 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cada6836-1fa5-45eb-9966-ff4475a5b071")
+		(property "Reference" "J8"
+			(at 186.436 104.648 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 180.086 99.568 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
+			(at 182.626 114.046 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.466 102.108 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.466 102.108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10bc7fe8-0a0c-4737-9a7d-cb50f831d05d")
+		)
+		(pin "2"
+			(uuid "636a659a-f730-417e-9570-f066bff3f9b6")
+		)
+		(pin "3"
+			(uuid "134e4a42-cbb2-4e8e-8eb5-4a09e9df052b")
+		)
+		(pin "4"
+			(uuid "6c472503-f89f-4370-b129-120abaeeed55")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -12346,79 +12451,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 272.034 98.806 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d565de61-8a40-4e9f-955d-4baf179f2b84")
-		(property "Reference" "JP28"
-			(at 272.034 96.266 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 264.414 89.916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 272.034 98.806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 272.034 98.806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 272.034 98.806 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43215bd9-57d9-4a25-a811-718326ad8a07")
-		)
-		(pin "2"
-			(uuid "3ff7954d-7176-4fdd-a606-9afb6f04de07")
-		)
-		(pin "3"
-			(uuid "6a67ecb6-d192-4f66-9ffb-9b98954b4ae6")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP28")
 					(unit 1)
 				)
 			)
@@ -12558,6 +12590,147 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDA")
+		(at 22.606 110.236 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0373a8f-bc96-4778-9832-693f94bfbe94")
+		(property "Reference" "#PWR088"
+			(at 22.606 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 19.558 112.776 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.606 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.606 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 22.606 110.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8078e42-e273-415a-b032-b07b2ebc785d")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "1053131104_1")
+		(lib_id "iclr:1053131104")
+		(at 222.504 34.798 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0bbb381-84d7-4872-9e4f-5d9e5ba0eb62")
+		(property "Reference" "J4"
+			(at 236.474 37.338 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 230.124 32.258 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
+			(at 232.664 46.736 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.504 34.798 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.504 34.798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ade3973-9262-4aef-a50e-278e1af7b394")
+		)
+		(pin "2"
+			(uuid "2b145898-7f4d-4246-9c67-34ab34f867e0")
+		)
+		(pin "3"
+			(uuid "08d02094-4a4d-4e3b-9751-c96189c97d95")
+		)
+		(pin "4"
+			(uuid "52037a08-c5ae-410c-912d-ce7c39a23031")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 152.146 119.126 90)
 		(unit 1)
@@ -12565,7 +12738,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e0b2ec58-8cf0-43ed-bf4e-c3db2a2705c9")
+		(uuid "e3501fe1-f516-4480-a9cb-60eb879a74b4")
 		(property "Reference" "JP18"
 			(at 149.606 117.856 90)
 			(effects
@@ -12586,7 +12759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+		(property "Footprint" "iclr:small_3pin_SolderJP"
 			(at 152.146 119.126 0)
 			(effects
 				(font
@@ -12614,92 +12787,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "93bbc2d7-76e7-471d-8d0a-be4d86e40776")
+			(uuid "8d23e4ac-c3d5-4f0d-9973-87f306847b00")
 		)
 		(pin "2"
-			(uuid "610546b0-3ebf-412f-bf2a-91d032ef0738")
+			(uuid "cc415723-9562-4a9d-95c1-e6eb982733ae")
 		)
 		(pin "3"
-			(uuid "53519c53-d96b-41c9-9007-009d19f8ad1b")
+			(uuid "c74b6995-6bdb-43c3-bdb8-1addb3963fe9")
 		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 250.444 52.578 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e295cfde-fe5c-4c1a-b0f6-5b4e65dc663a")
-		(property "Reference" "JP13"
-			(at 247.904 51.308 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 249.174 53.848 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 250.444 52.578 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 250.444 52.578 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 250.444 52.578 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2e6ce80c-7b1d-420a-8154-3f96b112d065")
-		)
-		(pin "2"
-			(uuid "3813d5f7-94a7-44f0-bbcd-1bfbe4a390ab")
-		)
-		(pin "3"
-			(uuid "3987845a-aa58-4f24-8536-c90d008a2e99")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP13")
 					(unit 1)
 				)
 			)
@@ -12773,80 +12872,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "R74")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 251.714 119.634 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e63159e4-781b-43eb-bea6-0447e338a912")
-		(property "Reference" "JP29"
-			(at 249.174 118.364 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 250.444 120.904 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 251.714 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 251.714 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 251.714 119.634 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b482067a-6188-454b-bf9d-c79f9a279a03")
-		)
-		(pin "2"
-			(uuid "20bb6073-dcc1-48d6-9554-bb1082aa3d97")
-		)
-		(pin "3"
-			(uuid "773b940e-dc68-49c3-8494-52a314211cae")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP29")
 					(unit 1)
 				)
 			)
@@ -13388,6 +13413,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 152.146 51.562 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eeb03a61-d6b0-432f-a809-b4b6a7fc6d22")
+		(property "Reference" "JP20"
+			(at 149.606 50.292 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 150.876 52.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 152.146 51.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.146 51.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.146 51.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76fe9d0f-1b24-488a-ab13-b93bf2d277a8")
+		)
+		(pin "2"
+			(uuid "ffac35e8-d4b2-4e0a-a118-ec1080eb4149")
+		)
+		(pin "3"
+			(uuid "1ec8e2d3-a726-4a37-b004-014e62306d41")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 218.186 114.3 90)
 		(unit 1)
@@ -13522,6 +13621,82 @@
 		)
 	)
 	(symbol
+		(lib_name "1053131104_1")
+		(lib_id "iclr:1053131104")
+		(at 172.466 34.544 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f195e302-664e-4db1-935c-696ace8870f6")
+		(property "Reference" "J7"
+			(at 186.436 37.084 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 180.086 32.004 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
+			(at 182.626 46.482 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.466 34.544 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.466 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50c38982-6aa5-4215-ba3a-86101fc2d06d")
+		)
+		(pin "2"
+			(uuid "d5520bfd-6ee3-4494-90ed-6bd6fb8b002c")
+		)
+		(pin "3"
+			(uuid "da8f02be-f832-4a94-bc51-04c8214f1dd5")
+		)
+		(pin "4"
+			(uuid "352b589f-2745-4666-b71c-0beb3420ad84")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 220.726 99.06 0)
 		(unit 1)
@@ -13549,7 +13724,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
+		(property "Footprint" "iclr:small_3pin_SolderJP"
 			(at 220.726 99.06 0)
 			(effects
 				(font
@@ -13589,161 +13764,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_3_Open")
-		(at 152.146 51.562 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f6ef7e6a-57e4-487d-8241-1bad29ea3655")
-		(property "Reference" "JP39"
-			(at 149.606 50.292 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "SolderJumper_3_Open"
-			(at 150.876 52.832 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels"
-			(at 152.146 51.562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.146 51.562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 152.146 51.562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d7ba0e41-32a0-4bbe-9b93-85ad044586ad")
-		)
-		(pin "2"
-			(uuid "a04c3016-6ae6-4c79-85b9-f26e6d53539b")
-		)
-		(pin "3"
-			(uuid "fd8d6873-adbf-4e11-88ec-1654c5f939c4")
-		)
-		(instances
-			(project "sensorboard - Copy"
-				(path "/26801cfb-b53b-4a6a-a2f4-5f4986565765/00000000-0000-0000-0000-000061b9f0c0"
-					(reference "JP39")
-					(unit 1)
-				)
-			)
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "JP20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "iclr:1053131104")
-		(at 270.764 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fa167ab6-cac3-4a1e-b894-1a67590ea0f4")
-		(property "Reference" "J9"
-			(at 284.734 38.1 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 278.384 33.02 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
-			(at 280.924 42.164 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.764 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 270.764 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4ec05d05-541d-46c3-8f16-ca360e1da1e2")
-		)
-		(pin "2"
-			(uuid "ca9515ff-95e6-4c28-995f-fe299b240355")
-		)
-		(pin "3"
-			(uuid "5611a059-78e1-4baa-8700-119f20582986")
-		)
-		(pin "4"
-			(uuid "6dfb5540-99a6-4e17-978b-8f47fd239571")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -13894,7 +13914,7 @@
 		(dnp no)
 		(uuid "fd775442-f385-4bd0-92c4-3e47ca42f1cd")
 		(property "Reference" "C39"
-			(at 26.67 121.666 0)
+			(at 25.908 115.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13902,7 +13922,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 26.67 119.126 0)
+			(at 26.162 112.268 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13952,6 +13972,80 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 255.016 105.156 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fea97c11-fc8a-4a65-ba16-5fc77e4c5fe4")
+		(property "Reference" "JP29"
+			(at 252.476 103.886 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 253.746 106.426 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "iclr:small_3pin_SolderJP"
+			(at 255.016 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.016 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 255.016 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d171776-56d6-4b72-9715-9522af00d650")
+		)
+		(pin "2"
+			(uuid "82be67ca-1581-441a-bd7e-59f5b176fdde")
+		)
+		(pin "3"
+			(uuid "d07a0b17-d49f-478a-aa86-6d40f729c49f")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "JP29")
 					(unit 1)
 				)
 			)
