@@ -3564,7 +3564,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 83.82) (xy 220.98 83.82)
+			(xy 215.392 84.074) (xy 224.282 84.074)
 		)
 		(stroke
 			(width 0)
@@ -3584,7 +3584,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 81.28) (xy 220.98 81.28)
+			(xy 215.392 81.534) (xy 224.282 81.534)
 		)
 		(stroke
 			(width 0)
@@ -3994,7 +3994,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 76.2) (xy 220.98 76.2)
+			(xy 215.392 76.454) (xy 224.282 76.454)
 		)
 		(stroke
 			(width 0)
@@ -4374,7 +4374,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 78.74) (xy 220.98 78.74)
+			(xy 215.392 78.994) (xy 224.282 78.994)
 		)
 		(stroke
 			(width 0)
@@ -4704,7 +4704,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 86.36) (xy 220.98 86.36)
+			(xy 215.392 86.614) (xy 224.282 86.614)
 		)
 		(stroke
 			(width 0)
@@ -4713,7 +4713,7 @@
 		(uuid "fff1e5fc-d663-4abc-8c7f-571618d9e324")
 	)
 	(rectangle
-		(start 115.824 78.486)
+		(start 115.824 75.692)
 		(end 137.922 93.472)
 		(stroke
 			(width 0)
@@ -4790,7 +4790,7 @@
 		(uuid "05e3073d-2619-4ccb-a988-02bbd4e016f3")
 	)
 	(label "HSPI_MOSI"
-		(at 220.98 81.28 0)
+		(at 224.282 81.534 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4799,6 +4799,17 @@
 			(justify left bottom)
 		)
 		(uuid "1933964a-2d3b-404d-a77f-e0510c7e4c5f")
+	)
+	(label "ADS_DRDY"
+		(at 186.182 80.518 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1bbf7e3f-9b37-42db-9e11-df77db377f83")
 	)
 	(label "SD1_DET"
 		(at 48.006 103.378 180)
@@ -4856,7 +4867,7 @@
 		(uuid "2d584cfb-6a4d-4c46-8bf3-a8ac25997c31")
 	)
 	(label "HSPI_MISO"
-		(at 220.98 83.82 0)
+		(at 224.282 84.074 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4889,7 +4900,7 @@
 		(uuid "34d8ca20-b65f-42ef-bb04-f700b6326c38")
 	)
 	(label "HSPI_SCLK"
-		(at 220.98 78.74 0)
+		(at 224.282 78.994 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4932,17 +4943,6 @@
 		)
 		(uuid "37c315b0-3d24-4b18-9925-c0ec7659c27e")
 	)
-	(label "DRDY"
-		(at 135.89 100.33 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "37e0fbfa-1d78-4f25-a9d3-84466b1a0662")
-	)
 	(label "CAN+"
 		(at 115.57 185.42 0)
 		(fields_autoplaced yes)
@@ -4955,7 +4955,7 @@
 		(uuid "386faf3f-2adf-472a-84bf-bd511edf2429")
 	)
 	(label "ADS_CS0"
-		(at 220.98 86.36 0)
+		(at 224.282 86.614 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5131,7 +5131,7 @@
 		(uuid "5e7c3a32-8dda-4e6a-9838-c94d1f165575")
 	)
 	(label "ADS_CLK"
-		(at 140.97 115.57 0)
+		(at 140.97 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5140,6 +5140,17 @@
 			(justify left bottom)
 		)
 		(uuid "5fa61525-6be5-43be-8259-bb3ea09ac319")
+	)
+	(label "TC_FAULT"
+		(at 186.182 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63e459d8-6bc5-4912-a305-9165996ebb7c")
 	)
 	(label "TXD"
 		(at 29.718 62.23 0)
@@ -5196,8 +5207,8 @@
 		)
 		(uuid "74855e0d-40e4-4940-a544-edae9207b2ea")
 	)
-	(label "DRDY"
-		(at 182.88 84.074 180)
+	(label "TC_DRDY"
+		(at 186.182 84.328 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5206,6 +5217,17 @@
 			(justify right bottom)
 		)
 		(uuid "76988843-abb7-419e-99d3-f288fe050856")
+	)
+	(label "TC_CS"
+		(at 186.182 86.614 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "78ba0612-175a-484a-ac70-3a7566d03687")
 	)
 	(label "CAN_TX"
 		(at 14.732 33.274 0)
@@ -5372,19 +5394,8 @@
 		)
 		(uuid "aae6b15d-5806-48ed-a6ec-bf0712992c5c")
 	)
-	(label "ADS_CS0"
-		(at 135.89 102.87 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0984d85-fb47-44f7-a457-079fcd53490e")
-	)
 	(label "ADS_CLK"
-		(at 220.98 76.2 0)
+		(at 224.282 76.454 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6960,7 +6971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5566-06A_2x03_P4.20mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal"
 			(at 123.19 20.32 0)
 			(effects
 				(font
@@ -8484,7 +8495,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 138.43 115.57 270)
+		(at 138.43 105.41 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8493,7 +8504,7 @@
 		(dnp no)
 		(uuid "6f49c7b9-8054-4534-84ae-7903a4ea593e")
 		(property "Reference" "R20"
-			(at 138.43 113.538 90)
+			(at 138.43 103.378 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8501,7 +8512,7 @@
 			)
 		)
 		(property "Value" "54.9R"
-			(at 138.684 117.602 90)
+			(at 138.684 107.442 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8509,7 +8520,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 138.43 115.57 0)
+			(at 138.43 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8518,7 +8529,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 138.43 115.57 0)
+			(at 138.43 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8527,7 +8538,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 138.43 115.57 0)
+			(at 138.43 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10266,7 +10277,7 @@
 		)
 	)
 	(sheet
-		(at 182.88 73.66)
+		(at 186.182 73.914)
 		(size 29.21 13.97)
 		(fields_autoplaced yes)
 		(stroke
@@ -10278,7 +10289,7 @@
 		)
 		(uuid "249a9f46-b59f-4de1-97d1-386ac76339a5")
 		(property "Sheetname" "Sensors"
-			(at 182.88 72.9484 0)
+			(at 186.182 73.2024 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10287,7 +10298,7 @@
 			)
 		)
 		(property "Sheetfile" "pressure_sensor_sch.kicad_sch"
-			(at 182.88 88.2146 0)
+			(at 186.182 88.4686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10296,7 +10307,7 @@
 			)
 		)
 		(pin "ADS_CLK" bidirectional
-			(at 212.09 76.2 0)
+			(at 215.392 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10305,38 +10316,8 @@
 			)
 			(uuid "82c56ae1-ed62-4123-bcdd-3eba13e299f8")
 		)
-		(pin "ADS_SCLK" bidirectional
-			(at 212.09 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "8b6f9804-f01d-4d37-9f75-2dc140c721eb")
-		)
-		(pin "ADS_MOSI" bidirectional
-			(at 212.09 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "56205112-6c9d-4455-9e01-abcd3e8d7988")
-		)
-		(pin "ADS_MISO" bidirectional
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "7637558a-f842-4f3c-b0ef-5d73e0204298")
-		)
 		(pin "ADS_CS0" bidirectional
-			(at 212.09 86.36 0)
+			(at 215.392 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10345,15 +10326,75 @@
 			)
 			(uuid "5150e324-893d-41a8-a7b6-0c468470e280")
 		)
-		(pin "DRDY" bidirectional
-			(at 182.88 84.074 180)
+		(pin "MOSI" input
+			(at 215.392 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "053279bb-b831-46ac-8357-5b73be5f7ef1")
+		)
+		(pin "MISO" output
+			(at 215.392 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "70012f1b-27a8-4286-b75b-f266a624ebf7")
+		)
+		(pin "ADS_DRDY" bidirectional
+			(at 186.182 80.518 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "477119b9-bf95-48e0-8335-c4fb9cff984d")
+			(uuid "0567a6f2-4d15-4c64-81c1-06adf5a4bb41")
+		)
+		(pin "SCLK" bidirectional
+			(at 215.392 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "efbc793d-686e-4828-84c4-e84cf6102349")
+		)
+		(pin "TC_FAULT" output
+			(at 186.182 77.47 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f0963532-4c0c-43b2-8325-b38753ce781e")
+		)
+		(pin "TC_CS" input
+			(at 186.182 86.614 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e81b690e-81d2-4152-a5c7-80edbefe4d5c")
+		)
+		(pin "TC_DRDY" output
+			(at 186.182 84.328 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "69f7f9ca-0b02-47b4-a5d2-535385250268")
 		)
 		(instances
 			(project "Ricardo-Stark"

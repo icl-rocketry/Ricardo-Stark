@@ -3008,7 +3008,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical"
+		(property "Footprint" ""
 			(at 250.698 73.406 0)
 			(effects
 				(font
