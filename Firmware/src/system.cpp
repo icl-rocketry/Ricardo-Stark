@@ -40,7 +40,8 @@ Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
 ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk,2),
 sensorHandler(networkmanager, ADC),
 ThanosR(networkmanager, sensorHandler),   
-primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
+primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus),
+m_OF(ThanosR)
 {};
 
 
@@ -81,6 +82,7 @@ void System::systemSetup(){
 
     sensorHandler.setup();
 
+    m_OF.setup();
  
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,3});
@@ -97,6 +99,9 @@ void System::systemSetup(){
     
 
     ThanosR.setup();
+
+    m_currOF = 0.0;
+    m_fuelcalc = 0.0;
     
 };
 
@@ -121,6 +126,8 @@ void System::systemUpdate(){
     ThanosR.update(); 
 
     sensorHandler.update();
+
+    updateOF();
 
     _OxAngle = ThanosR.getOxAngle();
     _FuelAngle = ThanosR.getFuelAngle();
@@ -152,6 +159,18 @@ void System::initializeLoggers()
     // initialize telemetry logger
     loggerhandler.retrieve_logger<RicCoreLoggingConfig::LOGGERS::TELEMETRY>().initialize(std::move(telemetrylogfile),[](std::string_view msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);});
 }
+
+void System::updateOF(){
+
+    m_OF.update();
+    m_currOF = m_OF.getOF();
+    m_fuelcalc = m_OF.getCalcFuelFlow();
+
+}
+
+float System::getOF(){return m_currOF;}
+float System::getFuelCalc(){return m_fuelcalc;}
+
 
 
 

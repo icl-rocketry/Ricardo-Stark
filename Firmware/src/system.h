@@ -22,6 +22,8 @@
 #include "EngineController/StateMachine/Ignition.h"
 #include "EngineController/StateMachine/Controlled.h"
 
+#include "EngineController/Control/OF.h"
+
 #include "Sensors/sensorHandler.h"
 
 #include "Commands/commands.h"
@@ -42,6 +44,12 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         void serviceSetup();
 
+        float getFuelCalc();
+
+        float getOF();
+
+        void updateOF();
+
 
 
         SPIClass SDSPI;
@@ -58,6 +66,11 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
       
         SdFat_Store primarysd;
+
+        OF m_OF;
+
+        float m_currOF;
+        float m_fuelcalc;
 
         uint32_t _OxAngle;
         uint32_t _FuelAngle;

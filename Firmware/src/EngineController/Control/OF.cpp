@@ -42,11 +42,14 @@ void OF::update(){
 
 void OF::updateOF(){
 
+    _currPc = _engine._sensorHandler.getPressure(SensorID::ChamberPt);
+    _WarmFuelInjP = _engine._sensorHandler.getPressure(SensorID::WarmFuelInjPt);
+
+
 
     for (int i=0; i < N; i++){
 
         
-
         m_mdotTotal = m_throatA*_currPc/ m_CstarTable.get(m_startOF);
         m_mdotFuel = m_CdaFuel*sqrt(2*m_fuelrho*(_WarmFuelInjP-_currPc));
         m_mdotOx = m_mdotTotal-m_mdotFuel;
@@ -54,7 +57,7 @@ void OF::updateOF(){
         m_loopOF = m_mdotOx/m_mdotFuel;
 
     }
-
+    
     m_currOF = m_loopOF;
 
 
