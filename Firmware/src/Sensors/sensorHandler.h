@@ -109,10 +109,10 @@ class SensorHandler
 
      enum Sensor : uint8_t
         {
-            ChamberPT = 0,
-            OxInjPt = 1,
-            WarmFuelInj = 2,
-            ColdFuelInj = 3,
+            ChamberPT = 3,
+            OxInjPt = 0,
+            WarmFuelInj = 1,
+            ColdFuelInj = 2,
             Chn4 = 4,
             Chn5 = 5,
             Turbine = 6
