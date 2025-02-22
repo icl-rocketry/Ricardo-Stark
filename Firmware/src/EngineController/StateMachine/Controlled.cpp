@@ -52,8 +52,6 @@ void Controlled::initialize()
 Types::EngineTypes::State_ptr_t Controlled::update()
 {
 
-   
-
     updateThrottle();
     updateOF();
     
@@ -64,11 +62,11 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     }
 
-     if (digitalRead(PinMap::Abort)==LOW){
+    //  if (digitalRead(PinMap::Abort)==LOW){
 
-        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+    //     return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
 
-    }
+    // }
 
     
         //Obtains valve angles from array
@@ -85,8 +83,8 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     if (millis() - m_Controlled_Command_time > m_OxDelay){
 
-        // _OxMainAdapter.execute(m_OxAngle[m_timeIndex]);
-        _OxMainAdapter.execute(_nextOxAngle);
+        _OxMainAdapter.execute(m_OxAngle[m_timeIndex]);
+        // _OxMainAdapter.execute(_nextOxAngle);
     }
 
     if (millis() - m_Controlled_Command_time > m_FuelDelay){

@@ -32,7 +32,6 @@ void Throttle::update(){
 
     m_prevTime = m_currTime;
 
-
 }
 
 void Throttle::updatePc()
