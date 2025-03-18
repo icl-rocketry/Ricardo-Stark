@@ -16,7 +16,7 @@ m_CstarTable({0.1,0.22041,0.34082,0.46122,0.58163,0.70204,
         ,1440.0,1459.2,1476.3,1491.5,1505.0,1516.8,1527.3,1536.3
         ,1544.0,1550.6,1556.0,1560.4,1563.8,1566.2,1567.7,1568.5
         ,1568.6,1568.1,1567.2,1565.8,1564.1,1562.1,1559.9,1557.6
-        ,1555.2,1552.6,1550.0,1547.3,1544.6,1541.9}) //OF C to C* LUT
+        ,1555.2,1552.6,1550.0,1547.3,1544.6,1541.9}) //OF to C* LUT
 {};   
 
 
@@ -24,8 +24,6 @@ void OF::setup(){
 
     _currPc = _engine._sensorHandler.getPressure(SensorID::ChamberPt);
     _WarmFuelInjP = _engine._sensorHandler.getPressure(SensorID::WarmFuelInjPt);
-
-    m_currOF = m_startOF;
 
     m_oxthrottlerange = m_OxAngleLim - m_throttleOx_min;
     m_fuelthrottlerange = m_FuelAngleLim - m_throttleFuel_min; 
@@ -42,25 +40,40 @@ void OF::update(){
 
 void OF::updateOF(){
 
-    _currPc = _engine._sensorHandler.getPressure(SensorID::ChamberPt);
-    _WarmFuelInjP = _engine._sensorHandler.getPressure(SensorID::WarmFuelInjPt);
+    // _currPc = _engine._sensorHandler.getPressure(SensorID::ChamberPt);
+    _currPc = 20.0;
+    // _WarmFuelInjP = _engine._sensorHandler.getPressure(SensorID::WarmFuelInjPt);
+    _WarmFuelInjP = 28.0;
 
-
+    m_loopOF = m_startOF;
 
     for (int i=0; i < N; i++){
 
         
-        m_mdotTotal = m_throatA*_currPc/ m_CstarTable.get(m_startOF);
-        m_mdotFuel = m_CdaFuel*sqrt(2*m_fuelrho*(_WarmFuelInjP-_currPc));
-        m_mdotOx = m_mdotTotal-m_mdotFuel;
+        double m_mdotTotaltemp = m_throatA*_currPc/ (m_CstarTable.get(m_loopOF)*m_comb_eff);
+        double m_mdotFueltemp = m_CdaFuel*sqrt(2*m_fuelrho*(_WarmFuelInjP-_currPc));
+        double m_mdotOxtemp = m_mdotTotaltemp-m_mdotFueltemp;
 
-        m_loopOF = m_mdotOx/m_mdotFuel;
+        m_loopOF = m_mdotOxtemp/m_mdotFueltemp;
 
     }
-    
+
     m_currOF = m_loopOF;
-
-
+    m_mdotTotal = m_mdotTotaltemp;
+    m_mdotFuel = m_mdotFueltemp;
+    m_mdotOx = m_mdotOxtemp;  
+    
+    // Serial.print("MDot: ");
+    // Serial.println(m_mdotTotal);
+    // Serial.print("Fuel: ");
+    // Serial.println(m_mdotFuel);
+    // Serial.print("Ox: ");
+    // Serial.println(m_mdotOx);
+    // Serial.print("OF: ");
+    // Serial.println(m_currOF);
+     
+    
+   
 }
 
 void OF::updateFF(){
@@ -91,7 +104,10 @@ float OF::getOF(){
 
 float OF::getCalcFuelFlow(){
 
-    return m_mdotFuel/m_fuelrho;
+
+    // return m_mdotFuel/m_fuelrho;
+    return m_mdotTotal;
+  
 
 }
 

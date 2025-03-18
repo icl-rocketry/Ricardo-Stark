@@ -29,7 +29,7 @@ void Controlled::initialize()
 {
     Types::EngineTypes::State_t::initialize();
 
-    _OxMainAdapter.arm(0); 
+    _OxMainAdapter.arm(0);  
     _FuelMainAdapter.arm(0);
 
     _engine.OxMain.setAngleLims(m_throttleOx_min, m_OxAngleLim);

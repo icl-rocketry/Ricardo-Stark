@@ -107,7 +107,7 @@ class SensorHandler
     }
     
 
-     enum Sensor : uint8_t
+     enum Sensor : int8_t
         {
             ChamberPT = 3,
             OxInjPt = 0,

@@ -39,14 +39,18 @@ uint8_t N = 10;
 float m_comb_eff = 0.95;
 float m_fuelrho = 800.0;
 float m_throatD = 13.54e-3;
-float m_throatA = 3.14*m_throatD*m_throatD/4;
+float m_throatA = 3.14*(m_throatD*m_throatD)/4;
 float m_CdaFuel = 0.75*5.14e-6;
 
-float m_mdotTotal;
-float m_mdotFuel;
-float m_mdotOx;
+double m_mdotTotal;
+double m_mdotFuel;
+double m_mdotOx;
 float _currPc;
 float _WarmFuelInjP;
+
+double m_mdotTotaltemp;
+double m_mdotFueltemp;
+double m_mdotOxtemp;
 
 
 // FF Params
@@ -68,6 +72,6 @@ float m_FFnextAngle;
 
 // FB Loop
 float m_currOF;
-float m_loopOF;
+double m_loopOF;
 
 };
