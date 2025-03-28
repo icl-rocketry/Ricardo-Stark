@@ -2226,7 +2226,7 @@
 		)
 		(uuid "b90d806f-4553-4a36-bc06-bfc989d10d19")
 	)
-	(hierarchical_label "GPIO38"
+	(hierarchical_label "GPIO5"
 		(shape input)
 		(at 245.618 73.406 180)
 		(effects
@@ -2248,9 +2248,9 @@
 		)
 		(uuid "2c892b1e-4591-4c06-b15e-4b2942c565e0")
 	)
-	(hierarchical_label "GPIO37"
+	(hierarchical_label "GPIO7"
 		(shape input)
-		(at 245.618 78.486 180)
+		(at 245.618 75.946 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2281,9 +2281,9 @@
 		)
 		(uuid "3f838eac-d876-4b83-bee1-44e843854a52")
 	)
-	(hierarchical_label "GPIO40"
+	(hierarchical_label "GPIO6"
 		(shape input)
-		(at 245.618 75.946 180)
+		(at 245.618 78.486 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2303,7 +2303,7 @@
 		)
 		(uuid "7014fdf9-8111-4b6d-a33a-0c6a29830d2a")
 	)
-	(hierarchical_label "GPIO42"
+	(hierarchical_label "GPIO4"
 		(shape input)
 		(at 245.618 70.866 180)
 		(effects

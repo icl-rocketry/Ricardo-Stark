@@ -2046,6 +2046,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.544 41.91) (xy 46.99 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60589d7b-789e-4710-916b-8611ac6b7895")
+	)
+	(wire
+		(pts
 			(xy 191.77 50.8) (xy 191.77 52.07)
 		)
 		(stroke
@@ -2146,6 +2156,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 41.91) (xy 93.726 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "832ec48c-8c83-4726-b488-1d70375490a3")
+	)
+	(wire
+		(pts
 			(xy 171.45 64.77) (xy 166.37 64.77)
 		)
 		(stroke
@@ -2173,16 +2193,6 @@
 			(type default)
 		)
 		(uuid "8ebf6fcc-4ea7-4e54-85c1-8337fb6c858c")
-	)
-	(wire
-		(pts
-			(xy 34.29 41.91) (xy 46.99 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "964d1527-78d9-4cd8-8981-b6177799faa6")
 	)
 	(wire
 		(pts
@@ -2316,16 +2326,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 39.37) (xy 80.01 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d21bb4f3-d8fa-457f-87e5-0c9117c8c3c6")
-	)
-	(wire
-		(pts
 			(xy 240.03 60.96) (xy 240.03 62.23)
 		)
 		(stroke
@@ -2355,7 +2355,7 @@
 		(uuid "f5a83c90-a4ca-4c24-befa-5d98f0f52797")
 	)
 	(label "VoutDiode"
-		(at 80.01 41.91 0)
+		(at 93.726 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2518,22 +2518,22 @@
 	)
 	(global_label "RBUS_uC_V"
 		(shape input)
-		(at 34.29 41.91 180)
+		(at 80.01 39.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "fa70bd12-03a5-4c86-a4a3-bff8b0094b6c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.4362 41.91 0)
+			(at 92.8638 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3124,7 +3124,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 90.17 39.37 0)
+		(at 34.544 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3133,7 +3133,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c623854-08d3-4713-928c-d4f4420abb63")
 		(property "Reference" "#PWR044"
-			(at 90.17 43.18 0)
+			(at 34.544 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3142,7 +3142,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 90.17 35.7942 0)
+			(at 34.544 38.3342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3150,7 +3150,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 39.37 0)
+			(at 34.544 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3159,7 +3159,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 39.37 0)
+			(at 34.544 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3168,7 +3168,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 39.37 0)
+			(at 34.544 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)

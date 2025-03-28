@@ -272,505 +272,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Simulation_SPICE:PMOS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "PMOS"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "P-MOSFET transistor, drain/source/gate"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "PMOS"
-				(at 0 -17.145 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "VDMOS"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor PMOS P-MOS P-MOSFET simulation"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PMOS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "PMOS_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "iclr:ST1W008S4TR2000"
 			(pin_names
 				(offset 1.016)
@@ -1431,28 +932,10 @@
 		(uuid "19a5ac4b-46cf-4def-9c50-4927bee31816")
 	)
 	(junction
-		(at 200.152 71.374)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ede0efa-d52a-4d76-b154-bfbc75833799")
-	)
-	(junction
 		(at 220.98 61.468)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4fc9013-64f9-4ea2-8fa7-6270e4bb6d9a")
-	)
-	(junction
-		(at 200.152 60.706)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb72a502-0978-4030-babb-7008414afdfe")
-	)
-	(junction
-		(at 208.534 66.294)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "caf35693-9605-4c6f-b880-65b9a19a6ec6")
 	)
 	(no_connect
 		(at 222.25 72.644)
@@ -1514,16 +997,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.706 62.738) (xy 187.706 60.706)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3315fe00-ed7b-47c0-b7d6-e9620c22f998")
-	)
-	(wire
-		(pts
 			(xy 250.19 95.504) (xy 250.19 98.044)
 		)
 		(stroke
@@ -1554,16 +1027,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.534 66.294) (xy 210.566 66.294)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61507804-2134-453b-b544-f9ca3d342591")
-	)
-	(wire
-		(pts
 			(xy 215.392 77.724) (xy 222.25 77.724)
 		)
 		(stroke
@@ -1574,26 +1037,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.706 60.706) (xy 200.152 60.706)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7eb1bdaf-2ddd-4f46-b396-1ed3e6bc467d")
-	)
-	(wire
-		(pts
-			(xy 200.152 60.706) (xy 200.152 61.214)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e47fd83-b8ab-4660-b18f-bf2bc528090c")
-	)
-	(wire
-		(pts
 			(xy 215.392 75.184) (xy 222.25 75.184)
 		)
 		(stroke
@@ -1601,26 +1044,6 @@
 			(type default)
 		)
 		(uuid "a271e3de-42af-426a-a0df-280ab1dc5c3c")
-	)
-	(wire
-		(pts
-			(xy 187.706 71.374) (xy 187.706 70.358)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3899f9a-9da2-4b1d-96c3-4d433d56b7f6")
-	)
-	(wire
-		(pts
-			(xy 207.772 66.294) (xy 208.534 66.294)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9748e9e-ee3d-44bd-9131-41bb0c40b651")
 	)
 	(wire
 		(pts
@@ -1644,16 +1067,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.152 59.69) (xy 200.152 60.706)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2671da3-9453-4b92-979f-0d3f108eb8cf")
-	)
-	(wire
-		(pts
 			(xy 200.152 80.264) (xy 222.25 80.264)
 		)
 		(stroke
@@ -1671,16 +1084,6 @@
 			(type default)
 		)
 		(uuid "e90a1b67-a9ba-46bb-a94c-5e315549456a")
-	)
-	(wire
-		(pts
-			(xy 200.152 71.374) (xy 187.706 71.374)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0a4bb75-2eb0-4a65-9a35-9b6597631263")
 	)
 	(hierarchical_label "VSPI_MOSI"
 		(shape input)
@@ -1736,85 +1139,6 @@
 			(justify right)
 		)
 		(uuid "618378c3-fc34-44c1-a792-441ddabb0d85")
-	)
-	(hierarchical_label "SD_Pow"
-		(shape input)
-		(at 210.566 66.294 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "89146db1-5b0b-40dc-8a11-a1b282aee9a1")
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 187.706 66.548 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "023ffc9f-c03c-43c1-9ffd-af40b28600f0")
-		(property "Reference" "JP34"
-			(at 182.626 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 155.956 48.768 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "iclr:SmallerSolderJP"
-			(at 187.706 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 187.706 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 187.706 66.548 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "111aa1f9-7aef-4eeb-b3d4-5c70faeed49b")
-		)
-		(pin "2"
-			(uuid "c3fb8611-bd82-4da9-9346-09cb67fce469")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/cbb4aecb-b4d4-4eab-8e16-74accf8129be"
-					(reference "JP34")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -1876,182 +1200,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/cbb4aecb-b4d4-4eab-8e16-74accf8129be"
 					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 208.534 68.834 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "27a28ab8-4f20-4790-a36f-09c87b786cf2")
-		(property "Reference" "R71"
-			(at 205.105 68.9641 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 205.105 71.501 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 208.534 68.834 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.534 68.834 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.534 68.834 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3e106d3e-acf7-4410-b881-53cd077a9d0a")
-		)
-		(pin "2"
-			(uuid "9542f909-6748-4624-b585-bc766c27effb")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/cbb4aecb-b4d4-4eab-8e16-74accf8129be"
-					(reference "R71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 202.692 66.294 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3101febf-04bb-420b-89f7-89687aace8b3")
-		(property "Reference" "Q3"
-			(at 196.342 65.024 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMP3099"
-			(at 196.342 67.564 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 197.612 68.834 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP3099L.pdf"
-			(at 202.692 53.594 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 202.692 66.294 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 202.692 49.149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 202.692 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 202.692 51.054 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" " DMP3099L"
-			(at 202.692 66.294 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f647b207-9cc5-4b8c-86e7-2d45075b8b4d")
-		)
-		(pin "3"
-			(uuid "8c33a61c-cf94-4583-8cdd-15e463e27846")
-		)
-		(pin "1"
-			(uuid "dedea0e2-b3c2-4e2b-97f2-92dd837d8c1a")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/cbb4aecb-b4d4-4eab-8e16-74accf8129be"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -2356,7 +1504,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 200.152 59.69 0)
+		(at 200.152 71.374 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2365,7 +1513,7 @@
 		(fields_autoplaced yes)
 		(uuid "46e80726-1f91-41bc-89a8-95af4f60b8e2")
 		(property "Reference" "#PWR095"
-			(at 200.152 63.5 0)
+			(at 200.152 75.184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2374,7 +1522,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 200.152 54.61 0)
+			(at 200.152 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,7 +1530,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.152 59.69 0)
+			(at 200.152 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +1539,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.152 59.69 0)
+			(at 200.152 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,7 +1548,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.152 59.69 0)
+			(at 200.152 71.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,74 +1695,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/cbb4aecb-b4d4-4eab-8e16-74accf8129be"
 					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 208.534 71.374 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd8bf668-a7da-485c-ac15-a65dff34e002")
-		(property "Reference" "#PWR0154"
-			(at 208.534 77.724 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 210.439 73.0778 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.534 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.534 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 208.534 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bacf9c77-6e9a-42e3-aaf5-40825a5916d1")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/cbb4aecb-b4d4-4eab-8e16-74accf8129be"
-					(reference "#PWR0154")
 					(unit 1)
 				)
 			)
