@@ -4809,6 +4809,16 @@
 		)
 		(uuid "fff1e5fc-d663-4abc-8c7f-571618d9e324")
 	)
+	(label "SwitchEn"
+		(at 247.65 129.032 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "055d6974-c23e-4821-9945-a944237dc964")
+	)
 	(label "Nuke 1"
 		(at 207.264 132.588 0)
 		(effects
@@ -4829,6 +4839,16 @@
 		)
 		(uuid "07eeb4f9-fa01-45db-b26f-48fd14e99061")
 	)
+	(label "DepVMon"
+		(at 69.85 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0abb7386-3d2a-4378-839d-027be4275037")
+	)
 	(label "GPIO4"
 		(at 187.96 51.562 180)
 		(effects
@@ -4838,6 +4858,16 @@
 			(justify right bottom)
 		)
 		(uuid "0dae37ea-ee1e-47a4-a634-ec8443024f06")
+	)
+	(label "SCL"
+		(at 247.65 132.588 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "13827b7d-e0e7-4f94-88c3-08437bc623a3")
 	)
 	(label "VSPI_MISO"
 		(at 135.89 69.85 0)
@@ -5039,6 +5069,16 @@
 		)
 		(uuid "408ee4e1-f3a2-4b71-9592-6374ef7cace8")
 	)
+	(label "SCL"
+		(at 221.742 147.828 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "40d6cc12-0379-4969-9711-df540de4f37e")
+	)
 	(label "HSPI_SCLK"
 		(at 135.89 95.25 0)
 		(effects
@@ -5088,16 +5128,6 @@
 			(justify left bottom)
 		)
 		(uuid "561afb28-84fc-4479-9724-0d07392566a7")
-	)
-	(label "GPIO7"
-		(at 187.96 59.182 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "56ba1da9-4c1e-4a17-8b54-2569dbffd3ea")
 	)
 	(label "Data-"
 		(at 99.06 162.56 0)
@@ -5209,6 +5239,16 @@
 		)
 		(uuid "74855e0d-40e4-4940-a544-edae9207b2ea")
 	)
+	(label "SDA"
+		(at 221.742 151.384 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "758d4fc9-008e-444b-ae42-d0739267c62b")
+	)
 	(label "TC_DRDY"
 		(at 186.182 84.328 180)
 		(effects
@@ -5218,6 +5258,16 @@
 			(justify right bottom)
 		)
 		(uuid "76988843-abb7-419e-99d3-f288fe050856")
+	)
+	(label "SDA"
+		(at 69.85 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "78018fec-67a1-4e0d-991a-fd6179e0bcd7")
 	)
 	(label "TC_FAULT"
 		(at 135.89 74.93 0)
@@ -5249,6 +5299,16 @@
 		)
 		(uuid "7e7a170f-6541-48a0-a7ae-34381ee56ab7")
 	)
+	(label "SwitchEn"
+		(at 69.85 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7fdc937d-7125-4093-9f5a-7b4367fb9078")
+	)
 	(label "CAN_TX"
 		(at 14.732 33.274 0)
 		(effects
@@ -5258,6 +5318,16 @@
 			(justify left bottom)
 		)
 		(uuid "8027ab2c-c05e-4d81-a4b3-a826ee8e8f09")
+	)
+	(label "SCL"
+		(at 69.85 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8431cd29-7402-4b13-a2dc-172761db1e43")
 	)
 	(label "SD1_DET"
 		(at 254.508 58.42 180)
@@ -5318,16 +5388,6 @@
 			(justify left bottom)
 		)
 		(uuid "96c5206d-2c9d-45e7-9ea9-339cee828f77")
-	)
-	(label "GPIO7"
-		(at 69.85 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9722526e-8a14-41e9-aa44-46735f8c8446")
 	)
 	(label "VSPI_SCLK"
 		(at 254.508 54.483 180)
@@ -5449,16 +5509,6 @@
 		)
 		(uuid "c1190100-b1c2-41c5-9ab1-fc7357983a0d")
 	)
-	(label "GPIO6"
-		(at 187.96 56.642 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c74ac9c9-3f3c-4bb4-b6fc-b9e8645fe9bc")
-	)
 	(label "ServoV_LOG"
 		(at 224.79 62.23 0)
 		(effects
@@ -5478,6 +5528,16 @@
 			(justify left bottom)
 		)
 		(uuid "d2258765-3b62-4dea-b84c-3f3b6a13118d")
+	)
+	(label "DepVMon"
+		(at 247.65 125.476 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4ff370a-f82f-4cb7-a115-9b171bd96a75")
 	)
 	(label "Pyro_IMON"
 		(at 207.264 124.968 180)
@@ -5539,15 +5599,15 @@
 		)
 		(uuid "de552ae9-cde6-4643-8cc7-9de2579dadae")
 	)
-	(label "GPIO6"
-		(at 69.85 85.09 180)
+	(label "SDA"
+		(at 247.65 134.874 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "e1d57f0f-0af3-40f9-b3c2-238fa612f4b2")
+		(uuid "e40bddff-9e51-4821-9532-006a69cb68d7")
 	)
 	(label "HSPI_MISO"
 		(at 135.89 118.11 0)
@@ -10403,7 +10463,7 @@
 	)
 	(sheet
 		(at 214.884 121.412)
-		(size 12.7 14.732)
+		(size 32.766 14.732)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10475,6 +10535,46 @@
 				(justify left)
 			)
 		)
+		(pin "BUS_VMON" output
+			(at 247.65 125.476 0)
+			(uuid "7fb2f6f9-7f85-46ba-aca7-e19a33059a85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EN" input
+			(at 247.65 129.032 0)
+			(uuid "65dccef5-aa7e-4701-aa1b-7319df77ddff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 247.65 132.588 0)
+			(uuid "12daa96c-6580-4a24-a414-642782090b5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 247.65 134.874 0)
+			(uuid "a4b4e81b-b2f5-4635-81bd-eb9c49a122d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
@@ -10526,7 +10626,7 @@
 		)
 	)
 	(sheet
-		(at 213.868 144.272)
+		(at 221.742 144.526)
 		(size 25.4 10.922)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10542,7 +10642,7 @@
 		)
 		(uuid "578673ef-832d-4fff-a2db-444ca36bedd2")
 		(property "Sheetname" "LEDs"
-			(at 213.868 143.5604 0)
+			(at 221.742 143.8144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10551,12 +10651,32 @@
 			)
 		)
 		(property "Sheetfile" "LEDs.kicad_sch"
-			(at 213.868 155.7786 0)
+			(at 221.742 156.0326 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 221.742 147.828 180)
+			(uuid "8ea39113-2b3b-41ee-8b5f-5946ca53c974")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 221.742 151.384 180)
+			(uuid "13ed9fc0-8efd-45d6-a856-bb74af5044e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -10654,26 +10774,6 @@
 		(pin "GPIO5" input
 			(at 187.96 54.102 180)
 			(uuid "e0bdfef6-7c6f-4957-8d63-aeba3b244f1a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GPIO6" input
-			(at 187.96 56.642 180)
-			(uuid "7a801698-36fd-409c-a45b-fff813f8288c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GPIO7" input
-			(at 187.96 59.182 180)
-			(uuid "e1c37d3c-b30b-4ea7-90af-c785e047132c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10891,48 +10991,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
 					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 180.086 144.018)
-		(size 24.638 13.97)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f8b7b364-2ada-4ef7-a1e0-215e1ae33a6e")
-		(property "Sheetname" "Fuzzzze"
-			(at 180.086 143.3064 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Fuzzzze.kicad_sch"
-			(at 180.086 158.5726 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83"
-					(page "12")
 				)
 			)
 		)
