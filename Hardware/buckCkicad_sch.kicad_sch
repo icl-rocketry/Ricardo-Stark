@@ -1833,6 +1833,12 @@
 		(uuid "509ad292-60d6-472b-8eef-4ce77c8fb66b")
 	)
 	(junction
+		(at 211.582 39.116)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bcc625a-6e1e-426f-8307-335feb74b392")
+	)
+	(junction
 		(at 74.93 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1857,10 +1863,22 @@
 		(uuid "3ab67a0e-1cf2-4b96-93e9-9f66a9825950")
 	)
 	(junction
+		(at 207.772 46.736)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89f9e7be-c814-4760-9cc7-c827d3e22ff2")
+	)
+	(junction
 		(at 74.93 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fa95695-028d-49e5-b6f4-7e3b558d3e99")
+	)
+	(junction
+		(at 211.582 46.736)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5312e75-cce2-4184-8713-d7cd5f078de0")
 	)
 	(junction
 		(at 129.54 44.45)
@@ -1939,6 +1957,16 @@
 			(type default)
 		)
 		(uuid "0819dd49-628f-4ea5-808f-037565bf413c")
+	)
+	(wire
+		(pts
+			(xy 211.582 44.196) (xy 211.582 46.736)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ab43539-ebb0-49d8-8725-b5eaa74e6b12")
 	)
 	(wire
 		(pts
@@ -2102,6 +2130,26 @@
 	)
 	(wire
 		(pts
+			(xy 191.262 46.736) (xy 207.772 46.736)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54953909-7b66-4776-922e-9f4cfc6fc55a")
+	)
+	(wire
+		(pts
+			(xy 211.582 37.846) (xy 211.582 39.116)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "575a2f3f-6184-49b5-bb94-a680df232cdd")
+	)
+	(wire
+		(pts
 			(xy 60.96 55.88) (xy 74.93 55.88)
 		)
 		(stroke
@@ -2242,6 +2290,16 @@
 	)
 	(wire
 		(pts
+			(xy 211.582 46.736) (xy 211.582 48.006)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b833175-84be-4a65-9058-9ebe5934d140")
+	)
+	(wire
+		(pts
 			(xy 140.97 60.96) (xy 142.24 60.96)
 		)
 		(stroke
@@ -2259,6 +2317,16 @@
 			(type default)
 		)
 		(uuid "91d7fb34-034b-427e-b533-f5cd3e05cc45")
+	)
+	(wire
+		(pts
+			(xy 207.772 39.116) (xy 211.582 39.116)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "940d1c59-10d3-4da1-ac13-d444a5091eec")
 	)
 	(wire
 		(pts
@@ -2432,6 +2500,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.772 44.196) (xy 207.772 46.736)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3e86a08-18d5-4ad4-b1d4-58811e977fce")
+	)
+	(wire
+		(pts
 			(xy 68.58 27.94) (xy 82.55 27.94)
 		)
 		(stroke
@@ -2489,6 +2567,16 @@
 			(type default)
 		)
 		(uuid "ddd398f5-8ca5-4305-8706-f1b003b173cc")
+	)
+	(wire
+		(pts
+			(xy 207.772 46.736) (xy 211.582 46.736)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df4cde1c-be03-4587-85f9-268cb3b73003")
 	)
 	(wire
 		(pts
@@ -2791,6 +2879,17 @@
 				(hide yes)
 			)
 		)
+	)
+	(hierarchical_label "SERVO_LOG"
+		(shape output)
+		(at 191.262 46.736 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ac47959a-5f70-4652-8596-d2c5f61fbf13")
 	)
 	(symbol
 		(lib_id "power:GNDA")
@@ -3123,6 +3222,73 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
 					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 211.582 50.546 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2320c753-0fd4-4a9a-9b3d-2a04c6713832")
+		(property "Reference" "R43"
+			(at 214.2236 50.546 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 216.535 50.546 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 211.582 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.582 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 211.582 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7b0ef63-f31c-45d2-9edf-6a222dd03af9")
+		)
+		(pin "2"
+			(uuid "2ced1ac6-e8d1-42e5-866d-47f3ca506f17")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -3814,6 +3980,73 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 211.582 41.656 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fa9c88e-73cc-4576-88eb-65f240a0ef88")
+		(property "Reference" "R42"
+			(at 214.2236 41.656 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 216.535 41.656 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 211.582 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.582 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 211.582 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4cb5102-bb49-4419-881c-58a899bd4516")
+		)
+		(pin "2"
+			(uuid "78e8e5ad-3dc5-49d2-8383-ac8e79eb4313")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 138.43 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3874,6 +4107,71 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 211.582 37.846 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6771d247-f8cc-4d5a-8137-a123cfc20a4e")
+		(property "Reference" "#PWR0173"
+			(at 211.582 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+6V"
+			(at 208.5173 35.9738 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 211.582 37.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 211.582 37.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 211.582 37.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6f503fd-e513-4789-80f4-947e108dcf0f")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+					(reference "#PWR0173")
 					(unit 1)
 				)
 			)
@@ -4311,7 +4609,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:ETQP5M6M_YLC"
+		(property "Footprint" "iclr:IND_SPM10065VT-3R3M-D"
 			(at 67.31 66.04 0)
 			(effects
 				(font
@@ -4732,6 +5030,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 211.582 53.086 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9bc4b1c-9a8f-4142-8e59-94eccd4abec5")
+		(property "Reference" "#PWR0177"
+			(at 211.582 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 211.709 57.4802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 211.582 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 211.582 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 211.582 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95a30eaf-afb9-476b-a397-f444d0229e52")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+					(reference "#PWR0177")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 60.96 83.82 90)
 		(unit 1)
@@ -4933,6 +5296,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 207.772 41.656 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e948e781-554b-41f1-a233-140ba8ff6982")
+		(property "Reference" "C89"
+			(at 198.882 40.386 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 198.882 42.926 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 207.772 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 207.772 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.772 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33150fb5-a6bf-44ef-9651-60466fdd2b2a")
+		)
+		(pin "2"
+			(uuid "a3cf4279-ba0e-438e-a70f-3066936b63c9")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/6c17bf58-bab3-4fa6-ad33-cca9e388d73c"
+					(reference "C89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 95.25 30.48 0)
 		(unit 1)
@@ -4960,7 +5392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-40_Kemet-Y"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7360-38_Kemet-E"
 			(at 95.25 30.48 0)
 			(effects
 				(font

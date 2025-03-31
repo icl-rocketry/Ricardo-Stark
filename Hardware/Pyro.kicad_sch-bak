@@ -126,14 +126,14 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 3.81)
-					(name "Pin_1"
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -144,14 +144,14 @@
 				(pin passive line
 					(at 5.08 -2.54 180)
 					(length 3.81)
-					(name "Pin_2"
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6512,7 +6512,7 @@
 		)
 		(uuid "2e9f4f33-f309-455a-95f9-192a8de7869e")
 	)
-	(label "PyroV"
+	(label "PyroPWR"
 		(at 56.896 193.04 180)
 		(effects
 			(font
