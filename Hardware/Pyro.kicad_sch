@@ -4797,12 +4797,6 @@
 		(uuid "0b4679d0-8c47-4669-a756-6868b2221c58")
 	)
 	(junction
-		(at 107.442 177.546)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0fe022bd-4244-4682-bb3f-7b1745cbe967")
-	)
-	(junction
 		(at 56.896 119.126)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4903,12 +4897,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a8ac8e8-ac67-4814-a56d-8404b316186b")
-	)
-	(junction
-		(at 101.092 175.006)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ae5c35e-0c42-4ed9-b6b4-3414e6f3e126")
 	)
 	(junction
 		(at 68.072 183.896)
@@ -5041,16 +5029,6 @@
 			(type default)
 		)
 		(uuid "01392674-f321-44a6-aa1b-6c3fba629957")
-	)
-	(wire
-		(pts
-			(xy 101.092 175.006) (xy 104.902 175.006)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "054e2c90-4bed-46da-91ec-d818b5fd55d7")
 	)
 	(wire
 		(pts
@@ -6914,7 +6892,7 @@
 		)
 		(uuid "53dc4938-db17-44bd-bc66-f570f49f3495")
 	)
-	(hierarchical_label "BUS_VMON"
+	(hierarchical_label "PyroVMON"
 		(shape output)
 		(at 126.746 128.016 0)
 		(effects
@@ -7830,71 +7808,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 107.442 172.466 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39560270-4d28-459b-9083-0dae15622334")
-		(property "Reference" "#PWR0172"
-			(at 107.442 176.276 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 111.252 168.656 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.442 172.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.442 172.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 107.442 172.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3eba8bf3-e54f-4724-9b7e-4acc2e53748c")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
-					(reference "#PWR0172")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 233.172 148.59 0)
 		(unit 1)
@@ -8363,71 +8276,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
 					(reference "#PWR0155")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 104.902 169.926 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "48d7e53d-5f43-4bd5-97ab-d0bfc64be72a")
-		(property "Reference" "#PWR066"
-			(at 104.902 173.736 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 105.283 165.5318 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.902 169.926 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.902 169.926 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 104.902 169.926 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bdce6b79-03ce-4165-8a6b-91620555cff9")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -10404,76 +10252,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 107.442 175.006 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9caf5dbe-c9f1-47a3-bdb0-2d65286b53a3")
-		(property "Reference" "R108"
-			(at 109.982 174.371 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.3k"
-			(at 109.982 176.911 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 107.442 175.006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.442 175.006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 107.442 175.006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e93679a-7c6a-4986-9da7-4c51973298a4")
-		)
-		(pin "2"
-			(uuid "a3c82e5f-928e-4167-ace7-6561f932d49c")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
-					(reference "R108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 44.196 124.206 0)
 		(unit 1)
@@ -12364,77 +12142,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
 					(reference "R87")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 104.902 172.466 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ef9e1a83-544f-447f-a6cc-b542b437ea38")
-		(property "Reference" "R94"
-			(at 99.822 169.926 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "3.3k"
-			(at 99.822 172.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 104.902 172.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.902 172.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 104.902 172.466 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "49650048-2001-4336-84ac-b5fce1256b69")
-		)
-		(pin "2"
-			(uuid "78ca4ca5-1d41-444f-826e-8b9f9ac05f43")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
-					(reference "R94")
 					(unit 1)
 				)
 			)

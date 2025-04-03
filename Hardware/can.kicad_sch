@@ -1717,7 +1717,7 @@
 	)
 	(hierarchical_label "CAN_HIGH"
 		(shape bidirectional)
-		(at 190.5 97.79 0)
+		(at 190.5 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1728,7 +1728,7 @@
 	)
 	(hierarchical_label "CAN_LOW"
 		(shape bidirectional)
-		(at 190.5 80.01 0)
+		(at 190.5 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
