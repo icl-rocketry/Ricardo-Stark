@@ -6805,7 +6805,7 @@
 		(uuid "467990f1-e9e8-4c43-a9ce-3edd7ae9beaa")
 	)
 	(label "HSPI_SCLK"
-		(at 135.89 95.25 0)
+		(at 135.89 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7145,7 +7145,7 @@
 		(uuid "9cf97b0a-6210-431a-8968-a7518d0dab02")
 	)
 	(label "TC_CS"
-		(at 135.89 97.79 0)
+		(at 135.89 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7425,7 +7425,7 @@
 		(uuid "e40bddff-9e51-4821-9532-006a69cb68d7")
 	)
 	(label "HSPI_MISO"
-		(at 135.89 118.11 0)
+		(at 135.89 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7485,7 +7485,7 @@
 		(uuid "f7447e92-4293-41c4-be3f-69b30aad1f17")
 	)
 	(label "HSPI_MOSI"
-		(at 135.89 115.57 0)
+		(at 135.89 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)

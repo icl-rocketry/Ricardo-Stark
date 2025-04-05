@@ -2560,16 +2560,6 @@
 		)
 		(uuid "050c4639-2e8b-4d6d-a741-778dfd24033a")
 	)
-	(label "Servo1PWM"
-		(at 82.0073 115.2436 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ea7ab0c-9339-4274-8fc2-f84a4cea7988")
-	)
 	(label "_SCL"
 		(at 236.22 68.326 0)
 		(effects
@@ -2579,6 +2569,26 @@
 			(justify left bottom)
 		)
 		(uuid "1a66165d-d7e9-4231-9103-ac403cadaf76")
+	)
+	(label "Servo0PWM"
+		(at 73.914 115.824 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "33ac37b0-b21a-48ac-8b22-c60600e37faf")
+	)
+	(label "Servo1PWM"
+		(at 84.074 114.808 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7097f65b-81bd-440d-a35f-591f58ed3f94")
 	)
 	(label "_SCL"
 		(at 164.338 68.072 0)
@@ -2599,16 +2609,6 @@
 			(justify left bottom)
 		)
 		(uuid "9f7e41ef-a6ce-4040-8d05-5a9dd2d90b08")
-	)
-	(label "Servo0PWM"
-		(at 73.914 115.824 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b51b2637-a0c5-4038-bc25-369e9eb7b409")
 	)
 	(label "_SDA"
 		(at 164.338 70.612 0)

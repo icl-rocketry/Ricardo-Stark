@@ -1815,6 +1815,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 110.998) (xy 147.574 110.998)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01da9a26-6616-45d3-bc1e-f49c5fbd8228")
+	)
+	(wire
+		(pts
 			(xy 44.45 104.14) (xy 52.07 104.14)
 		)
 		(stroke
@@ -3082,6 +3092,138 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
 					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 147.574 110.998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1cbb56f5-8f7f-40cc-b739-9bfbb4667c56")
+		(property "Reference" "#PWR0185"
+			(at 147.574 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 147.955 107.7468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.574 110.998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.574 110.998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.574 110.998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5f50bac-b510-4e24-b308-c9837ed0fdc0")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
+					(reference "#PWR0185")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 154.94 110.998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8c4a641-9e69-45ec-bd7f-c183567d5043")
+		(property "Reference" "TP11"
+			(at 153.67 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 153.67 102.1111 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 160.02 110.998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 110.998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 110.998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acb57ceb-9df1-49b4-b13e-7f5ff0f505d0")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
+					(reference "TP11")
 					(unit 1)
 				)
 			)
