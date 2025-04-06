@@ -2410,7 +2410,7 @@
 	)
 	(polyline
 		(pts
-			(xy 62.23 20.32) (xy 64.77 20.32)
+			(xy 55.49 20.35) (xy 64.77 20.35)
 		)
 		(stroke
 			(width 0)
@@ -2470,7 +2470,7 @@
 	)
 	(polyline
 		(pts
-			(xy 62.23 40.64) (xy 62.23 20.32)
+			(xy 55.49 40.67) (xy 55.49 20.35)
 		)
 		(stroke
 			(width 0)
@@ -2530,7 +2530,7 @@
 	)
 	(polyline
 		(pts
-			(xy 114.3 40.64) (xy 62.23 40.64)
+			(xy 114.3 40.67) (xy 55.49 40.67)
 		)
 		(stroke
 			(width 0)
@@ -2860,22 +2860,22 @@
 	)
 	(global_label "DeployV"
 		(shape bidirectional)
-		(at 66.04 27.94 90)
+		(at 66.04 27.94 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "0d1783cd-42fb-47aa-aa17-4d988f56f75c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 17.2785 90)
+			(at 55.3785 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)

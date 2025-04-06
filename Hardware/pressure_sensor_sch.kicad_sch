@@ -8593,7 +8593,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 104.648 41.656 0)
+			(at 105.46 39.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -8392,7 +8392,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d35eec7f-1466-497f-894d-3d3a2994ae57")
 		(property "Reference" "R65"
 			(at 115.062 39.497 0)
@@ -8404,7 +8403,7 @@
 			)
 		)
 		(property "Value" "150k"
-			(at 115.062 42.037 0)
+			(at 114.99 41.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
