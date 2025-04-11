@@ -1743,7 +1743,7 @@
 	)
 	(text "Be extra careful in leaving this connected at a single point\n"
 		(exclude_from_sim no)
-		(at 125.73 116.84 0)
+		(at 123.19 90.678 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2236,7 +2236,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 119.38) (xy 158.75 119.38)
+			(xy 151.13 93.218) (xy 156.21 93.218)
 		)
 		(stroke
 			(width 0)
@@ -2415,7 +2415,7 @@
 		(uuid "7b61fba6-6c58-4e67-b708-44bfeafe212e")
 	)
 	(label "GNDA"
-		(at 153.67 119.38 180)
+		(at 151.13 93.218 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5032,7 +5032,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 158.75 119.38 0)
+		(at 156.21 93.218 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5041,7 +5041,7 @@
 		(fields_autoplaced yes)
 		(uuid "e48b03d7-507a-49e6-8f1d-dc61aa61954a")
 		(property "Reference" "#PWR050"
-			(at 158.75 125.73 0)
+			(at 156.21 99.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5050,7 +5050,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.75 123.8234 0)
+			(at 156.21 97.6614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +5058,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 119.38 0)
+			(at 156.21 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,7 +5067,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 119.38 0)
+			(at 156.21 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +5076,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 119.38 0)
+			(at 156.21 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)

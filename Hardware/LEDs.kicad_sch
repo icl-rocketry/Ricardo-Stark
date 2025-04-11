@@ -2177,8 +2177,48 @@
 		(uuid "f78e07c9-81a7-421d-b127-79912c5be51a")
 	)
 	(no_connect
+		(at 211.328 90.932)
+		(uuid "24789945-bf6b-4e9f-a093-2d1b03a9a2fd")
+	)
+	(no_connect
+		(at 211.328 106.172)
+		(uuid "4e1dc9b0-abc4-4506-924d-49b3f0932c76")
+	)
+	(no_connect
+		(at 211.328 85.852)
+		(uuid "4f0522c9-f202-4c74-9820-c274dfdf498f")
+	)
+	(no_connect
 		(at 211.328 68.072)
 		(uuid "54919250-7bf0-4a9b-9f23-b6082d8f318d")
+	)
+	(no_connect
+		(at 211.328 96.012)
+		(uuid "71df103c-e9ed-4457-8b2d-794015ad88cb")
+	)
+	(no_connect
+		(at 211.328 103.632)
+		(uuid "8e97e7ca-424a-4bee-b5ab-68a83c7949f5")
+	)
+	(no_connect
+		(at 211.328 93.472)
+		(uuid "c4249a01-2c05-4185-9c8c-bc1404a6d7c9")
+	)
+	(no_connect
+		(at 211.328 101.092)
+		(uuid "dffb228f-3374-4a43-9f34-b938d1ddc132")
+	)
+	(no_connect
+		(at 211.328 88.392)
+		(uuid "ed30d136-3941-4385-9c7e-75cfc412f7dc")
+	)
+	(no_connect
+		(at 211.328 83.312)
+		(uuid "f788f741-d2eb-41e3-af77-086bb8c0a989")
+	)
+	(no_connect
+		(at 211.328 98.552)
+		(uuid "f78a2a4c-26fa-485b-9a99-6212e6230efa")
 	)
 	(wire
 		(pts
@@ -2960,7 +3000,7 @@
 			)
 		)
 		(property "Value" "ORANGE_LED"
-			(at 229.87 70.612 0)
+			(at 223.52 70.612 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3028,7 +3068,7 @@
 			)
 		)
 		(property "Value" "PURPLE_LED"
-			(at 230.124 80.772 0)
+			(at 223.774 80.772 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3243,7 +3283,7 @@
 			)
 		)
 		(property "Value" "RED_LED"
-			(at 228.092 73.152 0)
+			(at 221.742 73.152 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,7 +3486,7 @@
 			)
 		)
 		(property "Value" "BLUE_LED"
-			(at 228.6 78.232 0)
+			(at 222.25 78.232 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3782,7 +3822,7 @@
 			)
 		)
 		(property "Value" "YELLOW_LED"
-			(at 229.87 75.692 0)
+			(at 223.52 75.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)
