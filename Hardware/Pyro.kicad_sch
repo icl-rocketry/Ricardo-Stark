@@ -6754,6 +6754,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 64.516 122.936 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "144a1e19-dfe2-44b7-9399-bf575863a6e2")
+		(property "Reference" "#PWR0208"
+			(at 64.516 126.746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 61.468 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.516 122.936 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.516 122.936 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 64.516 122.936 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b34044a-1344-4749-b83f-e4a6af3d687e")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
+					(reference "#PWR0208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 268.224 45.212 90)
 		(unit 1)
@@ -8462,6 +8527,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 64.516 125.476 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6827c1ff-afee-42a6-a415-25124c84e09b")
+		(property "Reference" "R34"
+			(at 65.278 123.952 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DNP"
+			(at 65.278 126.492 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 64.516 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.516 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 64.516 125.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c28db5b-c08e-4541-8ce3-42f941011fb7")
+		)
+		(pin "2"
+			(uuid "d888550d-3025-48c3-9a73-df544e8bfa92")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 77.216 66.294 90)
 		(unit 1)
@@ -9286,7 +9420,7 @@
 		(dnp no)
 		(uuid "821b80d6-13ec-499f-bc3f-9bf780dfc40f")
 		(property "Reference" "C45"
-			(at 55.88 120.904 0)
+			(at 54.864 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9295,7 +9429,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 55.88 123.444 0)
+			(at 54.864 123.444 0)
 			(effects
 				(font
 					(size 1.27 1.27)
