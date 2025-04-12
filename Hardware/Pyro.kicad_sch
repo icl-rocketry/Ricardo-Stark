@@ -4363,12 +4363,6 @@
 		(uuid "d2346a9c-0b52-47d6-85c5-5239838c31c6")
 	)
 	(junction
-		(at 107.696 128.016)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d9293a2d-ea33-46d3-8cec-a6ecfb1faeb8")
-	)
-	(junction
 		(at 102.616 66.294)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4479,16 +4473,6 @@
 			(type default)
 		)
 		(uuid "0b69de93-2123-4236-b7a5-6b22d9abacce")
-	)
-	(wire
-		(pts
-			(xy 126.746 128.016) (xy 107.696 128.016)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b72641b-2cec-4a19-a8fc-af4873610807")
 	)
 	(wire
 		(pts
@@ -6342,17 +6326,6 @@
 			(justify right)
 		)
 		(uuid "53dc4938-db17-44bd-bc66-f570f49f3495")
-	)
-	(hierarchical_label "PyroVMON"
-		(shape output)
-		(at 126.746 128.016 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5cf7ca11-221a-4f23-a209-d078bf641100")
 	)
 	(hierarchical_label "SCL"
 		(shape output)
@@ -9186,7 +9159,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "10k"
 			(at 68.326 188.976 0)
 			(effects
 				(font

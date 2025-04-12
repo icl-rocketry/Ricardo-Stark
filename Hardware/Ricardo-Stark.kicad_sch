@@ -4962,6 +4962,10 @@
 		(uuid "9bd45027-f8b8-43aa-9c30-b60620a7a4c6")
 	)
 	(no_connect
+		(at 190.754 145.796)
+		(uuid "a01374bb-4577-4d49-8bcd-331efa2f9e8f")
+	)
+	(no_connect
 		(at 135.89 87.63)
 		(uuid "a73fb52a-c7cb-4ea9-a7b9-e155a81990d8")
 	)
@@ -6766,7 +6770,7 @@
 		(uuid "13827b7d-e0e7-4f94-88c3-08437bc623a3")
 	)
 	(label "VSPI_MISO"
-		(at 135.89 69.85 0)
+		(at 135.89 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7325,16 +7329,6 @@
 		)
 		(uuid "a163c6bb-35cd-4461-bb61-7e166fe206a2")
 	)
-	(label "PyroV"
-		(at 69.85 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a4f922f9-6b91-4de7-b5ae-61f9b82feb42")
-	)
 	(label "GPIO1"
 		(at 274.69 107.52 180)
 		(effects
@@ -7386,7 +7380,7 @@
 		(uuid "ab77e044-a7a7-42fe-839d-8e59f3437099")
 	)
 	(label "SD1_CS"
-		(at 135.89 128.27 0)
+		(at 135.89 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7426,7 +7420,7 @@
 		(uuid "b234a4a9-fe98-4c39-9bb1-6085d2f2f131")
 	)
 	(label "Nuke 1"
-		(at 190.754 145.796 180)
+		(at 69.85 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7506,7 +7500,7 @@
 		(uuid "c426e846-e3c6-4e7e-ad90-e9be690b6e68")
 	)
 	(label "VSPI_MOSI"
-		(at 135.89 130.81 0)
+		(at 135.89 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7534,16 +7528,6 @@
 			(justify right bottom)
 		)
 		(uuid "d49db170-3bf9-4b46-9e2f-287b53887fe9")
-	)
-	(label "PyroV"
-		(at 219 97.502 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d4ff370a-f82f-4cb7-a115-9b171bd96a75")
 	)
 	(label "CAN_RX"
 		(at 115.57 182.88 0)
@@ -7626,7 +7610,7 @@
 		(uuid "e8013298-66b8-4fda-929e-fa5c28ccf673")
 	)
 	(label "VSPI_SCLK"
-		(at 135.89 72.39 0)
+		(at 135.89 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14103,16 +14087,6 @@
 		(pin "SDA" bidirectional
 			(at 219 106.9 0)
 			(uuid "a4b4e81b-b2f5-4635-81bd-eb9c49a122d8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PyroVMON" output
-			(at 219 97.502 0)
-			(uuid "9ecaba47-8235-4ae0-9101-725cdd10b31f")
 			(effects
 				(font
 					(size 1.27 1.27)
