@@ -63,15 +63,15 @@ void System::systemSetup(){
 
 
     pinMode(PinMap::SdCs, OUTPUT);
-    pinMode(PinMap::SdEN, OUTPUT);
+    // pinMode(PinMap::SdEN, OUTPUT);
     pinMode(PinMap::ADS_Cs, OUTPUT);
 
     digitalWrite(PinMap::SdCs, HIGH);
-    digitalWrite(PinMap::SdEN, LOW);
+    // digitalWrite(PinMap::SdEN, LOW);
     digitalWrite(PinMap::ADS_Cs, HIGH);
 
 
-    pinMode(PinMap::LED, OUTPUT);
+    // pinMode(PinMap::LED, OUTPUT);
     // digitalWrite(PinMap::LED, HIGH); 
 
     canbus.setup();

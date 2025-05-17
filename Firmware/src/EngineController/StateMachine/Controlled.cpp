@@ -64,11 +64,11 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     }
 
-     if (digitalRead(PinMap::Abort)==LOW){
+    //  if (digitalRead(PinMap::Abort)==LOW){
 
-        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+    //     return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
 
-    }
+    // }
 
     
         //Obtains valve angles from array
