@@ -125,7 +125,32 @@ void System::systemUpdate(){
     _OxAngle = ThanosR.getOxAngle();
     _FuelAngle = ThanosR.getFuelAngle();
 
+    logReadings();
+
 };
+
+    void System::logReadings(){
+
+    TelemetryLogframe logframe;
+
+    uint32_t system_status;
+    uint64_t system_time;
+
+    
+    logframe.ch0sens = sensorHandler.getPressure(0);
+    logframe.ch0sens = sensorHandler.getPressure(1);
+    logframe.ch0sens = sensorHandler.getPressure(2);
+    logframe.ch0sens = sensorHandler.getPressure(3);
+    logframe.ch0sens = sensorHandler.getPressure(4);
+    logframe.ch0sens = sensorHandler.getPressure(5);
+    logframe.oxangle = _OxAngle;
+    logframe.fuelangle = _FuelAngle;
+    logframe.timestamp = esp_timer_get_time();
+
+    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::TELEMETRY>(logframe);
+
+}
+
 
 void System::initializeLoggers()
 {

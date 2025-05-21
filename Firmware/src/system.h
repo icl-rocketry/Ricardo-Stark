@@ -55,7 +55,6 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         SensorHandler sensorHandler;
         EngineController ThanosR;
-
       
         SdFat_Store primarysd;
 
@@ -67,6 +66,7 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         void initializeLoggers();
         void logReadings();
         void setupSPI();
+        void logreadings();
 
 
 
