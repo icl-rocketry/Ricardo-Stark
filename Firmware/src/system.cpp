@@ -138,11 +138,11 @@ void System::systemUpdate(){
 
     
     logframe.ch0sens = sensorHandler.getPressure(0);
-    logframe.ch0sens = sensorHandler.getPressure(1);
-    logframe.ch0sens = sensorHandler.getPressure(2);
-    logframe.ch0sens = sensorHandler.getPressure(3);
-    logframe.ch0sens = sensorHandler.getPressure(4);
-    logframe.ch0sens = sensorHandler.getPressure(5);
+    logframe.ch1sens = sensorHandler.getPressure(1);
+    logframe.ch2sens = sensorHandler.getPressure(2);
+    logframe.ch3sens = sensorHandler.getPressure(3);
+    logframe.ch4sens = sensorHandler.getPressure(4);
+    logframe.ch5sens = sensorHandler.getPressure(5);
     logframe.oxangle = _OxAngle;
     logframe.fuelangle = _FuelAngle;
     logframe.timestamp = esp_timer_get_time();
