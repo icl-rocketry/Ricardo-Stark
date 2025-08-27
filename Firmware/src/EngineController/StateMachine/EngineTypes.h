@@ -6,6 +6,8 @@
 #include <libriccore/fsm/state.h>
 #include <libriccore/fsm/statemachine.h>
 
+#include "Deployment/PCA9534Gpio.h"
+
 
 enum class EC_FLAGS:uint8_t{
 
@@ -34,7 +36,7 @@ namespace Types
     using LocalServoAdapter_t = RemoteActuatorAdapter<Types::LocalServo_t>;
     using LocalServoAdapterMap_t = std::array<LocalServoAdapter_t *, 2>;
 
-    using LocalPyro_t = NRCRemotePyro<ArduinoGpio>;
+    using LocalPyro_t = NRCRemotePyro<ArduinoGpio,PCA9534Gpio>;
     using LocalPyroAdapter_t = RemoteActuatorAdapter<Types::LocalPyro_t>;
     using LocalPyroMap_t = std::array<LocalPyroAdapter_t *, 1>;
 };

@@ -35,11 +35,13 @@ System::System():
 RicCoreSystem(Commands::command_map,Commands::defaultEnabledCommands,Serial),
 SDSPI(VSPI_BUS_NUM),
 SNSRSPI(HSPI_BUS_NUM),
+I2C(0),
 canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
 ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk,2),
+pyroPinExpander0(0x20,I2C),
 sensorHandler(networkmanager, ADC),
-ThanosR(networkmanager, sensorHandler),   
+ThanosR(networkmanager, sensorHandler,pyroPinExpander0),   
 primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
 {};
 
@@ -78,6 +80,8 @@ void System::systemSetup(){
     Buck.setup();
     setupSPI();
     ADC.setup();
+    setupI2C();
+    setupPyroPinExpander();
 
     sensorHandler.setup();
 
@@ -151,6 +155,24 @@ void System::systemUpdate(){
 
 }
 
+void System::setupI2C()
+{
+    I2C.begin(PinMap::_SDA, PinMap::_SCL, GeneralConfig::I2C_FREQUENCY);
+}
+
+void System::setupPyroPinExpander()
+{
+    if (pyroPinExpander0.setup())
+    {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("I2C pyro pin expander alive");
+
+    }
+    else
+    {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("I2C pyro pin expander failed to respond");
+    }
+
+};
 
 void System::initializeLoggers()
 {

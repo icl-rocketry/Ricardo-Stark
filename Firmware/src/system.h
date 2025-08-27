@@ -22,6 +22,8 @@
 #include "EngineController/StateMachine/Ignition.h"
 #include "EngineController/StateMachine/Controlled.h"
 
+#include "Deployment/PCA9534.h"
+
 #include "Sensors/sensorHandler.h"
 
 #include "Commands/commands.h"
@@ -30,6 +32,7 @@
 #include "Storage/sdfat_file.h"
 
 #include <SPI.h>
+#include <Wire.h>
 class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 {
     public:
@@ -42,16 +45,21 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         void serviceSetup();
 
+        void setupI2C();
 
+        void setupPyroPinExpander();
 
         SPIClass SDSPI;
         SPIClass SNSRSPI;
+        TwoWire I2C;
 
         CanBus<SYSTEM_FLAG> canbus;
          
         SiC43x Buck;
 
         ADS131M06 ADC;
+
+        PCA9534 pyroPinExpander0;
 
         SensorHandler sensorHandler;
         EngineController ThanosR;

@@ -19,6 +19,8 @@
 #include <librrc/Remote/nrcremoteservo.h>
 #include <librrc/Remote/nrcremotepyro.h>
 
+#include "Deployment/PCA9534.h"
+
 #include "EngineTypes.h"
 #include "Sensors/sensorHandler.h"
 
@@ -30,7 +32,7 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     
     public:
 
-    EngineController(RnpNetworkManager& networkmanager, SensorHandler& _sensorHandler);
+    EngineController(RnpNetworkManager& networkmanager, SensorHandler& _sensorHandler, PCA9534& pyroPinExpander);
 
     void setup();
     void update();

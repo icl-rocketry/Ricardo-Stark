@@ -5,6 +5,9 @@
 #include <libriccore/commands/commandhandler.h>
 #include <libriccore/riccorelogging.h>
 
+#include "Deployment/PCA9534.h"
+#include "Deployment/PCA9534Gpio.h"
+
 
 #include "Default.h"
 #include "Armed.h"
@@ -17,7 +20,7 @@
 
  
 
-EngineController::EngineController(RnpNetworkManager& networkmanager, SensorHandler& sensorHandler):
+EngineController::EngineController(RnpNetworkManager& networkmanager, SensorHandler& sensorHandler, PCA9534& pyroPinExpander):
                     NRCRemoteActuatorBase(networkmanager),
                     _networkmanager(networkmanager),  
                     _sensorHandler(sensorHandler),
@@ -25,7 +28,7 @@ EngineController::EngineController(RnpNetworkManager& networkmanager, SensorHand
                     OxMainAdapter(0,OxMain,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
                     FuelMain(LocalPWM(PinMap::ServoPWM2,1),networkmanager,"FuelMain"),
                     FuelMainAdapter(0,FuelMain,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
-                    Pyro(PinMap::PyroNuke, PinMap::PyroCont, _networkmanager),
+                    Pyro(ArduinoGpio(PinMap::PyroNuke), PCA9534Gpio(pyroPinExpander,PinMap::PyroCont), _networkmanager),
                     PyroAdapter(0,Pyro,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);})
 
 {}; 

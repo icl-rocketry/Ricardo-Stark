@@ -1,5 +1,7 @@
 #pragma once
 
+
+
 #include <driver/gpio.h>
 #include <driver/adc.h>
 #include "esp_adc_cal.h"
@@ -12,7 +14,7 @@ public:
     /**
      * @brief Construct a new VRailMonitor object
      * 
-     * @param systemstatus reference to system status object
+     * @param vrail_name name of voltage rail for logging purposes
      * @param pin pin to read voltage
      * @param r1 value of r1 in potential divider (unitless)
      * @param r2 value of r2 in potential divider (unitless)
@@ -25,7 +27,7 @@ public:
      * @param lowVoltage low voltage in mV
      * @param minVoltage minium voltage in mV
      */
-    void setup(uint16_t maxVoltage, uint16_t lowVoltage, uint16_t minVoltage);
+    void setup(int maxVoltage, int lowVoltage,int minVoltage);
     /**
      * @brief Read data into sensor struct
      * 
@@ -75,8 +77,8 @@ private:
      */
     bool _adcInitialized;
 
-    static constexpr adc_atten_t _atten = ADC_ATTEN_DB_11;
-    static constexpr adc_bits_width_t _width = ADC_WIDTH_12Bit;
+    static constexpr adc_atten_t _atten = ADC_ATTEN_DB_12;
+    static constexpr adc_bits_width_t _width = ADC_WIDTH_BIT_12;
 
 
     /**
@@ -85,9 +87,9 @@ private:
      */
     const float factor;
 
-    uint16_t _maxVoltage;
-    uint16_t _lowVoltage;
-    uint16_t _minVoltage;
+    int _maxVoltage;
+    int _lowVoltage;
+    int _minVoltage;
 
     bool _lowVoltageTriggered;
 

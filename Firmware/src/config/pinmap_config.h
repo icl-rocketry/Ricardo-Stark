@@ -28,7 +28,7 @@ namespace PinMap{
     static constexpr uint8_t ServoVLog = 8; 
 
     // Pyro
-    static constexpr uint8_t PyroCont = 39; //change
+    static constexpr uint8_t PyroCont = 3; //NB this is on the pyro pin expander
     static constexpr uint8_t PyroNuke = 9;
 
     // LED
@@ -51,6 +51,10 @@ namespace PinMap{
     // MISC
     static constexpr uint8_t Abort = 1;
     static constexpr uint8_t Turbine = 2;
+
+    //I2C
+    static constexpr uint8_t _SCL = 6;
+    static constexpr uint8_t _SDA = 7;
 
 
    
