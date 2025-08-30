@@ -40,6 +40,7 @@ canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
 ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk,2),
 pyroPinExpander0(0x20,I2C),
+pyroPowerSwitch(pyroPinExpander0,PinMap::PyroPowerSwitch),
 sensorHandler(networkmanager, ADC),
 ThanosR(networkmanager, sensorHandler,pyroPinExpander0),   
 primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
@@ -81,7 +82,10 @@ void System::systemSetup(){
     setupSPI();
     ADC.setup();
     setupI2C();
+
     setupPyroPinExpander();
+
+
 
     sensorHandler.setup();
 
@@ -101,6 +105,10 @@ void System::systemSetup(){
     
 
     ThanosR.setup();
+
+    //enable pyro power
+    pyroPowerSwitch.digitalWrite(1);
+    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Pyro power enabled");
     
 };
 
@@ -165,6 +173,10 @@ void System::setupPyroPinExpander()
     if (pyroPinExpander0.setup())
     {
         RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("I2C pyro pin expander alive");
+
+        pyroPowerSwitch.digitalWrite(0); // ensure off
+        pyroPowerSwitch.pinMode(PCA9534Gpio::PINMODE::GPIO_OUTPUT);
+        
 
     }
     else

@@ -60,6 +60,7 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         ADS131M06 ADC;
 
         PCA9534 pyroPinExpander0;
+        PCA9534Gpio pyroPowerSwitch;
 
         SensorHandler sensorHandler;
         EngineController ThanosR;

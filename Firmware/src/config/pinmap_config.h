@@ -30,6 +30,7 @@ namespace PinMap{
     // Pyro
     static constexpr uint8_t PyroCont = 3; //NB this is on the pyro pin expander
     static constexpr uint8_t PyroNuke = 9;
+    static constexpr uint8_t PyroPowerSwitch = 1; //NB this is on the pyro pin expander
 
     // LED
     // static constexpr uint8_t LED = 26; //chnage
