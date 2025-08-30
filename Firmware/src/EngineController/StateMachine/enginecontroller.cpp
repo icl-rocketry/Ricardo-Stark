@@ -24,9 +24,9 @@ EngineController::EngineController(RnpNetworkManager& networkmanager, SensorHand
                     NRCRemoteActuatorBase(networkmanager),
                     _networkmanager(networkmanager),  
                     _sensorHandler(sensorHandler),
-                    OxMain(LocalPWM(PinMap::ServoPWM1,0), networkmanager,"OxMain"),
+                    OxMain(LocalPWM(PinMap::ServoPWM1), networkmanager,"OxMain"),
                     OxMainAdapter(0,OxMain,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
-                    FuelMain(LocalPWM(PinMap::ServoPWM2,1),networkmanager,"FuelMain"),
+                    FuelMain(LocalPWM(PinMap::ServoPWM2),networkmanager,"FuelMain"),
                     FuelMainAdapter(0,FuelMain,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);}),
                     Pyro(ArduinoGpio(PinMap::PyroNuke), PCA9534Gpio(pyroPinExpander,PinMap::PyroCont), _networkmanager),
                     PyroAdapter(0,Pyro,[](const std::string& msg){RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>(msg);})
