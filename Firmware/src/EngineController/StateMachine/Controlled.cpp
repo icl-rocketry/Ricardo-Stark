@@ -21,6 +21,8 @@ _networkmanager(networkmanager),
 _engine(Engine),
 _OxMainAdapter(DefaultInitParams.OxAdapter),
 _FuelMainAdapter(DefaultInitParams.FuelAdapter),
+m_OxAngleLuT({time_array},{m_OxAngle}),
+m_FuelAngleLuT({time_array},{m_FuelAngle}),
 m_throttle(Engine),
 m_OF(Engine)
 {};
@@ -85,13 +87,13 @@ Types::EngineTypes::State_ptr_t Controlled::update()
 
     if (millis() - m_Controlled_Command_time > m_OxDelay){
 
-        // _OxMainAdapter.execute(m_OxAngle[m_timeIndex]);
-        _OxMainAdapter.execute(_nextOxAngle);
+        _OxMainAdapter.execute(m_OxAngleLuT.get(millis() - m_Controlled_Command_time - m_OxDelay)); //Uses linear interpolation between preset valve angles
+        // _OxMainAdapter.execute(_nextOxAngle);
     }
 
     if (millis() - m_Controlled_Command_time > m_FuelDelay){
 
-        _FuelMainAdapter.execute(m_FuelAngle[m_timeIndex]);
+        _FuelMainAdapter.execute(m_FuelAngleLuT.get(millis() - m_Controlled_Command_time) - m_FuelDelay);
         // _FuelMainAdapter.execute(_nextFuelAngle);
 
     }

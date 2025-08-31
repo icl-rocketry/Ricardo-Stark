@@ -61,6 +61,8 @@ void EngineController::update()
 void EngineController::arm_base(int32_t arg){
 
 
+    if ( _engineStateMachine.getCurrentStateID() == EC_FLAGS::State_Default){
+
     PyroAdapter.arm(arg);
     OxMainAdapter.arm(arg);
     FuelMainAdapter.arm(arg);
@@ -72,11 +74,13 @@ void EngineController::arm_base(int32_t arg){
 
                 NRCRemoteActuatorBase::arm_base(arg);
 
-                if (this->_state.flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL) && _engineStateMachine.getCurrentStateID() == EC_FLAGS::State_Default)
+                if (this->_state.flagSet(LIBRRC::COMPONENT_STATUS_FLAGS::NOMINAL))
                 
                 _engineStateMachine.changeState(std::make_unique<Armed>(m_DefaultStateParams, _networkmanager, *this));
 
             }
+
+    }
     else {
 
         PyroAdapter.disarm();

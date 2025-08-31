@@ -27,8 +27,8 @@ void Default::initialize()
     _OxMainAdapter.arm(0); 
     _FuelMainAdapter.arm(0);
 
-    _engine.OxMain.setAngleLims(0, 180);
-    _engine.FuelMain.setAngleLims(0, 180);
+    _engine.OxMain.setAngleLims(0, 90);
+    _engine.FuelMain.setAngleLims(0, 90);
     
     _OxMainAdapter.execute(0);
     _FuelMainAdapter.execute(0);
