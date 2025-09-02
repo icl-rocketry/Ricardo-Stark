@@ -68,12 +68,10 @@ class EngineController: public NRCRemoteActuatorBase<EngineController>
     Types::LocalPyro_t Pyro;
     Types::LocalPyroAdapter_t PyroAdapter;
 
-
     uint8_t OxMainservice = (uint8_t) Services::ID::Servo1;
     uint8_t FuelMainservice = (uint8_t) Services::ID::Servo2;
     uint8_t Pyroservice = (uint8_t) Services::ID::Pyro;
 
-    
 
     Types::EngineTypes::StateMachine_t _engineStateMachine;
     Types::EngineTypes::SystemStatus_t _engineStatus;

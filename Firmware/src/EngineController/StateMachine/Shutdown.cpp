@@ -38,16 +38,14 @@ void Shutdown::initialize()
     _FuelMainAdapter.disarm();
 
     // Kills nitrogen pressurisation when engine shuts down
-    
-    SimpleCommandPacket n2_shutdown(2, 2); 
-            n2_shutdown.header.source_service = static_cast<uint8_t>(Services::ID::Engine);
-            n2_shutdown.header.destination_service = 10;
-            n2_shutdown.header.source = 1;
-            n2_shutdown.header.destination = 9;  
-            n2_shutdown.header.uid = 0;
-            _networkmanager.sendPacket(n2_shutdown); 
-  
-  
+
+    SimpleCommandPacket n2_shutdown(2, 2);
+    n2_shutdown.header.source_service = static_cast<uint8_t>(Services::ID::Engine);
+    n2_shutdown.header.destination_service = 10;
+    n2_shutdown.header.source = 1;
+    n2_shutdown.header.destination = 9;
+    n2_shutdown.header.uid = 0;
+    _networkmanager.sendPacket(n2_shutdown);
 };
 
 Types::EngineTypes::State_ptr_t Shutdown::update()

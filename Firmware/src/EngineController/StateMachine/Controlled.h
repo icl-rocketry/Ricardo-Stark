@@ -52,12 +52,12 @@ class Controlled: public Types::EngineTypes ::State_t
 
     // Simple Engine
 
-        uint64_t m_Controlled_duration = 5000; //Duration of the controlled burn (ms)
+        uint64_t m_Controlled_duration = 60000; //Duration of the controlled burn (ms)
         uint64_t m_Controlled_Command_time;
 
-        std::vector<float> time_array = {0,1000,static_cast<float>(m_Controlled_duration)}; //Float type to be compatible with LuT and Interp template
-        std::vector<float> m_OxAngle = {0,90,90};
-        std::vector<float> m_FuelAngle = {m_throttleOx_min,90,90};
+        std::vector<float> time_array = {0,100,static_cast<float>(m_Controlled_duration)}; //Float type to be compatible with LuT and Interp template
+        std::vector<float> m_OxAngle = {0,95,95};
+        std::vector<float> m_FuelAngle = {0,100,100};
 
     // OX / Fuel Lead timing
 

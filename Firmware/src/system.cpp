@@ -48,7 +48,7 @@ primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
 
 
 void System::systemSetup(){
-    
+    delay(500);
     Serial.setRxBufferSize(GeneralConfig::SerialRxSize);
     Serial.begin(GeneralConfig::SerialBaud);
 
@@ -85,10 +85,7 @@ void System::systemSetup(){
 
     setupPyroPinExpander();
 
-
-
     sensorHandler.setup();
-
  
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,3});
@@ -176,7 +173,6 @@ void System::setupPyroPinExpander()
 
         pyroPowerSwitch.digitalWrite(0); // ensure off
         pyroPowerSwitch.pinMode(PCA9534Gpio::PINMODE::GPIO_OUTPUT);
-        
 
     }
     else
