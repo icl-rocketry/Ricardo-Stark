@@ -67,8 +67,8 @@ class Controlled: public Types::EngineTypes ::State_t
     // Valve Limits in the Controlled state
 
     //Max
-    float m_OxAngleLim = 90; 
-    float m_FuelAngleLim = 90;
+    float m_OxAngleLim = 95; 
+    float m_FuelAngleLim = 100;
 
     //Min
     float m_throttleOx_min = 35; 

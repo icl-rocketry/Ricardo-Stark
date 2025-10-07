@@ -9,6 +9,7 @@
 #include <librrc/Remote/nrcremotepotentiometer.h>
 
 #include "Sensors/ADS131M06.h"
+#include "Sensors/MAX31856.h"
 #include "SiC43x.h"
 
 
@@ -58,6 +59,7 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         SiC43x Buck;
 
         ADS131M06 ADC;
+        MAX31856 TC0;
 
         PCA9534 pyroPinExpander0;
         PCA9534Gpio pyroPowerSwitch;

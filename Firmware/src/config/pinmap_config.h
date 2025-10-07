@@ -35,13 +35,16 @@ namespace PinMap{
     // LED
     // static constexpr uint8_t LED = 26; //chnage
 
-    // ADS
+    // Sensors
     static constexpr uint8_t H_MISO = 33;
     static constexpr uint8_t H_SCLK = 47; 
     static constexpr uint8_t DRDY = 35; 
     static constexpr uint8_t ADS_Cs = 36; 
     static constexpr uint8_t H_MOSI = 34; 
     static constexpr uint8_t ADS_Clk =  37; 
+
+    static constexpr uint8_t TC0_Cs = 48;
+    static constexpr uint8_t TCO_Fault = 21;
 
     // GPIO Breakout
     static constexpr uint8_t GPIO1 = 1; 

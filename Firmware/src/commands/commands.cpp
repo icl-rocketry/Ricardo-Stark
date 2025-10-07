@@ -82,10 +82,7 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 	starktelem.ch3sens = sm.sensorHandler.getPressure(3);
 	starktelem.ch4sens = sm.sensorHandler.getPressure(4);
 	starktelem.ch5sens = sm.sensorHandler.getPressure(5);
-	starktelem.flowmeter = sm.sensorHandler.getFlow();
-	starktelem.OF = sm.ThanosR.getOF();
-	starktelem.FuelFlowCalc = sm.ThanosR.getFuelCalc();
-
+	starktelem.temp0 = sm.sensorHandler.getTemp();
 	starktelem.Servo1Angle = sm.ThanosR.getOxAngle();
 	starktelem.Servo2Angle = sm.ThanosR.getFuelAngle();
 	

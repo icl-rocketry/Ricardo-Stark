@@ -39,9 +39,10 @@ I2C(0),
 canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
 ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk,2),
+TC0(SNSRSPI, PinMap::TC0_Cs),
 pyroPinExpander0(0x20,I2C),
 pyroPowerSwitch(pyroPinExpander0,PinMap::PyroPowerSwitch),
-sensorHandler(networkmanager, ADC),
+sensorHandler(networkmanager, ADC, TC0),
 ThanosR(networkmanager, sensorHandler,pyroPinExpander0),   
 primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
 {};
@@ -68,10 +69,12 @@ void System::systemSetup(){
     pinMode(PinMap::SdCs, OUTPUT);
     // pinMode(PinMap::SdEN, OUTPUT);
     pinMode(PinMap::ADS_Cs, OUTPUT);
+    pinMode(PinMap::TC0_Cs, OUTPUT);
 
     digitalWrite(PinMap::SdCs, HIGH);
     // digitalWrite(PinMap::SdEN, LOW);
     digitalWrite(PinMap::ADS_Cs, HIGH);
+    digitalWrite(PinMap::TC0_Cs, HIGH);
 
 
     // pinMode(PinMap::LED, OUTPUT);
@@ -81,6 +84,7 @@ void System::systemSetup(){
     Buck.setup();
     setupSPI();
     ADC.setup();
+    TC0.setup();
     setupI2C();
 
     setupPyroPinExpander();
@@ -127,6 +131,7 @@ void System::systemUpdate(){
     
     Buck.update();
     ADC.update();
+    TC0.update();
     ThanosR.update(); 
 
     sensorHandler.update();
@@ -152,6 +157,7 @@ void System::systemUpdate(){
     logframe.ch3sens = sensorHandler.getPressure(3);
     logframe.ch4sens = sensorHandler.getPressure(4);
     logframe.ch5sens = sensorHandler.getPressure(5);
+    logframe.tc0 = sensorHandler.getTemp();
     logframe.oxangle = _OxAngle;
     logframe.fuelangle = _FuelAngle;
     logframe.timestamp = esp_timer_get_time();

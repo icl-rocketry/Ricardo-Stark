@@ -20,9 +20,7 @@ class StarkTelemPacket : public RnpPacket{
                 &StarkTelemPacket::ch3sens,
                 &StarkTelemPacket::ch4sens,
                 &StarkTelemPacket::ch5sens,
-                &StarkTelemPacket::flowmeter,
-                &StarkTelemPacket::OF,
-                &StarkTelemPacket::FuelFlowCalc,
+                &StarkTelemPacket::temp0,
                 &StarkTelemPacket::Servo1Angle,
                 &StarkTelemPacket::Servo2Angle,
                 &StarkTelemPacket::system_status,
@@ -57,10 +55,7 @@ class StarkTelemPacket : public RnpPacket{
         float ch3sens;
         float ch4sens;
         float ch5sens;
-        float flowmeter;
-        float OF;
-        float FuelFlowCalc;
-
+        float temp0;
 
         uint32_t Servo1Angle;
         uint32_t Servo2Angle;

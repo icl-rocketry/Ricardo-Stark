@@ -1,7 +1,7 @@
 #pragma once
 #include "Config/forward_decl.h"
-#pragma once
 #include "Sensors/ADS131M06.h"
+#include "Sensors/MAX31856.h"
 #include "librrc/Remote/nrcremoteflowsensor.h"
 #include "librrc/Remote/nrcremoteptap.h"
 #include "config/pinmap_config.h"
@@ -12,9 +12,10 @@
 class SensorHandler
 {
     public:
-    SensorHandler(RnpNetworkManager& networkmanager, ADS131M06& ADC):
+    SensorHandler(RnpNetworkManager& networkmanager, ADS131M06& ADC, MAX31856& TC0):
         _networkmanager(networkmanager),
-        _ADC(ADC),    
+        _ADC(ADC), 
+        _TC0(TC0),   
         PT0(networkmanager,0),
         PT1(networkmanager,1),
         PT2(networkmanager,2),
@@ -22,6 +23,7 @@ class SensorHandler
         PT4(networkmanager,4),
         PT5(networkmanager,5),
         TF0(networkmanager,PCNT_UNIT_0,PCNT_CHANNEL_0,PinMap::Turbine,0.001146158078)
+       
     {};
 
     void setup(){
@@ -105,6 +107,10 @@ class SensorHandler
 
         return TF0.getValue();
     }
+
+    float getTemp(){
+        return _TC0.getTemp();
+    }
     
 
      enum Sensor : uint8_t
@@ -123,6 +129,7 @@ class SensorHandler
         RnpNetworkManager& _networkmanager;
 
         ADS131M06& _ADC;
+        MAX31856& _TC0;
 
         SPIClass SNSRSPI;
 
@@ -133,6 +140,7 @@ class SensorHandler
         NRCRemotePTap PT4;
         NRCRemotePTap PT5;
         NRCRemoteFlowSensor TF0;
+
 
 
 };
