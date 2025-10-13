@@ -48,6 +48,17 @@ void Controlled::initialize()
     // Initialise time index
     m_timeIndex = 0;
 
+
+    // EREG Controlled command
+
+    SimpleCommandPacket n2_controlled(2, 1);
+    n2_controlled.header.source_service = static_cast<uint8_t>(Services::ID::Engine);
+    n2_controlled.header.destination_service = 10;
+    n2_controlled.header.source = 1;
+    n2_controlled.header.destination = 9;
+    n2_controlled.header.uid = 0;
+    _networkmanager.sendPacket(n2_controlled);
+
   
 };
 
@@ -59,12 +70,13 @@ Types::EngineTypes::State_ptr_t Controlled::update()
     updateThrottle();
     updateOF();
     
+    // Removing shutdown for Pluto flight
 
-    if (millis() - m_Controlled_Command_time > m_Controlled_duration){
+    // if (millis() - m_Controlled_Command_time > m_Controlled_duration){
 
-        return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
+    //     return std::make_unique<Shutdown>(m_DefaultInitParams, _networkmanager, _engine);
 
-    }
+    // }
 
     //  if (digitalRead(PinMap::Abort)==LOW){
 
