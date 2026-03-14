@@ -15,10 +15,10 @@
 #include <libriccore/commands/commandhandler.h>
 #include "Packets/rawADCPacket.h"
 
-#include "EngineController/enginecontroller.h"
-#include "EngineController/Ignition.h"
-#include "EngineController/Shutdown.h"
-#include "EngineController/Debug.h"
+#include "EngineController/StateMachine/enginecontroller.h"
+#include "EngineController/StateMachine/Ignition.h"
+#include "EngineController/StateMachine/Shutdown.h"
+#include "EngineController/StateMachine/Debug.h"
 
 
 #include "system.h"
@@ -76,14 +76,13 @@ void Commands::FreeRamCommand(System& sm, const RnpPacketSerialized& packet)
 	starktelem.header.destination_service = commandpacket.header.source_service;
 	starktelem.header.uid = commandpacket.header.uid; 
 	starktelem.servoVoltage = sm.Buck.getOutputV();
-	// starktelem.pyroIMon = sm.Pyro.getIMon();
-	starktelem.ch0sens = sm.PT0.getPressure();
-	starktelem.ch1sens = sm.PT1.getPressure();
-	starktelem.ch2sens = sm.PT2.getPressure();
-	starktelem.ch3sens = sm.PT3.getPressure();
-	starktelem.ch4sens = sm.PT4.getPressure();
-	starktelem.ch5sens = sm.PT5.getPressure();
-
+	starktelem.ch0sens = sm.sensorHandler.getPressure(0);
+	starktelem.ch1sens = sm.sensorHandler.getPressure(1);
+	starktelem.ch2sens = sm.sensorHandler.getPressure(2);
+	starktelem.ch3sens = sm.sensorHandler.getPressure(3);
+	starktelem.ch4sens = sm.sensorHandler.getPressure(4);
+	starktelem.ch5sens = sm.sensorHandler.getPressure(5);
+	starktelem.temp0 = sm.sensorHandler.getTemp();
 	starktelem.Servo1Angle = sm.ThanosR.getOxAngle();
 	starktelem.Servo2Angle = sm.ThanosR.getFuelAngle();
 	

@@ -14,13 +14,13 @@ class StarkTelemPacket : public RnpPacket{
         {
             auto ret = RnpSerializer(
                 &StarkTelemPacket::servoVoltage,
-                // &StarkTelemPacket::pyroIMon,
                 &StarkTelemPacket::ch0sens,
                 &StarkTelemPacket::ch1sens,
                 &StarkTelemPacket::ch2sens,
                 &StarkTelemPacket::ch3sens,
                 &StarkTelemPacket::ch4sens,
                 &StarkTelemPacket::ch5sens,
+                &StarkTelemPacket::temp0,
                 &StarkTelemPacket::Servo1Angle,
                 &StarkTelemPacket::Servo2Angle,
                 &StarkTelemPacket::system_status,
@@ -49,13 +49,13 @@ class StarkTelemPacket : public RnpPacket{
         void serialize(std::vector<uint8_t>& buf) override;
 
         float servoVoltage;
-        // float pyroIMon;
         float ch0sens;
         float ch1sens;
         float ch2sens;
         float ch3sens;
         float ch4sens;
         float ch5sens;
+        float temp0;
 
         uint32_t Servo1Angle;
         uint32_t Servo2Angle;

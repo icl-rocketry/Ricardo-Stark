@@ -9,6 +9,7 @@
 #include <librrc/Remote/nrcremotepotentiometer.h>
 
 #include "Sensors/ADS131M06.h"
+#include "Sensors/MAX31856.h"
 #include "SiC43x.h"
 
 
@@ -18,9 +19,13 @@
 #include <libriccore/networkinterfaces/can/canbus.h>
 #include "config/pinmap_config.h"
 
-#include "EngineController/enginecontroller.h"
-#include "EngineController/Ignition.h"
-#include "EngineController/Controlled.h"
+#include "EngineController/StateMachine/enginecontroller.h"
+#include "EngineController/StateMachine/Ignition.h"
+#include "EngineController/StateMachine/Controlled.h"
+
+#include "Deployment/PCA9534.h"
+
+#include "Sensors/sensorHandler.h"
 
 #include "Commands/commands.h"
 
@@ -28,6 +33,7 @@
 #include "Storage/sdfat_file.h"
 
 #include <SPI.h>
+#include <Wire.h>
 class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 {
     public:
@@ -40,25 +46,26 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
 
         void serviceSetup();
 
+        void setupI2C();
 
-        EngineController ThanosR;
+        void setupPyroPinExpander();
 
         SPIClass SDSPI;
         SPIClass SNSRSPI;
+        TwoWire I2C;
 
         CanBus<SYSTEM_FLAG> canbus;
          
         SiC43x Buck;
 
         ADS131M06 ADC;
+        MAX31856 TC0;
 
-        NRCRemotePTap PT0;
-        NRCRemotePTap PT1;
-        NRCRemotePTap PT2;
-        NRCRemotePTap PT3;
-        NRCRemotePTap PT4;
-        NRCRemotePTap PT5;
+        PCA9534 pyroPinExpander0;
+        PCA9534Gpio pyroPowerSwitch;
 
+        SensorHandler sensorHandler;
+        EngineController ThanosR;
       
         SdFat_Store primarysd;
 
@@ -70,17 +77,12 @@ class System : public RicCoreSystem<System,SYSTEM_FLAG,Commands::ID>
         void initializeLoggers();
         void logReadings();
         void setupSPI();
+        void logreadings();
 
 
 
         const std::string log_path = "/Logs";
         const std::string config_path = "/Config";
     
-
-
-        
-
-        
-
 
 };

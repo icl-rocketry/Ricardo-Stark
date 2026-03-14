@@ -33,24 +33,23 @@ static constexpr int HSPI_BUS_NUM = HSPI;
 
 System::System():
 RicCoreSystem(Commands::command_map,Commands::defaultEnabledCommands,Serial),
-ThanosR(networkmanager,PT4,PT3,PT5),
 SDSPI(VSPI_BUS_NUM),
 SNSRSPI(HSPI_BUS_NUM),
+I2C(0),
 canbus(systemstatus,PinMap::TxCan,PinMap::RxCan,3),
 Buck(systemstatus, PinMap::ServoVLog, 1500, 470),
 ADC(SNSRSPI, PinMap::ADS_Cs, PinMap::ADS_Clk,2),
-PT0(networkmanager,0),
-PT1(networkmanager,1),
-PT2(networkmanager,2),
-PT3(networkmanager,3),
-PT4(networkmanager,4),
-PT5(networkmanager,5),
+TC0(SNSRSPI, PinMap::TC0_Cs),
+pyroPinExpander0(0x20,I2C),
+pyroPowerSwitch(pyroPinExpander0,PinMap::PyroPowerSwitch),
+sensorHandler(networkmanager, ADC, TC0),
+ThanosR(networkmanager, sensorHandler,pyroPinExpander0),   
 primarysd(SDSPI,PinMap::SdCs,SD_SCK_MHZ(20),false, &systemstatus)
 {};
 
 
 void System::systemSetup(){
-    
+    delay(500);
     Serial.setRxBufferSize(GeneralConfig::SerialRxSize);
     Serial.begin(GeneralConfig::SerialBaud);
 
@@ -68,28 +67,29 @@ void System::systemSetup(){
 
 
     pinMode(PinMap::SdCs, OUTPUT);
-    pinMode(PinMap::SdEN, OUTPUT);
+    // pinMode(PinMap::SdEN, OUTPUT);
     pinMode(PinMap::ADS_Cs, OUTPUT);
+    pinMode(PinMap::TC0_Cs, OUTPUT);
 
     digitalWrite(PinMap::SdCs, HIGH);
-    digitalWrite(PinMap::SdEN, LOW);
+    // digitalWrite(PinMap::SdEN, LOW);
     digitalWrite(PinMap::ADS_Cs, HIGH);
+    digitalWrite(PinMap::TC0_Cs, HIGH);
 
 
-    pinMode(PinMap::LED, OUTPUT);
+    // pinMode(PinMap::LED, OUTPUT);
     // digitalWrite(PinMap::LED, HIGH); 
 
     canbus.setup();
     Buck.setup();
     setupSPI();
     ADC.setup();
+    TC0.setup();
+    setupI2C();
 
-    PT0.setup();
-    PT1.setup();
-    PT2.setup();
-    PT3.setup();
-    PT4.setup();
-    PT5.setup();
+    setupPyroPinExpander();
+
+    sensorHandler.setup();
  
     networkmanager.setNodeType(NODETYPE::HUB);
     networkmanager.setNoRouteAction(NOROUTE_ACTION::BROADCAST,{1,3});
@@ -99,24 +99,6 @@ void System::systemSetup(){
     networkmanager.registerService(Engineservice,ThanosR.getThisNetworkCallback());
 
 
-    uint8_t PT0Service = (uint8_t) Services::ID::PT0;
-    networkmanager.registerService(PT0Service,PT0.getThisNetworkCallback());
-
-    uint8_t PT1Service = (uint8_t) Services::ID::PT1;
-    networkmanager.registerService(PT1Service,PT1.getThisNetworkCallback());
-
-    uint8_t PT2Service = (uint8_t) Services::ID::PT2;
-    networkmanager.registerService(PT2Service,PT2.getThisNetworkCallback());
-
-    uint8_t PT3Service = (uint8_t) Services::ID::PT3;
-    networkmanager.registerService(PT3Service,PT3.getThisNetworkCallback());
-
-    uint8_t PT4Service = (uint8_t) Services::ID::PT4;
-    networkmanager.registerService(PT4Service,PT4.getThisNetworkCallback());
-
-    uint8_t PT5Service = (uint8_t) Services::ID::PT5;
-    networkmanager.registerService(PT5Service,PT5.getThisNetworkCallback());
-
 
     primarysd.setup();  
     initializeLoggers();
@@ -124,6 +106,10 @@ void System::systemSetup(){
     
 
     ThanosR.setup();
+
+    //enable pyro power
+    pyroPowerSwitch.digitalWrite(1);
+    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("Pyro power enabled");
     
 };
 
@@ -145,17 +131,60 @@ void System::systemUpdate(){
     
     Buck.update();
     ADC.update();
+    TC0.update();
     ThanosR.update(); 
+
+    sensorHandler.update();
 
     _OxAngle = ThanosR.getOxAngle();
     _FuelAngle = ThanosR.getFuelAngle();
 
-    PT0.update(ADC.getOutput(0));
-    PT1.update(ADC.getOutput(1));
-    PT2.update(ADC.getOutput(2));
-    PT3.update(ADC.getOutput(3));
-    PT4.update(ADC.getOutput(4));
-    PT5.update(ADC.getOutput(5));
+    logReadings();
+
+};
+
+    void System::logReadings(){
+
+    TelemetryLogframe logframe;
+
+    uint32_t system_status;
+    uint64_t system_time;
+
+    
+    logframe.ch0sens = sensorHandler.getPressure(0);
+    logframe.ch1sens = sensorHandler.getPressure(1);
+    logframe.ch2sens = sensorHandler.getPressure(2);
+    logframe.ch3sens = sensorHandler.getPressure(3);
+    logframe.ch4sens = sensorHandler.getPressure(4);
+    logframe.ch5sens = sensorHandler.getPressure(5);
+    logframe.tc0 = sensorHandler.getTemp();
+    logframe.oxangle = _OxAngle;
+    logframe.fuelangle = _FuelAngle;
+    logframe.timestamp = esp_timer_get_time();
+
+    RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::TELEMETRY>(logframe);
+
+}
+
+void System::setupI2C()
+{
+    I2C.begin(PinMap::_SDA, PinMap::_SCL, GeneralConfig::I2C_FREQUENCY);
+}
+
+void System::setupPyroPinExpander()
+{
+    if (pyroPinExpander0.setup())
+    {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("I2C pyro pin expander alive");
+
+        pyroPowerSwitch.digitalWrite(0); // ensure off
+        pyroPowerSwitch.pinMode(PCA9534Gpio::PINMODE::GPIO_OUTPUT);
+
+    }
+    else
+    {
+        RicCoreLogging::log<RicCoreLoggingConfig::LOGGERS::SYS>("I2C pyro pin expander failed to respond");
+    }
 
 };
 

@@ -14,6 +14,9 @@ private:
             &TelemetryLogframe::ch3sens,
             &TelemetryLogframe::ch4sens,
             &TelemetryLogframe::ch5sens,
+            &TelemetryLogframe::oxangle,
+            &TelemetryLogframe::tc0,
+            &TelemetryLogframe::fuelangle,
             &TelemetryLogframe::timestamp         
 
         );
@@ -23,10 +26,8 @@ private:
 public:
     //Sensors
      float ch0sens,ch1sens,ch2sens,ch3sens,ch4sens,ch5sens;
-    
-    
-    int16_t rssi; 
-    float snr;
+     float tc0;
+     float oxangle,fuelangle;
 
     
     uint64_t timestamp;
