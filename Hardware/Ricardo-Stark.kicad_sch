@@ -4926,6 +4926,10 @@
 		(uuid "10f2980c-7aad-4509-90a9-dd146dc0d576")
 	)
 	(no_connect
+		(at 190.754 143.256)
+		(uuid "26f64a5b-84d0-4d8d-be86-08526ccd90a2")
+	)
+	(no_connect
 		(at 69.85 120.65)
 		(uuid "2f272bfd-3fd4-405b-9a2f-56cb7ee5e09e")
 	)
@@ -7188,16 +7192,6 @@
 			(justify left bottom)
 		)
 		(uuid "7e7a170f-6541-48a0-a7ae-34381ee56ab7")
-	)
-	(label "SwitchEn"
-		(at 190.754 143.256 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7fdc937d-7125-4093-9f5a-7b4367fb9078")
 	)
 	(label "CAN_TX"
 		(at 14.732 33.274 0)

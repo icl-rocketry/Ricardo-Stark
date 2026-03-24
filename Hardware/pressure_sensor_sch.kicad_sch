@@ -127,344 +127,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "1053131104_1"
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J4"
-				(at 13.97 -2.54 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "1053131104"
-				(at 7.62 2.54 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0507_1x05-1MP_P1.00mm_Horizontal"
-				(at 10.16 -11.938 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CON_1053131104"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1053131104_1_1_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -10.16) (xy 12.7 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 0.8382)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 -0.8382)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -1.7018)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -3.3782)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -4.2418)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -5.9182)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -6.7818)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -8.4582)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -10.16) (xy 12.7 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.4986 1.4986)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "2024-03-09_17-28-43:ADS131M06IPBS"
 			(pin_names
 				(offset 0.254)
@@ -2693,6 +2355,341 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "iclr:1053131104"
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "1053131104"
+				(at 10.16 -5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "CON_1053131104"
+				(at 10.16 -6.604 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CON_1053131104"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1053131104_1_1"
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 5.08 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -10.16) (xy 12.7 -10.16)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 0.8382)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 8.89 -0.8382)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -1.7018)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 8.89 -3.3782)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -4.2418)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 8.89 -5.9182)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -6.7818)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 8.89 -8.4582)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 2.54) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -10.16) (xy 12.7 2.54)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.4986 1.4986)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.4986 1.4986)
 							)
 						)
 					)
@@ -7862,6 +7859,81 @@
 		)
 	)
 	(symbol
+		(lib_id "iclr:1053131104")
+		(at 270.764 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b7fbd72-8325-4941-a8b6-363dbc2b1ae5")
+		(property "Reference" "J8"
+			(at 284.734 38.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 278.384 33.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
+			(at 280.924 42.164 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.764 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 270.764 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f1f2a91-8b2f-41ad-859b-ab93ebcb8fcb")
+		)
+		(pin "2"
+			(uuid "cb423d71-1e3d-4316-af6b-3f0344e4af88")
+		)
+		(pin "3"
+			(uuid "cd96a805-9e1f-4d06-bd65-f22f41ca13a9")
+		)
+		(pin "4"
+			(uuid "6dd41bd8-01b3-48cc-b605-329420a0ca09")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 172.466 30.734 0)
 		(unit 1)
@@ -9046,6 +9118,81 @@
 		)
 	)
 	(symbol
+		(lib_id "iclr:1053131104")
+		(at 222.504 34.798 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3619e2ca-04a3-41b7-ae00-562255c3390c")
+		(property "Reference" "J7"
+			(at 236.474 37.338 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 230.124 32.258 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
+			(at 232.664 41.402 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.504 34.798 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 222.504 34.798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99e2983f-f1a1-4fc1-a316-a4ee207ee63d")
+		)
+		(pin "2"
+			(uuid "db604369-980c-46bb-8499-071815f39fb1")
+		)
+		(pin "3"
+			(uuid "caa9fbf3-c4f7-4354-9f6e-677ba4eb5a95")
+		)
+		(pin "4"
+			(uuid "52e23706-c11f-4e5c-ba08-ebd0092aa5c2")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 202.184 51.816 90)
 		(unit 1)
@@ -9515,6 +9662,81 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "#PWR0169")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iclr:1053131104")
+		(at 172.466 102.108 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42f7f631-0c1f-471e-902b-c9da2f153963")
+		(property "Reference" "J9"
+			(at 186.436 104.648 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 180.086 99.568 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
+			(at 182.626 108.712 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.466 102.108 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.466 102.108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2fba53ce-f2c2-4255-a01c-20dd19cbc0bf")
+		)
+		(pin "2"
+			(uuid "8e829d04-7c2e-4a89-8ed5-16233ad56bd8")
+		)
+		(pin "3"
+			(uuid "fef50eab-7340-44df-8638-888fb006f37c")
+		)
+		(pin "4"
+			(uuid "54570062-d3fa-479f-9542-bd3fe0830fd1")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -10183,6 +10405,81 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "JP32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iclr:1053131104")
+		(at 220.726 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "554f6328-3cd4-41bc-95a2-ff43a0c0b15b")
+		(property "Reference" "J10"
+			(at 234.696 105.41 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 228.346 100.33 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
+			(at 230.886 109.474 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.726 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.726 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38931f18-85d9-4e11-aa91-c53048da8600")
+		)
+		(pin "2"
+			(uuid "84e0accf-cb26-4cf8-9aaa-3ebb0dbc56e0")
+		)
+		(pin "3"
+			(uuid "9e24eb7d-7849-4a48-8024-eec6c74370a0")
+		)
+		(pin "4"
+			(uuid "66e15760-fc97-48bf-bf7b-a1868f983194")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -11349,158 +11646,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "R97")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "1053131104_1")
-		(lib_id "iclr:1053131104")
-		(at 270.764 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b6225ed-01bc-4fa3-b9b1-bb05c37e9876")
-		(property "Reference" "J6"
-			(at 284.734 38.1 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 278.384 33.02 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
-			(at 280.924 47.498 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.764 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 270.764 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "77534552-9842-44c0-bc71-5a8511f757f7")
-		)
-		(pin "2"
-			(uuid "54dd18de-e32e-43c5-8d7c-6c43701a03f9")
-		)
-		(pin "3"
-			(uuid "89aa4c2f-7b95-4fee-9299-aef019b0b1d0")
-		)
-		(pin "4"
-			(uuid "e46d05c3-200d-4225-ac57-522cf679aa6b")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "1053131104_1")
-		(lib_id "iclr:1053131104")
-		(at 272.034 102.616 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6e51893a-feee-4d64-ae8a-36970f20548c")
-		(property "Reference" "J10"
-			(at 286.004 105.156 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 279.654 100.076 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
-			(at 282.194 114.554 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 272.034 102.616 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 272.034 102.616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f90ca7de-55de-4db1-87d1-48cf55688315")
-		)
-		(pin "2"
-			(uuid "f7fdc0c4-786d-41ac-92d4-401382c61986")
-		)
-		(pin "3"
-			(uuid "2991a9eb-59a1-4d57-b3be-57b59c410458")
-		)
-		(pin "4"
-			(uuid "e9159a0a-5f30-4f57-a03a-702e450f7be4")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -12792,82 +12937,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "#PWR0205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "1053131104_1")
-		(lib_id "iclr:1053131104")
-		(at 220.726 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "94539e73-92ac-4473-ad3c-72964969c490")
-		(property "Reference" "J9"
-			(at 234.696 105.41 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 228.346 100.33 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
-			(at 230.886 114.808 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.726 102.87 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.726 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa643040-12d5-4893-a5bc-1576f25df179")
-		)
-		(pin "2"
-			(uuid "0c300129-8dd7-4813-bd3a-85c827a4414b")
-		)
-		(pin "3"
-			(uuid "12356e5e-83b6-4212-adc0-1b6e8b16a3c9")
-		)
-		(pin "4"
-			(uuid "287d4556-c337-4853-8385-862f9fc65a76")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -14470,17 +14539,16 @@
 		)
 	)
 	(symbol
-		(lib_name "1053131104_1")
 		(lib_id "iclr:1053131104")
-		(at 172.466 102.108 0)
+		(at 172.466 34.544 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cada6836-1fa5-45eb-9966-ff4475a5b071")
-		(property "Reference" "J8"
-			(at 186.436 104.648 0)
+		(uuid "d0a7bd3a-37f7-4adc-a624-bf13c174fb47")
+		(property "Reference" "J6"
+			(at 186.436 37.084 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14489,7 +14557,7 @@
 			)
 		)
 		(property "Value" "1053131104"
-			(at 180.086 99.568 0)
+			(at 180.086 32.004 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14498,8 +14566,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
-			(at 182.626 114.046 0)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
+			(at 182.626 41.148 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14508,7 +14576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.466 102.108 0)
+			(at 172.466 34.544 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14516,7 +14584,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.466 102.108 0)
+			(at 172.466 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14525,21 +14593,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "10bc7fe8-0a0c-4737-9a7d-cb50f831d05d")
+			(uuid "b4864379-6713-4109-94f5-813425026218")
 		)
 		(pin "2"
-			(uuid "636a659a-f730-417e-9570-f066bff3f9b6")
+			(uuid "8defb0c5-f81f-4118-9057-831bd91eab6f")
 		)
 		(pin "3"
-			(uuid "134e4a42-cbb2-4e8e-8eb5-4a09e9df052b")
+			(uuid "3f8cd1a8-f157-451a-8831-3b284cf8c06d")
 		)
 		(pin "4"
-			(uuid "6c472503-f89f-4370-b129-120abaeeed55")
+			(uuid "f6cd3762-5295-4471-8bc4-e0ef288c1021")
 		)
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J8")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -15006,82 +15074,6 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "1053131104_1")
-		(lib_id "iclr:1053131104")
-		(at 222.504 34.798 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e0bbb381-84d7-4872-9e4f-5d9e5ba0eb62")
-		(property "Reference" "J4"
-			(at 236.474 37.338 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 230.124 32.258 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
-			(at 232.664 46.736 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.504 34.798 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 222.504 34.798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ade3973-9262-4aef-a50e-278e1af7b394")
-		)
-		(pin "2"
-			(uuid "2b145898-7f4d-4246-9c67-34ab34f867e0")
-		)
-		(pin "3"
-			(uuid "08d02094-4a4d-4e3b-9751-c96189c97d95")
-		)
-		(pin "4"
-			(uuid "52037a08-c5ae-410c-912d-ce7c39a23031")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -15910,82 +15902,6 @@
 		)
 	)
 	(symbol
-		(lib_name "1053131104_1")
-		(lib_id "iclr:1053131104")
-		(at 172.466 34.544 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f195e302-664e-4db1-935c-696ace8870f6")
-		(property "Reference" "J7"
-			(at 186.436 37.084 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1053131104"
-			(at 180.086 32.004 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Pico-Clasp_202396-0407_1x04-1MP_P1.00mm_Horizontal"
-			(at 182.626 46.482 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.466 34.544 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 172.466 34.544 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50c38982-6aa5-4215-ba3a-86101fc2d06d")
-		)
-		(pin "2"
-			(uuid "d5520bfd-6ee3-4494-90ed-6bd6fb8b002c")
-		)
-		(pin "3"
-			(uuid "da8f02be-f832-4a94-bc51-04c8214f1dd5")
-		)
-		(pin "4"
-			(uuid "352b589f-2745-4666-b71c-0beb3420ad84")
-		)
-		(instances
-			(project "Ricardo-Stark"
-				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 220.726 99.06 0)
 		(unit 1)
@@ -16254,6 +16170,81 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
 					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "iclr:1053131104")
+		(at 272.034 102.616 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc73ca49-a57f-44dc-a769-550a210e1a23")
+		(property "Reference" "J13"
+			(at 286.004 105.156 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1053131104"
+			(at 279.654 100.076 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal"
+			(at 282.194 109.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 272.034 102.616 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 272.034 102.616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31e65b5b-2727-4991-ac4f-9f1aa3a2dfdc")
+		)
+		(pin "2"
+			(uuid "8a8b9bf1-330b-454b-b8b1-5e5090529499")
+		)
+		(pin "3"
+			(uuid "88aeb1a9-bfee-4af4-af15-484423ed2dde")
+		)
+		(pin "4"
+			(uuid "81ac0166-7d93-4383-938c-20662f1b9da1")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/249a9f46-b59f-4de1-97d1-386ac76339a5"
+					(reference "J13")
 					(unit 1)
 				)
 			)
