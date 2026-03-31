@@ -1,1086 +1,351 @@
-267259417216609
-iclr
-95
-
-
-0
-0
-0
-iclr
-292227-7
-
-
-0
-9
-9
-iclr
-1053131104
-
-
-0
-4
-4
-iclr
-9775026360R
-
-
-0
-2
-2
-iclr
-ADS131M06IRSNR
-
-
-0
-33
-33
-iclr
-AMASS_XT60PW-F
-
-
-0
-4
-4
-iclr
-AMASS_XT60PW-M
-
-
-0
-4
-4
-iclr
-AMPHENOL_12401598E4#2A
-
-
-0
-28
-28
-iclr
-ANT_AMCA31-2R450G-S1F-T3
-
-
-0
-2
-2
-iclr
-Axes_Lefthand_Xup
-
-
-0
-0
-0
-iclr
-Axes_Magnetic_Lefthand_Xdown
-
-
-0
-0
-0
-iclr
-BSZ025N04LS
-BSZ025N04LS-2
-MOSFET (N-Channel)
-0
-10
-10
-iclr
-BUK9M1140HX
-BUK9M11-40HX
-MOSFET (N-Channel)
-0
-11
-11
-iclr
-CAPC2012X145N
-
-
-0
-2
-2
-iclr
-CMT052575SMTTR
-CMT-0525-75-SMT-TR-1
-Loudspeaker or Buzzer
+86999175993240
+Battery
+BatteryClip_Keystone_54_D16-19mm
+Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
+battery clip 18650 18350 17350 CR123A 2/3A
 0
 3
-3
-iclr
-CONN8_08S4TR2000_JAE
-
-ST1W008S4TR2000 
-0
-13
-13
-iclr
-CONV_MAX77827AEFD+T
-
-
-0
-12
-12
-iclr
-Chad
-
-
-0
-0
-0
-iclr
-Crystal_SMD_2016-4Pin_2.0x1.6mm
-SMD Crystal SERIES SMD2016/4 http://www.q-crystal.com/upload/5/2015552223166229.pdf, 2.0x1.6mm^2 package
-SMD SMT crystal
-0
-4
-4
-iclr
-D5V0FS4U10LP7
-D5V0FS4U10LP-7-1
-TVS Diode (Uni-directional)
-0
-10
-10
-iclr
-DDTCCRUB_COTS_Charger
-
-
-0
-4
-4
-iclr
-DEA-4_2P0X1P25
-
-DEA202450BT-1213C1 
-0
-4
-4
-iclr
-DIOM6959X245N
-
-
+1
+Battery
+BatteryHolder_Bulgin_BX0036_1xC
+Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
+Bulgin BX0036
 0
 2
 2
-iclr
-DIO_V3PAN50-M3_I
-
-
+Battery
+BatteryHolder_ComfortableElectronic_CH273-2450_1x2450
+Comfortable Electronic CR2450 battery holder, http://www.comf.com.tw/ProductDetail.asp?no=148
+Comfortable Electronic CR2450
 0
 2
 2
-iclr
-DPAK228P990X239-4N
-
-
-0
-3
-3
-iclr
-ERJHP6D1000V
-ERJHP6
-Resistor
+Battery
+BatteryHolder_Eagle_12BH611-GR
+https://eu.mouser.com/datasheet/2/209/EPD-200766-1274481.pdf
+9V Battery Holder
 0
 2
 2
-iclr
-ETQP4M101KVC
-
-
-0
-0
-0
-iclr
-EXL1V07053R3R
-EXL1V0705-3R3-R-1
-Inductor
+Battery
+BatteryHolder_Keystone_103_1x20mm
+http://www.keyelco.com/product-pdf.cfm?p=719
+Keystone type 103 battery holder
 0
 2
 2
-iclr
-GCT_USB4110-GF-A_REVB
-
-
-0
-16
-16
-iclr
-HOPERF_RFM9XW_SMD
-Low Power Long Range Transceiver Module SMD-16 (https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf)
-LoRa Low Power Long Range Transceiver Module
-0
-16
-16
-iclr
-IC_ESP32-S3
-
-
-0
-69
-69
-iclr
-IC_TPS61089RNRR
-
-
-0
-12
-12
-iclr
-INDC1006X60N
-
-
+Battery
+BatteryHolder_Keystone_104_1x23mm
+http://www.keyelco.com/product-pdf.cfm?p=744
+Keystone type 104 battery holder
 0
 2
 2
-iclr
-INDM8681X400N
-
-
+Battery
+BatteryHolder_Keystone_105_1x2430
+http://www.keyelco.com/product-pdf.cfm?p=745
+Keystone type 105 battery holder
 0
 2
 2
-iclr
-INDPM3030X200N
-74438
-Inductor
+Battery
+BatteryHolder_Keystone_106_1x20mm
+http://www.keyelco.com/product-pdf.cfm?p=720
+Keystone type 106 battery holder
 0
 2
 2
-iclr
-INDPM110100X540N
-SRP1050WA-100M
-Inductor
+Battery
+BatteryHolder_Keystone_107_1x23mm
+http://www.keyelco.com/product-pdf.cfm?p=746
+Keystone type 107 battery holder
 0
 2
 2
-iclr
-INDPM112100X400N
-WLPMA0A040M2R2LC
-Inductor
+Battery
+BatteryHolder_Keystone_500
+Keystone #500, 12mm CR1220 battery holder, http://www.keyelco.com/product-pdf.cfm?p=710
+CR1220 battery holder
 0
 2
 2
-iclr
-IND_ETQP5M330YFM
-
-
-0
-2
-2
-iclr
-IND_FDSD0630-H-1R0M=P3
-
-
-0
-2
-2
-iclr
-IND_SPM10065VT-3R3M-D
-
-
-0
-2
-2
-iclr
-IND_SRP6540-390M
-
-
-0
-2
-2
-iclr
-JAE_ST1W008S4TR2000
-
-
-0
-13
-13
-iclr
-Kermit
-
-
-0
-0
-0
-iclr
-LGA88-1.4-17.8X15.8X2.4MM
-
-
-0
-88
-88
-iclr
-LM2596_COTS_Buck
-
-
-0
-4
-4
-iclr
-LM2623QNHLRQ1
-
-
-0
-15
-15
-iclr
-LMQ
-
-
-0
-0
-0
-iclr
-MAX1771CSA&plus_
-
-
-0
-8
-8
-iclr
-MGAH1004R68M-10
-
-
-0
-2
-2
-iclr
-MIT_logo
-
-
-0
-0
-0
-iclr
-MOLEX_78646-3001
-
-
-0
-14
-14
-iclr
-MP28167GQ-A-P
-
-
-0
-16
-16
-iclr
-MP28167GQ-A-Z
-
-
-0
-16
-16
-iclr
-MPLAL60504R7
-MPL-AL6050-4R7-1
-Inductor
-0
-2
-2
-iclr
-Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal
-Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-06A2, example for new mpn: 39-30-0060, 3 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
-connector Molex Mini-Fit_Jr top entryplastic_peg
-0
-6
-6
-iclr
-Molex_Mini-Fit_Jr_5569-06A2_2x03_P4.20mm_Horizontal_No_Mounting_Holes
-Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-06A2, example for new mpn: 39-30-0060, 3 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
-connector Molex Mini-Fit_Jr top entryplastic_peg
-0
-6
-6
-iclr
-Molex_Mini-Fit_Jr_5569-08A2_2x04_P4.20mm_Horizontal
-Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-08A2, example for new mpn: 39-30-0080, 4 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
-connector Molex Mini-Fit_Jr top entryplastic_peg
-0
-8
-8
-iclr
-Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal
-Molex Nano-Fit Power Connectors, 105313-xx02, 2 Pins per row (http://www.molex.com/pdm_docs/sd/1053131208_sd.pdf), generated with kicad-footprint-generator
-connector Molex Nano-Fit top entry
-0
-2
-2
-iclr
-Molex_Nano-Fit_105313-xx02_1x02_P2.50mm_Horizontal_No_Mounting_Holes
-Molex Nano-Fit Power Connectors, 105313-xx02, 2 Pins per row (http://www.molex.com/pdm_docs/sd/1053131208_sd.pdf), generated with kicad-footprint-generator
-connector Molex Nano-Fit top entry
-0
-2
-2
-iclr
-Molex_Nano-Fit_105313-xx03_1x03_P2.50mm_Horizontal
-Molex Nano-Fit Power Connectors, 105313-xx03, 3 Pins per row (http://www.molex.com/pdm_docs/sd/1053131208_sd.pdf), generated with kicad-footprint-generator
-connector Molex Nano-Fit top entry
+Battery
+BatteryHolder_Keystone_590
+AA CR2 A battery holder with leaf spring, Keystone, https://ken.keyeuro.eu/cat/590.pdf
+AA battery holder Keystone
 0
 3
-3
-iclr
-Molex_Nano-Fit_105313-xx04_1x04_P2.50mm_Horizontal
-Molex Nano-Fit Power Connectors, 105313-xx04, 4 Pins per row (http://www.molex.com/pdm_docs/sd/1053131208_sd.pdf), generated with kicad-footprint-generator
-connector Molex Nano-Fit top entry
-0
-4
-4
-iclr
-Molex_Pico-Clasp_202396-0707_1x07-1MP_P1.00mm_Horizontal
-Molex Pico-Clasp series connector, 202396-0707 (http://www.molex.com/pdm_docs/sd/2023960207_sd.pdf), generated with kicad-footprint-generator
-connector Molex Pico-Clasp top entry
-0
-9
-8
-iclr
-P160KN0QC20A10K
-P160KN-0QC20A10K-2
-Variable Resistor
-0
-3
-3
-iclr
-P0848NL
-P0848NL-3
-Inductor
+1
+Battery
+BatteryHolder_Keystone_1042_1x18650
+Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
+18650 Keystone 1042 Li-ion
 0
 2
 2
-iclr
-PHOENIX_1757242
-
-
+Battery
+BatteryHolder_Keystone_1057_1x2032
+SMT (Auto-In/Ultra-Low) Holder for 2032 Cell, 33.2 x 23.9mm, 2mm height above PCB, https://www.keyelco.com/userAssets/file/M65p4.pdf
+Keystone type 1057 coin cell holder CR2032
 0
 2
 2
-iclr
-PQFN50P300X300X80-16N
-
-
-0
-16
-16
-iclr
-PQFN50P300X300X100-16N
-
-
-0
-16
-16
-iclr
-PXP01230QLJ
-SOT8002-1
-MOSFET (P-Channel)
-0
-9
-9
-iclr
-QFN28G_0.5-5X5MM
-
-
-0
-29
-29
-iclr
-QFN40P700X700X90-57N
-
-
-0
-57
-57
-iclr
-QFN50P400X400X80-21N-D
-T2044Y+6C
-Integrated Circuit
-0
-21
-21
-iclr
-QFN50P400X400X95-24N
-
-
-0
-24
-24
-iclr
-QFN50P500X500X90-29N
-TMC2209-LA
-Integrated Circuit
-0
-29
-29
-iclr
-QFN65P400X400X100-17N
-
-
-0
-17
-17
-iclr
-QFN300X300X100-16N
-
-
-0
-16
-16
-iclr
-QFP50P900X900X120-48N
-PFB (S-PQFP-G48) PLASTIC QUAD FLATPACK
-Integrated Circuit
-0
-48
-48
-iclr
-RCLAMP3346PQTNT
-RCLAMP3346PQTNT-2
-Diode
-0
-7
-7
-iclr
-SDM02U30LP37B
-SDM02U30LP3-7B-4
-Schottky Diode
+Battery
+BatteryHolder_Keystone_1058_1x2032
+http://www.keyelco.com/product-pdf.cfm?p=14028
+Keystone type 1058 coin cell retainer
 0
 2
 2
-iclr
-SDR1307A101K
-SDR1307A-101K-2
-Inductor
+Battery
+BatteryHolder_Keystone_1060_1x2032
+http://www.keyelco.com/product-pdf.cfm?p=726
+CR2032 BR2032 BatteryHolder Battery
 0
 2
 2
-iclr
-SER2011202MLD
-SER2011-202MLD-1
-Inductor
-0
-3
-3
-iclr
-SI7315DNT1GE3
-SI7315DN-T1-GE3-1
-MOSFET (P-Channel)
-0
-9
-9
-iclr
-SIS862DNT1GE3
-PowerPAK 1212-8 Single_2
-MOSFET (P-Channel)
-0
-11
-11
-iclr
-SKY66112-11_SKY
-
-SKY66112-11 
-0
-24
-24
-iclr
-SKY66112-11_SKY-L
-
-SKY66112-11 
-0
-24
-24
-iclr
-SKY66112-11_SKY-M
-
-SKY66112-11 
-0
-24
-24
-iclr
-SODFL3516X70N
-S Series_1
-Diode
+Battery
+BatteryHolder_Keystone_2460_1xAA
+https://www.keyelco.com/product-pdf.cfm?p=1025
+AA battery cell holder
 0
 2
 2
-iclr
-SOIC127P599X175-8N
-
-
-0
-8
-8
-iclr
-SOIC127P599X175-9N
-
-
-0
-9
-9
-iclr
-SOIC127P600X100-9N
-HTSOP-J8-12
-Integrated Circuit
-0
-9
-9
-iclr
-SOIC127P600X170-9N
-
-
-0
-15
-15
-iclr
-SON50P300X300X80-13N-D
-DRR0012E_2021
-Integrated Circuit
-0
-13
-13
-iclr
-SON50P400X400X100-13N
-DNT0012B_-
-Integrated Circuit
-0
-13
-13
-iclr
-SON65P300X300X100-9N-D
-8 lead
-Integrated Circuit
-0
-9
-9
-iclr
-SOP40P640X120-14N
-
-
-0
-14
-14
-iclr
-SOP50P310X90-8N
-
-
-0
-8
-8
-iclr
-SOP50P490X110-10N
-
-
-0
-10
-10
-iclr
-SOP65P637X110-16N
-
-
-0
-17
-17
-iclr
-SOT-723
-http://toshiba.semicon-storage.com/info/docget.jsp?did=5879&prodName=RN1104MFV
-sot 723
-0
-3
-3
-iclr
-SOT65P210X110-6N
-
-
-0
-6
-6
-iclr
-SOT95P280X145-6N
-
-
-0
-6
-6
-iclr
-SOT95P282X145-5N
-SOT25_
-Integrated Circuit
-0
-5
-5
-iclr
-SOTFL50P160X60-8N
-DRL0008A
-Integrated Circuit
-0
-8
-8
-iclr
-SQS850ENT1_GE3
-PowerPAK 1212-8 Single
-MOSFET (P-Channel)
-0
-11
-11
-iclr
-SR0502CTG
-SOT-143
-TVS Diode (Uni-directional)
-0
-4
-4
-iclr
-SRP5050FA5R6M
-SRP5050FA-5R6M-2
-Inductor
+Battery
+BatteryHolder_Keystone_2462_2xAA
+2xAA cell battery holder, Keystone P/N 2462, https://www.keyelco.com/product-pdf.cfm?p=1027
+AA battery cell holder
 0
 2
 2
-iclr
-SiC437BEDT1GE3
-SiC437BED-T1-GE3-7
-Integrated Circuit
-0
-30
-30
-iclr
-SmallerSolderJP
-Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
-resistor
+Battery
+BatteryHolder_Keystone_2466_1xAAA
+1xAAA Battery Holder, Keystone, Plastic Case, http://www.keyelco.com/product-pdf.cfm?p=1031
+AAA battery holder Keystone
 0
 2
 2
-iclr
-TCMT1109-4N
-
-
-0
-4
-4
-iclr
-TO127P457X1016X2052-7P
-
-
-0
-7
-7
-iclr
-TO254P483X1016X2222-3P
-
-
-0
-3
-3
-iclr
-TPS259830ONRGER
-TPS259830ONRGER-2
-Integrated Circuit
-0
-26
-26
-iclr
-TRANS_SSM6J511NU,LF
-
-
-0
-8
-8
-iclr
-Terraria
-
-
-0
-0
-0
-iclr
-Texas_PowerVFQFN_15
-
-
-0
-13
-13
-iclr
-TopTrumps
-
-
-0
-0
-0
-iclr
-USB_C_Receptacle_Palconn_UTC16-G
-http://www.palpilot.com/wp-content/uploads/2017/05/UTC027-GKN-OR-Rev-A.pdf
-USB C Type-C Receptacle USB2.0
-0
-20
-17
-iclr
-V8PAM10SM3I
-V8PAM10S-M3/I-5
-Schottky Diode
+Battery
+BatteryHolder_Keystone_2468_2xAAA
+2xAAA cell battery holder, Keystone P/N 2468, http://www.keyelco.com/product-pdf.cfm?p=1033
+AAA battery cell holder
 0
 2
 2
-iclr
-VARC2012X102N
-VC0805
-Varistor
+Battery
+BatteryHolder_Keystone_2479_3xAAA
+Keystone Battery Holder, 2479, Battery Type 3xAAA (Script generated with StandardBox.py) (Keystone Battery Holder, 2479, Battery Type 3xAAA)
+Keystone Battery Holder 2479 Battery Type 3xAAA
 0
 2
 2
-iclr
-VIA-0.6mm
-
-
+Battery
+BatteryHolder_Keystone_2993
+http://www.keyelco.com/product-pdf.cfm?p=776
+Keystone type 2993 negative battery contact
 0
 1
 1
-iclr
-VLAD
-
-
-0
-0
-0
-iclr
-VSON-10-1EP_2.5x2.5mm_Pitch0.5mm_ThermalPad
-VSON 10 Thermal on 11 3x3mm Pitch 0.5mm http://chip.tomsk.ru/chip/chipdoc.nsf/Package/D8A64DD165C2AAD9472579400024FC41!OpenDocument
-VSON 10 Thermal on 11 3x3mm Pitch 0.5mm
-0
-17
-11
-iclr
-WE-XHMI_7070
-
-
-0
-2
-2
-iclr
-Write_Pad
-
-
-0
-0
-0
-iclr
-XBEE
-DIGI XBEE AND XBEE-PRO RF MODULES
-DIGI XBEE AND XBEE-PRO RF MODULES
-0
-20
-20
-iclr
-XC6230H001ERG
-XC6230H001ER-G-3
-Integrated Circuit
-0
-9
-9
-iclr
-XDCR_DPS310
-
-
-0
-8
-8
-iclr
-XFL2010183MEC
-XFL2010-183MEC-1
-Inductor
-0
-2
-2
-iclr
-XT30PWF
-XT30PW-F-2
-Connector
-0
-4
-4
-iclr
-XT30PWM
-XT30PW-M
-Connector
-0
-4
-4
-iclr
-astronautPete30mmwide
-
-
-0
-0
-0
-iclr
-buckaroo
-
-
-0
-0
-0
-iclr
-buffkermit
-
-
-0
-0
-0
-iclr
-cheshire
-
-
-0
-0
-0
-iclr
-chinesebuck
-
-
-0
-0
-0
-iclr
-daisychain
-
-
-0
-0
-0
-iclr
-iclr_logo
-
-
-0
-0
-0
-iclr
-iclr_logo_estd2018_6mm
-
-
-0
-0
-0
-iclr
-iclr_logo_estd2018_8mm
-
-
-0
-0
-0
-iclr
-iclr_logo_estd2018_10mm
-
-
-0
-0
-0
-iclr
-jolly_roger
-
-
-0
-0
-0
-iclr
-kachow
-
-
-0
-0
-0
-iclr
-max1771cpa&plus_
-
-
-0
-8
-8
-iclr
-microSIM_JAE_SF53S006VCBR2000
-https://www.jae.com/z-en/pdf_download_exec.cfm?param=SJ115712.pdf
-microSIM GSM Card
-0
-14
-7
-iclr
-nocap
-
-
-0
-0
-0
-iclr
-orientation_marker
-
-
-0
-0
-0
-iclr
-pickle_ric
-
-
-0
-0
-0
-iclr
-rae_logo_2mm
-
-
-0
-0
-0
-iclr
-rae_logo_4mm
-
-
-0
-0
-0
-iclr
-rae_logo_6mm
-
-
-0
-0
-0
-iclr
-rae_logo_8mm
-
-
-0
-0
-0
-iclr
-ricardo_logo
-
-
-0
-0
-0
-iclr
-small_3pin_SolderJP
-
-
+Battery
+BatteryHolder_Keystone_2998_1x6.8mm
+www.keyelco.com/product-pdf.cfm?p=763
+Keystone type 2998 battery holder
 0
 3
+2
+Battery
+BatteryHolder_Keystone_3000_1x12mm
+http://www.keyelco.com/product-pdf.cfm?p=777
+Keystone type 3000 coin cell retainer
+0
 3
-iclr
-spider-man
-
-
+2
+Battery
+BatteryHolder_Keystone_3001_1x12mm
+http://www.keyelco.com/product-pdf.cfm?p=778
+Keystone type 3001 coin cell retainer
+0
+3
+2
+Battery
+BatteryHolder_Keystone_3002_1x2032
+https://www.tme.eu/it/Document/a823211ec201a9e209042d155fe22d2b/KEYS2996.pdf
+BR2016 CR2016 DL2016 BR2020 CL2020 BR2025 CR2025 DL2025 DR2032 CR2032 DL2032
+0
+3
+2
+Battery
+BatteryHolder_Keystone_3008_1x2450
+http://www.keyelco.com/product-pdf.cfm?p=786
+Keystone type 3008 coin cell retainer
+0
+3
+2
+Battery
+BatteryHolder_Keystone_3009_1x2450
+http://www.keyelco.com/product-pdf.cfm?p=787
+Keystone type 3009 coin cell retainer
+0
+3
+2
+Battery
+BatteryHolder_Keystone_3034_1x20mm
+Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798
+Keystone type 3034 coin cell retainer
+0
+3
+2
+Battery
+BatteryHolder_LINX_BAT-HLD-012-SMT
+SMT battery holder for CR1216/1220/1225, https://linxtechnologies.com/wp/wp-content/uploads/bat-hld-012-smt.pdf
+battery holder coin cell cr1216 cr1220 cr1225
+0
+3
+2
+Battery
+BatteryHolder_MPD_BA9VPC_1xPP3
+1xPP3 (9V) battery holder, Memory Protection Devices P/N BA9VPC, http://www.memoryprotectiondevices.com/datasheets/BA9VPC-datasheet.pdf
+PP3 Battery Holder BA9VPC 9V
+0
+2
+2
+Battery
+BatteryHolder_MPD_BC2AAPC_2xAA
+2xAA cell battery holder, Memory Protection Devices P/N BC2AAPC, http://www.memoryprotectiondevices.com/datasheets/BC2AAPC-datasheet.pdf
+AA battery cell holder
+0
+2
+2
+Battery
+BatteryHolder_MPD_BC12AAPC_2xAA
+2xAA cell battery holder, Memory Protection Devices P/N BC12AAPC, http://www.memoryprotectiondevices.com/datasheets/BC12AAPC-datasheet.pdf
+AA battery cell holder
+0
+2
+2
+Battery
+BatteryHolder_MPD_BC2003_1x2032
+http://www.memoryprotectiondevices.com/datasheets/BC-2003-datasheet.pdf
+BC2003 CR2032 2032 Battery Holder
+0
+3
+2
+Battery
+BatteryHolder_MPD_BH-18650-PC2
+18650 Battery Holder (http://www.memoryprotectiondevices.com/datasheets/BK-18650-PC2-datasheet.pdf)
+18650 Battery Holder
+0
+2
+2
+Battery
+BatteryHolder_MYOUNG_BS-07-A1BJ001_CR2032
+CR2032 battery holder https://www.lcsc.com/datasheet/lcsc_datasheet_2203021630_MYOUNG-BS-07-A1BJ001_C2979167.pdf
+CR2032 BR2032 BatteryHolder Battery
+0
+2
+2
+Battery
+BatteryHolder_Multicomp_BC-2001_1x2032
+CR2032 retainer clip, SMT ( http://www.farnell.com/datasheets/1505853.pdf )
+BC-2001 CR2032 2032 Battery Holder
+0
+3
+2
+Battery
+BatteryHolder_Renata_SMTU2032-LF_1x2032
+https://www.renata.com/fr/downloads/?product=smtu2032-lf&fileid=6a9833a4d49dfb7b550194fe0f
+Renata SMT battery holder coin cell 2032
+0
+2
+2
+Battery
+BatteryHolder_Seiko_MS621F
+Seiko MS621F, https://www.sii.co.jp/en/me/files/2014/02/file_EXTENDED_PRDCT_SPEC_75_FILE_11.jpg
+Seiko MS621F
+0
+2
+2
+Battery
+BatteryHolder_TruPower_BH-331P_3xAA
+Keystone Battery Holder BH-331P Battery Type 3xAA (Script generated with StandardBox.py) (Keystone Battery Holder BH-331P Battery Type 3xAA)
+Battery Holder BH-331P Battery Type 3xAA
+0
+2
+2
+Battery
+Battery_CR1225
+CR1225 battery
+battery CR1225 coin cell
 0
 0
 0
-iclr
-ublox_MAX
-ublox MAX 6/7/8, (https://www.u-blox.com/sites/default/files/MAX-8-M8-FW3_HardwareIntegrationManual_%28UBX-15030059%29.pdf)
-GPS ublox MAX 6/7/8
+Battery
+Battery_Panasonic_CR1025-VSK_Vertical_CircularHoles
+Panasonic CR-1025/VSK battery
+battery CR-1025 coin cell vertical
 0
-18
-18
-iclr
-witcher_switcher
-
-
+2
+2
+Battery
+Battery_Panasonic_CR1220-VCN_Vertical_CircularHoles
+Panasonic CR-1220/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.PDF
+battery CR-1220 coin cell vertical
 0
+2
+2
+Battery
+Battery_Panasonic_CR1632-V1AN_Vertical_CircularHoles
+Panasonic CR-1632-V1AN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D464.PDF
+battery CR-1632 coin cell vertical
 0
+2
+2
+Battery
+Battery_Panasonic_CR2025-V1AK_Vertical_CircularHoles
+Panasonic CR-2025/V1AK battery,
+battery CR-2025 coin cell vertical
 0
+2
+2
+Battery
+Battery_Panasonic_CR2032-HFN_Horizontal_CircularHoles
+Panasonic CR-2032/HFN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D166.PDF
+battery CR-2032 coin cell
+0
+2
+2
+Battery
+Battery_Panasonic_CR2032-VS1N_Vertical_CircularHoles
+Panasonic CR-2032/VS1N battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D348.PDF
+battery CR-2032 coin cell vertical
+0
+2
+2
+Battery
+Battery_Panasonic_CR2354-VCN_Vertical_CircularHoles
+Panasonic CR-2354/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D486.PDF
+battery CR-2354/VCN coin cell vertical
+0
+2
+2
+Battery
+Battery_Panasonic_CR2450-VAN_Vertical_CircularHoles
+Panasonic CR-2450/VAN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D492.PDF
+battery CR-2450 coin cell
+0
+2
+2
+Battery
+Battery_Panasonic_CR2477-VCN_Vertical_CircularHoles
+Panasonic CR-2477/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D502.PDF
+battery CR-2477 coin cell vertical
+0
+2
+2
+Battery
+Battery_Panasonic_CR3032-VCN_Vertical_CircularHoles
+Panasonic CR-3032/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D508.PDF
+battery CR-3032 coin cell vertical
+0
+2
+2
