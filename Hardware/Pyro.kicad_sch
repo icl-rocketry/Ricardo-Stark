@@ -4198,6 +4198,12 @@
 		(uuid "678f23f8-9cb5-439d-b615-72b46060aff5")
 	)
 	(junction
+		(at 206.756 72.136)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "696611a7-27ff-4505-8dd4-637c22fcabfa")
+	)
+	(junction
 		(at 87.63 103.378)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4359,6 +4365,12 @@
 		(color 0 0 0 0)
 		(uuid "f692536e-21f0-41e2-b148-e74270404b3d")
 	)
+	(junction
+		(at 211.836 72.136)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6f5d644-c03c-4d7e-91db-eb442ff42c37")
+	)
 	(no_connect
 		(at 42.672 51.054)
 		(uuid "159c7e7b-ee2f-409a-b594-2101be28be70")
@@ -4510,6 +4522,16 @@
 			(type default)
 		)
 		(uuid "0dd4b14b-a53f-45ea-b483-26d6592fb06d")
+	)
+	(wire
+		(pts
+			(xy 206.756 72.136) (xy 208.026 72.136)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e2937cb-0685-49a6-82c7-ea08f197d5bd")
 	)
 	(wire
 		(pts
@@ -4753,6 +4775,16 @@
 	)
 	(wire
 		(pts
+			(xy 211.836 72.136) (xy 211.836 74.422)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34f6b12f-7a0a-4d7c-b3be-133ec9c5429b")
+	)
+	(wire
+		(pts
 			(xy 40.64 132.08) (xy 41.91 132.08)
 		)
 		(stroke
@@ -4943,6 +4975,16 @@
 	)
 	(wire
 		(pts
+			(xy 206.756 72.136) (xy 206.756 74.422)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59a8afb1-d5de-495c-a0c7-95dfbaf525c1")
+	)
+	(wire
+		(pts
 			(xy 241.046 112.776) (xy 248.666 112.776)
 		)
 		(stroke
@@ -4953,7 +4995,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.566 72.136) (xy 218.186 72.136)
+			(xy 210.566 72.136) (xy 211.836 72.136)
 		)
 		(stroke
 			(width 0)
@@ -4983,7 +5025,7 @@
 	)
 	(wire
 		(pts
-			(xy 188.214 72.136) (xy 208.026 72.136)
+			(xy 188.214 72.136) (xy 206.756 72.136)
 		)
 		(stroke
 			(width 0)
@@ -6100,6 +6142,16 @@
 			(type default)
 		)
 		(uuid "e697205d-e3a8-4fd3-a475-1874485d4e76")
+	)
+	(wire
+		(pts
+			(xy 211.836 72.136) (xy 218.186 72.136)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7889259-29e2-4213-a79d-91b6a3404401")
 	)
 	(wire
 		(pts
@@ -7757,6 +7809,73 @@
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
 					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky_Small_Filled")
+		(at 209.296 74.422 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25c1d0ad-822a-4681-8d98-109451fe7045")
+		(property "Reference" "D18"
+			(at 203.2 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V8PAM10S-M3/I"
+			(at 203.2 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "iclr:V8PAM10SM3I"
+			(at 209.296 74.422 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 209.296 74.422 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode, small symbol, filled shape"
+			(at 209.296 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "585d3990-ec30-4f16-95d3-52f62b182d85")
+		)
+		(pin "2"
+			(uuid "631fb58b-0cf6-47ff-bfb2-fed3a6d5bb8a")
+		)
+		(instances
+			(project "Ricardo-Stark"
+				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/3c6662b6-8783-49dc-b944-3dc2b3e30a07"
+					(reference "D18")
 					(unit 1)
 				)
 			)
