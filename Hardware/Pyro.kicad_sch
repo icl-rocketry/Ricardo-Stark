@@ -7593,7 +7593,7 @@
 				)
 			)
 		)
-		(property "Footprint" "iclr:TCMT1109-4N"
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
 			(at 83.82 157.48 0)
 			(effects
 				(font
@@ -8261,7 +8261,7 @@
 				)
 			)
 		)
-		(property "Footprint" "iclr:TCMT1109-4N"
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
 			(at 169.418 157.48 0)
 			(effects
 				(font
@@ -11606,7 +11606,7 @@
 				)
 			)
 		)
-		(property "Footprint" "iclr:TCMT1109-4N"
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
 			(at 253.746 97.536 0)
 			(effects
 				(font
