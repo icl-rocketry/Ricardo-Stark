@@ -1865,7 +1865,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 92.71) (xy 157.48 92.71)
+			(xy 160.02 92.71) (xy 158.75 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1905,6 +1905,26 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 92.71) (xy 152.4 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c3ca504-2b15-4bbd-b51b-e6a31b889016")
+	)
+	(wire
+		(pts
+			(xy 167.64 92.71) (xy 167.64 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bbc5d68-018e-4531-9040-c2e23c6d6d72")
+	)
+	(wire
+		(pts
 			(xy 125.73 93.98) (xy 125.73 96.52)
 		)
 		(stroke
@@ -1922,6 +1942,26 @@
 			(type default)
 		)
 		(uuid "8c6a821f-8e19-48f3-8f44-9b340f7689bc")
+	)
+	(wire
+		(pts
+			(xy 148.59 92.71) (xy 152.4 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f4ec3f4-085b-482e-9309-6a83a53929f9")
+	)
+	(wire
+		(pts
+			(xy 167.64 92.71) (xy 165.1 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a11a20a1-9ff8-4658-a8df-27a0c612a741")
 	)
 	(wire
 		(pts
@@ -2124,7 +2164,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988bf8")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR0503"
 			(at 133.35 96.52 0)
 			(effects
 				(font
@@ -2175,7 +2215,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#PWR039")
+					(reference "#PWR0503")
 					(unit 1)
 				)
 			)
@@ -2190,7 +2230,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988c01")
-		(property "Reference" "R19"
+		(property "Reference" "R502"
 			(at 129.54 100.33 90)
 			(effects
 				(font
@@ -2198,7 +2238,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1kΩ"
 			(at 129.54 102.6414 90)
 			(effects
 				(font
@@ -2242,7 +2282,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "R19")
+					(reference "R502")
 					(unit 1)
 				)
 			)
@@ -2257,7 +2297,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988c0e")
-		(property "Reference" "R18"
+		(property "Reference" "R501"
 			(at 123.19 89.0016 90)
 			(effects
 				(font
@@ -2265,7 +2305,7 @@
 				)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1kΩ"
 			(at 123.19 91.313 90)
 			(effects
 				(font
@@ -2309,7 +2349,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "R18")
+					(reference "R501")
 					(unit 1)
 				)
 			)
@@ -2324,7 +2364,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988c18")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR0501"
 			(at 96.52 137.16 0)
 			(effects
 				(font
@@ -2374,7 +2414,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#PWR037")
+					(reference "#PWR0501")
 					(unit 1)
 				)
 			)
@@ -2389,7 +2429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988c49")
-		(property "Reference" "J2"
+		(property "Reference" "J501"
 			(at 103.0478 82.1182 0)
 			(effects
 				(font
@@ -2486,7 +2526,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "J2")
+					(reference "J501")
 					(unit 1)
 				)
 			)
@@ -2501,7 +2541,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988c86")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR0504"
 			(at 132.08 151.13 0)
 			(effects
 				(font
@@ -2551,7 +2591,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#PWR040")
+					(reference "#PWR0504")
 					(unit 1)
 				)
 			)
@@ -2566,7 +2606,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061988c8c")
-		(property "Reference" "D2"
+		(property "Reference" "D501"
 			(at 137.287 138.5316 0)
 			(effects
 				(font
@@ -2627,7 +2667,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "D2")
+					(reference "D501")
 					(unit 1)
 				)
 			)
@@ -2642,7 +2682,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061a236c4")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR0502"
 			(at 116.84 88.9 0)
 			(effects
 				(font
@@ -2693,7 +2733,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#PWR038")
+					(reference "#PWR0502")
 					(unit 1)
 				)
 			)
@@ -2704,11 +2744,11 @@
 		(at 52.07 99.06 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061ab7cb8")
-		(property "Reference" "TP3"
+		(property "Reference" "TP501"
 			(at 56.8452 97.8916 90)
 			(effects
 				(font
@@ -2759,7 +2799,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "TP3")
+					(reference "TP501")
 					(unit 1)
 				)
 			)
@@ -2770,11 +2810,11 @@
 		(at 52.07 104.14 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061ab87f3")
-		(property "Reference" "TP4"
+		(property "Reference" "TP502"
 			(at 56.8452 102.9716 90)
 			(effects
 				(font
@@ -2825,7 +2865,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "TP4")
+					(reference "TP502")
 					(unit 1)
 				)
 			)
@@ -2840,7 +2880,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061b104ea")
-		(property "Reference" "USBLED1"
+		(property "Reference" "D502"
 			(at 162.56 87.503 0)
 			(effects
 				(font
@@ -2848,7 +2888,7 @@
 				)
 			)
 		)
-		(property "Value" "WHITE_LED"
+		(property "Value" "LED_WHITE"
 			(at 162.56 89.8144 0)
 			(effects
 				(font
@@ -2856,7 +2896,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 162.56 92.71 90)
 			(effects
 				(font
@@ -2892,7 +2932,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "USBLED1")
+					(reference "D502")
 					(unit 1)
 				)
 			)
@@ -2900,23 +2940,23 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 154.94 92.71 90)
+		(at 156.21 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061b104f0")
-		(property "Reference" "R20"
-			(at 154.94 95.3516 90)
+		(property "Reference" "R503"
+			(at 156.21 95.3516 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "5.1k"
-			(at 154.94 97.663 90)
+		(property "Value" "5.1kΩ"
+			(at 156.21 97.663 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2924,7 +2964,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 154.94 92.71 0)
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2933,7 +2973,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 92.71 0)
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2942,7 +2982,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 154.94 92.71 0)
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2959,7 +2999,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "R20")
+					(reference "R503")
 					(unit 1)
 				)
 			)
@@ -2967,15 +3007,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 92.71 90)
+		(at 167.64 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061b11f2f")
-		(property "Reference" "#PWR042"
-			(at 171.45 92.71 0)
+		(property "Reference" "#PWR0507"
+			(at 167.64 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2984,7 +3024,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.3512 92.583 90)
+			(at 169.672 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2993,7 +3033,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 92.71 0)
+			(at 167.64 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3002,7 +3042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 92.71 0)
+			(at 167.64 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3011,7 +3051,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 92.71 0)
+			(at 167.64 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +3065,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#PWR042")
+					(reference "#PWR0507")
 					(unit 1)
 				)
 			)
@@ -3033,15 +3073,15 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 152.4 92.71 90)
+		(at 148.59 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000061b168a6")
-		(property "Reference" "#PWR041"
-			(at 156.21 92.71 0)
+		(property "Reference" "#PWR0506"
+			(at 148.59 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,7 +3090,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 149.1488 92.329 90)
+			(at 145.542 88.646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +3099,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 92.71 0)
+			(at 148.59 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,7 +3108,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 92.71 0)
+			(at 148.59 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +3117,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 92.71 0)
+			(at 148.59 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3091,7 +3131,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#PWR041")
+					(reference "#PWR0506")
 					(unit 1)
 				)
 			)
@@ -3106,7 +3146,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1cbb56f5-8f7f-40cc-b739-9bfbb4667c56")
-		(property "Reference" "#PWR0185"
+		(property "Reference" "#PWR0505"
 			(at 147.574 114.808 0)
 			(effects
 				(font
@@ -3157,7 +3197,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#PWR0185")
+					(reference "#PWR0505")
 					(unit 1)
 				)
 			)
@@ -3168,11 +3208,11 @@
 		(at 154.94 110.998 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a8c4a641-9e69-45ec-bd7f-c183567d5043")
-		(property "Reference" "TP11"
+		(property "Reference" "TP503"
 			(at 153.67 104.648 0)
 			(effects
 				(font
@@ -3223,7 +3263,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "TP11")
+					(reference "TP503")
 					(unit 1)
 				)
 			)
@@ -3237,9 +3277,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f35f8e03-e2e5-4ba9-bc0d-ad01527f4e23")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG0501"
 			(at 152.4 90.805 0)
 			(effects
 				(font
@@ -3249,7 +3288,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 152.4 87.63 0)
+			(at 154.178 84.328 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3289,7 +3328,7 @@
 		(instances
 			(project "Ricardo-Stark"
 				(path "/7db990e4-92e1-4f99-b4d2-435bbec1ba83/00000000-0000-0000-0000-000061925999"
-					(reference "#FLG03")
+					(reference "#FLG0501")
 					(unit 1)
 				)
 			)
